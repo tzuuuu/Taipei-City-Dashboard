@@ -1,0 +1,56 @@
+{
+  "type": "FeatureCollection",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+    }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "road_name": "基隆路與羅斯福路口",
+        "times": 4464,
+        "genre": "違規左轉前十大路口"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5371212,
+          25.0112054
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "road_name": "師大路與羅斯福路口",
+        "times": 2529,
+        "genre": "違規左轉前十大路口"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5277729,
+          25.021064
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "road_name": "長安東路與建國北路口",
+        "times": 2314,
+        "genre": "違規左轉前十大路口"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.53674,
+          25.0484007
+        ]
+      }
+    }
+  ]
+}
