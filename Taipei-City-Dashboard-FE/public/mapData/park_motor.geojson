@@ -1,0 +1,2906 @@
+{
+	"type": "FeatureCollection",
+	"crs": {
+		"type": "name",
+		"properties": {
+			"name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+		}
+	},
+	"features": [
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "信義區",
+				"name": "府前廣場地下停車場",
+				"total": 1405,
+				"available": 205,
+				"usageRate": 85,
+				"tier":"81%~100%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.562115, 25.036537]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "信義區",
+				"name": "臺北市災害應變中心地下停車場",
+				"total": 199,
+				"available": 80,
+				"usageRate": 60,
+				"tier":"41%~60%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.565901, 25.028851]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "北投區",
+				"name": "立農公園地下停車場",
+				"total": 95,
+				"available": 20,
+				"usageRate": 79,
+				"tier":"61%~80%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.503081, 25.118554]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "北投區",
+				"name": "嘟嘟房捷運奇岩(機車)站停車場",
+				"total": 154,
+				"available": 104,
+				"usageRate": 32,
+				"tier":"21%~40%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.50101, 25.126075]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "萬華區",
+				"name": "萬華國中地下停車場",
+				"total": 215,
+				"available": 89,
+				"usageRate": 59,
+				"tier":"41%~60%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.499572, 25.029188]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "中山區",
+				"name": "捷運劍南停車場",
+				"total": 52,
+				"available": 11,
+				"usageRate": 79,
+				"tier":"61%~80%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.55479, 25.084707]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "南港區",
+				"name": "國家生技研究園區停車場",
+				"total": 910,
+				"available": 0,
+				"usageRate": 100,
+				"tier":"81%~100%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.61261, 25.049135]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "萬華區",
+				"name": "峨眉立體停車場",
+				"total": 1653,
+				"available": 0,
+				"usageRate": 100,
+				"tier":"81%~100%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.505312, 25.044237]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "萬華區",
+				"name": "洛陽綜合立體停車場",
+				"total": 277,
+				"available": 100,
+				"usageRate": 64,
+				"tier":"61%~80%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.505688, 25.047718]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "內湖區",
+				"name": "東湖國小地下停車場",
+				"total": 109,
+				"available": 12,
+				"usageRate": 89,
+				"tier":"81%~100%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.61584, 25.068552]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "信義區",
+				"name": "忠信地下停車場",
+				"total": 255,
+				"available": 2,
+				"usageRate": 99,
+				"tier":"81%~100%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.568219, 25.040263]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "大同區",
+				"name": "建成國中地下停車場",
+				"total": 156,
+				"available": 0,
+				"usageRate": 100,
+				"tier":"81%~100%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.519748, 25.051653]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "南港區",
+				"name": "興中立體停車場",
+				"total": 152,
+				"available": 0,
+				"usageRate": 100,
+				"tier":"81%~100%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.606785, 25.056241]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "萬華區",
+				"name": "青年公園高爾夫球場地下停車場",
+				"total": 156,
+				"available": 28,
+				"usageRate": 82,
+				"tier":"81%~100%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.507297, 25.024919]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "文山區",
+				"name": "動物園站地下停車場",
+				"total": 200,
+				"available": 73,
+				"usageRate": 64,
+				"tier":"61%~80%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.578773, 24.997364]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "信義區",
+				"name": "信義廣場地下停車場",
+				"total": 195,
+				"available": 0,
+				"usageRate": 100,
+				"tier":"81%~100%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.566433, 25.033061]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "信義區",
+				"name": "台北101停車場",
+				"total": 1509,
+				"available": 423,
+				"usageRate": 72,
+				"tier":"61%~80%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.563731, 25.033735]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "內湖區",
+				"name": "大湖公園地下停車場",
+				"total": 66,
+				"available": 12,
+				"usageRate": 82,
+				"tier":"81%~100%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.601935, 25.083117]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "大安區",
+				"name": "大安森林公園地下停車場",
+				"total": 344,
+				"available": 97,
+				"usageRate": 72,
+				"tier":"61%~80%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.537333, 25.03186]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "中正區",
+				"name": "台北時代寓所地下平面停車場",
+				"total": 54,
+				"available": 0,
+				"usageRate": 100,
+				"tier":"81%~100%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.522804, 25.04437]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "北投區",
+				"name": "陽明山立體停車場",
+				"total": 350,
+				"available": 0,
+				"usageRate": 100,
+				"tier":"81%~100%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.538923, 25.155134]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "士林區",
+				"name": "文昌國小地下停車場",
+				"total": 290,
+				"available": 0,
+				"usageRate": 100,
+				"tier":"81%~100%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.521956, 25.099413]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "萬華區",
+				"name": "青年公園棒球場地下停車場",
+				"total": 118,
+				"available": 31,
+				"usageRate": 74,
+				"tier":"61%~80%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.503079, 25.023807]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "中山區",
+				"name": "榮星花園地下停車場",
+				"total": 67,
+				"available": 4,
+				"usageRate": 94,
+				"tier":"81%~100%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.538256, 25.064202]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "士林區",
+				"name": "福林公園地下停車場",
+				"total": 62,
+				"available": 2,
+				"usageRate": 97,
+				"tier":"81%~100%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.530697, 25.095958]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "松山區",
+				"name": "偶戲博物館地下停車場",
+				"total": 32,
+				"available": 0,
+				"usageRate": 100,
+				"tier":"81%~100%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.561766, 25.047043]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "北投區",
+				"name": "陽明山第二停車場",
+				"total": 149,
+				"available": 0,
+				"usageRate": 100,
+				"tier":"81%~100%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.545544, 25.15487]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "大安區",
+				"name": "龍門國中地下停車場",
+				"total": 140,
+				"available": 78,
+				"usageRate": 44,
+				"tier":"41%~60%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.538033, 25.024075]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "中山區",
+				"name": "永盛公園地下停車場",
+				"total": 62,
+				"available": 7,
+				"usageRate": 89,
+				"tier":"81%~100%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.524823, 25.059262]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "文山區",
+				"name": "臺北花木批發市場地下停車場",
+				"total": 352,
+				"available": 139,
+				"usageRate": 61,
+				"tier":"61%~80%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.540629, 25.004427]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "北投區",
+				"name": "振興公園地下停車場",
+				"total": 102,
+				"available": 12,
+				"usageRate": 88,
+				"tier":"81%~100%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.523236, 25.118771]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "松山區",
+				"name": "民有市場地下停車場",
+				"total": 418,
+				"available": 301,
+				"usageRate": 28,
+				"tier":"21%~40%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.546743, 25.060833]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "信義區",
+				"name": "三張里地下停車場",
+				"total": 268,
+				"available": 124,
+				"usageRate": 54,
+				"tier":"41%~60%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.566935, 25.030678]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "信義區",
+				"name": "春光公園地下停車場",
+				"total": 68,
+				"available": 19,
+				"usageRate": 72,
+				"tier":"61%~80%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.580986, 25.042486]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "萬華區",
+				"name": "艋舺公園地下停車場",
+				"total": 268,
+				"available": 0,
+				"usageRate": 100,
+				"tier":"81%~100%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.499929, 25.036136]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "中山區",
+				"name": "濱江國中地下停車場",
+				"total": 135,
+				"available": 114,
+				"usageRate": 16,
+				"tier":"'20%以下"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.561685, 25.079562]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "大同區",
+				"name": "建成公園地下停車場",
+				"total": 172,
+				"available": 0,
+				"usageRate": 100,
+				"tier":"81%~100%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.518225, 25.053893]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "士林區",
+				"name": "捷運劍潭站轉乘停車場",
+				"total": 152,
+				"available": 0,
+				"usageRate": 100,
+				"tier":"81%~100%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.52458, 25.082693]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "北投區",
+				"name": "石牌國小地下停車場",
+				"total": 175,
+				"available": 31,
+				"usageRate": 82,
+				"tier":"81%~100%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.513143, 25.11452]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "中山區",
+				"name": "長安國小地下停車場",
+				"total": 117,
+				"available": 38,
+				"usageRate": 68,
+				"tier":"61%~80%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.531324, 25.050346]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "北投區",
+				"name": "七星公園地下停車場",
+				"total": 52,
+				"available": 0,
+				"usageRate": 100,
+				"tier":"81%~100%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.502184, 25.136557]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "士林區",
+				"name": "承德公園地下停車場",
+				"total": 60,
+				"available": 21,
+				"usageRate": 65,
+				"tier":"61%~80%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.522273, 25.089758]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "南港區",
+				"name": "南港國小地下停車場",
+				"total": 71,
+				"available": 60,
+				"usageRate": 15,
+				"tier":"'20%以下"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.611297, 25.056595]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "南港區",
+				"name": "玉成國小地下停車場",
+				"total": 28,
+				"available": 1,
+				"usageRate": 96,
+				"tier":"81%~100%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.592936, 25.053291]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "大同區",
+				"name": "蓬萊國小地下停車場",
+				"total": 144,
+				"available": 51,
+				"usageRate": 65,
+				"tier":"61%~80%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.516796, 25.056496]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "信義區",
+				"name": "信義國小地下停車場",
+				"total": 50,
+				"available": 0,
+				"usageRate": 100,
+				"tier":"81%~100%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.562466, 25.031837]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "中山區",
+				"name": "臺北市中山運動中心停車場",
+				"total": 81,
+				"available": 3,
+				"usageRate": 96,
+				"tier":"81%~100%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.521473, 25.054859]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "文山區",
+				"name": "興隆公園地下停車場",
+				"total": 58,
+				"available": 18,
+				"usageRate": 69,
+				"tier":"61%~80%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.551369, 25.000711]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "文山區",
+				"name": "景美國小地下停車場",
+				"total": 93,
+				"available": 20,
+				"usageRate": 78,
+				"tier":"61%~80%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.54027, 24.988548]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "大安區",
+				"name": "國立臺灣大學臨時停車場",
+				"total": 1330,
+				"available": 982,
+				"usageRate": 26,
+				"tier":"21%~40%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.533724, 25.017182]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "大同區",
+				"name": "大龍國小地下停車場",
+				"total": 106,
+				"available": 19,
+				"usageRate": 82,
+				"tier":"81%~100%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.517216, 25.074115]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "南港區",
+				"name": "世貿公園地下停車場",
+				"total": 194,
+				"available": 154,
+				"usageRate": 21,
+				"tier":"21%~40%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.615101, 25.057827]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "士林區",
+				"name": "社子國小地下停車場",
+				"total": 211,
+				"available": 70,
+				"usageRate": 67,
+				"tier":"61%~80%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.502167, 25.091349]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "松山區",
+				"name": "臺北田徑場平面、地下停車場",
+				"total": 637,
+				"available": 358,
+				"usageRate": 44,
+				"tier":"41%~60%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.55081, 25.048864]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "文山區",
+				"name": "萬興國小地下停車場",
+				"total": 188,
+				"available": 101,
+				"usageRate": 46,
+				"tier":"41%~60%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.576661, 24.989452]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "士林區",
+				"name": "嘟嘟房捷運士林站停車場",
+				"total": 170,
+				"available": 0,
+				"usageRate": 100,
+				"tier":"81%~100%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.526371, 25.092157]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "士林區",
+				"name": "嘟嘟房捷運芝山站停車場",
+				"total": 167,
+				"available": 77,
+				"usageRate": 54,
+				"tier":"41%~60%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.522823, 25.101658]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "大同區",
+				"name": "嘟嘟房捷運民權西路站停車場",
+				"total": 191,
+				"available": 72,
+				"usageRate": 62,
+				"tier":"61%~80%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.519858, 25.06164]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "內湖區",
+				"name": "嘟嘟房捷運內湖(機車)站停車場",
+				"total": 319,
+				"available": 131,
+				"usageRate": 59,
+				"tier":"41%~60%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.594243, 25.083823]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "南港區",
+				"name": "玉成公園地下停車場",
+				"total": 84,
+				"available": 4,
+				"usageRate": 95,
+				"tier":"81%~100%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.586916, 25.041806]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "南港區",
+				"name": "嘟嘟房捷運內湖機廠站停車場",
+				"total": 97,
+				"available": 29,
+				"usageRate": 70,
+				"tier":"61%~80%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.61881, 25.061387]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "士林區",
+				"name": "士林一號廣場(西側)地下停車場",
+				"total": 70,
+				"available": 0,
+				"usageRate": 100,
+				"tier":"81%~100%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.529813, 25.118538]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "信義區",
+				"name": "BELLAVITA寶麗廣場停車場",
+				"total": 243,
+				"available": 0,
+				"usageRate": 100,
+				"tier":"81%~100%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.567917, 25.039731]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "松山區",
+				"name": "臺北國際航空站第2、6號收費停車場",
+				"total": 307,
+				"available": 0,
+				"usageRate": 100,
+				"tier":"81%~100%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.552689, 25.062803]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "信義區",
+				"name": "松山工農地下停車場",
+				"total": 189,
+				"available": 26,
+				"usageRate": 86,
+				"tier":"81%~100%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.572286, 25.039584]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "松山區",
+				"name": "松山國小地下停車場",
+				"total": 135,
+				"available": 1,
+				"usageRate": 99,
+				"tier":"81%~100%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.578528, 25.050364]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "信義區",
+				"name": "臺北文創停車場",
+				"total": 1234,
+				"available": 809,
+				"usageRate": 34,
+				"tier":"21%~40%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.561929, 25.044659]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "中正區",
+				"name": "臺北車站西側地上停車場",
+				"total": 150,
+				"available": 0,
+				"usageRate": 100,
+				"tier":"81%~100%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.516532, 25.047629]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "文山區",
+				"name": "歐特儀股份有限公司捷運木柵站轉乘停車",
+				"total": 161,
+				"available": 45,
+				"usageRate": 72,
+				"tier":"61%~80%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.573046, 24.998178]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "大安區",
+				"name": "國立臺灣大學辛亥臨時停車場",
+				"total": 1484,
+				"available": 0,
+				"usageRate": 100,
+				"tier":"81%~100%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.542685, 25.020801]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "士林區",
+				"name": "臺北市立天文科學教育館地下及戶外平面停車場",
+				"total": 422,
+				"available": 362,
+				"usageRate": 14,
+				"tier":"'20%以下"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.518365, 25.095828]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "大安區",
+				"name": "助安企業有限公司第二殯儀館地下室停車場",
+				"total": 385,
+				"available": 0,
+				"usageRate": 100,
+				"tier":"81%~100%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.552934, 25.013771]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "中正區",
+				"name": "三創生活園區停車場",
+				"total": 1157,
+				"available": 191,
+				"usageRate": 83,
+				"tier":"81%~100%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.530811, 25.045292]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "大安區",
+				"name": "嘉興公園地下停車場",
+				"total": 64,
+				"available": 0,
+				"usageRate": 100,
+				"tier":"81%~100%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.551936, 25.021665]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "大同區",
+				"name": "啟聰學校地下停車場",
+				"total": 96,
+				"available": 15,
+				"usageRate": 84,
+				"tier":"81%~100%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.512001, 25.074259]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "士林區",
+				"name": "兒童新樂園停車場",
+				"total": 393,
+				"available": 169,
+				"usageRate": 57,
+				"tier":"41%~60%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.514837, 25.09754]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "松山區",
+				"name": "嘟嘟房台北小巨蛋站停車場",
+				"total": 710,
+				"available": 538,
+				"usageRate": 24,
+				"tier":"21%~40%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.550931, 25.051243]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "大安區",
+				"name": "便利停車場大安地政事務所站",
+				"total": 154,
+				"available": 0,
+				"usageRate": 100,
+				"tier":"81%~100%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.556481, 25.033699]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "南港區",
+				"name": "南港車站地下停車場",
+				"total": 1052,
+				"available": 1,
+				"usageRate": 100,
+				"tier":"81%~100%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.603743, 25.052107]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "士林區",
+				"name": "延平北路5段1巷平面停車場",
+				"total": 17,
+				"available": 0,
+				"usageRate": 100,
+				"tier":"81%~100%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.510018, 25.078688]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "萬華區",
+				"name": "華江橋下與雙層停車場",
+				"total": 228,
+				"available": 0,
+				"usageRate": 100,
+				"tier":"81%~100%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.49135, 25.035434]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "信義區",
+				"name": "吳興街284巷臨時平面停車場",
+				"total": 39,
+				"available": 0,
+				"usageRate": 100,
+				"tier":"81%~100%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.563674, 25.025127]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "北投區",
+				"name": "好市多北投分公司",
+				"total": 235,
+				"available": 0,
+				"usageRate": 100,
+				"tier":"81%~100%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.470117, 25.127582]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "大安區",
+				"name": "國立臺灣大學生醫工程館地下停車場",
+				"total": 495,
+				"available": 109,
+				"usageRate": 78,
+				"tier":"61%~80%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.546996, 25.013929]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "南港區",
+				"name": "嘟嘟房南港展覽館站停車場",
+				"total": 1770,
+				"available": 0,
+				"usageRate": 100,
+				"tier":"81%~100%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.619189, 25.056495]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "大同區",
+				"name": "全國停車場重慶店",
+				"total": 564,
+				"available": 0,
+				"usageRate": 100,
+				"tier":"81%~100%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.513847, 25.059025]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "南港區",
+				"name": "嘟嘟房捷運南港展覽館站停車場",
+				"total": 1050,
+				"available": 234,
+				"usageRate": 78,
+				"tier":"61%~80%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.616738, 25.054765]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "松山區",
+				"name": "八德立體停車場",
+				"total": 382,
+				"available": 259,
+				"usageRate": 32,
+				"tier":"21%~40%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.571404, 25.04959]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "內湖區",
+				"name": "臺北市網球中心停車場",
+				"total": 526,
+				"available": 0,
+				"usageRate": 100,
+				"tier":"81%~100%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.596956, 25.06757]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "內湖區",
+				"name": "康樂合署大樓地下停車場",
+				"total": 31,
+				"available": 0,
+				"usageRate": 100,
+				"tier":"81%~100%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.619216, 25.072609]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "南港區",
+				"name": "嘟嘟房南港展覽館2站停車場",
+				"total": 1136,
+				"available": 0,
+				"usageRate": 100,
+				"tier":"81%~100%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.615122, 25.056069]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "文山區",
+				"name": "興隆公宅D2停車場",
+				"total": 401,
+				"available": 112,
+				"usageRate": 72,
+				"tier":"61%~80%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.562612, 24.988109]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "文山區",
+				"name": "永建國小地下停車場",
+				"total": 83,
+				"available": 35,
+				"usageRate": 58,
+				"tier":"41%~60%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.555663, 24.989042]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "南港區",
+				"name": "叭叭房南軟二期停車場",
+				"total": 422,
+				"available": 0,
+				"usageRate": 100,
+				"tier":"81%~100%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.611617, 25.058614]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "中正區",
+				"name": "臺北市城中社會福利大樓停車場",
+				"total": 92,
+				"available": 0,
+				"usageRate": 100,
+				"tier":"81%~100%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.509003, 25.038807]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "信義區",
+				"name": "遠東百貨信義分公司",
+				"total": 362,
+				"available": 40,
+				"usageRate": 89,
+				"tier":"81%~100%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.567942, 25.036933]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "信義區",
+				"name": "景勤二號公園地下停車場",
+				"total": 102,
+				"available": 19,
+				"usageRate": 81,
+				"tier":"81%~100%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.558678, 25.026524]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "中山區",
+				"name": "新生公園停車場",
+				"total": 74,
+				"available": 0,
+				"usageRate": 100,
+				"tier":"81%~100%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.530936, 25.068613]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "文山區",
+				"name": "萬芳醫院附設停車場",
+				"total": 176,
+				"available": 0,
+				"usageRate": 100,
+				"tier":"81%~100%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.55798, 24.999851]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "松山區",
+				"name": "臺北網球場平面停車場",
+				"total": 44,
+				"available": 31,
+				"usageRate": 30,
+				"tier":"21%~40%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.551977, 25.050645]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "北投區",
+				"name": "關渡國小運動中心停車場",
+				"total": 24,
+				"available": 0,
+				"usageRate": 100,
+				"tier":"81%~100%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.466738, 25.126054]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "內湖區",
+				"name": "臺北市內湖運動中心停車場",
+				"total": 168,
+				"available": 0,
+				"usageRate": 100,
+				"tier":"81%~100%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.575052, 25.078258]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "大同區",
+				"name": "臺北市大龍新城地下停車場",
+				"total": 201,
+				"available": 0,
+				"usageRate": 100,
+				"tier":"81%~100%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.514265, 25.074987]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "中山區",
+				"name": "中山區行政中心停車場",
+				"total": 58,
+				"available": 0,
+				"usageRate": 100,
+				"tier":"81%~100%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.533505, 25.064399]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "大安區",
+				"name": "臺北和平籃球館停車場",
+				"total": 347,
+				"available": 104,
+				"usageRate": 70,
+				"tier":"61%~80%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.545868, 25.022119]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "大同區",
+				"name": "京站停車場",
+				"total": 1021,
+				"available": 812,
+				"usageRate": 20,
+				"tier":"'20%以下"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.517941, 25.049177]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "大同區",
+				"name": "168停車聯盟-大龍場",
+				"total": 179,
+				"available": 0,
+				"usageRate": 100,
+				"tier":"81%~100%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.517167, 25.069055]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "大安區",
+				"name": "大安運動中心停車場",
+				"total": 117,
+				"available": 0,
+				"usageRate": 100,
+				"tier":"81%~100%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.546203, 25.020515]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "士林區",
+				"name": "北台國際開發有限公司葫蘆堵停車場",
+				"total": 198,
+				"available": 0,
+				"usageRate": 100,
+				"tier":"81%~100%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.51075, 25.082319]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "信義區",
+				"name": "市府轉運站停車場",
+				"total": 595,
+				"available": 45,
+				"usageRate": 92,
+				"tier":"81%~100%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.564434, 25.040395]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "中山區",
+				"name": "驛東交停企業有限公司台北中山場停車場",
+				"total": 174,
+				"available": 0,
+				"usageRate": 100,
+				"tier":"81%~100%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.521046, 25.050346]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "萬華區",
+				"name": "TIMES萬華運動中心",
+				"total": 155,
+				"available": 0,
+				"usageRate": 100,
+				"tier":"81%~100%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.507074, 25.04744]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "內湖區",
+				"name": "西湖市場暨捷運站地下停車場",
+				"total": 185,
+				"available": 0,
+				"usageRate": 100,
+				"tier":"81%~100%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.566608, 25.082633]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "南港區",
+				"name": "北台國際開發有限公司舊莊停車場",
+				"total": 68,
+				"available": 0,
+				"usageRate": 100,
+				"tier":"81%~100%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.619471, 25.041351]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "北投區",
+				"name": "北台國際開發有限公司石牌停車場",
+				"total": 94,
+				"available": 0,
+				"usageRate": 100,
+				"tier":"81%~100%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.522588, 25.113054]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "文山區",
+				"name": "永建市場旁平面停車場",
+				"total": 18,
+				"available": 0,
+				"usageRate": 100,
+				"tier":"81%~100%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.551507, 24.988213]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "大同區",
+				"name": "慶昌橋下停車場",
+				"total": 138,
+				"available": 0,
+				"usageRate": 100,
+				"tier":"81%~100%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.514931, 25.076495]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "大安區",
+				"name": "臺灣科技大學地下停車場",
+				"total": 904,
+				"available": 0,
+				"usageRate": 100,
+				"tier":"81%~100%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.540852, 25.013511]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "內湖區",
+				"name": "行善路383巷臨時平面停車場",
+				"total": 122,
+				"available": 0,
+				"usageRate": 100,
+				"tier":"81%~100%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.58642, 25.063432]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "士林區",
+				"name": "福林路平面停車場",
+				"total": 50,
+				"available": 0,
+				"usageRate": 100,
+				"tier":"81%~100%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.532771, 25.096327]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "中正區",
+				"name": "臨沂街臨時平面停車場（一）",
+				"total": 11,
+				"available": 0,
+				"usageRate": 100,
+				"tier":"81%~100%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.530956, 25.041823]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "中山區",
+				"name": "長安東路臨時平面停車場(一)",
+				"total": 15,
+				"available": 0,
+				"usageRate": 100,
+				"tier":"81%~100%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.52948, 25.04722]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "萬華區",
+				"name": "雙園堤外平面停車場",
+				"total": 242,
+				"available": 0,
+				"usageRate": 100,
+				"tier":"81%~100%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.487644, 25.032647]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "士林區",
+				"name": "三腳渡平面停車場",
+				"total": 16,
+				"available": 0,
+				"usageRate": 100,
+				"tier":"81%~100%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.516529, 25.081969]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "士林區",
+				"name": "劍潭抽水站堤外平面停車場",
+				"total": 80,
+				"available": 0,
+				"usageRate": 100,
+				"tier":"81%~100%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.518915, 25.079747]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "士林區",
+				"name": "百齡橋堤外槌球場南側臨時平面停車場",
+				"total": 103,
+				"available": 0,
+				"usageRate": 100,
+				"tier":"81%~100%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.512758, 25.086961]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "士林區",
+				"name": "百齡橋堤外（一）平面停車場",
+				"total": 14,
+				"available": 0,
+				"usageRate": 100,
+				"tier":"81%~100%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.510137, 25.092552]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "士林區",
+				"name": "通河西街一段堤外平面停車場",
+				"total": 9,
+				"available": 0,
+				"usageRate": 100,
+				"tier":"81%~100%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.513283, 25.083703]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "大同區",
+				"name": "承德橋下停車場",
+				"total": 62,
+				"available": 0,
+				"usageRate": 100,
+				"tier":"81%~100%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.519285, 25.077568]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "松山區",
+				"name": "基隆河濱公園迎風段(一)停車場",
+				"total": 94,
+				"available": 0,
+				"usageRate": 100,
+				"tier":"81%~100%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.566852, 25.071717]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "南港區",
+				"name": "臺北流行音樂中心停車場",
+				"total": 583,
+				"available": 495,
+				"usageRate": 15,
+				"tier":"'20%以下"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.599171, 25.05278]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "士林區",
+				"name": "太平洋崇光百貨股份有限公司天母店停車場",
+				"total": 1173,
+				"available": 0,
+				"usageRate": 100,
+				"tier":"81%~100%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.524209, 25.105478]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "萬華區",
+				"name": "驛東交停企業有限公司環南市場一期停車場",
+				"total": 1433,
+				"available": 0,
+				"usageRate": 100,
+				"tier":"81%~100%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.489845, 25.029769]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "萬華區",
+				"name": "堤外魚類中繼市場停車場",
+				"total": 135,
+				"available": 0,
+				"usageRate": 100,
+				"tier":"81%~100%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.495289, 25.0146]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "信義區",
+				"name": "亨通信義停車場",
+				"total": 114,
+				"available": 20,
+				"usageRate": 82,
+				"tier":"81%~100%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.565079, 25.032319]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "松山區",
+				"name": "嘟嘟房合庫大樓站停車場",
+				"total": 711,
+				"available": 353,
+				"usageRate": 50,
+				"tier":"41%~60%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.545346, 25.048444]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "信義區",
+				"name": "詮營信義101停車場",
+				"total": 41,
+				"available": 0,
+				"usageRate": 100,
+				"tier":"81%~100%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.564817, 25.03262]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "士林區",
+				"name": "大葉天母停車場",
+				"total": 1131,
+				"available": 0,
+				"usageRate": 100,
+				"tier":"81%~100%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.531743, 25.111527]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "中正區",
+				"name": "水源停車場",
+				"total": 118,
+				"available": 2,
+				"usageRate": 98,
+				"tier":"81%~100%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.534397, 25.012742]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "內湖區",
+				"name": "吉拾停車場內湖一場",
+				"total": 232,
+				"available": 130,
+				"usageRate": 44,
+				"tier":"41%~60%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.578103, 25.060723]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "中正區",
+				"name": "台大醫院兒童醫療大樓停車場",
+				"total": 102,
+				"available": 0,
+				"usageRate": 100,
+				"tier":"81%~100%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.518854, 25.044371]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "松山區",
+				"name": "微風廣場地下停車場",
+				"total": 179,
+				"available": 0,
+				"usageRate": 100,
+				"tier":"81%~100%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.544179, 25.04614]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "大同區",
+				"name": "延平國小地下停車場",
+				"total": 99,
+				"available": 0,
+				"usageRate": 100,
+				"tier":"81%~100%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.511929, 25.066938]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "大同區",
+				"name": "明倫社會住宅地下停車場",
+				"total": 293,
+				"available": 44,
+				"usageRate": 85,
+				"tier":"81%~100%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.519881, 25.07327]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "中正區",
+				"name": "臺北車站東區地下停車場",
+				"total": 172,
+				"available": 0,
+				"usageRate": 100,
+				"tier":"81%~100%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.517687, 25.047688]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "大同區",
+				"name": "嘟嘟房捷運大橋頭站停車場",
+				"total": 65,
+				"available": 15,
+				"usageRate": 77,
+				"tier":"61%~80%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.511756, 25.063514]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "中山區",
+				"name": "基隆河大佳段河濱公園停車場",
+				"total": 163,
+				"available": 0,
+				"usageRate": 100,
+				"tier":"81%~100%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.541606, 25.073773]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "北投區",
+				"name": "金龍停車場",
+				"total": 10,
+				"available": 0,
+				"usageRate": 100,
+				"tier":"81%~100%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.507747, 25.116383]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "萬華區",
+				"name": "華中橋堤外（二）停車場",
+				"total": 22,
+				"available": 0,
+				"usageRate": 100,
+				"tier":"81%~100%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.492262, 25.019476]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "信義區",
+				"name": "臺北市立永春高級中學",
+				"total": 162,
+				"available": 0,
+				"usageRate": 100,
+				"tier":"81%~100%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.578959, 25.033635]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "內湖區",
+				"name": "大港墘公園地下停車場",
+				"total": 176,
+				"available": 128,
+				"usageRate": 27,
+				"tier":"21%~40%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.5743, 25.078511]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "士林區",
+				"name": "故宮廣場平面停車場",
+				"total": 181,
+				"available": 0,
+				"usageRate": 100,
+				"tier":"81%~100%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.548403, 25.098561]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "萬華區",
+				"name": "凱達大飯店附屬停車場",
+				"total": 641,
+				"available": 0,
+				"usageRate": 100,
+				"tier":"81%~100%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.498313, 25.032869]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "士林區",
+				"name": "臺北表演藝術中心停車場",
+				"total": 353,
+				"available": 170,
+				"usageRate": 52,
+				"tier":"41%~60%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.524207, 25.085141]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "內湖區",
+				"name": "燦坤堤頂停車場",
+				"total": 122,
+				"available": 0,
+				"usageRate": 100,
+				"tier":"81%~100%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.573127, 25.063094]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "南港區",
+				"name": "中南社會住宅地下停車場",
+				"total": 120,
+				"available": 0,
+				"usageRate": 100,
+				"tier":"81%~100%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.619085, 25.043007]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "北投區",
+				"name": "新奇岩社會住宅地下停車場",
+				"total": 195,
+				"available": 0,
+				"usageRate": 100,
+				"tier":"81%~100%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.503345, 25.123264]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "內湖區",
+				"name": "瑞光社會住宅地下停車場",
+				"total": 278,
+				"available": 0,
+				"usageRate": 100,
+				"tier":"81%~100%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.578954, 25.072837]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "萬華區",
+				"name": "青年一期社會住宅地下停車場",
+				"total": 160,
+				"available": 0,
+				"usageRate": 100,
+				"tier":"81%~100%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.503462, 25.020264]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "松山區",
+				"name": "健康1區社會住宅地下停車場",
+				"total": 156,
+				"available": 0,
+				"usageRate": 100,
+				"tier":"81%~100%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.564084, 25.054385]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "松山區",
+				"name": "健康2區社會住宅地下停車場",
+				"total": 168,
+				"available": 0,
+				"usageRate": 100,
+				"tier":"81%~100%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.565865, 25.054475]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "南港區",
+				"name": "東明公共住宅甲區地下停車場",
+				"total": 90,
+				"available": 3,
+				"usageRate": 97,
+				"tier":"81%~100%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.603952, 25.054266]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "南港區",
+				"name": "東明公共住宅乙區地下停車場",
+				"total": 375,
+				"available": 179,
+				"usageRate": 52,
+				"tier":"41%~60%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.604076, 25.054537]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "中山區",
+				"name": "臺北市立美術館臨時停車場",
+				"total": 28,
+				"available": 0,
+				"usageRate": 100,
+				"tier":"81%~100%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.524733, 25.072102]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "大安區",
+				"name": "統一精工台大長興停車場",
+				"total": 428,
+				"available": 348,
+				"usageRate": 19,
+				"tier":"'20%以下"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.545373, 25.017681]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "信義區",
+				"name": "信安街67巷臨時平面停車場",
+				"total": 200,
+				"available": 0,
+				"usageRate": 100,
+				"tier":"81%~100%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.560169, 25.025722]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "北投區",
+				"name": "忠義站平面停車場",
+				"total": 6,
+				"available": 0,
+				"usageRate": 100,
+				"tier":"81%~100%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.474396, 25.131586]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "內湖區",
+				"name": "宏達經營管理顧問有限公司港墘停車場",
+				"total": 203,
+				"available": 0,
+				"usageRate": 100,
+				"tier":"81%~100%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.574755, 25.07384]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "中正區",
+				"name": "行一機車臨時平面停車場",
+				"total": 216,
+				"available": 0,
+				"usageRate": 100,
+				"tier":"81%~100%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.521058, 25.047685]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "文山區",
+				"name": "興隆公宅D1停車場",
+				"total": 114,
+				"available": 0,
+				"usageRate": 100,
+				"tier":"81%~100%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.557928, 24.988334]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "南港區",
+				"name": "小彎社會住宅地下停車場",
+				"total": 346,
+				"available": 166,
+				"usageRate": 52,
+				"tier":"41%~60%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.594329, 25.057334]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "信義區",
+				"name": "廣慈社會住宅1區地下停車場",
+				"total": 178,
+				"available": 61,
+				"usageRate": 66,
+				"tier":"61%~80%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.582871, 25.039696]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "信義區",
+				"name": "廣慈社會住宅2區地下停車場",
+				"total": 294,
+				"available": 68,
+				"usageRate": 77,
+				"tier":"61%~80%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.581027, 25.038627]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "大同區",
+				"name": "Times 赤峰街【機車】",
+				"total": 30,
+				"available": 0,
+				"usageRate": 100,
+				"tier":"81%~100%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.518965, 25.05387]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "大同區",
+				"name": "Times 太原路【機車】",
+				"total": 21,
+				"available": 0,
+				"usageRate": 100,
+				"tier":"81%~100%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.516127, 25.051824]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "萬華區",
+				"name": "臺北市第一果菜批發市場中繼市場機車停車場",
+				"total": 1500,
+				"available": 0,
+				"usageRate": 100,
+				"tier":"81%~100%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.497226, 25.018565]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "內湖區",
+				"name": "安康公車調度站臨時平面停車場",
+				"total": 84,
+				"available": 0,
+				"usageRate": 100,
+				"tier":"81%~100%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.613216, 25.067339]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "信義區",
+				"name": "廣慈衛福大樓地下停車場",
+				"total": 943,
+				"available": 610,
+				"usageRate": 35,
+				"tier":"21%~40%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.583176, 25.03802]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "信義區",
+				"name": "信義區行政中心地下停車場",
+				"total": 237,
+				"available": 130,
+				"usageRate": 45,
+				"tier":"41%~60%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.582253, 25.037708]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "內湖區",
+				"name": "行善社會住宅地下停車場",
+				"total": 623,
+				"available": 0,
+				"usageRate": 100,
+				"tier":"81%~100%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.581482, 25.060118]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "萬華區",
+				"name": "莒光社會住宅地下停車場",
+				"total": 184,
+				"available": 63,
+				"usageRate": 66,
+				"tier":"61%~80%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.5004, 25.031993]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "大安區",
+				"name": "國立臺灣大學立體機車停車場",
+				"total": 107,
+				"available": 0,
+				"usageRate": 100,
+				"tier":"81%~100%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [118.525054, 24.996506]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "信義區",
+				"name": "臺北大巨蛋園區停車場",
+				"total": 2141,
+				"available": 1129,
+				"usageRate": 47,
+				"tier":"41%~60%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [118.524509, 25.02368]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "大同區",
+				"name": "公園首席停車場",
+				"total": 14,
+				"available": 0,
+				"usageRate": 100,
+				"tier":"81%~100%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [118.524187, 25.039686]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "文山區",
+				"name": "景美女中地下停車場",
+				"total": 140,
+				"available": 124,
+				"usageRate": 11,
+				"tier":"'20%以下"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [118.525759, 24.961269]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "北投區",
+				"name": "開勝平面停車場",
+				"total": 21,
+				"available": 0,
+				"usageRate": 100,
+				"tier":"81%~100%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [118.522554, 25.120795]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "萬華區",
+				"name": "新和國小地下停車場",
+				"total": 56,
+				"available": 0,
+				"usageRate": 100,
+				"tier":"81%~100%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [118.524858, 25.006256]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "內湖區",
+				"name": "東湖立體停車場",
+				"total": 202,
+				"available": 98,
+				"usageRate": 51,
+				"tier":"41%~60%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [118.523987, 25.049637]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "文山區",
+				"name": "168停車聯盟-興岩社宅",
+				"total": 203,
+				"available": 190,
+				"usageRate": 6,
+				"tier":"'20%以下"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [118.52537, 24.980705]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "信義區",
+				"name": "松山車站機車停車場",
+				"total": 1625,
+				"available": 363,
+				"usageRate": 78,
+				"tier":"61%~80%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.578474, 25.048303]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "大安區",
+				"name": "便利停車場富敦站",
+				"total": 196,
+				"available": 0,
+				"usageRate": 100,
+				"tier":"81%~100%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.549475, 25.044407]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "內湖區",
+				"name": "便利停車場基湖五站",
+				"total": 467,
+				"available": 0,
+				"usageRate": 100,
+				"tier":"81%~100%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.563586, 25.081022]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"district": "中正區",
+				"name": "便利停車場臨沂五站",
+				"total": 29,
+				"available": 0,
+				"usageRate": 100,
+				"tier":"81%~100%"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.528794, 25.036425]
+			}
+		}
+	]
+}
