@@ -239,6 +239,17 @@ export const useAdminStore = defineStore("admin", {
 			this.getPublicComponents(params);
 		},
 
+		// jarrenpoh 發送交通違規項目
+		async sendTrafficViolationsReport(violation) {
+			const dialogStore = useDialogStore();
+			const violationn = JSON.parse(
+				JSON.stringify(violation)
+			);
+			await http.post('/dashboard/traffic', violationn);
+			dialogStore.showNotification("success", "组件数据更新成功");
+
+		},
+
 		/* Issue */
 		// 1. Get all issues
 		async getIssues(params) {

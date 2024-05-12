@@ -15,7 +15,7 @@
         "total": 1998,
         "available": 251,
         "usageRate": 87,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -33,7 +33,7 @@
         "total": 446,
         "available": 200,
         "usageRate": 55,
-        "tier":"41%~60%"
+        "tier": 3
       },
       "geometry": {
         "type": "Point",
@@ -51,7 +51,7 @@
         "total": 169,
         "available": 3,
         "usageRate": 98,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -69,7 +69,7 @@
         "total": 204,
         "available": 14,
         "usageRate": 93,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -87,7 +87,7 @@
         "total": 204,
         "available": 36,
         "usageRate": 82,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -105,7 +105,7 @@
         "total": 514,
         "available": 25,
         "usageRate": 95,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -123,7 +123,7 @@
         "total": 282,
         "available": 104,
         "usageRate": 63,
-        "tier":"61%~80%"
+        "tier": 4
       },
       "geometry": {
         "type": "Point",
@@ -141,7 +141,7 @@
         "total": 525,
         "available": 62,
         "usageRate": 88,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -159,7 +159,7 @@
         "total": 91,
         "available": 13,
         "usageRate": 86,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -177,7 +177,7 @@
         "total": 144,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -195,7 +195,7 @@
         "total": 49,
         "available": 3,
         "usageRate": 94,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -213,7 +213,7 @@
         "total": 447,
         "available": 51,
         "usageRate": 89,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -231,7 +231,7 @@
         "total": 518,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -249,7 +249,7 @@
         "total": 441,
         "available": 4,
         "usageRate": 99,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -267,7 +267,7 @@
         "total": 48,
         "available": 3,
         "usageRate": 94,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -285,7 +285,7 @@
         "total": 1670,
         "available": 328,
         "usageRate": 80,
-        "tier":"61%~80%"
+        "tier": 4
       },
       "geometry": {
         "type": "Point",
@@ -303,7 +303,7 @@
         "total": 155,
         "available": 4,
         "usageRate": 97,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -321,7 +321,7 @@
         "total": 231,
         "available": 121,
         "usageRate": 48,
-        "tier":"41%~60%"
+        "tier": 3
       },
       "geometry": {
         "type": "Point",
@@ -339,7 +339,7 @@
         "total": 524,
         "available": 89,
         "usageRate": 83,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -357,7 +357,7 @@
         "total": 210,
         "available": 24,
         "usageRate": 89,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -375,7 +375,7 @@
         "total": 716,
         "available": 82,
         "usageRate": 89,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -393,7 +393,7 @@
         "total": 193,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -411,7 +411,7 @@
         "total": 259,
         "available": 38,
         "usageRate": 85,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -429,7 +429,7 @@
         "total": 5,
         "available": 4,
         "usageRate": 20,
-        "tier":"20%以下"
+        "tier": 1
       },
       "geometry": {
         "type": "Point",
@@ -447,7 +447,7 @@
         "total": 749,
         "available": 127,
         "usageRate": 83,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -465,7 +465,7 @@
         "total": 226,
         "available": 1,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -483,7 +483,7 @@
         "total": 358,
         "available": 48,
         "usageRate": 87,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -501,7 +501,7 @@
         "total": 198,
         "available": 1,
         "usageRate": 99,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -519,7 +519,7 @@
         "total": 116,
         "available": 2,
         "usageRate": 98,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -537,7 +537,7 @@
         "total": 341,
         "available": 47,
         "usageRate": 86,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -555,7 +555,7 @@
         "total": 151,
         "available": 9,
         "usageRate": 94,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -573,7 +573,7 @@
         "total": 129,
         "available": 26,
         "usageRate": 80,
-        "tier":"61%~80%"
+        "tier": 4
       },
       "geometry": {
         "type": "Point",
@@ -591,7 +591,7 @@
         "total": 271,
         "available": 1,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -609,7 +609,7 @@
         "total": 234,
         "available": 17,
         "usageRate": 93,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -627,7 +627,7 @@
         "total": 527,
         "available": 14,
         "usageRate": 97,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -645,7 +645,7 @@
         "total": 180,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -663,7 +663,7 @@
         "total": 266,
         "available": 8,
         "usageRate": 97,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -681,7 +681,7 @@
         "total": 194,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -699,7 +699,7 @@
         "total": 314,
         "available": 1,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -717,7 +717,7 @@
         "total": 326,
         "available": 2,
         "usageRate": 99,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -735,7 +735,7 @@
         "total": 637,
         "available": 118,
         "usageRate": 81,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -753,7 +753,7 @@
         "total": 332,
         "available": 21,
         "usageRate": 94,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -771,7 +771,7 @@
         "total": 150,
         "available": 1,
         "usageRate": 99,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -789,7 +789,7 @@
         "total": 372,
         "available": 19,
         "usageRate": 95,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -807,7 +807,7 @@
         "total": 122,
         "available": 98,
         "usageRate": 20,
-        "tier":"20%以下"
+        "tier": 1
       },
       "geometry": {
         "type": "Point",
@@ -825,7 +825,7 @@
         "total": 1295,
         "available": 1324,
         "usageRate": -2,
-        "tier":"20%以下"
+        "tier": 1
       },
       "geometry": {
         "type": "Point",
@@ -843,7 +843,7 @@
         "total": 221,
         "available": 2,
         "usageRate": 99,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -861,7 +861,7 @@
         "total": 151,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -879,7 +879,7 @@
         "total": 457,
         "available": 71,
         "usageRate": 84,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -897,7 +897,7 @@
         "total": 76,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -915,7 +915,7 @@
         "total": 252,
         "available": 24,
         "usageRate": 90,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -933,7 +933,7 @@
         "total": 1352,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -951,7 +951,7 @@
         "total": 184,
         "available": 29,
         "usageRate": 84,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -969,7 +969,7 @@
         "total": 496,
         "available": 239,
         "usageRate": 52,
-        "tier":"41%~60%"
+        "tier": 3
       },
       "geometry": {
         "type": "Point",
@@ -987,7 +987,7 @@
         "total": 973,
         "available": 251,
         "usageRate": 74,
-        "tier":"61%~80%"
+        "tier": 4
       },
       "geometry": {
         "type": "Point",
@@ -1005,7 +1005,7 @@
         "total": 137,
         "available": 64,
         "usageRate": 53,
-        "tier":"41%~60%"
+        "tier": 3
       },
       "geometry": {
         "type": "Point",
@@ -1023,7 +1023,7 @@
         "total": 209,
         "available": 193,
         "usageRate": 8,
-        "tier":"20%以下"
+        "tier": 1
       },
       "geometry": {
         "type": "Point",
@@ -1041,7 +1041,7 @@
         "total": 49,
         "available": 39,
         "usageRate": 20,
-        "tier":"20%以下"
+        "tier": 1
       },
       "geometry": {
         "type": "Point",
@@ -1059,7 +1059,7 @@
         "total": 8,
         "available": 2,
         "usageRate": 75,
-        "tier":"61%~80%"
+        "tier": 4
       },
       "geometry": {
         "type": "Point",
@@ -1077,7 +1077,7 @@
         "total": 113,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -1095,7 +1095,7 @@
         "total": 1,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -1113,7 +1113,7 @@
         "total": 204,
         "available": 74,
         "usageRate": 64,
-        "tier":"61%~80%"
+        "tier": 4
       },
       "geometry": {
         "type": "Point",
@@ -1131,7 +1131,7 @@
         "total": 321,
         "available": 27,
         "usageRate": 92,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -1149,7 +1149,7 @@
         "total": 222,
         "available": 71,
         "usageRate": 68,
-        "tier":"61%~80%"
+        "tier": 4
       },
       "geometry": {
         "type": "Point",
@@ -1167,7 +1167,7 @@
         "total": 276,
         "available": 51,
         "usageRate": 82,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -1185,7 +1185,7 @@
         "total": 242,
         "available": 22,
         "usageRate": 91,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -1203,7 +1203,7 @@
         "total": 244,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -1221,7 +1221,7 @@
         "total": 241,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -1239,7 +1239,7 @@
         "total": 850,
         "available": 52,
         "usageRate": 94,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -1257,7 +1257,7 @@
         "total": 69,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -1275,7 +1275,7 @@
         "total": 347,
         "available": 13,
         "usageRate": 96,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -1293,7 +1293,7 @@
         "total": 112,
         "available": 1,
         "usageRate": 99,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -1311,7 +1311,7 @@
         "total": 34,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -1329,7 +1329,7 @@
         "total": 382,
         "available": 296,
         "usageRate": 23,
-        "tier":"21%~40%"
+        "tier": 2
       },
       "geometry": {
         "type": "Point",
@@ -1347,7 +1347,7 @@
         "total": 432,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -1365,7 +1365,7 @@
         "total": 729,
         "available": 49,
         "usageRate": 93,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -1383,7 +1383,7 @@
         "total": 153,
         "available": 29,
         "usageRate": 81,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -1401,7 +1401,7 @@
         "total": 224,
         "available": 7,
         "usageRate": 97,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -1419,7 +1419,7 @@
         "total": 13,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -1437,7 +1437,7 @@
         "total": 229,
         "available": 49,
         "usageRate": 79,
-        "tier":"61%~80%"
+        "tier": 4
       },
       "geometry": {
         "type": "Point",
@@ -1455,7 +1455,7 @@
         "total": 411,
         "available": 72,
         "usageRate": 82,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -1473,7 +1473,7 @@
         "total": 210,
         "available": 52,
         "usageRate": 75,
-        "tier":"61%~80%"
+        "tier": 4
       },
       "geometry": {
         "type": "Point",
@@ -1491,7 +1491,7 @@
         "total": 334,
         "available": 15,
         "usageRate": 96,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -1509,7 +1509,7 @@
         "total": 354,
         "available": 34,
         "usageRate": 90,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -1527,7 +1527,7 @@
         "total": 214,
         "available": 13,
         "usageRate": 94,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -1545,7 +1545,7 @@
         "total": 181,
         "available": 44,
         "usageRate": 76,
-        "tier":"61%~80%"
+        "tier": 4
       },
       "geometry": {
         "type": "Point",
@@ -1563,7 +1563,7 @@
         "total": 518,
         "available": 1,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -1581,7 +1581,7 @@
         "total": 209,
         "available": 77,
         "usageRate": 63,
-        "tier":"61%~80%"
+        "tier": 4
       },
       "geometry": {
         "type": "Point",
@@ -1599,7 +1599,7 @@
         "total": 238,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -1617,7 +1617,7 @@
         "total": 139,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -1635,7 +1635,7 @@
         "total": 24,
         "available": 7,
         "usageRate": 71,
-        "tier":"61%~80%"
+        "tier": 4
       },
       "geometry": {
         "type": "Point",
@@ -1653,7 +1653,7 @@
         "total": 461,
         "available": 40,
         "usageRate": 91,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -1671,7 +1671,7 @@
         "total": 105,
         "available": 2,
         "usageRate": 98,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -1689,7 +1689,7 @@
         "total": 245,
         "available": 64,
         "usageRate": 74,
-        "tier":"61%~80%"
+        "tier": 4
       },
       "geometry": {
         "type": "Point",
@@ -1707,7 +1707,7 @@
         "total": 284,
         "available": 54,
         "usageRate": 81,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -1725,7 +1725,7 @@
         "total": 328,
         "available": 65,
         "usageRate": 80,
-        "tier":"61%~80%"
+        "tier": 4
       },
       "geometry": {
         "type": "Point",
@@ -1743,7 +1743,7 @@
         "total": 678,
         "available": 457,
         "usageRate": 33,
-        "tier":"21%~40%"
+        "tier": 2
       },
       "geometry": {
         "type": "Point",
@@ -1761,7 +1761,7 @@
         "total": 176,
         "available": 40,
         "usageRate": 77,
-        "tier":"61%~80%"
+        "tier": 4
       },
       "geometry": {
         "type": "Point",
@@ -1779,7 +1779,7 @@
         "total": 311,
         "available": 206,
         "usageRate": 34,
-        "tier":"21%~40%"
+        "tier": 2
       },
       "geometry": {
         "type": "Point",
@@ -1797,7 +1797,7 @@
         "total": 49,
         "available": 14,
         "usageRate": 71,
-        "tier":"61%~80%"
+        "tier": 4
       },
       "geometry": {
         "type": "Point",
@@ -1815,7 +1815,7 @@
         "total": 293,
         "available": 81,
         "usageRate": 72,
-        "tier":"61%~80%"
+        "tier": 4
       },
       "geometry": {
         "type": "Point",
@@ -1833,7 +1833,7 @@
         "total": 286,
         "available": 32,
         "usageRate": 89,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -1851,7 +1851,7 @@
         "total": 232,
         "available": 3,
         "usageRate": 99,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -1869,7 +1869,7 @@
         "total": 251,
         "available": 239,
         "usageRate": 5,
-        "tier":"20%以下"
+        "tier": 1
       },
       "geometry": {
         "type": "Point",
@@ -1887,7 +1887,7 @@
         "total": 175,
         "available": 16,
         "usageRate": 91,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -1905,7 +1905,7 @@
         "total": 155,
         "available": 19,
         "usageRate": 88,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -1923,7 +1923,7 @@
         "total": 57,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -1941,7 +1941,7 @@
         "total": 259,
         "available": 29,
         "usageRate": 89,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -1959,7 +1959,7 @@
         "total": 253,
         "available": 16,
         "usageRate": 94,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -1977,7 +1977,7 @@
         "total": 1228,
         "available": 570,
         "usageRate": 54,
-        "tier":"41%~60%"
+        "tier": 3
       },
       "geometry": {
         "type": "Point",
@@ -1995,7 +1995,7 @@
         "total": 1082,
         "available": 2,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -2013,7 +2013,7 @@
         "total": 15,
         "available": -13,
         "usageRate": 187,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -2031,7 +2031,7 @@
         "total": 266,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -2049,7 +2049,7 @@
         "total": 400,
         "available": 308,
         "usageRate": 23,
-        "tier":"21%~40%"
+        "tier": 2
       },
       "geometry": {
         "type": "Point",
@@ -2067,7 +2067,7 @@
         "total": 464,
         "available": 117,
         "usageRate": 75,
-        "tier":"61%~80%"
+        "tier": 4
       },
       "geometry": {
         "type": "Point",
@@ -2085,7 +2085,7 @@
         "total": 269,
         "available": 3,
         "usageRate": 99,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -2103,7 +2103,7 @@
         "total": 101,
         "available": 2,
         "usageRate": 98,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -2121,7 +2121,7 @@
         "total": 231,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -2139,7 +2139,7 @@
         "total": 86,
         "available": 11,
         "usageRate": 87,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -2157,7 +2157,7 @@
         "total": 44,
         "available": 4,
         "usageRate": 91,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -2175,7 +2175,7 @@
         "total": 25,
         "available": 3,
         "usageRate": 88,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -2193,7 +2193,7 @@
         "total": 37,
         "available": 1,
         "usageRate": 97,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -2211,7 +2211,7 @@
         "total": 64,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -2229,7 +2229,7 @@
         "total": 77,
         "available": 1,
         "usageRate": 99,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -2247,7 +2247,7 @@
         "total": 164,
         "available": 19,
         "usageRate": 88,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -2265,7 +2265,7 @@
         "total": 30,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -2283,7 +2283,7 @@
         "total": 137,
         "available": 7,
         "usageRate": 95,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -2301,7 +2301,7 @@
         "total": 412,
         "available": 43,
         "usageRate": 90,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -2319,7 +2319,7 @@
         "total": 306,
         "available": 130,
         "usageRate": 58,
-        "tier":"41%~60%"
+        "tier": 3
       },
       "geometry": {
         "type": "Point",
@@ -2337,7 +2337,7 @@
         "total": 382,
         "available": 168,
         "usageRate": 56,
-        "tier":"41%~60%"
+        "tier": 3
       },
       "geometry": {
         "type": "Point",
@@ -2355,7 +2355,7 @@
         "total": 222,
         "available": 15,
         "usageRate": 93,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -2373,7 +2373,7 @@
         "total": 168,
         "available": 16,
         "usageRate": 90,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -2391,7 +2391,7 @@
         "total": 111,
         "available": 38,
         "usageRate": 66,
-        "tier":"61%~80%"
+        "tier": 4
       },
       "geometry": {
         "type": "Point",
@@ -2409,7 +2409,7 @@
         "total": 210,
         "available": 37,
         "usageRate": 82,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -2427,7 +2427,7 @@
         "total": 500,
         "available": 202,
         "usageRate": 60,
-        "tier":"41%~60%"
+        "tier": 3
       },
       "geometry": {
         "type": "Point",
@@ -2445,7 +2445,7 @@
         "total": 469,
         "available": 373,
         "usageRate": 20,
-        "tier":"20%以下"
+        "tier": 1
       },
       "geometry": {
         "type": "Point",
@@ -2463,7 +2463,7 @@
         "total": 239,
         "available": 9,
         "usageRate": 96,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -2481,7 +2481,7 @@
         "total": 431,
         "available": 116,
         "usageRate": 73,
-        "tier":"61%~80%"
+        "tier": 4
       },
       "geometry": {
         "type": "Point",
@@ -2499,7 +2499,7 @@
         "total": 286,
         "available": 55,
         "usageRate": 81,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -2517,7 +2517,7 @@
         "total": 560,
         "available": 232,
         "usageRate": 59,
-        "tier":"41%~60%"
+        "tier": 3
       },
       "geometry": {
         "type": "Point",
@@ -2535,7 +2535,7 @@
         "total": 70,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -2553,7 +2553,7 @@
         "total": 70,
         "available": 5,
         "usageRate": 93,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -2571,7 +2571,7 @@
         "total": 96,
         "available": 7,
         "usageRate": 93,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -2589,7 +2589,7 @@
         "total": 105,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -2607,7 +2607,7 @@
         "total": 146,
         "available": 16,
         "usageRate": 89,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -2625,7 +2625,7 @@
         "total": 425,
         "available": 133,
         "usageRate": 69,
-        "tier":"61%~80%"
+        "tier": 4
       },
       "geometry": {
         "type": "Point",
@@ -2643,7 +2643,7 @@
         "total": 460,
         "available": 100,
         "usageRate": 78,
-        "tier":"61%~80%"
+        "tier": 4
       },
       "geometry": {
         "type": "Point",
@@ -2661,7 +2661,7 @@
         "total": 75,
         "available": 25,
         "usageRate": 67,
-        "tier":"61%~80%"
+        "tier": 4
       },
       "geometry": {
         "type": "Point",
@@ -2679,7 +2679,7 @@
         "total": 124,
         "available": 52,
         "usageRate": 58,
-        "tier":"41%~60%"
+        "tier": 3
       },
       "geometry": {
         "type": "Point",
@@ -2697,7 +2697,7 @@
         "total": 279,
         "available": 6,
         "usageRate": 98,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -2715,7 +2715,7 @@
         "total": 188,
         "available": 17,
         "usageRate": 91,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -2733,7 +2733,7 @@
         "total": 154,
         "available": 69,
         "usageRate": 55,
-        "tier":"41%~60%"
+        "tier": 3
       },
       "geometry": {
         "type": "Point",
@@ -2751,7 +2751,7 @@
         "total": 254,
         "available": 93,
         "usageRate": 63,
-        "tier":"61%~80%"
+        "tier": 4
       },
       "geometry": {
         "type": "Point",
@@ -2769,7 +2769,7 @@
         "total": 454,
         "available": 21,
         "usageRate": 95,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -2787,7 +2787,7 @@
         "total": 108,
         "available": 25,
         "usageRate": 77,
-        "tier":"61%~80%"
+        "tier": 4
       },
       "geometry": {
         "type": "Point",
@@ -2805,7 +2805,7 @@
         "total": 695,
         "available": 80,
         "usageRate": 88,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -2823,7 +2823,7 @@
         "total": 263,
         "available": 3,
         "usageRate": 99,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -2841,7 +2841,7 @@
         "total": 84,
         "available": 22,
         "usageRate": 74,
-        "tier":"61%~80%"
+        "tier": 4
       },
       "geometry": {
         "type": "Point",
@@ -2859,7 +2859,7 @@
         "total": 21,
         "available": 12,
         "usageRate": 43,
-        "tier":"41%~60%"
+        "tier": 3
       },
       "geometry": {
         "type": "Point",
@@ -2877,7 +2877,7 @@
         "total": 42,
         "available": 16,
         "usageRate": 62,
-        "tier":"61%~80%"
+        "tier": 4
       },
       "geometry": {
         "type": "Point",
@@ -2895,7 +2895,7 @@
         "total": 69,
         "available": 5,
         "usageRate": 93,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -2913,7 +2913,7 @@
         "total": 194,
         "available": 8,
         "usageRate": 96,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -2931,7 +2931,7 @@
         "total": 143,
         "available": 50,
         "usageRate": 65,
-        "tier":"61%~80%"
+        "tier": 4
       },
       "geometry": {
         "type": "Point",
@@ -2949,7 +2949,7 @@
         "total": 171,
         "available": 75,
         "usageRate": 56,
-        "tier":"41%~60%"
+        "tier": 3
       },
       "geometry": {
         "type": "Point",
@@ -2967,7 +2967,7 @@
         "total": 377,
         "available": 221,
         "usageRate": 41,
-        "tier":"41%~60%"
+        "tier": 3
       },
       "geometry": {
         "type": "Point",
@@ -2985,7 +2985,7 @@
         "total": 133,
         "available": 44,
         "usageRate": 67,
-        "tier":"61%~80%"
+        "tier": 4
       },
       "geometry": {
         "type": "Point",
@@ -3003,7 +3003,7 @@
         "total": 120,
         "available": 17,
         "usageRate": 86,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -3021,7 +3021,7 @@
         "total": 70,
         "available": 26,
         "usageRate": 63,
-        "tier":"61%~80%"
+        "tier": 4
       },
       "geometry": {
         "type": "Point",
@@ -3039,7 +3039,7 @@
         "total": 105,
         "available": 20,
         "usageRate": 81,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -3057,7 +3057,7 @@
         "total": 255,
         "available": 5,
         "usageRate": 98,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -3075,7 +3075,7 @@
         "total": 246,
         "available": 4,
         "usageRate": 98,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -3093,7 +3093,7 @@
         "total": 57,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -3111,7 +3111,7 @@
         "total": 142,
         "available": 2,
         "usageRate": 99,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -3129,7 +3129,7 @@
         "total": 113,
         "available": 1,
         "usageRate": 99,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -3147,7 +3147,7 @@
         "total": 287,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -3165,7 +3165,7 @@
         "total": 66,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -3183,7 +3183,7 @@
         "total": 108,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -3201,7 +3201,7 @@
         "total": 240,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -3219,7 +3219,7 @@
         "total": 175,
         "available": 2,
         "usageRate": 99,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -3237,7 +3237,7 @@
         "total": 24,
         "available": 12,
         "usageRate": 50,
-        "tier":"41%~60%"
+        "tier": 3
       },
       "geometry": {
         "type": "Point",
@@ -3255,7 +3255,7 @@
         "total": 34,
         "available": 15,
         "usageRate": 56,
-        "tier":"41%~60%"
+        "tier": 3
       },
       "geometry": {
         "type": "Point",
@@ -3273,7 +3273,7 @@
         "total": 442,
         "available": 1,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -3291,7 +3291,7 @@
         "total": 62,
         "available": 5,
         "usageRate": 92,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -3309,7 +3309,7 @@
         "total": 86,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -3327,7 +3327,7 @@
         "total": 59,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -3345,7 +3345,7 @@
         "total": 476,
         "available": 175,
         "usageRate": 63,
-        "tier":"61%~80%"
+        "tier": 4
       },
       "geometry": {
         "type": "Point",
@@ -3363,7 +3363,7 @@
         "total": 144,
         "available": 83,
         "usageRate": 42,
-        "tier":"41%~60%"
+        "tier": 3
       },
       "geometry": {
         "type": "Point",
@@ -3381,7 +3381,7 @@
         "total": 70,
         "available": 1,
         "usageRate": 99,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -3399,7 +3399,7 @@
         "total": 83,
         "available": 29,
         "usageRate": 65,
-        "tier":"61%~80%"
+        "tier": 4
       },
       "geometry": {
         "type": "Point",
@@ -3417,7 +3417,7 @@
         "total": 36,
         "available": 10,
         "usageRate": 72,
-        "tier":"61%~80%"
+        "tier": 4
       },
       "geometry": {
         "type": "Point",
@@ -3435,7 +3435,7 @@
         "total": 68,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -3453,7 +3453,7 @@
         "total": 29,
         "available": 1,
         "usageRate": 97,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -3471,7 +3471,7 @@
         "total": 33,
         "available": 8,
         "usageRate": 76,
-        "tier":"61%~80%"
+        "tier": 4
       },
       "geometry": {
         "type": "Point",
@@ -3489,7 +3489,7 @@
         "total": 25,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -3507,7 +3507,7 @@
         "total": 84,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -3525,7 +3525,7 @@
         "total": 26,
         "available": 4,
         "usageRate": 85,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -3543,7 +3543,7 @@
         "total": 39,
         "available": 10,
         "usageRate": 74,
-        "tier":"61%~80%"
+        "tier": 4
       },
       "geometry": {
         "type": "Point",
@@ -3561,7 +3561,7 @@
         "total": 472,
         "available": 106,
         "usageRate": 78,
-        "tier":"61%~80%"
+        "tier": 4
       },
       "geometry": {
         "type": "Point",
@@ -3579,7 +3579,7 @@
         "total": 30,
         "available": 3,
         "usageRate": 90,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -3597,7 +3597,7 @@
         "total": 1100,
         "available": 309,
         "usageRate": 72,
-        "tier":"61%~80%"
+        "tier": 4
       },
       "geometry": {
         "type": "Point",
@@ -3615,7 +3615,7 @@
         "total": 155,
         "available": 21,
         "usageRate": 86,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -3633,7 +3633,7 @@
         "total": 44,
         "available": 18,
         "usageRate": 59,
-        "tier":"41%~60%"
+        "tier": 3
       },
       "geometry": {
         "type": "Point",
@@ -3651,7 +3651,7 @@
         "total": 23,
         "available": 4,
         "usageRate": 83,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -3669,7 +3669,7 @@
         "total": 14,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -3687,7 +3687,7 @@
         "total": 17,
         "available": 4,
         "usageRate": 76,
-        "tier":"61%~80%"
+        "tier": 4
       },
       "geometry": {
         "type": "Point",
@@ -3705,7 +3705,7 @@
         "total": 31,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -3723,7 +3723,7 @@
         "total": 31,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -3741,7 +3741,7 @@
         "total": 205,
         "available": 19,
         "usageRate": 91,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -3759,7 +3759,7 @@
         "total": 153,
         "available": 20,
         "usageRate": 87,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -3777,7 +3777,7 @@
         "total": 35,
         "available": 3,
         "usageRate": 91,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -3795,7 +3795,7 @@
         "total": 17,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -3813,7 +3813,7 @@
         "total": 50,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -3831,7 +3831,7 @@
         "total": 57,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -3849,7 +3849,7 @@
         "total": 22,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -3867,7 +3867,7 @@
         "total": 81,
         "available": 60,
         "usageRate": 26,
-        "tier":"21%~40%"
+        "tier": 2
       },
       "geometry": {
         "type": "Point",
@@ -3885,7 +3885,7 @@
         "total": 690,
         "available": 119,
         "usageRate": 83,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -3903,7 +3903,7 @@
         "total": 349,
         "available": 82,
         "usageRate": 77,
-        "tier":"61%~80%"
+        "tier": 4
       },
       "geometry": {
         "type": "Point",
@@ -3921,7 +3921,7 @@
         "total": 406,
         "available": 218,
         "usageRate": 46,
-        "tier":"41%~60%"
+        "tier": 3
       },
       "geometry": {
         "type": "Point",
@@ -3939,7 +3939,7 @@
         "total": 348,
         "available": 272,
         "usageRate": 22,
-        "tier":"21%~40%"
+        "tier": 2
       },
       "geometry": {
         "type": "Point",
@@ -3957,7 +3957,7 @@
         "total": 143,
         "available": 71,
         "usageRate": 50,
-        "tier":"41%~60%"
+        "tier": 3
       },
       "geometry": {
         "type": "Point",
@@ -3975,7 +3975,7 @@
         "total": 572,
         "available": 73,
         "usageRate": 87,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -3993,7 +3993,7 @@
         "total": 117,
         "available": 63,
         "usageRate": 46,
-        "tier":"41%~60%"
+        "tier": 3
       },
       "geometry": {
         "type": "Point",
@@ -4011,7 +4011,7 @@
         "total": 36,
         "available": 24,
         "usageRate": 33,
-        "tier":"21%~40%"
+        "tier": 2
       },
       "geometry": {
         "type": "Point",
@@ -4029,7 +4029,7 @@
         "total": 20,
         "available": 18,
         "usageRate": 10,
-        "tier":"20%以下"
+        "tier": 1
       },
       "geometry": {
         "type": "Point",
@@ -4047,7 +4047,7 @@
         "total": 9,
         "available": 6,
         "usageRate": 33,
-        "tier":"21%~40%"
+        "tier": 2
       },
       "geometry": {
         "type": "Point",
@@ -4065,7 +4065,7 @@
         "total": 10,
         "available": 8,
         "usageRate": 20,
-        "tier":"20%以下"
+        "tier": 1
       },
       "geometry": {
         "type": "Point",
@@ -4083,7 +4083,7 @@
         "total": 60,
         "available": 9,
         "usageRate": 85,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -4101,7 +4101,7 @@
         "total": 80,
         "available": 64,
         "usageRate": 20,
-        "tier":"20%以下"
+        "tier": 1
       },
       "geometry": {
         "type": "Point",
@@ -4119,7 +4119,7 @@
         "total": 57,
         "available": 25,
         "usageRate": 56,
-        "tier":"41%~60%"
+        "tier": 3
       },
       "geometry": {
         "type": "Point",
@@ -4137,7 +4137,7 @@
         "total": 620,
         "available": 210,
         "usageRate": 66,
-        "tier":"61%~80%"
+        "tier": 4
       },
       "geometry": {
         "type": "Point",
@@ -4155,7 +4155,7 @@
         "total": 481,
         "available": 143,
         "usageRate": 70,
-        "tier":"61%~80%"
+        "tier": 4
       },
       "geometry": {
         "type": "Point",
@@ -4173,7 +4173,7 @@
         "total": 310,
         "available": 123,
         "usageRate": 60,
-        "tier":"41%~60%"
+        "tier": 3
       },
       "geometry": {
         "type": "Point",
@@ -4191,7 +4191,7 @@
         "total": 338,
         "available": 282,
         "usageRate": 17,
-        "tier":"20%以下"
+        "tier": 1
       },
       "geometry": {
         "type": "Point",
@@ -4209,7 +4209,7 @@
         "total": 53,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -4227,7 +4227,7 @@
         "total": 120,
         "available": 109,
         "usageRate": 9,
-        "tier":"20%以下"
+        "tier": 1
       },
       "geometry": {
         "type": "Point",
@@ -4245,7 +4245,7 @@
         "total": 323,
         "available": 250,
         "usageRate": 23,
-        "tier":"21%~40%"
+        "tier": 2
       },
       "geometry": {
         "type": "Point",
@@ -4263,7 +4263,7 @@
         "total": 366,
         "available": 332,
         "usageRate": 9,
-        "tier":"20%以下"
+        "tier": 1
       },
       "geometry": {
         "type": "Point",
@@ -4281,7 +4281,7 @@
         "total": 902,
         "available": 462,
         "usageRate": 49,
-        "tier":"41%~60%"
+        "tier": 3
       },
       "geometry": {
         "type": "Point",
@@ -4299,7 +4299,7 @@
         "total": 310,
         "available": 146,
         "usageRate": 53,
-        "tier":"41%~60%"
+        "tier": 3
       },
       "geometry": {
         "type": "Point",
@@ -4317,7 +4317,7 @@
         "total": 85,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -4335,7 +4335,7 @@
         "total": 1290,
         "available": 1091,
         "usageRate": 15,
-        "tier":"20%以下"
+        "tier": 1
       },
       "geometry": {
         "type": "Point",
@@ -4353,7 +4353,7 @@
         "total": 137,
         "available": 82,
         "usageRate": 40,
-        "tier":"21%~40%"
+        "tier": 2
       },
       "geometry": {
         "type": "Point",
@@ -4371,7 +4371,7 @@
         "total": 100,
         "available": 80,
         "usageRate": 20,
-        "tier":"20%以下"
+        "tier": 1
       },
       "geometry": {
         "type": "Point",
@@ -4389,7 +4389,7 @@
         "total": 349,
         "available": 118,
         "usageRate": 66,
-        "tier":"61%~80%"
+        "tier": 4
       },
       "geometry": {
         "type": "Point",
@@ -4407,7 +4407,7 @@
         "total": 211,
         "available": 32,
         "usageRate": 85,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -4425,7 +4425,7 @@
         "total": 495,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -4443,7 +4443,7 @@
         "total": 231,
         "available": 9,
         "usageRate": 96,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -4461,7 +4461,7 @@
         "total": 52,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -4479,7 +4479,7 @@
         "total": 175,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -4497,7 +4497,7 @@
         "total": 84,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -4515,7 +4515,7 @@
         "total": 218,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -4533,7 +4533,7 @@
         "total": 92,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -4551,7 +4551,7 @@
         "total": 55,
         "available": 38,
         "usageRate": 31,
-        "tier":"21%~40%"
+        "tier": 2
       },
       "geometry": {
         "type": "Point",
@@ -4569,7 +4569,7 @@
         "total": 153,
         "available": 28,
         "usageRate": 82,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -4587,7 +4587,7 @@
         "total": 264,
         "available": 51,
         "usageRate": 81,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -4605,7 +4605,7 @@
         "total": 85,
         "available": 84,
         "usageRate": 1,
-        "tier":"20%以下"
+        "tier": 1
       },
       "geometry": {
         "type": "Point",
@@ -4623,7 +4623,7 @@
         "total": 114,
         "available": 79,
         "usageRate": 31,
-        "tier":"21%~40%"
+        "tier": 2
       },
       "geometry": {
         "type": "Point",
@@ -4641,7 +4641,7 @@
         "total": 151,
         "available": 51,
         "usageRate": 66,
-        "tier":"61%~80%"
+        "tier": 4
       },
       "geometry": {
         "type": "Point",
@@ -4659,7 +4659,7 @@
         "total": 42,
         "available": 27,
         "usageRate": 36,
-        "tier":"21%~40%"
+        "tier": 2
       },
       "geometry": {
         "type": "Point",
@@ -4677,7 +4677,7 @@
         "total": 293,
         "available": 16,
         "usageRate": 95,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -4695,7 +4695,7 @@
         "total": 219,
         "available": 10,
         "usageRate": 95,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -4713,7 +4713,7 @@
         "total": 38,
         "available": 1,
         "usageRate": 97,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -4731,7 +4731,7 @@
         "total": 63,
         "available": 1,
         "usageRate": 98,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -4749,7 +4749,7 @@
         "total": 44,
         "available": 1,
         "usageRate": 98,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -4767,7 +4767,7 @@
         "total": 61,
         "available": 9,
         "usageRate": 85,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -4785,7 +4785,7 @@
         "total": 49,
         "available": 3,
         "usageRate": 94,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -4803,7 +4803,7 @@
         "total": 114,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -4821,7 +4821,7 @@
         "total": 255,
         "available": 197,
         "usageRate": 23,
-        "tier":"21%~40%"
+        "tier": 2
       },
       "geometry": {
         "type": "Point",
@@ -4839,7 +4839,7 @@
         "total": 91,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -4857,7 +4857,7 @@
         "total": 16,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -4875,7 +4875,7 @@
         "total": 319,
         "available": 191,
         "usageRate": 40,
-        "tier":"21%~40%"
+        "tier": 2
       },
       "geometry": {
         "type": "Point",
@@ -4893,7 +4893,7 @@
         "total": 48,
         "available": 14,
         "usageRate": 71,
-        "tier":"61%~80%"
+        "tier": 4
       },
       "geometry": {
         "type": "Point",
@@ -4911,7 +4911,7 @@
         "total": 31,
         "available": 12,
         "usageRate": 61,
-        "tier":"61%~80%"
+        "tier": 4
       },
       "geometry": {
         "type": "Point",
@@ -4929,7 +4929,7 @@
         "total": 25,
         "available": 1,
         "usageRate": 96,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -4947,7 +4947,7 @@
         "total": 46,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -4965,7 +4965,7 @@
         "total": 36,
         "available": 5,
         "usageRate": 86,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -4983,7 +4983,7 @@
         "total": 16,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -5001,7 +5001,7 @@
         "total": 82,
         "available": 69,
         "usageRate": 16,
-        "tier":"20%以下"
+        "tier": 1
       },
       "geometry": {
         "type": "Point",
@@ -5019,7 +5019,7 @@
         "total": 101,
         "available": 40,
         "usageRate": 60,
-        "tier":"41%~60%"
+        "tier": 3
       },
       "geometry": {
         "type": "Point",
@@ -5037,7 +5037,7 @@
         "total": 47,
         "available": 35,
         "usageRate": 26,
-        "tier":"21%~40%"
+        "tier": 2
       },
       "geometry": {
         "type": "Point",
@@ -5055,7 +5055,7 @@
         "total": 71,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -5073,7 +5073,7 @@
         "total": 87,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -5091,7 +5091,7 @@
         "total": 133,
         "available": 14,
         "usageRate": 89,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -5109,7 +5109,7 @@
         "total": 31,
         "available": 16,
         "usageRate": 48,
-        "tier":"41%~60%"
+        "tier": 3
       },
       "geometry": {
         "type": "Point",
@@ -5127,7 +5127,7 @@
         "total": 97,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -5145,7 +5145,7 @@
         "total": 101,
         "available": 29,
         "usageRate": 71,
-        "tier":"61%~80%"
+        "tier": 4
       },
       "geometry": {
         "type": "Point",
@@ -5163,7 +5163,7 @@
         "total": 88,
         "available": 29,
         "usageRate": 67,
-        "tier":"61%~80%"
+        "tier": 4
       },
       "geometry": {
         "type": "Point",
@@ -5181,7 +5181,7 @@
         "total": 115,
         "available": 2,
         "usageRate": 98,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -5199,7 +5199,7 @@
         "total": 58,
         "available": 11,
         "usageRate": 81,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -5217,7 +5217,7 @@
         "total": 8,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -5235,7 +5235,7 @@
         "total": 95,
         "available": 23,
         "usageRate": 76,
-        "tier":"61%~80%"
+        "tier": 4
       },
       "geometry": {
         "type": "Point",
@@ -5253,7 +5253,7 @@
         "total": 106,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -5271,7 +5271,7 @@
         "total": 22,
         "available": 17,
         "usageRate": 23,
-        "tier":"21%~40%"
+        "tier": 2
       },
       "geometry": {
         "type": "Point",
@@ -5289,7 +5289,7 @@
         "total": 198,
         "available": 26,
         "usageRate": 87,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -5307,7 +5307,7 @@
         "total": 64,
         "available": 8,
         "usageRate": 88,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -5325,7 +5325,7 @@
         "total": 63,
         "available": 34,
         "usageRate": 46,
-        "tier":"41%~60%"
+        "tier": 3
       },
       "geometry": {
         "type": "Point",
@@ -5343,7 +5343,7 @@
         "total": 34,
         "available": 2,
         "usageRate": 94,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -5361,7 +5361,7 @@
         "total": 94,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -5379,7 +5379,7 @@
         "total": 35,
         "available": 35,
         "usageRate": 0,
-        "tier":"20%以下"
+        "tier": 1
       },
       "geometry": {
         "type": "Point",
@@ -5397,7 +5397,7 @@
         "total": 54,
         "available": 4,
         "usageRate": 93,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -5415,7 +5415,7 @@
         "total": 59,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -5433,7 +5433,7 @@
         "total": 51,
         "available": 33,
         "usageRate": 35,
-        "tier":"21%~40%"
+        "tier": 2
       },
       "geometry": {
         "type": "Point",
@@ -5451,7 +5451,7 @@
         "total": 184,
         "available": 184,
         "usageRate": 0,
-        "tier":"20%以下"
+        "tier": 1
       },
       "geometry": {
         "type": "Point",
@@ -5469,7 +5469,7 @@
         "total": 63,
         "available": 11,
         "usageRate": 83,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -5487,7 +5487,7 @@
         "total": 79,
         "available": 13,
         "usageRate": 84,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -5505,7 +5505,7 @@
         "total": 132,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -5523,7 +5523,7 @@
         "total": 63,
         "available": 12,
         "usageRate": 81,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -5541,7 +5541,7 @@
         "total": 190,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -5559,7 +5559,7 @@
         "total": 536,
         "available": 350,
         "usageRate": 35,
-        "tier":"21%~40%"
+        "tier": 2
       },
       "geometry": {
         "type": "Point",
@@ -5577,7 +5577,7 @@
         "total": 146,
         "available": 8,
         "usageRate": 95,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -5595,7 +5595,7 @@
         "total": 22,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -5613,7 +5613,7 @@
         "total": 43,
         "available": 13,
         "usageRate": 70,
-        "tier":"61%~80%"
+        "tier": 4
       },
       "geometry": {
         "type": "Point",
@@ -5631,7 +5631,7 @@
         "total": 52,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -5649,7 +5649,7 @@
         "total": 25,
         "available": 9,
         "usageRate": 64,
-        "tier":"61%~80%"
+        "tier": 4
       },
       "geometry": {
         "type": "Point",
@@ -5667,7 +5667,7 @@
         "total": 54,
         "available": 2,
         "usageRate": 96,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -5685,7 +5685,7 @@
         "total": 41,
         "available": 5,
         "usageRate": 88,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -5703,7 +5703,7 @@
         "total": 473,
         "available": 196,
         "usageRate": 59,
-        "tier":"41%~60%"
+        "tier": 3
       },
       "geometry": {
         "type": "Point",
@@ -5721,7 +5721,7 @@
         "total": 35,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -5739,7 +5739,7 @@
         "total": 20,
         "available": 28,
         "usageRate": -40,
-        "tier":"20%以下"
+        "tier": 1
       },
       "geometry": {
         "type": "Point",
@@ -5757,7 +5757,7 @@
         "total": 47,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -5775,7 +5775,7 @@
         "total": 17,
         "available": 1,
         "usageRate": 94,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -5793,7 +5793,7 @@
         "total": 241,
         "available": 15,
         "usageRate": 94,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -5811,7 +5811,7 @@
         "total": 46,
         "available": 15,
         "usageRate": 67,
-        "tier":"61%~80%"
+        "tier": 4
       },
       "geometry": {
         "type": "Point",
@@ -5829,7 +5829,7 @@
         "total": 392,
         "available": 392,
         "usageRate": 0,
-        "tier":"20%以下"
+        "tier": 1
       },
       "geometry": {
         "type": "Point",
@@ -5847,7 +5847,7 @@
         "total": 162,
         "available": 40,
         "usageRate": 75,
-        "tier":"61%~80%"
+        "tier": 4
       },
       "geometry": {
         "type": "Point",
@@ -5865,7 +5865,7 @@
         "total": 1,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -5883,7 +5883,7 @@
         "total": 74,
         "available": 12,
         "usageRate": 84,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -5901,7 +5901,7 @@
         "total": 445,
         "available": 173,
         "usageRate": 61,
-        "tier":"61%~80%"
+        "tier": 4
       },
       "geometry": {
         "type": "Point",
@@ -5919,7 +5919,7 @@
         "total": 200,
         "available": 71,
         "usageRate": 65,
-        "tier":"61%~80%"
+        "tier": 4
       },
       "geometry": {
         "type": "Point",
@@ -5937,7 +5937,7 @@
         "total": 10,
         "available": 2,
         "usageRate": 80,
-        "tier":"61%~80%"
+        "tier": 4
       },
       "geometry": {
         "type": "Point",
@@ -5955,7 +5955,7 @@
         "total": 16,
         "available": 16,
         "usageRate": 0,
-        "tier":"20%以下"
+        "tier": 1
       },
       "geometry": {
         "type": "Point",
@@ -5973,7 +5973,7 @@
         "total": 8,
         "available": 8,
         "usageRate": 0,
-        "tier":"20%以下"
+        "tier": 1
       },
       "geometry": {
         "type": "Point",
@@ -5991,7 +5991,7 @@
         "total": 23,
         "available": 2,
         "usageRate": 91,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -6009,7 +6009,7 @@
         "total": 29,
         "available": 2,
         "usageRate": 93,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -6027,7 +6027,7 @@
         "total": 43,
         "available": 1,
         "usageRate": 98,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -6045,7 +6045,7 @@
         "total": 23,
         "available": 3,
         "usageRate": 87,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -6063,7 +6063,7 @@
         "total": 50,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -6081,7 +6081,7 @@
         "total": 6,
         "available": -11,
         "usageRate": 283,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -6099,7 +6099,7 @@
         "total": 8,
         "available": -13,
         "usageRate": 263,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -6117,7 +6117,7 @@
         "total": 18,
         "available": -12,
         "usageRate": 167,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -6135,7 +6135,7 @@
         "total": 24,
         "available": -11,
         "usageRate": 146,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -6153,7 +6153,7 @@
         "total": 15,
         "available": -13,
         "usageRate": 187,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -6171,7 +6171,7 @@
         "total": 70,
         "available": -13,
         "usageRate": 119,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -6189,7 +6189,7 @@
         "total": 39,
         "available": -12,
         "usageRate": 131,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -6207,7 +6207,7 @@
         "total": 14,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -6225,7 +6225,7 @@
         "total": 3,
         "available": -13,
         "usageRate": 533,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -6243,7 +6243,7 @@
         "total": 3,
         "available": -11,
         "usageRate": 467,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -6261,7 +6261,7 @@
         "total": 142,
         "available": 136,
         "usageRate": 4,
-        "tier":"20%以下"
+        "tier": 1
       },
       "geometry": {
         "type": "Point",
@@ -6279,7 +6279,7 @@
         "total": 176,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -6297,7 +6297,7 @@
         "total": 105,
         "available": -11,
         "usageRate": 110,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -6315,7 +6315,7 @@
         "total": 55,
         "available": 5,
         "usageRate": 91,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -6333,7 +6333,7 @@
         "total": 146,
         "available": -11,
         "usageRate": 108,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -6351,7 +6351,7 @@
         "total": 93,
         "available": -12,
         "usageRate": 113,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -6369,7 +6369,7 @@
         "total": 182,
         "available": -11,
         "usageRate": 106,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -6387,7 +6387,7 @@
         "total": 79,
         "available": -11,
         "usageRate": 114,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -6405,7 +6405,7 @@
         "total": 57,
         "available": 50,
         "usageRate": 12,
-        "tier":"20%以下"
+        "tier": 1
       },
       "geometry": {
         "type": "Point",
@@ -6423,7 +6423,7 @@
         "total": 40,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -6441,7 +6441,7 @@
         "total": 19,
         "available": -13,
         "usageRate": 168,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -6459,7 +6459,7 @@
         "total": 9,
         "available": -13,
         "usageRate": 244,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -6477,7 +6477,7 @@
         "total": 11,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -6495,7 +6495,7 @@
         "total": 22,
         "available": -11,
         "usageRate": 150,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -6513,7 +6513,7 @@
         "total": 16,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -6531,7 +6531,7 @@
         "total": 24,
         "available": 5,
         "usageRate": 79,
-        "tier":"61%~80%"
+        "tier": 4
       },
       "geometry": {
         "type": "Point",
@@ -6549,7 +6549,7 @@
         "total": 32,
         "available": -13,
         "usageRate": 141,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -6567,7 +6567,7 @@
         "total": 21,
         "available": 5,
         "usageRate": 76,
-        "tier":"61%~80%"
+        "tier": 4
       },
       "geometry": {
         "type": "Point",
@@ -6585,7 +6585,7 @@
         "total": 26,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -6603,7 +6603,7 @@
         "total": 48,
         "available": -11,
         "usageRate": 123,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -6621,7 +6621,7 @@
         "total": 18,
         "available": -13,
         "usageRate": 172,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -6639,7 +6639,7 @@
         "total": 14,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -6657,7 +6657,7 @@
         "total": 18,
         "available": -13,
         "usageRate": 172,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -6675,7 +6675,7 @@
         "total": 212,
         "available": -13,
         "usageRate": 106,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -6693,7 +6693,7 @@
         "total": 116,
         "available": -13,
         "usageRate": 111,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -6711,7 +6711,7 @@
         "total": 54,
         "available": -13,
         "usageRate": 124,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -6729,7 +6729,7 @@
         "total": 27,
         "available": -13,
         "usageRate": 148,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -6747,7 +6747,7 @@
         "total": 54,
         "available": -13,
         "usageRate": 124,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -6765,7 +6765,7 @@
         "total": 34,
         "available": -13,
         "usageRate": 138,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -6783,7 +6783,7 @@
         "total": 51,
         "available": -13,
         "usageRate": 125,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -6801,7 +6801,7 @@
         "total": 75,
         "available": -13,
         "usageRate": 117,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -6819,7 +6819,7 @@
         "total": 150,
         "available": -13,
         "usageRate": 109,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -6837,7 +6837,7 @@
         "total": 5,
         "available": -11,
         "usageRate": 320,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -6855,7 +6855,7 @@
         "total": 14,
         "available": -11,
         "usageRate": 179,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -6873,7 +6873,7 @@
         "total": 8,
         "available": -13,
         "usageRate": 263,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -6891,7 +6891,7 @@
         "total": 30,
         "available": 1,
         "usageRate": 97,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -6909,7 +6909,7 @@
         "total": 641,
         "available": 381,
         "usageRate": 41,
-        "tier":"41%~60%"
+        "tier": 3
       },
       "geometry": {
         "type": "Point",
@@ -6927,7 +6927,7 @@
         "total": 51,
         "available": 15,
         "usageRate": 71,
-        "tier":"61%~80%"
+        "tier": 4
       },
       "geometry": {
         "type": "Point",
@@ -6945,7 +6945,7 @@
         "total": 109,
         "available": -13,
         "usageRate": 112,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -6963,7 +6963,7 @@
         "total": 748,
         "available": -11,
         "usageRate": 101,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -6981,7 +6981,7 @@
         "total": 145,
         "available": -11,
         "usageRate": 108,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -6999,7 +6999,7 @@
         "total": 124,
         "available": -13,
         "usageRate": 110,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -7017,7 +7017,7 @@
         "total": 256,
         "available": -11,
         "usageRate": 104,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -7035,7 +7035,7 @@
         "total": 299,
         "available": -13,
         "usageRate": 104,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -7053,7 +7053,7 @@
         "total": 135,
         "available": -11,
         "usageRate": 108,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -7071,7 +7071,7 @@
         "total": 49,
         "available": -11,
         "usageRate": 122,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -7089,7 +7089,7 @@
         "total": 129,
         "available": -11,
         "usageRate": 109,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -7107,7 +7107,7 @@
         "total": 69,
         "available": -12,
         "usageRate": 117,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -7125,7 +7125,7 @@
         "total": 179,
         "available": -11,
         "usageRate": 106,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -7143,7 +7143,7 @@
         "total": 185,
         "available": -13,
         "usageRate": 107,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -7161,7 +7161,7 @@
         "total": 553,
         "available": -11,
         "usageRate": 102,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -7179,7 +7179,7 @@
         "total": 8,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -7197,7 +7197,7 @@
         "total": 19,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -7215,7 +7215,7 @@
         "total": 1738,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -7233,7 +7233,7 @@
         "total": 606,
         "available": 70,
         "usageRate": 88,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -7251,7 +7251,7 @@
         "total": 145,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -7269,7 +7269,7 @@
         "total": 79,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -7287,7 +7287,7 @@
         "total": 42,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -7305,7 +7305,7 @@
         "total": 12,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -7323,7 +7323,7 @@
         "total": 164,
         "available": 160,
         "usageRate": 2,
-        "tier":"20%以下"
+        "tier": 1
       },
       "geometry": {
         "type": "Point",
@@ -7341,7 +7341,7 @@
         "total": 43,
         "available": 4,
         "usageRate": 91,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -7359,7 +7359,7 @@
         "total": 122,
         "available": 17,
         "usageRate": 86,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -7377,7 +7377,7 @@
         "total": 79,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -7395,7 +7395,7 @@
         "total": 217,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -7413,7 +7413,7 @@
         "total": 293,
         "available": 192,
         "usageRate": 34,
-        "tier":"21%~40%"
+        "tier": 2
       },
       "geometry": {
         "type": "Point",
@@ -7431,7 +7431,7 @@
         "total": 31,
         "available": 31,
         "usageRate": 0,
-        "tier":"20%以下"
+        "tier": 1
       },
       "geometry": {
         "type": "Point",
@@ -7449,7 +7449,7 @@
         "total": 368,
         "available": 64,
         "usageRate": 83,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -7467,7 +7467,7 @@
         "total": 42,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -7485,7 +7485,7 @@
         "total": 214,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -7503,7 +7503,7 @@
         "total": 178,
         "available": 6,
         "usageRate": 97,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -7521,7 +7521,7 @@
         "total": 537,
         "available": 396,
         "usageRate": 26,
-        "tier":"21%~40%"
+        "tier": 2
       },
       "geometry": {
         "type": "Point",
@@ -7539,7 +7539,7 @@
         "total": 13,
         "available": 1,
         "usageRate": 92,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -7557,7 +7557,7 @@
         "total": 550,
         "available": 154,
         "usageRate": 72,
-        "tier":"61%~80%"
+        "tier": 4
       },
       "geometry": {
         "type": "Point",
@@ -7575,7 +7575,7 @@
         "total": 22,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -7593,7 +7593,7 @@
         "total": 53,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -7611,7 +7611,7 @@
         "total": 17,
         "available": 6,
         "usageRate": 65,
-        "tier":"61%~80%"
+        "tier": 4
       },
       "geometry": {
         "type": "Point",
@@ -7629,7 +7629,7 @@
         "total": 95,
         "available": 11,
         "usageRate": 88,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -7647,7 +7647,7 @@
         "total": 13,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -7665,7 +7665,7 @@
         "total": 147,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -7683,7 +7683,7 @@
         "total": 82,
         "available": 4,
         "usageRate": 95,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -7701,7 +7701,7 @@
         "total": 49,
         "available": 5,
         "usageRate": 90,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -7719,7 +7719,7 @@
         "total": 91,
         "available": 16,
         "usageRate": 82,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -7737,7 +7737,7 @@
         "total": 26,
         "available": 12,
         "usageRate": 54,
-        "tier":"41%~60%"
+        "tier": 3
       },
       "geometry": {
         "type": "Point",
@@ -7755,7 +7755,7 @@
         "total": 104,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -7773,7 +7773,7 @@
         "total": 616,
         "available": 16,
         "usageRate": 97,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -7791,7 +7791,7 @@
         "total": 15,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -7809,7 +7809,7 @@
         "total": 99,
         "available": 17,
         "usageRate": 83,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -7827,7 +7827,7 @@
         "total": 36,
         "available": 20,
         "usageRate": 44,
-        "tier":"41%~60%"
+        "tier": 3
       },
       "geometry": {
         "type": "Point",
@@ -7845,7 +7845,7 @@
         "total": 71,
         "available": 24,
         "usageRate": 66,
-        "tier":"61%~80%"
+        "tier": 4
       },
       "geometry": {
         "type": "Point",
@@ -7863,7 +7863,7 @@
         "total": 79,
         "available": 47,
         "usageRate": 41,
-        "tier":"41%~60%"
+        "tier": 3
       },
       "geometry": {
         "type": "Point",
@@ -7881,7 +7881,7 @@
         "total": 703,
         "available": 53,
         "usageRate": 92,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -7899,7 +7899,7 @@
         "total": 96,
         "available": 35,
         "usageRate": 64,
-        "tier":"61%~80%"
+        "tier": 4
       },
       "geometry": {
         "type": "Point",
@@ -7917,7 +7917,7 @@
         "total": 83,
         "available": 21,
         "usageRate": 75,
-        "tier":"61%~80%"
+        "tier": 4
       },
       "geometry": {
         "type": "Point",
@@ -7935,7 +7935,7 @@
         "total": 87,
         "available": 38,
         "usageRate": 56,
-        "tier":"41%~60%"
+        "tier": 3
       },
       "geometry": {
         "type": "Point",
@@ -7953,7 +7953,7 @@
         "total": 89,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -7971,7 +7971,7 @@
         "total": 48,
         "available": 34,
         "usageRate": 29,
-        "tier":"21%~40%"
+        "tier": 2
       },
       "geometry": {
         "type": "Point",
@@ -7989,7 +7989,7 @@
         "total": 189,
         "available": 52,
         "usageRate": 72,
-        "tier":"61%~80%"
+        "tier": 4
       },
       "geometry": {
         "type": "Point",
@@ -8007,7 +8007,7 @@
         "total": 6,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -8025,7 +8025,7 @@
         "total": 98,
         "available": 2,
         "usageRate": 98,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -8043,7 +8043,7 @@
         "total": 6,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -8061,7 +8061,7 @@
         "total": 32,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -8079,7 +8079,7 @@
         "total": 49,
         "available": 28,
         "usageRate": 43,
-        "tier":"41%~60%"
+        "tier": 3
       },
       "geometry": {
         "type": "Point",
@@ -8097,7 +8097,7 @@
         "total": 88,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -8115,7 +8115,7 @@
         "total": 4,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -8133,7 +8133,7 @@
         "total": 20,
         "available": 1,
         "usageRate": 95,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -8151,7 +8151,7 @@
         "total": 1506,
         "available": 158,
         "usageRate": 90,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -8169,7 +8169,7 @@
         "total": 202,
         "available": 202,
         "usageRate": 0,
-        "tier":"20%以下"
+        "tier": 1
       },
       "geometry": {
         "type": "Point",
@@ -8187,7 +8187,7 @@
         "total": 26,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -8205,7 +8205,7 @@
         "total": 25,
         "available": 1,
         "usageRate": 96,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -8223,7 +8223,7 @@
         "total": 43,
         "available": 26,
         "usageRate": 40,
-        "tier":"21%~40%"
+        "tier": 2
       },
       "geometry": {
         "type": "Point",
@@ -8241,7 +8241,7 @@
         "total": 148,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -8259,7 +8259,7 @@
         "total": 44,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -8277,7 +8277,7 @@
         "total": 150,
         "available": 121,
         "usageRate": 19,
-        "tier":"20%以下"
+        "tier": 1
       },
       "geometry": {
         "type": "Point",
@@ -8295,7 +8295,7 @@
         "total": 548,
         "available": 446,
         "usageRate": 19,
-        "tier":"20%以下"
+        "tier": 1
       },
       "geometry": {
         "type": "Point",
@@ -8313,7 +8313,7 @@
         "total": 297,
         "available": 13,
         "usageRate": 96,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -8331,7 +8331,7 @@
         "total": 33,
         "available": 12,
         "usageRate": 64,
-        "tier":"61%~80%"
+        "tier": 4
       },
       "geometry": {
         "type": "Point",
@@ -8349,7 +8349,7 @@
         "total": 19,
         "available": 3,
         "usageRate": 84,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -8367,7 +8367,7 @@
         "total": 84,
         "available": 10,
         "usageRate": 88,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -8385,7 +8385,7 @@
         "total": 183,
         "available": 182,
         "usageRate": 1,
-        "tier":"20%以下"
+        "tier": 1
       },
       "geometry": {
         "type": "Point",
@@ -8403,7 +8403,7 @@
         "total": 98,
         "available": 88,
         "usageRate": 10,
-        "tier":"20%以下"
+        "tier": 1
       },
       "geometry": {
         "type": "Point",
@@ -8421,7 +8421,7 @@
         "total": 5,
         "available": 5,
         "usageRate": 0,
-        "tier":"20%以下"
+        "tier": 1
       },
       "geometry": {
         "type": "Point",
@@ -8439,7 +8439,7 @@
         "total": 67,
         "available": 7,
         "usageRate": 90,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -8457,7 +8457,7 @@
         "total": 130,
         "available": 3,
         "usageRate": 98,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -8475,7 +8475,7 @@
         "total": 314,
         "available": 121,
         "usageRate": 61,
-        "tier":"61%~80%"
+        "tier": 4
       },
       "geometry": {
         "type": "Point",
@@ -8493,7 +8493,7 @@
         "total": 75,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -8511,7 +8511,7 @@
         "total": 331,
         "available": 124,
         "usageRate": 63,
-        "tier":"61%~80%"
+        "tier": 4
       },
       "geometry": {
         "type": "Point",
@@ -8529,7 +8529,7 @@
         "total": 231,
         "available": 30,
         "usageRate": 87,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -8547,7 +8547,7 @@
         "total": 149,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -8565,7 +8565,7 @@
         "total": 31,
         "available": 1,
         "usageRate": 97,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -8583,7 +8583,7 @@
         "total": 309,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -8601,7 +8601,7 @@
         "total": 101,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -8619,7 +8619,7 @@
         "total": 56,
         "available": 7,
         "usageRate": 88,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -8637,7 +8637,7 @@
         "total": 6,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -8655,7 +8655,7 @@
         "total": 10,
         "available": 7,
         "usageRate": 30,
-        "tier":"21%~40%"
+        "tier": 2
       },
       "geometry": {
         "type": "Point",
@@ -8673,7 +8673,7 @@
         "total": 12,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -8691,7 +8691,7 @@
         "total": 18,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -8709,7 +8709,7 @@
         "total": 9,
         "available": 9,
         "usageRate": 0,
-        "tier":"20%以下"
+        "tier": 1
       },
       "geometry": {
         "type": "Point",
@@ -8727,7 +8727,7 @@
         "total": 239,
         "available": 1,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -8745,7 +8745,7 @@
         "total": 114,
         "available": 14,
         "usageRate": 88,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -8763,7 +8763,7 @@
         "total": 121,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -8781,7 +8781,7 @@
         "total": 101,
         "available": 84,
         "usageRate": 17,
-        "tier":"20%以下"
+        "tier": 1
       },
       "geometry": {
         "type": "Point",
@@ -8799,7 +8799,7 @@
         "total": 46,
         "available": 3,
         "usageRate": 93,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -8817,7 +8817,7 @@
         "total": 175,
         "available": 104,
         "usageRate": 41,
-        "tier":"41%~60%"
+        "tier": 3
       },
       "geometry": {
         "type": "Point",
@@ -8835,7 +8835,7 @@
         "total": 179,
         "available": 79,
         "usageRate": 56,
-        "tier":"41%~60%"
+        "tier": 3
       },
       "geometry": {
         "type": "Point",
@@ -8853,7 +8853,7 @@
         "total": 258,
         "available": 10,
         "usageRate": 96,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -8871,7 +8871,7 @@
         "total": 35,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -8889,7 +8889,7 @@
         "total": 21,
         "available": 1,
         "usageRate": 95,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -8907,7 +8907,7 @@
         "total": 12,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -8925,7 +8925,7 @@
         "total": 179,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -8943,7 +8943,7 @@
         "total": 69,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -8961,7 +8961,7 @@
         "total": 87,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -8979,7 +8979,7 @@
         "total": 274,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -8997,7 +8997,7 @@
         "total": 20,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -9015,7 +9015,7 @@
         "total": 44,
         "available": 1,
         "usageRate": 98,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -9033,7 +9033,7 @@
         "total": 284,
         "available": 7,
         "usageRate": 98,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -9051,7 +9051,7 @@
         "total": 5,
         "available": 2,
         "usageRate": 60,
-        "tier":"41%~60%"
+        "tier": 3
       },
       "geometry": {
         "type": "Point",
@@ -9069,7 +9069,7 @@
         "total": 49,
         "available": 1,
         "usageRate": 98,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -9087,7 +9087,7 @@
         "total": 52,
         "available": 16,
         "usageRate": 69,
-        "tier":"61%~80%"
+        "tier": 4
       },
       "geometry": {
         "type": "Point",
@@ -9105,7 +9105,7 @@
         "total": 41,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -9123,7 +9123,7 @@
         "total": 2,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -9141,7 +9141,7 @@
         "total": 1,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -9159,7 +9159,7 @@
         "total": 46,
         "available": 4,
         "usageRate": 91,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -9177,7 +9177,7 @@
         "total": 59,
         "available": 58,
         "usageRate": 2,
-        "tier":"20%以下"
+        "tier": 1
       },
       "geometry": {
         "type": "Point",
@@ -9195,7 +9195,7 @@
         "total": 78,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -9213,7 +9213,7 @@
         "total": 258,
         "available": 34,
         "usageRate": 87,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -9231,7 +9231,7 @@
         "total": 24,
         "available": 4,
         "usageRate": 83,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -9249,7 +9249,7 @@
         "total": 87,
         "available": 36,
         "usageRate": 59,
-        "tier":"41%~60%"
+        "tier": 3
       },
       "geometry": {
         "type": "Point",
@@ -9267,7 +9267,7 @@
         "total": 37,
         "available": 20,
         "usageRate": 46,
-        "tier":"41%~60%"
+        "tier": 3
       },
       "geometry": {
         "type": "Point",
@@ -9285,7 +9285,7 @@
         "total": 49,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -9303,7 +9303,7 @@
         "total": 503,
         "available": 103,
         "usageRate": 80,
-        "tier":"61%~80%"
+        "tier": 4
       },
       "geometry": {
         "type": "Point",
@@ -9321,7 +9321,7 @@
         "total": 111,
         "available": 111,
         "usageRate": 0,
-        "tier":"20%以下"
+        "tier": 1
       },
       "geometry": {
         "type": "Point",
@@ -9339,7 +9339,7 @@
         "total": 170,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -9357,7 +9357,7 @@
         "total": 71,
         "available": 71,
         "usageRate": 0,
-        "tier":"20%以下"
+        "tier": 1
       },
       "geometry": {
         "type": "Point",
@@ -9375,7 +9375,7 @@
         "total": 73,
         "available": 69,
         "usageRate": 5,
-        "tier":"20%以下"
+        "tier": 1
       },
       "geometry": {
         "type": "Point",
@@ -9393,7 +9393,7 @@
         "total": 170,
         "available": 38,
         "usageRate": 78,
-        "tier":"61%~80%"
+        "tier": 4
       },
       "geometry": {
         "type": "Point",
@@ -9411,7 +9411,7 @@
         "total": 194,
         "available": 85,
         "usageRate": 56,
-        "tier":"41%~60%"
+        "tier": 3
       },
       "geometry": {
         "type": "Point",
@@ -9429,7 +9429,7 @@
         "total": 15,
         "available": 10,
         "usageRate": 33,
-        "tier":"21%~40%"
+        "tier": 2
       },
       "geometry": {
         "type": "Point",
@@ -9447,7 +9447,7 @@
         "total": 97,
         "available": 32,
         "usageRate": 67,
-        "tier":"61%~80%"
+        "tier": 4
       },
       "geometry": {
         "type": "Point",
@@ -9465,7 +9465,7 @@
         "total": 29,
         "available": 14,
         "usageRate": 52,
-        "tier":"41%~60%"
+        "tier": 3
       },
       "geometry": {
         "type": "Point",
@@ -9483,7 +9483,7 @@
         "total": 132,
         "available": 42,
         "usageRate": 68,
-        "tier":"61%~80%"
+        "tier": 4
       },
       "geometry": {
         "type": "Point",
@@ -9501,7 +9501,7 @@
         "total": 134,
         "available": 15,
         "usageRate": 89,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -9519,7 +9519,7 @@
         "total": 148,
         "available": 9,
         "usageRate": 94,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -9537,7 +9537,7 @@
         "total": 64,
         "available": 40,
         "usageRate": 38,
-        "tier":"21%~40%"
+        "tier": 2
       },
       "geometry": {
         "type": "Point",
@@ -9555,7 +9555,7 @@
         "total": 325,
         "available": 111,
         "usageRate": 66,
-        "tier":"61%~80%"
+        "tier": 4
       },
       "geometry": {
         "type": "Point",
@@ -9573,7 +9573,7 @@
         "total": 206,
         "available": 47,
         "usageRate": 77,
-        "tier":"61%~80%"
+        "tier": 4
       },
       "geometry": {
         "type": "Point",
@@ -9591,7 +9591,7 @@
         "total": 9,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -9609,7 +9609,7 @@
         "total": 11,
         "available": 5,
         "usageRate": 55,
-        "tier":"41%~60%"
+        "tier": 3
       },
       "geometry": {
         "type": "Point",
@@ -9627,7 +9627,7 @@
         "total": 98,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -9645,7 +9645,7 @@
         "total": 124,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -9663,7 +9663,7 @@
         "total": 15,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -9681,7 +9681,7 @@
         "total": 146,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -9699,7 +9699,7 @@
         "total": 6,
         "available": 6,
         "usageRate": 0,
-        "tier":"20%以下"
+        "tier": 1
       },
       "geometry": {
         "type": "Point",
@@ -9717,7 +9717,7 @@
         "total": 75,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -9735,7 +9735,7 @@
         "total": 196,
         "available": 21,
         "usageRate": 89,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -9753,7 +9753,7 @@
         "total": 60,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -9771,7 +9771,7 @@
         "total": 46,
         "available": 10,
         "usageRate": 78,
-        "tier":"61%~80%"
+        "tier": 4
       },
       "geometry": {
         "type": "Point",
@@ -9789,7 +9789,7 @@
         "total": 24,
         "available": 24,
         "usageRate": 0,
-        "tier":"20%以下"
+        "tier": 1
       },
       "geometry": {
         "type": "Point",
@@ -9807,7 +9807,7 @@
         "total": 151,
         "available": 64,
         "usageRate": 58,
-        "tier":"41%~60%"
+        "tier": 3
       },
       "geometry": {
         "type": "Point",
@@ -9825,7 +9825,7 @@
         "total": 21,
         "available": 6,
         "usageRate": 71,
-        "tier":"61%~80%"
+        "tier": 4
       },
       "geometry": {
         "type": "Point",
@@ -9843,7 +9843,7 @@
         "total": 42,
         "available": 19,
         "usageRate": 55,
-        "tier":"41%~60%"
+        "tier": 3
       },
       "geometry": {
         "type": "Point",
@@ -9861,7 +9861,7 @@
         "total": 15,
         "available": 7,
         "usageRate": 53,
-        "tier":"41%~60%"
+        "tier": 3
       },
       "geometry": {
         "type": "Point",
@@ -9879,7 +9879,7 @@
         "total": 12,
         "available": 12,
         "usageRate": 0,
-        "tier":"20%以下"
+        "tier": 1
       },
       "geometry": {
         "type": "Point",
@@ -9897,7 +9897,7 @@
         "total": 10,
         "available": 3,
         "usageRate": 70,
-        "tier":"61%~80%"
+        "tier": 4
       },
       "geometry": {
         "type": "Point",
@@ -9915,7 +9915,7 @@
         "total": 44,
         "available": 23,
         "usageRate": 48,
-        "tier":"41%~60%"
+        "tier": 3
       },
       "geometry": {
         "type": "Point",
@@ -9933,7 +9933,7 @@
         "total": 43,
         "available": 20,
         "usageRate": 53,
-        "tier":"41%~60%"
+        "tier": 3
       },
       "geometry": {
         "type": "Point",
@@ -9951,7 +9951,7 @@
         "total": 91,
         "available": 46,
         "usageRate": 49,
-        "tier":"41%~60%"
+        "tier": 3
       },
       "geometry": {
         "type": "Point",
@@ -9969,7 +9969,7 @@
         "total": 33,
         "available": 1,
         "usageRate": 97,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -9987,7 +9987,7 @@
         "total": 14,
         "available": 14,
         "usageRate": 0,
-        "tier":"20%以下"
+        "tier": 1
       },
       "geometry": {
         "type": "Point",
@@ -10005,7 +10005,7 @@
         "total": 269,
         "available": 5,
         "usageRate": 98,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -10023,7 +10023,7 @@
         "total": 172,
         "available": 19,
         "usageRate": 89,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -10041,7 +10041,7 @@
         "total": 348,
         "available": 144,
         "usageRate": 59,
-        "tier":"41%~60%"
+        "tier": 3
       },
       "geometry": {
         "type": "Point",
@@ -10059,7 +10059,7 @@
         "total": 199,
         "available": 35,
         "usageRate": 82,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -10077,7 +10077,7 @@
         "total": 136,
         "available": 22,
         "usageRate": 84,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -10095,7 +10095,7 @@
         "total": 10,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -10113,7 +10113,7 @@
         "total": 18,
         "available": 3,
         "usageRate": 83,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -10131,7 +10131,7 @@
         "total": 62,
         "available": 9,
         "usageRate": 85,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -10149,7 +10149,7 @@
         "total": 27,
         "available": 13,
         "usageRate": 52,
-        "tier":"41%~60%"
+        "tier": 3
       },
       "geometry": {
         "type": "Point",
@@ -10167,7 +10167,7 @@
         "total": 79,
         "available": 30,
         "usageRate": 62,
-        "tier":"61%~80%"
+        "tier": 4
       },
       "geometry": {
         "type": "Point",
@@ -10185,7 +10185,7 @@
         "total": 91,
         "available": 84,
         "usageRate": 8,
-        "tier":"20%以下"
+        "tier": 1
       },
       "geometry": {
         "type": "Point",
@@ -10203,7 +10203,7 @@
         "total": 32,
         "available": 6,
         "usageRate": 81,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -10221,7 +10221,7 @@
         "total": 309,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -10239,7 +10239,7 @@
         "total": 301,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -10257,7 +10257,7 @@
         "total": 10,
         "available": 10,
         "usageRate": 0,
-        "tier":"20%以下"
+        "tier": 1
       },
       "geometry": {
         "type": "Point",
@@ -10275,7 +10275,7 @@
         "total": 24,
         "available": 8,
         "usageRate": 67,
-        "tier":"61%~80%"
+        "tier": 4
       },
       "geometry": {
         "type": "Point",
@@ -10293,7 +10293,7 @@
         "total": 47,
         "available": 24,
         "usageRate": 49,
-        "tier":"41%~60%"
+        "tier": 3
       },
       "geometry": {
         "type": "Point",
@@ -10311,7 +10311,7 @@
         "total": 140,
         "available": 105,
         "usageRate": 25,
-        "tier":"21%~40%"
+        "tier": 2
       },
       "geometry": {
         "type": "Point",
@@ -10329,7 +10329,7 @@
         "total": 7,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -10347,7 +10347,7 @@
         "total": 128,
         "available": 41,
         "usageRate": 68,
-        "tier":"61%~80%"
+        "tier": 4
       },
       "geometry": {
         "type": "Point",
@@ -10365,7 +10365,7 @@
         "total": 78,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -10383,7 +10383,7 @@
         "total": 4,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -10401,7 +10401,7 @@
         "total": 81,
         "available": 16,
         "usageRate": 80,
-        "tier":"61%~80%"
+        "tier": 4
       },
       "geometry": {
         "type": "Point",
@@ -10419,7 +10419,7 @@
         "total": 125,
         "available": 52,
         "usageRate": 58,
-        "tier":"41%~60%"
+        "tier": 3
       },
       "geometry": {
         "type": "Point",
@@ -10437,7 +10437,7 @@
         "total": 382,
         "available": 226,
         "usageRate": 41,
-        "tier":"41%~60%"
+        "tier": 3
       },
       "geometry": {
         "type": "Point",
@@ -10455,7 +10455,7 @@
         "total": 335,
         "available": 256,
         "usageRate": 24,
-        "tier":"21%~40%"
+        "tier": 2
       },
       "geometry": {
         "type": "Point",
@@ -10473,7 +10473,7 @@
         "total": 26,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -10491,7 +10491,7 @@
         "total": 17,
         "available": 4,
         "usageRate": 76,
-        "tier":"61%~80%"
+        "tier": 4
       },
       "geometry": {
         "type": "Point",
@@ -10509,7 +10509,7 @@
         "total": 160,
         "available": 97,
         "usageRate": 39,
-        "tier":"21%~40%"
+        "tier": 2
       },
       "geometry": {
         "type": "Point",
@@ -10527,7 +10527,7 @@
         "total": 37,
         "available": 33,
         "usageRate": 11,
-        "tier":"20%以下"
+        "tier": 1
       },
       "geometry": {
         "type": "Point",
@@ -10545,7 +10545,7 @@
         "total": 16,
         "available": 10,
         "usageRate": 38,
-        "tier":"21%~40%"
+        "tier": 2
       },
       "geometry": {
         "type": "Point",
@@ -10563,7 +10563,7 @@
         "total": 40,
         "available": 7,
         "usageRate": 83,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -10581,7 +10581,7 @@
         "total": 87,
         "available": 42,
         "usageRate": 52,
-        "tier":"41%~60%"
+        "tier": 3
       },
       "geometry": {
         "type": "Point",
@@ -10599,7 +10599,7 @@
         "total": 41,
         "available": 23,
         "usageRate": 44,
-        "tier":"41%~60%"
+        "tier": 3
       },
       "geometry": {
         "type": "Point",
@@ -10617,7 +10617,7 @@
         "total": 237,
         "available": 57,
         "usageRate": 76,
-        "tier":"61%~80%"
+        "tier": 4
       },
       "geometry": {
         "type": "Point",
@@ -10635,7 +10635,7 @@
         "total": 369,
         "available": 107,
         "usageRate": 71,
-        "tier":"61%~80%"
+        "tier": 4
       },
       "geometry": {
         "type": "Point",
@@ -10653,7 +10653,7 @@
         "total": 268,
         "available": 33,
         "usageRate": 88,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -10671,7 +10671,7 @@
         "total": 6,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -10689,7 +10689,7 @@
         "total": 660,
         "available": 284,
         "usageRate": 57,
-        "tier":"41%~60%"
+        "tier": 3
       },
       "geometry": {
         "type": "Point",
@@ -10707,7 +10707,7 @@
         "total": 5,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -10725,7 +10725,7 @@
         "total": 27,
         "available": 6,
         "usageRate": 78,
-        "tier":"61%~80%"
+        "tier": 4
       },
       "geometry": {
         "type": "Point",
@@ -10743,7 +10743,7 @@
         "total": 244,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -10761,7 +10761,7 @@
         "total": 48,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -10779,7 +10779,7 @@
         "total": 69,
         "available": 18,
         "usageRate": 74,
-        "tier":"61%~80%"
+        "tier": 4
       },
       "geometry": {
         "type": "Point",
@@ -10797,7 +10797,7 @@
         "total": 49,
         "available": 1,
         "usageRate": 98,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -10815,7 +10815,7 @@
         "total": 67,
         "available": 30,
         "usageRate": 55,
-        "tier":"41%~60%"
+        "tier": 3
       },
       "geometry": {
         "type": "Point",
@@ -10833,7 +10833,7 @@
         "total": 13,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -10851,7 +10851,7 @@
         "total": 43,
         "available": 6,
         "usageRate": 86,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -10869,7 +10869,7 @@
         "total": 20,
         "available": 10,
         "usageRate": 50,
-        "tier":"41%~60%"
+        "tier": 3
       },
       "geometry": {
         "type": "Point",
@@ -10887,7 +10887,7 @@
         "total": 15,
         "available": 3,
         "usageRate": 80,
-        "tier":"61%~80%"
+        "tier": 4
       },
       "geometry": {
         "type": "Point",
@@ -10905,7 +10905,7 @@
         "total": 4,
         "available": 4,
         "usageRate": 0,
-        "tier":"20%以下"
+        "tier": 1
       },
       "geometry": {
         "type": "Point",
@@ -10923,7 +10923,7 @@
         "total": 43,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -10941,7 +10941,7 @@
         "total": 20,
         "available": 2,
         "usageRate": 90,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -10959,7 +10959,7 @@
         "total": 5,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -10977,7 +10977,7 @@
         "total": 70,
         "available": 62,
         "usageRate": 11,
-        "tier":"20%以下"
+        "tier": 1
       },
       "geometry": {
         "type": "Point",
@@ -10995,7 +10995,7 @@
         "total": 7,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -11013,7 +11013,7 @@
         "total": 9,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -11031,7 +11031,7 @@
         "total": 6,
         "available": 2,
         "usageRate": 67,
-        "tier":"61%~80%"
+        "tier": 4
       },
       "geometry": {
         "type": "Point",
@@ -11049,7 +11049,7 @@
         "total": 6,
         "available": 3,
         "usageRate": 50,
-        "tier":"41%~60%"
+        "tier": 3
       },
       "geometry": {
         "type": "Point",
@@ -11067,7 +11067,7 @@
         "total": 4,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -11085,7 +11085,7 @@
         "total": 82,
         "available": 25,
         "usageRate": 70,
-        "tier":"61%~80%"
+        "tier": 4
       },
       "geometry": {
         "type": "Point",
@@ -11103,7 +11103,7 @@
         "total": 6,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -11121,7 +11121,7 @@
         "total": 39,
         "available": 3,
         "usageRate": 92,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -11139,7 +11139,7 @@
         "total": 53,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -11157,7 +11157,7 @@
         "total": 66,
         "available": 43,
         "usageRate": 35,
-        "tier":"21%~40%"
+        "tier": 2
       },
       "geometry": {
         "type": "Point",
@@ -11175,7 +11175,7 @@
         "total": 58,
         "available": 12,
         "usageRate": 79,
-        "tier":"61%~80%"
+        "tier": 4
       },
       "geometry": {
         "type": "Point",
@@ -11193,7 +11193,7 @@
         "total": 14,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -11211,7 +11211,7 @@
         "total": 91,
         "available": 51,
         "usageRate": 44,
-        "tier":"41%~60%"
+        "tier": 3
       },
       "geometry": {
         "type": "Point",
@@ -11229,7 +11229,7 @@
         "total": 23,
         "available": 3,
         "usageRate": 87,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -11247,7 +11247,7 @@
         "total": 42,
         "available": 7,
         "usageRate": 83,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -11265,7 +11265,7 @@
         "total": 130,
         "available": 48,
         "usageRate": 63,
-        "tier":"61%~80%"
+        "tier": 4
       },
       "geometry": {
         "type": "Point",
@@ -11283,7 +11283,7 @@
         "total": 20,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -11301,7 +11301,7 @@
         "total": 115,
         "available": 2,
         "usageRate": 98,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -11319,7 +11319,7 @@
         "total": 704,
         "available": 214,
         "usageRate": 70,
-        "tier":"61%~80%"
+        "tier": 4
       },
       "geometry": {
         "type": "Point",
@@ -11337,7 +11337,7 @@
         "total": 98,
         "available": 16,
         "usageRate": 84,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -11355,7 +11355,7 @@
         "total": 260,
         "available": 6,
         "usageRate": 98,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -11373,7 +11373,7 @@
         "total": 401,
         "available": 138,
         "usageRate": 66,
-        "tier":"61%~80%"
+        "tier": 4
       },
       "geometry": {
         "type": "Point",
@@ -11391,7 +11391,7 @@
         "total": 13,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -11409,7 +11409,7 @@
         "total": 145,
         "available": 36,
         "usageRate": 75,
-        "tier":"61%~80%"
+        "tier": 4
       },
       "geometry": {
         "type": "Point",
@@ -11427,7 +11427,7 @@
         "total": 6,
         "available": 2,
         "usageRate": 67,
-        "tier":"61%~80%"
+        "tier": 4
       },
       "geometry": {
         "type": "Point",
@@ -11445,7 +11445,7 @@
         "total": 35,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -11463,7 +11463,7 @@
         "total": 5,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -11481,7 +11481,7 @@
         "total": 49,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -11499,7 +11499,7 @@
         "total": 43,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -11517,7 +11517,7 @@
         "total": 27,
         "available": 7,
         "usageRate": 74,
-        "tier":"61%~80%"
+        "tier": 4
       },
       "geometry": {
         "type": "Point",
@@ -11535,7 +11535,7 @@
         "total": 43,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -11553,7 +11553,7 @@
         "total": 425,
         "available": 42,
         "usageRate": 90,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -11571,7 +11571,7 @@
         "total": 967,
         "available": 539,
         "usageRate": 44,
-        "tier":"41%~60%"
+        "tier": 3
       },
       "geometry": {
         "type": "Point",
@@ -11589,7 +11589,7 @@
         "total": 28,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -11607,7 +11607,7 @@
         "total": 268,
         "available": 39,
         "usageRate": 85,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -11625,7 +11625,7 @@
         "total": 41,
         "available": 22,
         "usageRate": 46,
-        "tier":"41%~60%"
+        "tier": 3
       },
       "geometry": {
         "type": "Point",
@@ -11643,7 +11643,7 @@
         "total": 49,
         "available": 17,
         "usageRate": 65,
-        "tier":"61%~80%"
+        "tier": 4
       },
       "geometry": {
         "type": "Point",
@@ -11661,7 +11661,7 @@
         "total": 62,
         "available": 37,
         "usageRate": 40,
-        "tier":"21%~40%"
+        "tier": 2
       },
       "geometry": {
         "type": "Point",
@@ -11679,7 +11679,7 @@
         "total": 69,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -11697,7 +11697,7 @@
         "total": 29,
         "available": 6,
         "usageRate": 79,
-        "tier":"61%~80%"
+        "tier": 4
       },
       "geometry": {
         "type": "Point",
@@ -11715,7 +11715,7 @@
         "total": 15,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -11733,7 +11733,7 @@
         "total": 304,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -11751,7 +11751,7 @@
         "total": 228,
         "available": 41,
         "usageRate": 82,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -11769,7 +11769,7 @@
         "total": 160,
         "available": 50,
         "usageRate": 69,
-        "tier":"61%~80%"
+        "tier": 4
       },
       "geometry": {
         "type": "Point",
@@ -11787,7 +11787,7 @@
         "total": 19,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -11805,7 +11805,7 @@
         "total": 288,
         "available": 32,
         "usageRate": 89,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -11823,7 +11823,7 @@
         "total": 12,
         "available": 3,
         "usageRate": 75,
-        "tier":"61%~80%"
+        "tier": 4
       },
       "geometry": {
         "type": "Point",
@@ -11841,7 +11841,7 @@
         "total": 120,
         "available": 97,
         "usageRate": 19,
-        "tier":"20%以下"
+        "tier": 1
       },
       "geometry": {
         "type": "Point",
@@ -11859,7 +11859,7 @@
         "total": 66,
         "available": 7,
         "usageRate": 89,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -11877,7 +11877,7 @@
         "total": 108,
         "available": 28,
         "usageRate": 74,
-        "tier":"61%~80%"
+        "tier": 4
       },
       "geometry": {
         "type": "Point",
@@ -11895,7 +11895,7 @@
         "total": 16,
         "available": 2,
         "usageRate": 88,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -11913,7 +11913,7 @@
         "total": 98,
         "available": 6,
         "usageRate": 94,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -11931,7 +11931,7 @@
         "total": 26,
         "available": 10,
         "usageRate": 62,
-        "tier":"61%~80%"
+        "tier": 4
       },
       "geometry": {
         "type": "Point",
@@ -11949,7 +11949,7 @@
         "total": 70,
         "available": 8,
         "usageRate": 89,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -11967,7 +11967,7 @@
         "total": 213,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -11985,7 +11985,7 @@
         "total": 16,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -12003,7 +12003,7 @@
         "total": 49,
         "available": 6,
         "usageRate": 88,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -12021,7 +12021,7 @@
         "total": 20,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -12039,7 +12039,7 @@
         "total": 505,
         "available": 194,
         "usageRate": 62,
-        "tier":"61%~80%"
+        "tier": 4
       },
       "geometry": {
         "type": "Point",
@@ -12057,7 +12057,7 @@
         "total": 121,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",
@@ -12075,7 +12075,7 @@
         "total": 12,
         "available": 0,
         "usageRate": 100,
-        "tier":"81%~100%"
+        "tier": 5
       },
       "geometry": {
         "type": "Point",

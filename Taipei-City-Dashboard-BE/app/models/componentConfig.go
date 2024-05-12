@@ -5,7 +5,6 @@ import (
 	"encoding/json"
 	"fmt"
 	"time"
-
 	"github.com/lib/pq"
 	"gorm.io/gorm"
 )
@@ -58,6 +57,38 @@ type ComponentChart struct {
 	Color pq.StringArray `json:"color" gorm:"column:color;type:varchar[]"`
 	Types pq.StringArray `json:"types" gorm:"column:types;type:varchar[]"`
 	Unit  string         `json:"unit" gorm:"column:unit;type:varchar"`
+}
+
+// jarrenpoh
+type TrafficViolation struct {
+    ReporterName string    `gorm:"column:舉報人姓名"`
+    ContactPhone string    `gorm:"column:通報人聯絡電話"`
+    Longitude    string   `gorm:"column:舉報地點經度"`
+    Latitude     string   `gorm:"column:舉報地點緯度"`
+    Address      string    `gorm:"column:舉報地點地址"`
+    ReportTime   string `gorm:"column:舉報時間"`
+    Vehicle      string    `gorm:"column:違規交通工具"`
+    Violation    string    `gorm:"column:違規項目"`
+    Comments     string    `gorm:"column:補充內容"`
+}
+
+// jarrenpoh
+type GeoJSON struct {
+    Type     string    `json:"type"`
+    Features []Feature `json:"features"`
+}
+
+// jarrenpoh
+type Feature struct {
+    Type       string                 `json:"type"`
+    Properties TrafficViolation `json:"properties"`
+    Geometry   Geometry               `json:"geometry"`
+}
+
+// jarrenpoh
+type Geometry struct {
+    Type        string          `json:"type"`
+    Coordinates [][]float64   `json:"coordinates"`
 }
 
 /* ----- Handlers ----- */
@@ -158,6 +189,16 @@ func UpdateComponent(id int, name string, historyConfig json.RawMessage, mapFilt
 		return component, err
 	}
 	return component, nil
+}
+
+// jarrenpoh 發送交通違規項目
+func AddTrafficViolation(reporterName string,contactPhone string,longitude string,latitude string,address string,reportTime string,vehicle string,violationn string,comments string,) (error) {
+	violation := TrafficViolation{ReporterName:reporterName,ContactPhone:contactPhone,Longitude:longitude,Latitude:latitude,Address:address,ReportTime:reportTime,Vehicle:vehicle,Violation:violationn,Comments:comments,}
+    err := DBDashboard.Table("traffic_violations_report").Create(&violation).Error
+    if err != nil {
+        return err
+    }
+    return nil
 }
 
 func UpdateComponentChartConfig(index string, color pq.StringArray, types pq.StringArray, unit string) (chartConfig ComponentChart, err error) {

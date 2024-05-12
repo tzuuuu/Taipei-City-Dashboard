@@ -2,11 +2,13 @@
 package controllers
 
 import (
+	"TaipeiCityDashboardBE/app/models"
+	"encoding/json"
+	"fmt"
+	"os"
+	"io/ioutil"
 	"net/http"
 	"strconv"
-
-	"TaipeiCityDashboardBE/app/models"
-
 	"github.com/gin-gonic/gin"
 )
 
@@ -114,6 +116,82 @@ func UpdateComponent(c *gin.Context) {
 
 	// 5. Return the component
 	c.JSON(http.StatusOK, gin.H{"status": "success", "data": component})
+}
+
+// jarrenpoh 發送交通違規項目
+func AddTrafficViolation(c *gin.Context) {
+	dir, err := os.Getwd()
+    if err != nil {
+        fmt.Println("Error getting current directory:", err)
+        return
+    }
+    fmt.Println("Current directory:", dir)
+
+    var violation models.TrafficViolation
+    // Bind the JSON to the violation variable
+    if err := c.ShouldBindJSON(&violation); err != nil {
+        c.JSON(http.StatusBadRequest, gin.H{"status": "error", "message": "sdsd"+err.Error()})
+        return
+    }
+
+    // Save the new record to the database
+	err = models.AddTrafficViolation(violation.ReporterName,violation.ContactPhone,violation.Longitude,violation.Latitude,violation.Address,violation.ReportTime,violation.Vehicle,violation.Violation,violation.Comments)
+
+    if err != nil {
+        c.JSON(http.StatusInternalServerError, gin.H{"status": "error", "message": "sdsd"+err.Error()})
+        return
+    }
+
+	// // 讀本地資料
+	geoJSON, err := readGeoJSON("/Taipei-City-Dashboard-FE/public/mapData/traffic_accident_location_view.geojson")
+	if err != nil {
+		fmt.Println("Error reading GeoJSON:", err)
+        return
+    }
+	// 加資料
+	addNewViolation(geoJSON, violation, 31.2304, 121.4737)
+	// 寫回去
+	err = writeGeoJSON("/Taipei-City-Dashboard-FE/public/mapData/traffic_accident_location_view.geojson", geoJSON)
+    if err != nil {
+		fmt.Println("Error writing GeoJSON:", err)
+        return
+    }
+
+    // Return the newly created violation
+    c.JSON(http.StatusCreated, gin.H{"status": "success", "data": violation})
+}
+
+func readGeoJSON(filePath string) (*models.GeoJSON, error) {
+    data, err := ioutil.ReadFile(filePath)
+    if err != nil {
+        return nil, err
+    }
+    var geoJSON models.GeoJSON
+    err = json.Unmarshal(data, &geoJSON)
+    if err != nil {
+        return nil, err
+    }
+    return &geoJSON, nil
+}
+
+func addNewViolation(geoJSON *models.GeoJSON, violation models.TrafficViolation, lat, lon float64) {
+    newFeature := models.Feature{
+        Type: "Feature",
+        Properties: violation,
+        Geometry: models.Geometry{
+            Type: "Point",
+            Coordinates: [][]float64{{lon, lat}},
+        },
+    }
+    geoJSON.Features = append(geoJSON.Features, newFeature)
+}
+
+func writeGeoJSON(filePath string, geoJSON *models.GeoJSON) error {
+    data, err := json.MarshalIndent(geoJSON, "", "  ")
+    if err != nil {
+        return err
+    }
+    return ioutil.WriteFile(filePath, data, 0644)
 }
 
 /*

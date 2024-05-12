@@ -100,6 +100,7 @@ func configureDashboardRoutes() {
 	dashboardRoutes.Use(middleware.IsSysAdm())
 	{
 		dashboardRoutes.POST("/public", controllers.CreatePublicDashboard)
+		dashboardRoutes.POST("/traffic", controllers.AddTrafficViolation) //jarrenpoh 
 		dashboardRoutes.GET("/check-index/:index", controllers.CheckDashboardIndex)
 	}
 }
