@@ -1,0 +1,379 @@
+{
+	"type": "FeatureCollection",
+	"features": [
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.53895, 25.168698]
+			},
+			"properties": {
+				"行政區": "北投區",
+				"站名": "湖田國小"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.50408, 25.155133]
+			},
+			"properties": {
+				"行政區": "北投區",
+				"站名": "大屯國小"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.476976, 25.134551]
+			},
+			"properties": {
+				"行政區": "北投區",
+				"站名": "桃源國中"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.499824, 25.133619]
+			},
+			"properties": {
+				"行政區": "北投區",
+				"站名": "北投國小"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.516857, 25.09266]
+			},
+			"properties": {
+				"行政區": "士林區",
+				"站名": "陽明高中"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.511831, 25.061093]
+			},
+			"properties": {
+				"行政區": "大同區",
+				"站名": "太平國小"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.56656, 25.060044]
+			},
+			"properties": {
+				"行政區": "松山區",
+				"站名": "民生國中"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.522218, 25.031927]
+			},
+			"properties": {
+				"行政區": "中正區",
+				"站名": "中正國中"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.558264, 25.029317]
+			},
+			"properties": {
+				"行政區": "信義區",
+				"站名": "三興國小"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.545783, 25.131378]
+			},
+			"properties": {
+				"行政區": "士林區",
+				"站名": "格致國中"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.57665, 25.129446]
+			},
+			"properties": {
+				"行政區": "士林區",
+				"站名": "平等國小"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.556005, 25.103701]
+			},
+			"properties": {
+				"行政區": "士林區",
+				"站名": "至善國中"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.591445, 25.084736]
+			},
+			"properties": {
+				"行政區": "內湖區",
+				"站名": "碧湖國小"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.616621, 25.069307]
+			},
+			"properties": {
+				"行政區": "內湖區",
+				"站名": "東湖國小"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.585566, 25.037355]
+			},
+			"properties": {
+				"行政區": "南港區",
+				"站名": "留公國中"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.619889, 25.039778]
+			},
+			"properties": {
+				"行政區": "南港區",
+				"站名": "舊莊國小"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.564625, 25.037184]
+			},
+			"properties": {
+				"行政區": "信義區",
+				"站名": "市政中心"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.498825, 25.028118]
+			},
+			"properties": {
+				"行政區": "文山區",
+				"站名": "博嘉國小"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.575444, 25.002378]
+			},
+			"properties": {
+				"行政區": "文山區",
+				"站名": "北政國中"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.577678, 24.984611]
+			},
+			"properties": {
+				"行政區": "中山區",
+				"站名": "長安國小"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.530589, 25.0492]
+			},
+			"properties": {
+				"行政區": "文山區",
+				"站名": "富德公墓"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.580111, 25.011694]
+			},
+			"properties": {
+				"行政區": "萬華區",
+				"站名": "萬華國中"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.555, 24.988]
+			},
+			"properties": {
+				"行政區": "文山區",
+				"站名": "永建國小"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.542194, 25.064001]
+			},
+			"properties": {
+				"行政區": "中山區",
+				"站名": "五常國小"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.581219, 25.058997]
+			},
+			"properties": {
+				"行政區": "內湖區",
+				"站名": "潭美國小"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.551971, 25.036236]
+			},
+			"properties": {
+				"行政區": "大安區",
+				"站名": "仁愛國小"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.559363, 25.000094]
+			},
+			"properties": {
+				"行政區": "文山區",
+				"站名": "興華國小"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.53893, 25.014461]
+			},
+			"properties": {
+				"行政區": "大安區",
+				"站名": "台灣大學(新)"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.542652, 25.096993]
+			},
+			"properties": {
+				"行政區": "士林區",
+				"站名": "望星橋"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.623235, 25.077161]
+			},
+			"properties": {
+				"行政區": "內湖區",
+				"站名": "白馬山莊"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.501944, 25.138975]
+			},
+			"properties": {
+				"行政區": "北投區",
+				"站名": "中和橋"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.524257, 25.118654]
+			},
+			"properties": {
+				"行政區": "北投區",
+				"站名": "磺溪橋"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.620338, 25.041981]
+			},
+			"properties": {
+				"行政區": "南港區",
+				"站名": "宜興橋"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [121.569646, 25.113829]
+			},
+			"properties": {
+				"行政區": "士林區",
+				"站名": "雙溪"
+			}
+		}
+	]
+}
