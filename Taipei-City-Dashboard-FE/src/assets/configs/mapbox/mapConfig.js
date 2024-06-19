@@ -362,7 +362,7 @@ export const maplayerCommonLayout = {
 			1.4,
 		],
 	},	
-	"symbol-cctv": {
+	"symbol-cctv_camera": {
 		"icon-image": "cctv-camera",
 		"icon-size": [
 			"interpolate",
