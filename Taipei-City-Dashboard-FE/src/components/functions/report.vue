@@ -1,31 +1,36 @@
+<!-- eslint-disable vue/multi-word-component-names -->
 <script setup>
+
 //jarrenpoh
 import { useAdminStore } from "../../store/adminStore";
 import { ref } from 'vue';
 
 const adminStore = useAdminStore();
-const year = ref('');
-const month = ref('');
-const day = ref('');
-const hour = ref('');
-const minute = ref('');
-const second = ref('');
-const address = ref('');
+const year = ref('2024');  // TODO: 直接使用當下時間
+const month = ref('6');
+const day = ref('21');
+const hour = ref('12');
+const minute = ref('10');
+const second = ref('10');
+// const address = ref('');
 const vehicleType = ref('');
+const longitude = ref('121.5641661'); // TODO: 直接獲取用戶所在 經緯度   25.036960486042506, 121.56416612679072
+const latitude = ref('25.0369604');
+// const comments = ref(''); // TODO: 開放用戶上傳備註
 
 const sendTrafficViolationsReport = async () => {
 	const reportTime = `${year.value}-${month.value}-${day.value} ${hour.value}:${minute.value}:${second.value}`;
-    const componentData = {
-        ReporterName: '匿名',
-        ContactPhone: '未提供',
-        Longitude: '未知',
-        Latitude: '未知',
-        Address: address.value,
-        ReportTime: reportTime,
-        Vehicle: vehicleType.value,
-        Violation: '違規停車',
-        Comments: '無'
-    };
+	const componentData = {
+		ReporterName: '匿名',
+		ContactPhone: '未提供',
+		Longitude: longitude.value,
+		Latitude: latitude.value,
+		Address: '無',
+		ReportTime: reportTime,
+		Vehicle: vehicleType.value,
+		Violation: '違規停車',
+		Comments: '無'
+	};
 
 	year.value = "";
 	day.value = "";
@@ -33,9 +38,12 @@ const sendTrafficViolationsReport = async () => {
 	hour.value = "";
 	minute.value = "";
 	second.value = "";
-	address.value = "";
+	// address.value = "";
 	vehicleType.value = "";
+	longitude.value = "";
+	latitude.value = "";
 
+	// eslint-disable-next-line no-console
 	console.log("Component Data:", componentData);
 	adminStore.sendTrafficViolationsReport(componentData);
 }
@@ -56,7 +64,9 @@ const sendTrafficViolationsReport = async () => {
 				<input v-model="second" type="text" style="width: 48px" />秒
 			</span>
 		</div>
-		<div>地點：<input v-model="address" type="text" /></div>
+		<!-- <div>地點：<input v-model="address" type="text" /></div> -->
+		<div>經度：<input v-model="longitude" type="text" /></div>
+		<div>緯度：<input v-model="latitude" type="text" /></div>
 		<div>
 			違停車輛類型：
 			<select v-model="vehicleType">
@@ -64,8 +74,8 @@ const sendTrafficViolationsReport = async () => {
 				<option value="汽車">汽車</option>
 				<option value="重型機車">重型機車</option>
 				<option value="機車">機車</option>
-				<option value="腳踏車">腳踏車</option>
-				<option value="腳踏車">貨車</option>
+				<option value="自行車">自行車</option>
+				<option value="貨車">貨車</option>
 			</select>
 		</div>
 		<div class="right"><input class="right" type="button" value="送出檢舉" @click="sendTrafficViolationsReport" /></div>

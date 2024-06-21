@@ -246,7 +246,7 @@ export const useAdminStore = defineStore("admin", {
 				JSON.stringify(violation)
 			);
 			await http.post('/dashboard/traffic', violationn);
-			dialogStore.showNotification("success", "组件数据更新成功");
+			dialogStore.showNotification("success", "成功送出舉報");
 
 		},
 

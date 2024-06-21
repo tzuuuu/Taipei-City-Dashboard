@@ -143,19 +143,26 @@ func AddTrafficViolation(c *gin.Context) {
     }
 
 	// // 讀本地資料
-	geoJSON, err := readGeoJSON("/Taipei-City-Dashboard-FE/public/mapData/traffic_accident_location_view.geojson")
+	targetGeoJsonFilePath := "/opt/mapData/traffic_violations_report.geojson" //TODO: fix file path
+	fmt.Println("Start trying open geojson!!!!!!!!")
+
+	geoJSON, err := readGeoJSON(targetGeoJsonFilePath)
 	if err != nil {
 		fmt.Println("Error reading GeoJSON:", err)
         return
-    }
+    } else{
+		fmt.Println("Open geojson success!!!!!!!!")
+	}
 	// 加資料
-	addNewViolation(geoJSON, violation, 31.2304, 121.4737)
+	addNewViolation(geoJSON, violation)
 	// 寫回去
-	err = writeGeoJSON("/Taipei-City-Dashboard-FE/public/mapData/traffic_accident_location_view.geojson", geoJSON)
+	err = writeGeoJSON(targetGeoJsonFilePath, geoJSON)
     if err != nil {
 		fmt.Println("Error writing GeoJSON:", err)
         return
-    }
+    } else{
+		fmt.Println("Write geojson success!!!!!!!!")
+	}
 
     // Return the newly created violation
     c.JSON(http.StatusCreated, gin.H{"status": "success", "data": violation})
@@ -174,13 +181,16 @@ func readGeoJSON(filePath string) (*models.GeoJSON, error) {
     return &geoJSON, nil
 }
 
-func addNewViolation(geoJSON *models.GeoJSON, violation models.TrafficViolation, lat, lon float64) {
+func addNewViolation(geoJSON *models.GeoJSON, violation models.TrafficViolation) {
+    longitude := stringToFloat64(violation.Longitude)
+    latitude := stringToFloat64(violation.Latitude)
+
     newFeature := models.Feature{
-        Type: "Feature",
+        Type:       "Feature",
         Properties: violation,
         Geometry: models.Geometry{
-            Type: "Point",
-            Coordinates: [][]float64{{lon, lat}},
+            Type:        "Point",
+            Coordinates: []float64{longitude, latitude},
         },
     }
     geoJSON.Features = append(geoJSON.Features, newFeature)
@@ -192,6 +202,15 @@ func writeGeoJSON(filePath string, geoJSON *models.GeoJSON) error {
         return err
     }
     return ioutil.WriteFile(filePath, data, 0644)
+}
+
+func stringToFloat64(s string) float64 {
+    f, err := strconv.ParseFloat(s, 64)
+    if err != nil {
+        fmt.Println("Error converting string to float64:", err)
+        return 0
+    }
+    return f
 }
 
 /*

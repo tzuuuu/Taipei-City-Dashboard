@@ -88,7 +88,7 @@ type Feature struct {
 // jarrenpoh
 type Geometry struct {
     Type        string          `json:"type"`
-    Coordinates [][]float64   `json:"coordinates"`
+    Coordinates []float64   `json:"coordinates"`
 }
 
 /* ----- Handlers ----- */

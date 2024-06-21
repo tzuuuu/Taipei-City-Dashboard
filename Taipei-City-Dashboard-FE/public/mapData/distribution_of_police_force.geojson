@@ -1,0 +1,866 @@
+{
+  "type": "FeatureCollection",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+    }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "police_num": "P1",
+        "status": "出勤中",
+        "coordinates": "[121.5371212,25.0112054]"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5371212,
+          25.0112054
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "police_num": "P2",
+        "status": "出勤中",
+        "coordinates": "[121.5277729,25.021064]"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5277729,
+          25.021064
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "police_num": "P3",
+        "status": "出勤中",
+        "coordinates": "[121.53674,25.0484007]"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.53674,
+          25.0484007
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "police_num": "P4",
+        "status": "出勤中",
+        "coordinates": "[121.5537806,25.0443835]"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5537806,
+          25.0443835
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "police_num": "P5",
+        "status": "出勤中",
+        "coordinates": "[121.5268038,25.031726]"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5268038,
+          25.031726
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "police_num": "P6",
+        "status": "出勤中",
+        "coordinates": "[121.5248161,25.1041448]"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5248161,
+          25.1041448
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "police_num": "P7",
+        "status": "出勤中",
+        "coordinates": "[121.569389,25.0494768]"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.569389,
+          25.0494768
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "police_num": "P8",
+        "status": "出勤中",
+        "coordinates": "[121.5149995,25.0434067]"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5149995,
+          25.0434067
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "police_num": "P9",
+        "status": "出勤中",
+        "coordinates": "[121.5781726,25.0840059]"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5781726,
+          25.0840059
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "police_num": "P10",
+        "status": "出勤中",
+        "coordinates": "[121.5626961,25.0487039]"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5626961,
+          25.0487039
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "police_num": "P11",
+        "status": "出勤中",
+        "coordinates": "[121.5382203,25.0080025]"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5382203,
+          25.0080025
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "police_num": "P12",
+        "status": "出勤中",
+        "coordinates": "[121.5172509,25.1165773]"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5172509,
+          25.1165773
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "police_num": "P13",
+        "status": "出勤中",
+        "coordinates": "[121.4961048,25.0388104]"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.4961048,
+          25.0388104
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "police_num": "P14",
+        "status": "出勤中",
+        "coordinates": "[121.5170333,25.1158507]"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5170333,
+          25.1158507
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "police_num": "P15",
+        "status": "出勤中",
+        "coordinates": "[121.541032,25.0680766]"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.541032,
+          25.0680766
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "police_num": "P16",
+        "status": "出勤中",
+        "coordinates": "[121.6057471,25.0562484]"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.6057471,
+          25.0562484
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "police_num": "P17",
+        "status": "出勤中",
+        "coordinates": "[121.5345671,25.044997]"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5345671,
+          25.044997
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "police_num": "P18",
+        "status": "出勤中",
+        "coordinates": "[121.5255594,25.0602979]"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5255594,
+          25.0602979
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "police_num": "P19",
+        "status": "出勤中",
+        "coordinates": "[121.5789161,25.0355783]"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5789161,
+          25.0355783
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "police_num": "P20",
+        "status": "出勤中",
+        "coordinates": "[121.5693412,25.0494496]"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5693412,
+          25.0494496
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "police_num": "P21",
+        "status": "出勤中",
+        "coordinates": "[121.5693412,25.0494496]"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5693412,
+          25.0494496
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "police_num": "P22",
+        "status": "出勤中",
+        "coordinates": "[121.5525302,25.0243981]"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5525302,
+          25.0243981
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "police_num": "P23",
+        "status": "出勤中",
+        "coordinates": "[121.53712,25.0111698]"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.53712,
+          25.0111698
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "police_num": "P24",
+        "status": "出勤中",
+        "coordinates": "[121.5206952,25.0480849]"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5206952,
+          25.0480849
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "police_num": "P25",
+        "status": "出勤中",
+        "coordinates": "[121.5466712,25.0191828]"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5466712,
+          25.0191828
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "police_num": "P26",
+        "status": "出勤中",
+        "coordinates": "[121.5218726,25.0944587]"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5218726,
+          25.0944587
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "police_num": "P27",
+        "status": "出勤中",
+        "coordinates": "[121.5258902,25.0268048]"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5258902,
+          25.0268048
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "police_num": "P28",
+        "status": "出勤中",
+        "coordinates": "[121.4955591,25.0165728]"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.4955591,
+          25.0165728
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "police_num": "P29",
+        "status": "出勤中",
+        "coordinates": "[121.4952794,25.0281562]"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.4952794,
+          25.0281562
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "police_num": "P30",
+        "status": "出勤中",
+        "coordinates": "[121.5778383,25.0407901]"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5778383,
+          25.0407901
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "police_num": "P31",
+        "status": "出勤中",
+        "coordinates": "[121.5164531,25.0487991]"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5164531,
+          25.0487991
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "police_num": "P32",
+        "status": "出勤中",
+        "coordinates": "[121.5138446,25.0758794]"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5138446,
+          25.0758794
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "police_num": "P33",
+        "status": "出勤中",
+        "coordinates": "[121.5138446,25.0758794]"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5138446,
+          25.0758794
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "police_num": "P34",
+        "status": "出勤中",
+        "coordinates": "[121.5242199,25.0478255]"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5242199,
+          25.0478255
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "police_num": "P35",
+        "status": "出勤中",
+        "coordinates": "[121.5242199,25.0478255]"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5242199,
+          25.0478255
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "police_num": "P36",
+        "status": "出勤中",
+        "coordinates": "[121.5362889,25.0109635]"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5362889,
+          25.0109635
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "police_num": "P37",
+        "status": "出勤中",
+        "coordinates": "[121.4973017,25.0193872]"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.4973017,
+          25.0193872
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "police_num": "P38",
+        "status": "出勤中",
+        "coordinates": "[121.4973017,25.0193872]"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.4973017,
+          25.0193872
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "police_num": "P39",
+        "status": "出勤中",
+        "coordinates": "[121.5170925,25.0508887]"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5170925,
+          25.0508887
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "police_num": "P40",
+        "status": "出勤中",
+        "coordinates": "[121.4905991,25.02436]"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.4905991,
+          25.02436
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "police_num": "P41",
+        "status": "出勤中",
+        "coordinates": "[121.5665629,25.0485562]"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5665629,
+          25.0485562
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "police_num": "P42",
+        "status": "出勤中",
+        "coordinates": "[121.5492251,25.0518609]"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5492251,
+          25.0518609
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "police_num": "P43",
+        "status": "出勤中",
+        "coordinates": "[121.5488818,25.0417133]"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5488818,
+          25.0417133
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "police_num": "P44",
+        "status": "出勤中",
+        "coordinates": "[121.577678,25.0491005]"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.577678,
+          25.0491005
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "police_num": "P45",
+        "status": "出勤中",
+        "coordinates": "[121.5671637,25.0392249]"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5671637,
+          25.0392249
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "police_num": "P46",
+        "status": "出勤中",
+        "coordinates": "[121.5815389,25.0370637]"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5815389,
+          25.0370637
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "police_num": "P47",
+        "status": "出勤中",
+        "coordinates": "[121.5672315,25.031393]"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5672315,
+          25.031393
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "police_num": "P48",
+        "status": "出勤中",
+        "coordinates": "[121.5487625,25.0334023]"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5487625,
+          25.0334023
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "police_num": "P49",
+        "status": "出勤中",
+        "coordinates": "[121.5636542,25.0360464]"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5636542,
+          25.0360464
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "police_num": "P50",
+        "status": "出勤中",
+        "coordinates": "[121.5618517,25.0269863]"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5618517,
+          25.0269863
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "police_num": "P51",
+        "status": "出勤中",
+        "coordinates": "[121.5634396,25.0569194]"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5634396,
+          25.0569194
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "police_num": "P52",
+        "status": "出勤中",
+        "coordinates": "[121.5813782,25.0699812]"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5813782,
+          25.0699812
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "police_num": "P53",
+        "status": "出勤中",
+        "coordinates": "[121.5442564,25.0604571]"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5442564,
+          25.0604571
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "police_num": "P54",
+        "status": "出勤中",
+        "coordinates": "[121.5371677,25.0623379]"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5371677,
+          25.0623379
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "police_num": "P55",
+        "status": "出勤中",
+        "coordinates": "[121.5366876,25.0546922]"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5366876,
+          25.0546922
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "police_num": "P56",
+        "status": "出勤中",
+        "coordinates": "[121.533313,25.0683875]"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.533313,
+          25.0683875
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "police_num": "P57",
+        "status": "出勤中",
+        "coordinates": "[121.5253737,25.053887]"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5253737,
+          25.053887
+        ]
+      }
+    }
+  ]
+}
