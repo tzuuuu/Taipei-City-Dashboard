@@ -54,4 +54,4 @@ Note : To access the "Utility Features" section, you need to log in to the dashb
 ## Contact Information
 
 For any questions, please contact the backend developer of "真的是Go了！" below.
-Email: jarren@wwwx.red
+Email: alyssa59147@gmail.com
