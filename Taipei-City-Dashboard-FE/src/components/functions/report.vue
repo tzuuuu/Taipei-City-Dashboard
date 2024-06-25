@@ -30,7 +30,7 @@ const getFormattedDateTime = () => {
 }
 
 const geocodeAddress = async (address) => {
-	const YOUR_API_KEY = 'AIzaSyAepGXFhAkUE2bnbr8rA94i2PekXfXRbeg'; // Replace with your actual API key
+	const YOUR_API_KEY = ''; // Replace with your actual API key
 	const response = await fetch(`https://maps.googleapis.com/maps/api/geocode/json?address=${encodeURIComponent(address)}&key=${YOUR_API_KEY}`);
 	const data = await response.json();
 

@@ -1,36 +1,57 @@
-# <img src='Taipei-City-Dashboard-FE/src/assets/images/TUIC.svg' height='28'> Taipei City Dashboard
+# Taipei City Dashboard
 
-## Introduction
+This project is a part of the 2024 Taipei Urban Spring Dashboard Hackathon, a government competition aimed at co-developing a dashboard with the government to promote joint concern between the government and citizens about Taipei City. Our theme for this competition is the Traffic Dashboard. Our team, "真的是Go了！" received an Honorable Mention.
 
-Taipei City Dashboard is a data visualization platform developed by [Taipei Urban Intelligence Center (TUIC)](https://tuic.gov.taipei/en).
+## Ownership
 
-Our main goal is to create a comprehensive data visualization tool to assist in Taipei City policy decisions. This was achieved through the first version of the Taipei City Dashboard, which displayed a mix of internal and open data, seamlessly blending statistical and geographical data.
+The ownership of this dashboard belongs to the [Taipei Urban Intelligence Center (TUIC)](https://tuic.gov.taipei/en).
 
-Fast forward to mid-2023, as Taipei City’s open data ecosystem matured and expanded, our vision gradually expanded as well. We aimed not only to aid policy decisions but also to keep citizens informed about the important statistics of their city. Given the effectiveness of this tool, we also hoped to publicize the codebase for this project so that any relevant organization could easily create a similar data visualization tool of their own.
+## Demo
+<p align="center">
+  <img src="https://raw.githubusercontent.com/JarrenPoh/Taipei-City-Dashboard/main/截圖%202024-06-24%20凌晨4.49.51.png" />
+</p>
 
-Our dashboard, made yours.
+[Demo Video Click Here](https://firebasestorage.googleapis.com/v0/b/absolute-text-353909.appspot.com/o/螢幕錄影%202024-06-24%20凌晨4.31.22.mov?alt=media&token=d6d1724c-7468-4991-aac1-c2f0b6c073a8)
 
-Based on the above vision, we decided to begin development on Taipei City Dashboard 2.0. Unlike its predecessor, Taipei City Dashboard 2.0 will be a public platform instead of an internal tool. The codebase for Taipei City Dashboard will also be open-sourced, inviting all interested parties to participate in the development of this platform.
+## Installation Steps
 
-We have since released Taipei City Dashboard 2.0 to the general public. From now on, you will be able to suggest features and changes to Taipei City Dashboard and develop the platform alongside us. We are excited for you to join Taipei City Dashboard’s journey!
+1. **Download the project**:
+   [Download Link](https://github.com/JarrenPoh/Taipei-City-Dashboard)
 
-Please refer to the docs for the [Chinese Version](https://tuic.gov.taipei/documentation/front-end/introduction) (and click on the "switch languages" icon in the top right corner).
+2. **Navigate to the Docker directory**:
+   ```sh
+   cd docker
 
-[Official Site](https://citydashboard.taipei) | [License](https://github.com/tpe-doit/Taipei-City-Dashboard/blob/main/LICENSE) | [Code of Conduct](https://github.com/tpe-doit/Taipei-City-Dashboard/blob/main/.github/CODE_OF_CONDUCT.md) | [Contribution Guide](https://tuic.gov.taipei/documentation/front-end/contribution-overview)
+3. **Create the Docker network**:
+   ```sh
+   docker network create --driver=bridge --subnet=192.168.128.0/24 --gateway=192.168.128.1 br_dashboard
 
-## Quick Start
+4. **Start the database services**:
+   ```sh
+   docker-compose -f docker-compose-db.yaml up -d
 
-Please refer to the [Docs](https://tuic.gov.taipei/documentation/front-end/project-setup) for the quick start guide.
+5. **Initialize the dashboard**:
+   ```sh
+   docker-compose -f docker-compose-init.yaml up -d
 
-## Documentation
+6. **Run the frontend and backend services**:
+   ```sh
+   docker-compose up -d
 
-Check out the complete documentation for Taipei City Dashboard [here](https://tuic.gov.taipei/documentation).
+---
+Note : To access the "Utility Features" section, you need to log in to the dashboard.
+- Click on the "Log In" button at the top right corner.
+- Shift-click the icon.
+- Use the following credentials:
+    - Username: admin@gmail.com
+    - Password: admin1234
+- Next, configure the Geocoding API Key in GCP.
+    - Generate Geocoding API Key From [Google Cloud Platform (GCP)](https://cloud.google.com/?hl=zh_tw)
+    - Replace the YOUR_API_KEY in report.vue with your Geocoding API Key.
 
-## Contributors
 
-Many thanks to the contributors to this project!
 
-<a href="https://github.com/tpe-doit/Taipei-City-Dashboard/graphs/contributors">
-<img src="https://contrib.rocks/image?repo=tpe-doit/Taipei-City-Dashboard" />
-</a>
-# Taipei-City-Dashboard
+## Contact Information
+
+For any questions, please contact the backend developer of "真的是Go了！" below.
+Email: jarren@wwwx.red
