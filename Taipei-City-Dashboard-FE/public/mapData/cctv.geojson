@@ -1,0 +1,7076 @@
+{
+  "type": "FeatureCollection",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+    }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "171-羅斯福路3段244巷口(台電大樓)",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/171"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.531481,
+          25.017381
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "391-文山北向入口",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/391"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "隧道",
+        "coordinates": [
+          121.5816271,
+          25.00916456
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "392-文山北向出口",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/392"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "隧道",
+        "coordinates": [
+          121.5781427,
+          25.0209973
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "393-文山南向入口",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/393"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "隧道",
+        "coordinates": [
+          121.5774561,
+          25.02130841
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "394-文山南向出口",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/394"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "隧道",
+        "coordinates": [
+          121.5812802,
+          25.00992394
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "395-象山北向入口",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/395"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "隧道",
+        "coordinates": [
+          121.5763657,
+          25.02374133
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "396-象山北向出口",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/396"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "隧道",
+        "coordinates": [
+          121.5719446,
+          25.03128632
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "397-象山南向入口",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/397"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "隧道",
+        "coordinates": [
+          121.571553,
+          25.03133979
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "398-象山南向出口",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/398"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "隧道",
+        "coordinates": [
+          121.5760372,
+          25.02371064
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "388-八德路3段-光復北路",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/388"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.5578,
+          25.04816
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "389-中山北路6段-德行西路",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/389"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.52491,
+          25.10647
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "399-木柵路4段-和平東路4段",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/399"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.574583,
+          24.998167
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "400-信義杭州",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/400"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.52414,
+          25.03556
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "390-中正路-延平北路5段(西南角)",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/390"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.50933,
+          25.08666
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "151-堤頂大道樂群一路",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/151"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "快速道路",
+        "coordinates": [
+          121.56855,
+          25.077263
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "152-堤頂大道1段與港墘路口往北",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/152"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "快速道路",
+        "coordinates": [
+          121.5724,
+          25.07461
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "113-瑞光港墘",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/113"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.574814,
+          25.076233
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "154-民權瑞光",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/154"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.583979,
+          25.068633
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "125-辛亥路三段330號(二殯西北角)",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/125"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.55307,
+          25.01373
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "377-菸廠路 市民大道5段14巷",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/377"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.5604497,
+          25.045062
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "383-忠孝東路-逸仙路",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/383"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.5616393,
+          25.0411849
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "381-羅斯福路2段9號(羅斯福金融廣場大樓)",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/381"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.5212056,
+          25.02894722
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "379-市民大道八段99號(西南角) (臺北流行音樂中心南館頂樓西南角)",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/379"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.5976056,
+          25.05142222
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "310-松江路與長春路口",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/310"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.5329635,
+          25.0549123
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "311-松江路與民生東路口",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/311"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.5329837,
+          25.0581148
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "312-松江路-南京東二段",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/312"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.5329494,
+          25.05161857
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "255-木柵秀明",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/255"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.571077,
+          24.991698
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "318-木柵路1段與和興路口號誌桿",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/318"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.5459973,
+          24.98670152
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "358-木柵-辛亥路口",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/358"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.5523655,
+          24.98769899
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "359-木柵-興隆路口",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/359"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.5601661,
+          24.98871072
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "362-木柵-信義快匝道路口",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/362"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.5768371,
+          25.00032514
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "360-木新-樟新路口",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/360"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.5548942,
+          24.98016743
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "023-水源快永福橋",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/023"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "快速道路、橋梁",
+        "coordinates": [
+          121.52814,
+          25.012011
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "024-水源快福和橋",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/024"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "快速道路、橋梁",
+        "coordinates": [
+          121.532405,
+          25.008628
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "007-水源快中正橋",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/007"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "快速道路",
+        "coordinates": [
+          121.5166651,
+          25.02218833
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "077-環河快詔安街",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/077"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "快速道路",
+        "coordinates": [
+          121.514607,
+          25.02400181
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "078-環河快泉州街",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/078"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "快速道路",
+        "coordinates": [
+          121.5121763,
+          25.02408073
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "008-水源快師大",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/008"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "快速道路",
+        "coordinates": [
+          121.522281,
+          25.020491
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "083-環河快青年路口",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/083"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "快速道路",
+        "coordinates": [
+          121.5042989,
+          25.01985106
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "084-水源快溪州街口",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/084"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "快速道路",
+        "coordinates": [
+          121.5342047,
+          25.00594153
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "085-水源快景美出口匝道",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/085"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "快速道路",
+        "coordinates": [
+          121.535638,
+          24.997855
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "086-水源快景美入口匝道",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/086"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.5352933,
+          25.0000574
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "030-市民快松江",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/030"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "快速道路",
+        "coordinates": [
+          121.532738,
+          25.045305
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "031-市民快永吉",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/031"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.56501,
+          25.044683
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "032-市民快重慶匝道",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/032"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.512978,
+          25.049494
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "033-市民快新生匝道",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/033"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "快速道路",
+        "coordinates": [
+          121.530198,
+          25.046084
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "368-南京東路六段-舊宗路一段",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/368"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.581675,
+          25.05726111
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "177-基隆路北往南主車道1(基隆忠孝)",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/177"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.564394,
+          25.041319
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "178-基隆路北往南主車道2(基隆忠孝)機 1",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/178"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.5642727,
+          25.04104561
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "179-基隆路北往南主車道3(基隆忠孝)",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/179"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.564265,
+          25.041097
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "180-基隆路北往南主車道4(基隆松高)",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/180"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.563682,
+          25.039173
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "181-基隆路北往南主車道5(基隆松高)",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/181"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.563516,
+          25.039187
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "182-基隆路北往南主車道6(基隆松壽)",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/182"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.561488,
+          25.035936
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "183-基隆路北往南主車道7(基隆松壽)",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/183"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.561413,
+          25.035858
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "184-基隆路北往南主車道8(基隆松壽)",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/184"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.561338,
+          25.035722
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "185-基隆路南往北主車道1(基隆松壽)",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/185"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.561193,
+          25.035916
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "187-基隆路南往北主車道3(基隆松壽)",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/187"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.561091,
+          25.035761
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "188-基隆路南往北主車道4(基隆松高)",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/188"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.563565,
+          25.039156
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "189-基隆路南往北主車道5(基隆松高)",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/189"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.563624,
+          25.039163
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "190-基隆路南往北主車道6(基隆忠孝)",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/190"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.564648,
+          25.041292
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "191-基隆路南往北主車道7(基隆忠孝)",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/191"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.564589,
+          25.041209
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "192-基隆路南往北主車道8(基隆忠孝)",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/192"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.564541,
+          25.041112
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "193-基隆路北往南混合車道1(基隆松高)",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/193"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.563712,
+          25.039233
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "194-基隆路北往南混合車道2(基隆松高)",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/194"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.563696,
+          25.039182
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "195-基隆路北往南混合車道3(基隆松壽)",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/195"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.561268,
+          25.03562
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "196-基隆路北往南混合車道4(基隆松壽)",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/196"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.56122,
+          25.035537
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "197-基隆路南往北混合車道1(基隆松壽)",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/197"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.561059,
+          25.035693
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "198-基隆路南往北混合車道2(基隆松壽)",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/198"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.561016,
+          25.035596
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "199-基隆路南往北混合車道3(基隆松高)",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/199"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.563648,
+          25.039314
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "200-基隆路南往北混合車道4(基隆忠孝)",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/200"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.564369,
+          25.041272
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "273-市民大道與向陽路口",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/273"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.5956639,
+          25.05134722
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "278-重慶北路與南京西路",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/278"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.514403,
+          25.054061
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "369-重慶南路-汀州路2段",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/369"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.5166389,
+          25.02565
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "370-和平西路3段-南寧路",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/370"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.5031556,
+          25.03520833
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "371-和平西路2段-泉州街",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/371"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.5143972,
+          25.02766389
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "372-民權東路與敦化北路",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/372"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.5512917,
+          25.06165833
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "373-格致路與凱旋路",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/373"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.5463722,
+          25.13681389
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "374-重慶南路與廈門街114巷",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/374"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.5169944,
+          25.02303056
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "375-重慶北路2段48號",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/375"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.5140028,
+          25.05555
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "376-辛亥路4段-101巷",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/376"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.558565,
+          25.006698
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "378-市民大道八段99號(東北角) (臺北流行音樂中心南館頂樓東北角)",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/378"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.5977722,
+          25.05168333
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "380-南港路2段59號(東北角)",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/380"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.5989194,
+          25.05346944
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "363-忠孝東路7段325巷口",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/363"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.60569,
+          25.05195
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "364-市民大道8段與南港路2段41巷口",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/364"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.6032,
+          25.05261
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "366-承德路6段-福國路口",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/366"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.51233,
+          25.1013
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "136-基隆光復",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/136"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.557597,
+          25.029804
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "283-信義路四段-光復南路口",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/283"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.5574992,
+          25.03309573
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "329-光復南路與市民大道口",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/329"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.557685,
+          25.04492577
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "327-雙溪街與至誠路口",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/327"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.5266917,
+          25.10088611
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "010-辛亥快泰順",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/010"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "快速道路",
+        "coordinates": [
+          121.529495,
+          25.019934
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "011-辛亥快新生南",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/011"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "快速道路",
+        "coordinates": [
+          121.534517,
+          25.022641
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "342-辛亥路3段基隆路3段路口",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/342"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.5466159,
+          25.01873273
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "348-八德-塔悠路口",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/348"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.5722722,
+          25.0499889
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "353-八德-新生北路口",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/353"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.5298689,
+          25.04363587
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "297-士東路-忠誠路口",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/297"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.53,
+          25.112
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "045-大直橋",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/045"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "橋梁",
+        "coordinates": [
+          121.544685,
+          25.077025
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "068-大業大度",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/068"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.499672,
+          25.121141
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "157-中山劍潭(東側)",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/157"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.525623,
+          25.084018
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "165-市民中山(西南角)",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/165"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.520593,
+          25.047942
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "231-中山北路6段-福國路口",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/231"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.525246,
+          25.102564
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "232-中山北路-通河街口",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/232"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.524197,
+          25.079989
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "233-中山北路3段-民權東西路口",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/233"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.522486,
+          25.063017
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "249-中山北路-圓山隧道口",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/249"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.5250251,
+          25.0767399
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "326-中山北路5段與文林路口",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/326"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.5255683,
+          25.08602915
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "328-民生東路與中山北路口",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/328"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.5227248,
+          25.05773305
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "346-中山北-濟南路口",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/346"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.5189188,
+          25.04331665
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "044-圓山中山橋",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/044"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.5253088,
+          25.07627506
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "042-承德中正",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/042"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.515997,
+          25.090995
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "048-中正重陽橋",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/048"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "橋梁",
+        "coordinates": [
+          121.505803,
+          25.085694
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "263-中華路-愛國西路口",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/263"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.5070306,
+          25.03729722
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "291-衡陽路-中華路一段路口",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/291"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.508,
+          25.042
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "337-中華路一段39號1(台糖騰雲大樓頂樓西南角)",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/337"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.5095188,
+          25.04552949
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "338-中華路一段39號2(台糖騰雲大樓頂樓西北角)",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/338"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.5095,
+          25.04544444
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "173-仁愛敦化(北側)",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/173"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.548706,
+          25.038298
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "174-仁愛敦化(西側)",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/174"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.548228,
+          25.037939
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "175-仁愛敦化(東側)",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/175"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.549397,
+          25.037853
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "120-民權東路6段與堤頂大道1段路口號誌桿",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/120"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.572258,
+          25.06488
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "307-福國-文林",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/307"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.5212278,
+          25.10160833
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "121-木柵路1段與木柵路1段76巷口號誌桿",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/121"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.550159,
+          24.98746
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "207-辛亥隧道往木柵入口0K+7M",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/207"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "隧道",
+        "coordinates": [
+          121.554367,
+          25.012644
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "208-辛亥隧道往木柵入口0K+179M",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/208"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "隧道",
+        "coordinates": [
+          121.555557,
+          25.011465
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "209-辛亥隧道往木柵入口0K+331M",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/209"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "隧道",
+        "coordinates": [
+          121.557091,
+          25.00993
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "210-辛亥隧道往市區入口0K+7M",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/210"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "隧道",
+        "coordinates": [
+          121.557335,
+          25.010065
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "211-辛亥隧道往市區入口0K+160M",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/211"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "隧道",
+        "coordinates": [
+          121.555817,
+          25.011669
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "212-辛亥隧道往市區入口0K+355M",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/212"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "隧道",
+        "coordinates": [
+          121.554642,
+          25.012848
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "290-和平羅斯",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/290"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.522,
+          25.027
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "322-復興南路與和平東路口",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/322"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.5429469,
+          25.02493891
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "355-和平-敦化路口",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/355"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.5487302,
+          25.02447036
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "129-忠孝光復",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/129"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.557732,
+          25.041399
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "131-忠孝松山",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/131"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.578094,
+          25.040913
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "229-新生高忠孝",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/229"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.529972,
+          25.043
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "257-忠孝東路-松仁路口",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/257"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.5689083,
+          25.04086944
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "301-忠孝西路一段86號",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/301"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.5133086,
+          25.04740352
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "303-中華路1段2號西北角（國稅局1號）",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/303"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.5097318,
+          25.04826003
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "304-中華路1段2號東北角(國稅局2號)",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/304"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.5097318,
+          25.04826003
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "345-忠孝東-敦化南路口",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/345"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.5488551,
+          25.04145101
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "352-忠孝-延吉路口",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/352"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.5544544,
+          25.0414112
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "246 承德-庫倫",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/246"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.518578,
+          25.071995
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "289-承德路-石牌路口",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/289"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.509,
+          25.112
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "285-昌吉街-重慶北路三段",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/285"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.513,
+          25.066
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "147-明水樂群一路",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/147"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.550697,
+          25.077282
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "102-東湖隧道北向0K+295M",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/102"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "隧道",
+        "coordinates": [
+          121.60913,
+          25.08091
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "103-東湖隧道南向0K+593M",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/103"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "隧道",
+        "coordinates": [
+          121.61074,
+          25.07939
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "104-東湖隧道南向0K+770M",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/104"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "隧道",
+        "coordinates": [
+          121.61263,
+          25.07823
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "105-東湖隧道北向1K+115M",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/105"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "隧道",
+        "coordinates": [
+          121.61605,
+          25.07838
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "106-東湖隧道南向1K+245M",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/106"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "隧道",
+        "coordinates": [
+          121.61745,
+          25.07861
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "107-東湖隧道北向1K+500M",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/107"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "隧道",
+        "coordinates": [
+          121.61963,
+          25.07963
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "108-東湖隧道北向1K+777M",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/108"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "隧道",
+        "coordinates": [
+          121.62226,
+          25.07864
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "271-市民大道-東新街口",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/271"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.5837639,
+          25.049775
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "272-東新街-八德路口",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/272"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.5828006,
+          25.05166953
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "270-市民大道-松山路口",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/270"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.5777056,
+          25.04818333
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "134-松仁松壽",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/134"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.568314,
+          25.03578
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "242-松江路-民權東路口",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/242"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.533247,
+          25.062322
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "141-北安明水(近大直橋)",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/141"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.551575,
+          25.085754
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "142-北安明水(近自強隧道)",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/142"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.552841,
+          25.085871
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "237-北安路595巷口",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/237"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.548803,
+          25.082
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "248-北安路-中山北路口",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/248"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.52714,
+          25.076508
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "365-南港路2段23巷口",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/365"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.60314,
+          25.05366
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "235-福林路-雨農路-中正路口",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/235"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.532342,
+          25.096714
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "220-忠孝東研究院路(車行往北)",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/220"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.616226,
+          25.053165
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "234-至善路-福林路口",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/234"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.536636,
+          25.099347
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "162-市民重慶(東側)",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/162"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.513364,
+          25.049276
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "163-市民承德(南側)",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/163"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.516345,
+          25.048769
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "164-市民承德(西側)",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/164"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.516423,
+          25.048552
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "166-市民中山(西北角)",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/166"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.520594,
+          25.048132
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "221-龍門大樓頂樓",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/221"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "快速道路",
+        "coordinates": [
+          121.5108647,
+          25.05041733
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "269-市民大道-松信路口",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/269"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.5722278,
+          25.04945833
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "027-市民快環河",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/027"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "快速道路",
+        "coordinates": [
+          121.506905,
+          25.050808
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "275-市民大道-中南街口",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/275"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.6152472,
+          25.05426944
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "028-市民快中山",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/028"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "快速道路",
+        "coordinates": [
+          121.520889,
+          25.048124
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "029-市民快敦化",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/029"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "快速道路",
+        "coordinates": [
+          121.548958,
+          25.044937
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "222-向陽重陽",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/222"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.594667,
+          25.054722
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "146-成功文德",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/146"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.589599,
+          25.079314
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "155-民權成功",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/155"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.590592,
+          25.069049
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "350-成功-內湖交流道路口",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/350"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "快速道路",
+        "coordinates": [
+          121.5911242,
+          25.06129171
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "292-成都路-昆明路口",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/292"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.5048269,
+          25.0430233
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "汐五高架(堤頂交流道到汐止端)",
+        "videourl": "https://cctvn.freeway.gov.tw/abs2mjpg/bmjpg?camera=11530"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "國道",
+        "coordinates": [
+          121.607778,
+          25.064722
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "汐五高架(堤頂交流道到汐止端)",
+        "videourl": "https://cctvn.freeway.gov.tw/abs2mjpg/bmjpg?camera=11830"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "國道",
+        "coordinates": [
+          121.578333,
+          25.069167
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "汐五高架(汐止端到堤頂交流道)",
+        "videourl": "https://cctvn.freeway.gov.tw/abs2mjpg/bmjpg?camera=11470"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "國道",
+        "coordinates": [
+          121.61389,
+          25.065832
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "汐五高架(堤頂交流道到下塔悠交流道)",
+        "videourl": "https://cctvn.freeway.gov.tw/abs2mjpg/bmjpg?camera=11920"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "國道",
+        "coordinates": [
+          121.570178,
+          25.071216
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "汐五高架(下塔悠交流道到環北交流道)",
+        "videourl": "https://cctvn.freeway.gov.tw/abs2mjpg/bmjpg?camera=12560"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "國道",
+        "coordinates": [
+          121.508333,
+          25.078333
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "國3甲(萬芳交流道到台北端)",
+        "videourl": "https://cctvn.freeway.gov.tw/abs2mjpg/bmjpg?camera=91050"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "國道",
+        "coordinates": [
+          121.55386,
+          25.01415
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "國3甲(木柵交流道到萬芳交流道)",
+        "videourl": "https://cctvn.freeway.gov.tw/abs2mjpg/bmjpg?camera=91450"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "國道",
+        "coordinates": [
+          121.58905,
+          25.00306
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "國道3號(木柵交流道到南深路交流道)",
+        "videourl": "https://cctvn.freeway.gov.tw/abs2mjpg/bmjpg?camera=31800"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "國道",
+        "coordinates": [
+          121.60291,
+          25.02424
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "國道3號(木柵休息站到木柵交流道)",
+        "videourl": "https://cctvn.freeway.gov.tw/abs2mjpg/bmjpg?camera=32370"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "國道",
+        "coordinates": [
+          121.58266,
+          24.97831
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "國道3號(木柵休息站到新店交流道)",
+        "videourl": "https://cctvn.freeway.gov.tw/abs2mjpg/bmjpg?camera=32570"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "國道",
+        "coordinates": [
+          121.56401,
+          24.97744
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "國道5號(石碇交流道到南港系統交流道)",
+        "videourl": "https://cctvp02.freeway.gov.tw/mjpeg/X01001602800201"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "國道",
+        "coordinates": [
+          121.62502,
+          25.034748
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "國道5號(石碇交流道到南港系統交流道)",
+        "videourl": "https://cctvp02.freeway.gov.tw/mjpeg/X01001602800301"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "國道",
+        "coordinates": [
+          121.62992,
+          25.033003
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "國道5號(石碇交流道到南港系統交流道)",
+        "videourl": "https://cctvp02.freeway.gov.tw/mjpeg/X01001510011301"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "國道",
+        "coordinates": [
+          121.63938,
+          25.024445
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "國道5號(南港系統交流道到石碇交流道)",
+        "videourl": "https://cctvp02.freeway.gov.tw/mjpeg/X01001510010401"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "國道",
+        "coordinates": [
+          121.638916,
+          25.024607
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "汐五高架(堤頂交流道到汐止端)",
+        "videourl": "https://cctvn.freeway.gov.tw/abs2mjpg/bmjpg?camera=11630"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "國道",
+        "coordinates": [
+          121.598724,
+          25.06354
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "汐五高架(堤頂交流道到汐止端)",
+        "videourl": "https://cctvn.freeway.gov.tw/abs2mjpg/bmjpg?camera=11760"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "國道",
+        "coordinates": [
+          121.586111,
+          25.066111
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "汐五高架(環北交流道到下塔悠交流道)",
+        "videourl": "https://cctvn.freeway.gov.tw/abs2mjpg/bmjpg?camera=12080"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "國道",
+        "coordinates": [
+          121.55556,
+          25.072222
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "281-竹子湖派出所前",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/281"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.540069,
+          25.167569
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "201-自強隧道往故宮入口0K+16M",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/201"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "隧道",
+        "coordinates": [
+          121.549568,
+          25.087173
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "202-自強隧道往故宮入口0K+240M",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/202"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "隧道",
+        "coordinates": [
+          121.549301,
+          25.090467
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "203-自強隧道往故宮入口0K+474M",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/203"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "隧道",
+        "coordinates": [
+          121.548965,
+          25.093479
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "204-自強隧道往大直入口0K+20M",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/204"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "隧道",
+        "coordinates": [
+          121.548508,
+          25.09413
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "205-自強隧道往大直入口0K+326M",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/205"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "隧道",
+        "coordinates": [
+          121.548637,
+          25.0924
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "206-自強隧道往大直入口0K+553M",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/206"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "隧道",
+        "coordinates": [
+          121.548805,
+          25.089815
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "236-故宮路-至善路口",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/236"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.546461,
+          25.098308
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "320-復興南路與信義路口",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/320"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.5434377,
+          25.0331958
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "321-復興南路與復興南路2段148巷口",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/321"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.5433892,
+          25.02850844
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "079-復興辛亥",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/079"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.543298,
+          25.021568
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "176-仁愛敦化(南側)",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/176"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.548781,
+          25.037332
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "306-敦化-八德",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/306"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.5489028,
+          25.04800833
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "293-艋舺 大理國小",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/293"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "橋梁",
+        "coordinates": [
+          121.493,
+          25.03
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "288-逸仙路-松高路口",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/288"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.5615771,
+          25.03918714
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "167-重慶愛國(西側)",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/167"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.512255,
+          25.035305
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "228-新生高長安",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/228"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.529806,
+          25.048222
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "223-新生高圓山橋",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/223"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "快速道路",
+        "coordinates": [
+          121.525806,
+          25.073722
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "224-新生高民族",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/224"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "快速道路",
+        "coordinates": [
+          121.527885,
+          25.068029
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "299-民生東路限高器",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/299"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "快速道路",
+        "coordinates": [
+          121.5278263,
+          25.05800639
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "076-新生高圓山",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/076"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "快速道路",
+        "coordinates": [
+          121.5256463,
+          25.07434992
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "091-中山北安",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/091"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "快速道路",
+        "coordinates": [
+          121.5267972,
+          25.07595899
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "122-新明路成美橋",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/122"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.5822339,
+          25.05563424
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "143-內湖堤頂(西側)",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/143"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "快速道路",
+        "coordinates": [
+          121.56076,
+          25.0842
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "149-瑞光路478巷口",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/149"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.569426,
+          25.078963
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "150-瑞光陽光(瑞光社宅)",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/150"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.579063,
+          25.073568
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "367-洲子街-瑞光路393巷",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/367"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.5733889,
+          25.07910833
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "060-環東匝道",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/060"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.619362,
+          25.059399
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "059-經貿二南港",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/059"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.616638,
+          25.055103
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "215-經貿二路105巷口",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/215"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.6165,
+          25.058111
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "295-萬大路-東園街口",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/295"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.498,
+          25.021
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "239- 濱江街150巷口",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/239"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.536664,
+          25.072575
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "323-瑞光路與江南街口",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/323"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.5758187,
+          25.07600866
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "240-濱江街大佳國小大門右側(號誌桿)",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/240"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.535642,
+          25.073139
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "218-經貿一路環東大道槽化島",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/218"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "快速道路",
+        "coordinates": [
+          121.617083,
+          25.062694
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "219-環東大道經貿二路出口匝道綠帶",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/219"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "快速道路",
+        "coordinates": [
+          121.612889,
+          25.062778
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "037-市民快麥帥一橋",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/037"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "快速道路",
+        "coordinates": [
+          121.570717,
+          25.051216
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "049-環東快堤頂匝道",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/049"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "快速道路",
+        "coordinates": [
+          121.577797,
+          25.05489
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "050-環東快舊宗匝道",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/050"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "快速道路",
+        "coordinates": [
+          121.584259,
+          25.058504
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "051-環東快成功路",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/051"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "快速道路",
+        "coordinates": [
+          121.5910282,
+          25.06109731
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "052-環東快出城往東",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/052"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "快速道路",
+        "coordinates": [
+          121.600304,
+          25.05835
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "054-環東快成功橋",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/054"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "快速道路",
+        "coordinates": [
+          121.591705,
+          25.060177
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "055-環東快進城基河三期國宅",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/055"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "快速道路",
+        "coordinates": [
+          121.601273,
+          25.058428
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "056-環東快進城南湖大橋",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/056"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "快速道路",
+        "coordinates": [
+          121.611183,
+          25.061342
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "057-環東快經貿一路匝道",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/057"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "快速道路",
+        "coordinates": [
+          121.616203,
+          25.062899
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "002-環快忠孝橋",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/002"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "快速道路",
+        "coordinates": [
+          121.506042,
+          25.049253
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "003-環快中興橋",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/003"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "快速道路",
+        "coordinates": [
+          121.500679,
+          25.044197
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "039-環河民生",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/039"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.508362,
+          25.056755
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "004-環快華江橋",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/004"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "快速道路",
+        "coordinates": [
+          121.4904247,
+          25.03527326
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "005-環快光復橋",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/005"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "快速道路",
+        "coordinates": [
+          121.4912983,
+          25.0248362
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "006-環快華中橋",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/006"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "快速道路",
+        "coordinates": [
+          121.495305,
+          25.016719
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "274-環河北路與民族西路口燈桿上",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/274"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.509109,
+          25.068535
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "041-環河北敦煌",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/041"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.508559,
+          25.076133
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "069-環河北中正",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/069"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.505536,
+          25.085722
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "070-延平社中",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/070"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.501044,
+          25.090495
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "071-延平北通河西",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/071"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.497548,
+          25.093829
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "072-延平北通河西(堤防)",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/072"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.497352,
+          25.094381
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "080-環河快貴陽匝道",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/080"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.49559,
+          25.03858
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "081-環河快萬板大橋",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/081"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "快速道路、橋梁",
+        "coordinates": [
+          121.4882854,
+          25.03043655
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "082-環河快華翠大橋",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/082"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "快速道路、橋梁",
+        "coordinates": [
+          121.4891298,
+          25.0275276
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "115-舊宗路2段181巷口",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/115"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.574409,
+          25.071665
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "117- 舊宗路2段與民權東路6段11巷25弄口",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/117"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.574753,
+          25.067524
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "156-舊宗新湖二路",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/156"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.578247,
+          25.06175
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "169-基隆路3段156巷",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/169"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.54248,
+          25.01591
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "172-基隆羅斯(東南角)",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/172"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.537289,
+          25.010831
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "025-基隆快羅斯",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/025"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.53717,
+          25.01134
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "347-羅斯福-中山南-愛國路口",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/347"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.5167006,
+          25.03486221
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "361-羅斯福路五段211巷路口",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/361"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.5389509,
+          25.00226207
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "汐五高架(環北交流道到下塔悠交流道)",
+        "videourl": "https://cctvn.freeway.gov.tw/abs2mjpg/bmjpg?camera=12180"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "國道",
+        "coordinates": [
+          121.545856,
+          25.072273
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "汐五高架(環北交流道到下塔悠交流道)",
+        "videourl": "https://cctvn.freeway.gov.tw/abs2mjpg/bmjpg?camera=12270"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "國道",
+        "coordinates": [
+          121.537575,
+          25.072502
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "汐五高架(環北交流道到下塔悠交流道)",
+        "videourl": "https://cctvn.freeway.gov.tw/abs2mjpg/bmjpg?camera=12390"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "國道",
+        "coordinates": [
+          121.525276,
+          25.074722
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "汐五高架(環北交流道到下塔悠交流道)",
+        "videourl": "https://cctvn.freeway.gov.tw/abs2mjpg/bmjpg?camera=12490"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "國道",
+        "coordinates": [
+          121.51611,
+          25.077223
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "汐五高架(環北交流道到下塔悠交流道)",
+        "videourl": "https://cctvn.freeway.gov.tw/abs2mjpg/bmjpg?camera=12600"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "國道",
+        "coordinates": [
+          121.505646,
+          25.077694
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "汐五高架(汐止端到堤頂交流道)",
+        "videourl": "https://cctvn.freeway.gov.tw/abs2mjpg/bmjpg?camera=11600"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "國道",
+        "coordinates": [
+          121.60182,
+          25.064306
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "汐五高架(汐止端到堤頂交流道)",
+        "videourl": "https://cctvn.freeway.gov.tw/abs2mjpg/bmjpg?camera=11740"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "國道",
+        "coordinates": [
+          121.5875,
+          25.06611
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "汐五高架(堤頂交流道到下塔悠交流道)",
+        "videourl": "https://cctvn.freeway.gov.tw/abs2mjpg/bmjpg?camera=12040"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "國道",
+        "coordinates": [
+          121.55889,
+          25.071943
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "汐五高架(下塔悠交流道到環北交流道)",
+        "videourl": "https://cctvn.freeway.gov.tw/abs2mjpg/bmjpg?camera=12181"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "國道",
+        "coordinates": [
+          121.545,
+          25.073333
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "汐五高架(下塔悠交流道到環北交流道)",
+        "videourl": "https://cctvn.freeway.gov.tw/abs2mjpg/bmjpg?camera=12330"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "國道",
+        "coordinates": [
+          121.530556,
+          25.07361
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "汐五高架(下塔悠交流道到環北交流道)",
+        "videourl": "https://cctvn.freeway.gov.tw/abs2mjpg/bmjpg?camera=12420"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "國道",
+        "coordinates": [
+          121.52194,
+          25.07639
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "國3甲(台北端到萬芳交流道)",
+        "videourl": "https://cctvn.freeway.gov.tw/abs2mjpg/bmjpg?camera=90070"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "國道",
+        "coordinates": [
+          121.55311,
+          25.014261
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "國3甲(台北端到萬芳交流道)",
+        "videourl": "https://cctvn.freeway.gov.tw/abs2mjpg/bmjpg?camera=90150"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "國道",
+        "coordinates": [
+          121.56215,
+          25.01195
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "國3甲(台北端到萬芳交流道)",
+        "videourl": "https://cctvn.freeway.gov.tw/abs2mjpg/bmjpg?camera=90190"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "國道",
+        "coordinates": [
+          121.56636,
+          25.008945
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "國3甲(台北端到萬芳交流道)",
+        "videourl": "https://cctvn.freeway.gov.tw/abs2mjpg/bmjpg?camera=90210"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "國道",
+        "coordinates": [
+          121.572474,
+          25.007198
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "國3甲(台北端到萬芳交流道)",
+        "videourl": "https://cctvn.freeway.gov.tw/abs2mjpg/bmjpg?camera=90240"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "國道",
+        "coordinates": [
+          121.57109,
+          25.00804
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "國3甲(台北端到萬芳交流道)",
+        "videourl": "https://cctvn.freeway.gov.tw/abs2mjpg/bmjpg?camera=90261"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "國道",
+        "coordinates": [
+          121.574203,
+          25.006725
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "國3甲(萬芳交流道到木柵交流道)",
+        "videourl": "https://cctvn.freeway.gov.tw/abs2mjpg/bmjpg?camera=90370"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "國道",
+        "coordinates": [
+          121.581913,
+          25.00426
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "國3甲(萬芳交流道到台北端)",
+        "videourl": "https://cctvn.freeway.gov.tw/abs2mjpg/bmjpg?camera=91010"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "國道",
+        "coordinates": [
+          121.55055,
+          25.016111
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "國3甲(萬芳交流道到台北端)",
+        "videourl": "https://cctvn.freeway.gov.tw/abs2mjpg/bmjpg?camera=91080"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "國道",
+        "coordinates": [
+          121.55797,
+          25.01418
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "國3甲(萬芳交流道到台北端)",
+        "videourl": "https://cctvn.freeway.gov.tw/abs2mjpg/bmjpg?camera=91090"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "國道",
+        "coordinates": [
+          121.55722,
+          25.01389
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "國3甲(萬芳交流道到台北端)",
+        "videourl": "https://cctvn.freeway.gov.tw/abs2mjpg/bmjpg?camera=91211"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "國道",
+        "coordinates": [
+          121.56979,
+          25.00844
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "國3甲(萬芳交流道到台北端)",
+        "videourl": "https://cctvn.freeway.gov.tw/abs2mjpg/bmjpg?camera=91240"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "國道",
+        "coordinates": [
+          121.565936,
+          25.009562
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "國3甲(萬芳交流道到台北端)",
+        "videourl": "https://cctvn.freeway.gov.tw/abs2mjpg/bmjpg?camera=91270"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "國道",
+        "coordinates": [
+          121.57437,
+          25.00726
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "國3甲(萬芳交流道到台北端)",
+        "videourl": "https://cctvn.freeway.gov.tw/abs2mjpg/bmjpg?camera=91280"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "國道",
+        "coordinates": [
+          121.57438,
+          25.00714
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "國3甲(木柵交流道到萬芳交流道)",
+        "videourl": "https://cctvn.freeway.gov.tw/abs2mjpg/bmjpg?camera=91490"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "國道",
+        "coordinates": [
+          121.59278,
+          25.0025
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "國3甲(木柵交流道到萬芳交流道)",
+        "videourl": "https://cctvn.freeway.gov.tw/abs2mjpg/bmjpg?camera=91500"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "國道",
+        "coordinates": [
+          121.59411,
+          25.0026
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "國3甲(深坑端到木柵交流道)",
+        "videourl": "https://cctvn.freeway.gov.tw/abs2mjpg/bmjpg?camera=91530"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "國道",
+        "coordinates": [
+          121.5975,
+          25.001944
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "國道3號(木柵交流道到南深路交流道)",
+        "videourl": "https://cctvn.freeway.gov.tw/abs2mjpg/bmjpg?camera=31700"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "國道",
+        "coordinates": [
+          121.611098,
+          25.030098
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "國道3號(木柵交流道到南深路交流道)",
+        "videourl": "https://cctvn.freeway.gov.tw/abs2mjpg/bmjpg?camera=81840"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "國道",
+        "coordinates": [
+          121.601395,
+          25.022751
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "國道3號(木柵交流道到南深路交流道)",
+        "videourl": "https://cctvn.freeway.gov.tw/abs2mjpg/bmjpg?camera=81930"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "國道",
+        "coordinates": [
+          121.596579,
+          25.008807
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "國道3號(木柵交流道到南深路交流道)",
+        "videourl": "https://cctvn.freeway.gov.tw/abs2mjpg/bmjpg?camera=81960"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "國道",
+        "coordinates": [
+          121.602408,
+          25.023994
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "國道3號(木柵交流道到南深路交流道)",
+        "videourl": "https://cctvn.freeway.gov.tw/abs2mjpg/bmjpg?camera=81981"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "國道",
+        "coordinates": [
+          121.602408,
+          25.023994
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "國道3號(木柵休息站到木柵交流道)",
+        "videourl": "https://cctvn.freeway.gov.tw/abs2mjpg/bmjpg?camera=32160"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "國道",
+        "coordinates": [
+          121.59322,
+          24.99362
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "國道3號(木柵休息站到木柵交流道)",
+        "videourl": "https://cctvn.freeway.gov.tw/abs2mjpg/bmjpg?camera=82200"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "國道",
+        "coordinates": [
+          121.5904226,
+          24.98598232
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "國道3號(木柵休息站到木柵交流道)",
+        "videourl": "https://cctvn.freeway.gov.tw/abs2mjpg/bmjpg?camera=82250"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "國道",
+        "coordinates": [
+          121.5893068,
+          24.98400818
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "國道3號(木柵休息站到木柵交流道)",
+        "videourl": "https://cctvn.freeway.gov.tw/abs2mjpg/bmjpg?camera=82280"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "國道",
+        "coordinates": [
+          121.5887382,
+          24.98330799
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "國道3號(木柵休息站到木柵交流道)",
+        "videourl": "https://cctvn.freeway.gov.tw/abs2mjpg/bmjpg?camera=82320"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "國道",
+        "coordinates": [
+          121.5866009,
+          24.98113893
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "國道3號(木柵休息站到木柵交流道)",
+        "videourl": "https://cctvn.freeway.gov.tw/abs2mjpg/bmjpg?camera=82350"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "國道",
+        "coordinates": [
+          121.586013,
+          24.98060441
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "國道3號(木柵休息站到木柵交流道)",
+        "videourl": "https://cctvn.freeway.gov.tw/abs2mjpg/bmjpg?camera=32370"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "國道",
+        "coordinates": [
+          121.58266,
+          24.97831
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "國道3號(木柵休息站到木柵交流道)",
+        "videourl": "https://cctvn.freeway.gov.tw/abs2mjpg/bmjpg?camera=32510"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "國道",
+        "coordinates": [
+          121.57002,
+          24.976082
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "國道3號(新店交流道到木柵休息站)",
+        "videourl": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=428"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "國道",
+        "coordinates": [
+          120.58532,
+          23.674929
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "國道3號(南港系統交流道到南深路交流道)",
+        "videourl": "https://cctvn.freeway.gov.tw/abs2mjpg/bmjpg?camera=31640"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "國道",
+        "coordinates": [
+          121.615833,
+          25.033056
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "國道3號(南深路交流道到木柵交流道)",
+        "videourl": "https://cctvn.freeway.gov.tw/abs2mjpg/bmjpg?camera=71850"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "國道",
+        "coordinates": [
+          121.596323,
+          25.009105
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "國道3號(南深路交流道到木柵交流道)",
+        "videourl": "https://cctvn.freeway.gov.tw/abs2mjpg/bmjpg?camera=71900"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "國道",
+        "coordinates": [
+          121.594906,
+          25.002386
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "國道3號(南深路交流道到木柵交流道)",
+        "videourl": "https://cctvn.freeway.gov.tw/abs2mjpg/bmjpg?camera=71950"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "國道",
+        "coordinates": [
+          121.597353,
+          25.01193
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "國道3號(南深路交流道到木柵交流道)",
+        "videourl": "https://cctvn.freeway.gov.tw/abs2mjpg/bmjpg?camera=71980"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "國道",
+        "coordinates": [
+          121.597351,
+          25.011925
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "國道3號(木柵交流道到木柵休息站)",
+        "videourl": "https://cctvn.freeway.gov.tw/abs2mjpg/bmjpg?camera=72190"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "國道",
+        "coordinates": [
+          121.591813,
+          24.989612
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "130-忠孝基隆",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/130"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.56469,
+          25.041418
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "135-基隆信義",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/135"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.559769,
+          25.033039
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "026-基隆快辛亥",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/026"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.5468,
+          25.019
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "264-基隆路-和平東路口",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/264"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.5525944,
+          25.02440556
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "266-基隆路-八德路口(高架第2層)",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/266"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.5696,
+          25.04958056
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "268-基隆路口-八德路口(高架上層)",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/268"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.5693889,
+          25.04925
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "287-基隆路二段-嘉興街",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/287"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.5560042,
+          25.02730626
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "300-基隆松壽限高器",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/300"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.5604189,
+          25.0346963
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "038-基隆永吉",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/038"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.566913,
+          25.045533
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "087-基隆快樂業街口",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/087"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.5502051,
+          25.02227099
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "088-基隆快敦化南路",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/088"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.5486272,
+          25.02105815
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "089-基隆快辛亥出口匝道",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/089"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.54171,
+          25.01487
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "124-康寧東湖",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/124"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.612182,
+          25.068992
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "335-康寧路3段與康寧路3段222巷口",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/335"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.6119127,
+          25.06653314
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "047-麥帥二橋松山抽水站",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/047"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.57016,
+          25.054733
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "109-內湖環山",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/109"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.565307,
+          25.082148
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "119-堤頂-民權東路6段(橋上)",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/119"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.572433,
+          25.064726
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "145-內湖港墘",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/145"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.576591,
+          25.079613
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "111-堤頂基湖(東南角)",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/111"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "快速道路",
+        "coordinates": [
+          121.564125,
+          25.078604
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "112-堤頂基湖(西南角)",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/112"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "快速道路",
+        "coordinates": [
+          121.563957,
+          25.078972
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "053-環東麥帥二橋往堤頂",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/053"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "快速道路",
+        "coordinates": [
+          121.573631,
+          25.058311
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "100-復北隧道南向0K+705M",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/100"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "隧道",
+        "coordinates": [
+          121.54423,
+          25.06915
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "101-復北隧道南向0K+580M",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/101"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "隧道",
+        "coordinates": [
+          121.54425,
+          25.06803
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "092-復北隧道南口-民族復興",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/092"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "隧道",
+        "coordinates": [
+          121.5443686,
+          25.06658579
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "093-復北隧道北向0K+500M",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/093"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "隧道",
+        "coordinates": [
+          121.54436,
+          25.06731
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "094-復北隧道北向0K+623M",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/094"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "隧道",
+        "coordinates": [
+          121.544434,
+          25.069681
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "095-復北隧道北向0K+750M",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/095"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "隧道",
+        "coordinates": [
+          121.54432,
+          25.06955
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "096-復北隧道北向0K+876M",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/096"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "隧道",
+        "coordinates": [
+          121.54431,
+          25.07061
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "097-復北隧道北口-濱江大直橋",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/097"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "隧道",
+        "coordinates": [
+          121.54417,
+          25.07197
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "098-復北隧道南向0K+955M",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/098"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "隧道",
+        "coordinates": [
+          121.54426,
+          25.07127
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "099-復北隧道南向0K+830M",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/099"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "隧道",
+        "coordinates": [
+          121.54425,
+          25.07019
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "238-濱江街-大直橋路口",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/238"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.544492,
+          25.072428
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "243-復興北路427巷(往北)",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/243"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.544333,
+          25.063311
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "245-復興北路427巷(往南)",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/245"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.544194,
+          25.063311
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "262-忠孝東路-復興南路口",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/262"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.543925,
+          25.04149722
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "315-復興北路與民生東路口",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/315"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.5440837,
+          25.05788686
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "316-復興北路與南京東路口",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/316"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.5439827,
+          25.05190533
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "317-復興南路與市民大道口",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/317"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.5437534,
+          25.04438833
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "319-復興南路-仁愛三段",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/319"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.5436311,
+          25.03782272
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "356-艋舺-萬大路口",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/356"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.5005,
+          25.03305
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "250-劍潭路-中山北路口",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/250"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.525359,
+          25.084214
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "251-劍潭路-承德路口",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/251"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.523626,
+          25.084248
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "148-敬業三路樂群二路",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/148"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.556145,
+          25.079866
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "331-興隆路與辛亥路口",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/331"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.5544587,
+          25.00079635
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "332-興隆路與興隆路3段112巷口",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/332"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.5579086,
+          24.9990456
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "035-市民快光復匝道",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/035"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.556938,
+          25.044897
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "313-松江路與長安東路口",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/313"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.5329048,
+          25.04837561
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "314-松江路市民大道口",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/314"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.5330538,
+          25.04570815
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "324-松江路367號(中山區公所)",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/324"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.5334104,
+          25.06442183
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "133-松高松智",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/133"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.565567,
+          25.039202
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "140-市府西北(松高市府)",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/140"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.563782,
+          25.038948
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "138-市府東南(松壽松智)",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/138"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.565224,
+          25.036072
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "139-市府東北(松高松智)",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/139"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.565269,
+          25.038872
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "137-市府西南(松壽市府)",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/137"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.563805,
+          25.036091
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "296-仁愛路-金山南路口",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/296"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.5283992,
+          25.03829891
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "128-信義松智東南角",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/128"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.565483,
+          25.032854
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "284-信義路-莊敬路口",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/284"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.5613375,
+          25.03296744
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "330-信義路與安和路口",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/330"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.5524343,
+          25.03317711
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "354-信義-敦化路口",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/354"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.5487834,
+          25.03319875
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "074-信義松德",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/074"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.5741417,
+          25.03311944
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "075-信義松仁",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/075"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.568184,
+          25.032612
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "227-新生高南京",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/227"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.528056,
+          25.052361
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "305-敦化-南京",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/305"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.5494028,
+          25.05175833
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "325-水源快上層往南門架(溪州街與汀州路4段140巷口",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/325"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.5349488,
+          25.00484617
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "341-南京東路4段北寧路口",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/341"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.5517955,
+          25.05150119
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "349-南京東-三民路口",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/349"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.5637797,
+          25.0514517
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "351-南京-光復路口",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/351"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.557315,
+          25.05155798
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "216-南港路經貿一路",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/216"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.618722,
+          25.05475
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "217-南港路興中路",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/217"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.607389,
+          25.054444
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "058-三重南港",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/058"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.614059,
+          25.054968
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "333-康寧路3段與南湖大橋",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/333"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.6112466,
+          25.0638845
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "061-南湖大橋三重路",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/061"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.614487,
+          25.060604
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "013-建國快和平",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/013"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.53751,
+          25.02576
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "014-建國快信義",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/014"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.537651,
+          25.033466
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "016-建國快忠孝",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/016"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.53701,
+          25.0416
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "019-建國快民生",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/019"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.53703,
+          25.05801
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "022-建國快圓山匝道",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/022"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.5336,
+          25.07116
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "034-市民快建國北匝道",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/034"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.536842,
+          25.044715
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "012-建國快辛亥",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/012"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "快速道路",
+        "coordinates": [
+          121.536369,
+          25.022418
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "015-建國快仁愛",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/015"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "快速道路",
+        "coordinates": [
+          121.53798,
+          25.03807
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "017-建國快長安",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/017"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "快速道路",
+        "coordinates": [
+          121.53684,
+          25.04848
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "018-建國快南京",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/018"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "快速道路",
+        "coordinates": [
+          121.53661,
+          25.05187
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "020-建國快民權",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/020"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "快速道路",
+        "coordinates": [
+          121.53692,
+          25.06228
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "090-建國快松江",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/090"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "快速道路",
+        "coordinates": [
+          121.53398,
+          25.06733
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "063-洲美快道福國匝道",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/063"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "快速道路",
+        "coordinates": [
+          121.499135,
+          25.101245
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "064-洲美快13號道路匝道前",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/064"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "快速道路",
+        "coordinates": [
+          121.4991137,
+          25.10613965
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "065-洲美快焚化爐前",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/065"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "快速道路",
+        "coordinates": [
+          121.4986613,
+          25.10812087
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "066-洲美快13號道路",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/066"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "快速道路",
+        "coordinates": [
+          121.498663,
+          25.112044
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "067-洲美快大業路匝道",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/067"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "快速道路",
+        "coordinates": [
+          121.499687,
+          25.116961
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "256-木柵焚化廠",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/256"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.5876847,
+          25.00521658
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "334-研究院路2段與大坑街口(南深橋)",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/334"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.615846,
+          25.04898
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "001-市民快承德",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/001"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.516899,
+          25.048553
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "259-重慶北路-民權西路口",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/259"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.5138,
+          25.06315
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "260-重慶南路-和平西路口",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/260"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.5159028,
+          25.02747778
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "043-重慶北交流道",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/043"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.513039,
+          25.081245
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "073-信義快萬芳交流道",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/073"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "國道",
+        "coordinates": [
+          121.580375,
+          25.004241
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "國道3號(木柵交流道到木柵休息站)",
+        "videourl": "https://cctvn.freeway.gov.tw/abs2mjpg/bmjpg?camera=72250"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "國道",
+        "coordinates": [
+          121.59181,
+          24.989596
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "國道3號(木柵交流道到木柵休息站)",
+        "videourl": "https://cctvn.freeway.gov.tw/abs2mjpg/bmjpg?camera=72271"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "國道",
+        "coordinates": [
+          121.593311,
+          24.995735
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "國道3號(木柵交流道到木柵休息站)",
+        "videourl": "https://cctvn.freeway.gov.tw/abs2mjpg/bmjpg?camera=72320"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "國道",
+        "coordinates": [
+          121.5867186,
+          24.98193189
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "國道3號(木柵交流道到木柵休息站)",
+        "videourl": "https://cctvn.freeway.gov.tw/abs2mjpg/bmjpg?camera=72350"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "國道",
+        "coordinates": [
+          121.58448,
+          24.97988
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "國道3號(木柵交流道到木柵休息站)",
+        "videourl": "https://cctvn.freeway.gov.tw/abs2mjpg/bmjpg?camera=72430"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "國道",
+        "coordinates": [
+          121.580215,
+          24.977921
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "國道3號(木柵交流道到木柵休息站)",
+        "videourl": "https://cctvn.freeway.gov.tw/abs2mjpg/bmjpg?camera=32461"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "國道",
+        "coordinates": [
+          121.57477,
+          24.976196
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "國道5號(石碇交流道到南港系統交流道)",
+        "videourl": "https://cctvp02.freeway.gov.tw/mjpeg/X01001602801001"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "國道",
+        "coordinates": [
+          121.620285,
+          25.036219
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "國道5號(石碇交流道到南港系統交流道)",
+        "videourl": "https://cctvp02.freeway.gov.tw/mjpeg/X01001602800101"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "國道",
+        "coordinates": [
+          121.62135,
+          25.03598
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "國道5號(石碇交流道到南港系統交流道)",
+        "videourl": "https://cctvp02.freeway.gov.tw/mjpeg/X01001602800901"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "國道",
+        "coordinates": [
+          121.62279,
+          25.035685
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "國道5號(南港系統交流道到石碇交流道)",
+        "videourl": "https://cctvp02.freeway.gov.tw/mjpeg/X01001602900101"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "國道",
+        "coordinates": [
+          121.62106,
+          25.035797
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "261-市民高架-西寧北路",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/261"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "快速道路",
+        "coordinates": [
+          121.5081194,
+          25.050425
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "267-市民高架道路(往東延吉街上方)",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/267"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "快速道路",
+        "coordinates": [
+          121.5524583,
+          25.04440833
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "343-市高(光復) 市高西行既設鋼構",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/343"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "快速道路",
+        "coordinates": [
+          121.5595583,
+          25.04521969
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "344-市高(建國) 市高西行既設鋼構",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/344"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "快速道路",
+        "coordinates": [
+          121.5395597,
+          25.04459275
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "036-市民快正氣橋上層",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/036"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "快速道路",
+        "coordinates": [
+          121.567345,
+          25.045813
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "226-新生高民生",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/226"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.526944,
+          25.057806
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "258-民生東路-松江路口",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/258"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.5329167,
+          25.05791111
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "286-民生西路-延平北路口",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/286"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.511,
+          25.057
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "336-民生西路與重慶北路口",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/336"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.5138393,
+          25.05700219
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "021-民族松江",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/021"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.53295,
+          25.06831
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "241-民族東路-建國北路口",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/241"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.533161,
+          25.068272
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "244-民族西路-延平北路口",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/244"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.510728,
+          25.068689
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "252-民族西路承德路口",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/252"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.518532,
+          25.068525
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "253-民族西路-中山北路口",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/253"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.522778,
+          25.068515
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "357-民族-重慶路口",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/357"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.5136523,
+          25.06860855
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "046-民權大橋",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/046"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "橋梁",
+        "coordinates": [
+          121.568359,
+          25.063366
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "153-民權行愛",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/153"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.578331,
+          25.066748
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "158-延平民權(進城)",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/158"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.511231,
+          25.063051
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "159-延平民權(出城)",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/159"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.51126,
+          25.062825
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "160-民權承德(西側)",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/160"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.518059,
+          25.062883
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "161-民權承德(東側)",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/161"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.51798,
+          25.062911
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "225-新生高民權",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/225"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.527528,
+          25.062639
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "339-民權東路6段與民權東路6段206巷口",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/339"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.5967611,
+          25.06701389
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "040-民權西台北橋",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/040"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "橋梁",
+        "coordinates": [
+          121.508774,
+          25.063412
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "168-師大汀州(南側)",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/168"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.525374,
+          25.020886
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "009-辛亥快汀州",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/009"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.526881,
+          25.018831
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "294-汀州路-思源街口",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/294"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.531,
+          25.015
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "308-大度路與立德路口(東南角)",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/308"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.4717451,
+          25.12298936
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "309-大度路與立德路口(西南角)",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/309"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.4715334,
+          25.12318622
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "298-承德路-立賢路口",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/298"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.504,
+          25.116
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "282-仰德大道二段2巷口",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/282"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.5397027,
+          25.1019327
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "132-仁愛光復",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/132"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.557777,
+          25.037724
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "401-民權東路6段180巷口",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/401"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.592819,
+          25.068897
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "402-文林北路(75巷)94巷口",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/402"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.517619,
+          25.105356
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "403-北士科1(福國路-洲美社區)",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/403"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.50518,
+          25.10119
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "404-北士科2(福國路-承平路)",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/404"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.50813,
+          25.1013
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "405-北士科3(福善路-承平路)",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/405"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.50817,
+          25.09937
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "406-石牌路-立農街2段",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/406"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.51899,
+          25.11876
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "407-石牌路2段-東華街1段(捷運石牌站)",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/407"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.51527,
+          25.11528
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "408-石牌路2段-天母西路",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/408"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.52192,
+          25.11921
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "409-石牌路2段130巷",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/409"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.51749,
+          25.11807
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "410-木新路1段-指南路1段",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/410"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.57064,
+          24.98775
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "411-中山北路5段-中正路",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/411"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.52791,
+          25.09574
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "412-中山北路6段-忠誠路1段",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/412"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.52489,
+          25.10404
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "413-湖山路-陽金公路",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/413"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.54607,
+          25.15222
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "416-木柵路4段-萬芳路",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/416"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.57173,
+          24.99488
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "417-和平東路1段-師大路",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/417"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.52847,
+          25.0266
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "414-重慶北路3段-啟聰學校前",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/414"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.51378,
+          25.0746
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "415-承德路1段-南京西路",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/415"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.51778,
+          25.05323
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "126-芳蘭路-基隆路三段155巷176弄",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/126"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.54695,
+          25.0143
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "127-辛亥路-芳蘭路",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/127"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.54893,
+          25.01684
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "418-市民大道5段-東興路",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/418"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.56578,
+          25.04828
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "382-光復南路290巷(國父紀念館西側門)",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/382"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.5575087,
+          25.039304
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "384-仁愛逸仙",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/384"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.5615481,
+          25.0376077
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "110-堤頂大道2段-樂群一路",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/110"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.57003,
+          25.07732
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cctv_name": "247-北安路-大直橋頭",
+        "videourl": "https://cctv.bote.gov.taipei:8501/MJPEG/247"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "genre": "平面道路",
+        "coordinates": [
+          121.54436,
+          25.07981
+        ]
+      }
+    }
+  ]
+}

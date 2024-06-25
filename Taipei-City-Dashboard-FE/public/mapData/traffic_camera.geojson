@@ -1,0 +1,515 @@
+{
+  "type": "FeatureCollection",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+    }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "genre": "違規停車",
+        "place": "市府轉運站前(忠孝東路五段)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5649317,
+          25.0410881
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "genre": "違規停車",
+        "place": "臺北車站北側門(市民大道一段)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5139769,
+          25.0491109
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "genre": "違規停車",
+        "place": "臺北醫學院周邊(吳興街220巷)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5630089,
+          25.027755
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "genre": "違規停車",
+        "place": "馬偕醫院周邊(中山北路二段92號)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5226796,
+          25.0588985
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "genre": "違規停車",
+        "place": "臺北轉運站前(市民大道一段)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5178225,
+          25.0486763
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "genre": "違規停車",
+        "place": "南港車站前(市民大道八段)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.6049631,
+          25.0530054
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "genre": "違規停車",
+        "place": "內湖路一段739號前"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5784721,
+          25.0790377
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "genre": "違規停車",
+        "place": "捷運公館站前(羅斯福路四段68號至108巷前)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5342621,
+          25.0146767
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "genre": "違規停車",
+        "place": "臺北榮總醫院周邊(石牌路二段與立農街口周邊及石牌路二段與天母西路口周邊)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5191472,
+          25.1188312
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "genre": "高架道路多功能",
+        "place": "市民高架道路(近臺北車站及臺北轉運站上方)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5172742,
+          25.0488817
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "genre": "高架道路多功能",
+        "place": "建國高架道路(市民大道上方)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5366875,
+          25.0448746
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "genre": "路口多功能",
+        "place": "鄭州路與西寧北路口"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5082075,
+          25.0505858
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "genre": "路口多功能",
+        "place": "市民大道與承德路口"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5163341,
+          25.0488645
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "genre": "路口多功能",
+        "place": "民權西路與承德路口"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5182558,
+          25.0629423
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "genre": "路口多功能",
+        "place": "民權西路與延平北路口"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5112144,
+          25.0628814
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "genre": "路口多功能",
+        "place": "民權西路與蘭州街口"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5147158,
+          25.0630843
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "genre": "路口多功能",
+        "place": "大直街與北安路口"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5492964,
+          25.0841162
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "genre": "路口多功能",
+        "place": "民權東路與建國北路口"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5371677,
+          25.0623379
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "genre": "路口多功能",
+        "place": "市民大道與中山北路口"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5206767,
+          25.0480454
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "genre": "路口多功能",
+        "place": "市民大道與建國南路口"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5366178,
+          25.0447964
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "genre": "路口多功能",
+        "place": "市民大道與林森北路口"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.523323,
+          25.0448192
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "genre": "路口多功能",
+        "place": "和平東路與基隆路口"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5525035,
+          25.0243661
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "genre": "路口多功能",
+        "place": "信義路與建國南路口"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5377915,
+          25.033627
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "genre": "路口多功能",
+        "place": "辛亥路與基隆路口"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5466712,
+          25.0191828
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "genre": "路口多功能",
+        "place": "市民大道與敦化南路口"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5488789,
+          25.0448236
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "genre": "路口多功能",
+        "place": "忠孝東路與基隆路口"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5644322,
+          25.041139
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "genre": "路口多功能",
+        "place": "信義路與基隆路口"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5593624,
+          25.0330842
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "genre": "路口多功能",
+        "place": "中正路與延平北路口"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5093611,
+          25.0866916
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "genre": "路口多功能",
+        "place": "大度路與立德路口"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.4706866,
+          25.1230437
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "genre": "路口多功能",
+        "place": "承德路與福國路口"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5122992,
+          25.1016017
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "genre": "路口多功能",
+        "place": "和平西路與西園路口"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.4992643,
+          25.035374
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "genre": "路口多功能",
+        "place": "辛亥路與木柵路口"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5523383,
+          24.9877803
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "genre": "路口多功能",
+        "place": "港墘路與堤頂大道口"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5722303,
+          25.0746083
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "genre": "路口多功能",
+        "place": "南京東路與建國北路口"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5370023,
+          25.0520272
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "genre": "路口多功能",
+        "place": "民權東路與舊宗路、行忠路口"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5750635,
+          25.0657614
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "genre": "路口多功能",
+        "place": "忠孝東路與敦化南路口(含敦化南路1段270巷與仁愛路4段71巷口)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5487322,
+          25.0421101
+        ]
+      }
+    }
+  ]
+}

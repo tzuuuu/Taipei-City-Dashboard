@@ -1,0 +1,611 @@
+{
+  "type": "FeatureCollection",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+    }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "road_name": "基隆路與羅斯福路口",
+        "times": 4464,
+        "genre": "違規左轉前十大路口"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5371212,
+          25.0112054
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "road_name": "師大路與羅斯福路口",
+        "times": 2529,
+        "genre": "違規左轉前十大路口"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5277729,
+          25.021064
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "road_name": "長安東路與建國北路口",
+        "times": 2314,
+        "genre": "違規左轉前十大路口"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.53674,
+          25.0484007
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "road_name": "市民大道與延吉街口",
+        "times": 2177,
+        "genre": "違規左轉前十大路口"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5537806,
+          25.0443835
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "road_name": "金山南路與愛國東路口",
+        "times": 2070,
+        "genre": "違規左轉前十大路口"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5268038,
+          25.031726
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "road_name": "中山北路與忠誠路口",
+        "times": 1952,
+        "genre": "違規左轉前十大路口"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5248161,
+          25.1041448
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "road_name": "八德路與基隆路口",
+        "times": 1707,
+        "genre": "違規左轉前十大路口"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.569389,
+          25.0494768
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "road_name": "館前路與襄陽路口",
+        "times": 1465,
+        "genre": "違規左轉前十大路口"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5149995,
+          25.0434067
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "road_name": "港墘路與環山路口",
+        "times": 1296,
+        "genre": "違規左轉前十大路口"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5781726,
+          25.0840059
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "road_name": "八德路與東寧路口",
+        "times": 1237,
+        "genre": "違規左轉前十大路口"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5626961,
+          25.0487039
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "road_name": "汀州路與羅斯福路口",
+        "times": 160,
+        "genre": "取締併排停車前十大路口"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5382203,
+          25.0080025
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "road_name": "裕民一路與裕民二路口",
+        "times": 159,
+        "genre": "取締併排停車前十大路口"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5172509,
+          25.1165773
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "road_name": "桂林路與環河南路口",
+        "times": 46,
+        "genre": "取締併排停車前十大路口"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.4961048,
+          25.0388104
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "road_name": "裕民二路與裕民三路口",
+        "times": 44,
+        "genre": "取締併排停車前十大路口"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5170333,
+          25.1158507
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "road_name": "民族東路與龍江路口",
+        "times": 34,
+        "genre": "取締併排停車前十大路口"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.541032,
+          25.0680766
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "road_name": "興中路與興華路口\n辛亥路與復興南路口",
+        "times": 24,
+        "genre": "取締併排停車前十大路口"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.6057471,
+          25.0562484
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "road_name": "八德路與市民大道口",
+        "times": 23,
+        "genre": "取締併排停車前十大路口"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5345671,
+          25.044997
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "road_name": "林森北路與錦州街口",
+        "times": 22,
+        "genre": "取締併排停車前十大路口"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5255594,
+          25.0602979
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "road_name": "林口街與松山路口",
+        "times": 20,
+        "genre": "取締併排停車前十大路口"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5789161,
+          25.0355783
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "road_name": "基隆路與羅斯福路口",
+        "times": 19,
+        "genre": "取締併排停車前十大路口"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5693412,
+          25.0494496
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "road_name": "民權東路與行愛路口",
+        "times": 829,
+        "genre": "取締闖紅燈前十大路口"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5693412,
+          25.0494496
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "road_name": "和平東路與基隆路口",
+        "times": 784,
+        "genre": "取締闖紅燈前十大路口"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5525302,
+          25.0243981
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "road_name": "基隆路與羅斯福路口",
+        "times": 614,
+        "genre": "取締闖紅燈前十大路口"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.53712,
+          25.0111698
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "road_name": "中山北路與市民大道口",
+        "times": 577,
+        "genre": "取締闖紅燈前十大路口"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5206952,
+          25.0480849
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "road_name": "辛亥路與基隆路口",
+        "times": 429,
+        "genre": "取締闖紅燈前十大路口"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5466712,
+          25.0191828
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "road_name": "中正路與文昌路口",
+        "times": 386,
+        "genre": "取締闖紅燈前十大路口"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5218726,
+          25.0944587
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "road_name": "和平東路與金山南路口",
+        "times": 366,
+        "genre": "取締闖紅燈前十大路口"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5258902,
+          25.0268048
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "road_name": "萬大路與環河南路口",
+        "times": 344,
+        "genre": "取締闖紅燈前十大路口"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.4955591,
+          25.0165728
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "road_name": "西園路與東園街口",
+        "times": 338,
+        "genre": "取締闖紅燈前十大路口"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.4952794,
+          25.0281562
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "road_name": "忠孝東路與松山路口",
+        "times": 335,
+        "genre": "取締闖紅燈前十大路口"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5778383,
+          25.0407901
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "road_name": "市民大道與承德路口",
+        "times": 86,
+        "genre": "取締酒後駕車前十大路口"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5164531,
+          25.0487991
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "road_name": "重慶北路與敦煌路口、辛亥路與建國南路口",
+        "times": 52,
+        "genre": "取締酒後駕車前十大路口"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5138446,
+          25.0758794
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "road_name": "萬大路與環河南路口",
+        "times": 47,
+        "genre": "取締酒後駕車前十大路口"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5138446,
+          25.0758794
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "road_name": "市民大道與林森北路口",
+        "times": 45,
+        "genre": "取締酒後駕車前十大路口"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5242199,
+          25.0478255
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "road_name": "八德路與市民大道口",
+        "times": 41,
+        "genre": "取締酒後駕車前十大路口"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5242199,
+          25.0478255
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "road_name": "汀州路與基隆路口",
+        "times": 39,
+        "genre": "取締酒後駕車前十大路口"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5362889,
+          25.0109635
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "road_name": "富民路與萬大路口",
+        "times": 37,
+        "genre": "取締酒後駕車前十大路口"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.4973017,
+          25.0193872
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "road_name": "塔城街與鄭州路口",
+        "times": 35,
+        "genre": "取締酒後駕車前十大路口"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.4973017,
+          25.0193872
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "road_name": "承德路與長安西路口、葫蘆街與環河北路口",
+        "times": 33,
+        "genre": "取締酒後駕車前十大路口"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5170925,
+          25.0508887
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "road_name": "西園路與環河南路口",
+        "times": 28,
+        "genre": "取締酒後駕車前十大路口"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.4905991,
+          25.02436
+        ]
+      }
+    }
+  ]
+}
