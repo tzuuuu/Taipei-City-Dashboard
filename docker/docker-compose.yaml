@@ -61,7 +61,7 @@ services:
       REDIS_DB: ${REDIS_DB}
     volumes:
       - ../Taipei-City-Dashboard-BE:/opt/Taipei-City-Dashboard-BE
-      - ../Taipei-City-Dashboard-FE/public/mapData:/opt/mapData  # 新增共享卷，讓BE能夠取用FE資料夾裡的mapData
+      - ../Taipei-City-Dashboard-FE:/opt/Taipei-City-Dashboard-FE  # jarrenpoh添加這一行
     working_dir: /opt/Taipei-City-Dashboard-BE
     ports:
       - "8088:${PORT:-8080}"

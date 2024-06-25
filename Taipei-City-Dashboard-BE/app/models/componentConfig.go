@@ -63,11 +63,12 @@ type ComponentChart struct {
 type TrafficViolation struct {
     ReporterName string    `gorm:"column:舉報人姓名"`
     ContactPhone string    `gorm:"column:通報人聯絡電話"`
-    Longitude    string   `gorm:"column:舉報地點經度"`
-    Latitude     string   `gorm:"column:舉報地點緯度"`
+    Longitude    string    `gorm:"column:舉報地點經度"`
+    Latitude     string    `gorm:"column:舉報地點緯度"`
     Address      string    `gorm:"column:舉報地點地址"`
-    ReportTime   string `gorm:"column:舉報時間"`
+    ReportTime   string    `gorm:"column:舉報時間"`
     Vehicle      string    `gorm:"column:違規交通工具"`
+	VehicleNum 	 string    `gorm:"column:車牌"`
     Violation    string    `gorm:"column:違規項目"`
     Comments     string    `gorm:"column:補充內容"`
 }
@@ -81,7 +82,7 @@ type GeoJSON struct {
 // jarrenpoh
 type Feature struct {
     Type       string                 `json:"type"`
-    Properties TrafficViolation `json:"properties"`
+    Properties map[string]interface{} `json:"properties"`
     Geometry   Geometry               `json:"geometry"`
 }
 
@@ -192,8 +193,8 @@ func UpdateComponent(id int, name string, historyConfig json.RawMessage, mapFilt
 }
 
 // jarrenpoh 發送交通違規項目
-func AddTrafficViolation(reporterName string,contactPhone string,longitude string,latitude string,address string,reportTime string,vehicle string,violationn string,comments string,) (error) {
-	violation := TrafficViolation{ReporterName:reporterName,ContactPhone:contactPhone,Longitude:longitude,Latitude:latitude,Address:address,ReportTime:reportTime,Vehicle:vehicle,Violation:violationn,Comments:comments,}
+func AddTrafficViolation(reporterName string,contactPhone string,longitude string,latitude string,address string,reportTime string,vehicle string,violationn string,comments string,vehicleNum string) (error) {
+	violation := TrafficViolation{ReporterName:reporterName,ContactPhone:contactPhone,Longitude:longitude,Latitude:latitude,Address:address,ReportTime:reportTime,Vehicle:vehicle,Violation:violationn,Comments:comments,VehicleNum: vehicleNum}
     err := DBDashboard.Table("traffic_violations_report").Create(&violation).Error
     if err != nil {
         return err

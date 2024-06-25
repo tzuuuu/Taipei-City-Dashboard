@@ -121,51 +121,78 @@ func UpdateComponent(c *gin.Context) {
 // jarrenpoh 發送交通違規項目
 func AddTrafficViolation(c *gin.Context) {
 	dir, err := os.Getwd()
-    if err != nil {
-        fmt.Println("Error getting current directory:", err)
-        return
-    }
-    fmt.Println("Current directory:", dir)
+	if err != nil {
+		fmt.Println("Error getting current directory:", err)
+		return
+	}
+	fmt.Println("Current directory:", dir)
 
-    var violation models.TrafficViolation
-    // Bind the JSON to the violation variable
-    if err := c.ShouldBindJSON(&violation); err != nil {
-        c.JSON(http.StatusBadRequest, gin.H{"status": "error", "message": "sdsd"+err.Error()})
-        return
-    }
+	var violation models.TrafficViolation
+	// 綁定 JSON 到 violation 變量
+	if err := c.ShouldBindJSON(&violation); err != nil {
+		c.JSON(http.StatusBadRequest, gin.H{"status": "error", "message": "sdsd" + err.Error()})
+		return
+	}
 
-    // Save the new record to the database
-	err = models.AddTrafficViolation(violation.ReporterName,violation.ContactPhone,violation.Longitude,violation.Latitude,violation.Address,violation.ReportTime,violation.Vehicle,violation.Violation,violation.Comments)
+	// 將新紀錄保存到數據庫
+	err = models.AddTrafficViolation(violation.ReporterName, violation.ContactPhone, violation.Longitude, violation.Latitude, violation.Address, violation.ReportTime, violation.Vehicle, violation.Violation, violation.Comments, violation.VehicleNum)
+	if err != nil {
+		c.JSON(http.StatusInternalServerError, gin.H{"status": "error", "message": "sdsd" + err.Error()})
+		return
+	}
 
-    if err != nil {
-        c.JSON(http.StatusInternalServerError, gin.H{"status": "error", "message": "sdsd"+err.Error()})
-        return
-    }
+	// 将经纬度从字符串转换为浮点数
+	lat, err := strconv.ParseFloat(violation.Latitude, 64)
+	if err != nil {
+		c.JSON(http.StatusBadRequest, gin.H{"status": "error", "message": "Invalid latitude value"})
+		return
+	}
+ 
+	lon, err := strconv.ParseFloat(violation.Longitude, 64)
+	if err != nil {
+		c.JSON(http.StatusBadRequest, gin.H{"status": "error", "message": "Invalid longitude value"})
+		return
+	}
 
-	// // 讀本地資料
-	targetGeoJsonFilePath := "/opt/mapData/traffic_violations_report.geojson" //TODO: fix file path
-	fmt.Println("Start trying open geojson!!!!!!!!")
+	// 讀取本地資料
+	geoJSONPath := "/opt/Taipei-City-Dashboard-FE/public/mapData/traffic_violations_report.geojson"
+	if _, err := os.Stat(geoJSONPath); os.IsNotExist(err) {
+		fmt.Println("GeoJSON file does not exist at:", geoJSONPath)
+		files, err := ioutil.ReadDir("/opt/Taipei-City-Dashboard-FE/public/mapData")
+		if err != nil {
+			fmt.Println("Error reading directory:", err)
+			return
+		}
+		for _, f := range files {
+			fmt.Println("File in directory:", f.Name())
+		}
+		return
+	}
 
-	geoJSON, err := readGeoJSON(targetGeoJsonFilePath)
+	geoJSON, err := readGeoJSON(geoJSONPath)
 	if err != nil {
 		fmt.Println("Error reading GeoJSON:", err)
-        return
-    } else{
-		fmt.Println("Open geojson success!!!!!!!!")
-	}
-	// 加資料
-	addNewViolation(geoJSON, violation)
-	// 寫回去
-	err = writeGeoJSON(targetGeoJsonFilePath, geoJSON)
-    if err != nil {
-		fmt.Println("Error writing GeoJSON:", err)
-        return
-    } else{
-		fmt.Println("Write geojson success!!!!!!!!")
+		fmt.Println("Attempted path:", geoJSONPath)
+		fmt.Println("Current directory:", dir)
+		files, _ := ioutil.ReadDir("/opt/Taipei-City-Dashboard-FE/public/mapData")
+		for _, f := range files {
+			fmt.Println("File:", f.Name())
+		}
+		return
 	}
 
-    // Return the newly created violation
-    c.JSON(http.StatusCreated, gin.H{"status": "success", "data": violation})
+	// 添加新違規記錄
+	addNewViolation(geoJSON, violation,lat,lon)
+
+	// 寫回資料
+	err = writeGeoJSON(geoJSONPath, geoJSON)
+	if err != nil {
+		fmt.Println("Error writing GeoJSON:", err)
+		return
+	}
+
+	// 返回新建的違規記錄
+	c.JSON(http.StatusCreated, gin.H{"status": "success", "data": violation})
 }
 
 func readGeoJSON(filePath string) (*models.GeoJSON, error) {
@@ -181,16 +208,24 @@ func readGeoJSON(filePath string) (*models.GeoJSON, error) {
     return &geoJSON, nil
 }
 
-func addNewViolation(geoJSON *models.GeoJSON, violation models.TrafficViolation) {
-    longitude := stringToFloat64(violation.Longitude)
-    latitude := stringToFloat64(violation.Latitude)
-
+func addNewViolation(geoJSON *models.GeoJSON, violation models.TrafficViolation,lat, lon float64) {
     newFeature := models.Feature{
-        Type:       "Feature",
-        Properties: violation,
+        Type: "Feature",
+        Properties: map[string]interface{}{
+            "舉報人姓名":   violation.ReporterName,
+            "通報人聯絡電話": violation.ContactPhone,
+            "舉報地點經度":   violation.Longitude,
+            "舉報地點緯度":   violation.Latitude,
+            "舉報地點地址":   violation.Address,
+            "舉報時間":     violation.ReportTime,
+            "違規交通工具":   violation.Vehicle,
+            "車牌":         violation.VehicleNum,
+            "違規項目":     violation.Violation,
+            "補充內容":     violation.Comments,
+        },
         Geometry: models.Geometry{
             Type:        "Point",
-            Coordinates: []float64{longitude, latitude},
+			Coordinates: []float64{lon, lat},
         },
     }
     geoJSON.Features = append(geoJSON.Features, newFeature)
@@ -202,15 +237,6 @@ func writeGeoJSON(filePath string, geoJSON *models.GeoJSON) error {
         return err
     }
     return ioutil.WriteFile(filePath, data, 0644)
-}
-
-func stringToFloat64(s string) float64 {
-    f, err := strconv.ParseFloat(s, 64)
-    if err != nil {
-        fmt.Println("Error converting string to float64:", err)
-        return 0
-    }
-    return f
 }
 
 /*

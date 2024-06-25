@@ -24,7 +24,6 @@ services:
       MANAGER_SAMPLE_FILE: ${MANAGER_SAMPLE_FILE:-dashboardmanager-demo.sql}
     volumes:
       - ../Taipei-City-Dashboard-BE:/opt/Taipei-City-Dashboard-BE
-      - ../Taipei-City-Dashboard-FE/public/mapData:/opt/mapData  # 新增共享卷，讓BE能夠取用FE資料夾裡的mapData
       - ../db-sample-data:/opt/db-sample-data
     working_dir: /opt/Taipei-City-Dashboard-BE
     command: ["go", "run", "main.go", "migrateDB"]
@@ -43,7 +42,6 @@ services:
       DASHBOARD_SAMPLE_FILE: ${DASHBOARD_SAMPLE_FILE:-dashboard-demo.sql}
     volumes:
       - ../Taipei-City-Dashboard-BE:/opt/Taipei-City-Dashboard-BE
-      - ../Taipei-City-Dashboard-FE/public/mapData:/opt/mapData  # 新增共享卷，讓BE能夠取用FE資料夾裡的mapData
       - ../db-sample-data:/opt/db-sample-data
     working_dir: /opt/Taipei-City-Dashboard-BE
     command: ["go", "run", "main.go", "initDashboard"]

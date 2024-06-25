@@ -1,58 +1,92 @@
-<!-- eslint-disable vue/multi-word-component-names -->
 <script setup>
-
 //jarrenpoh
 import { useAdminStore } from "../../store/adminStore";
 import { ref } from 'vue';
 
 const adminStore = useAdminStore();
-const year = ref('2024');  // TODO: 直接使用當下時間
-const month = ref('6');
-const day = ref('21');
-const hour = ref('12');
-const minute = ref('10');
-const second = ref('10');
-// const address = ref('');
+// const year = ref('');
+// const month = ref('');
+// const day = ref('');
+// const hour = ref('');
+// const minute = ref('');
+// const second = ref('');
+const address = ref('');
 const vehicleType = ref('');
-const longitude = ref('121.5641661'); // TODO: 直接獲取用戶所在 經緯度   25.036960486042506, 121.56416612679072
-const latitude = ref('25.0369604');
-// const comments = ref(''); // TODO: 開放用戶上傳備註
+const reportName = ref('');
+const contactPhone = ref('');
+const comments = ref('');
+const vehicleNum = ref('');
+
+const getFormattedDateTime = () => {
+	const now = new Date();
+	const year = now.getFullYear();
+	const month = String(now.getMonth() + 1).padStart(2, '0');
+	const day = String(now.getDate()).padStart(2, '0');
+	const hours = String(now.getHours()).padStart(2, '0');
+	const minutes = String(now.getMinutes()).padStart(2, '0');
+	const seconds = String(now.getSeconds()).padStart(2, '0');
+
+	return `${year}-${month}-${day} ${hours}:${minutes}:${seconds}`;
+}
+
+const geocodeAddress = async (address) => {
+	const YOUR_API_KEY = 'AIzaSyAepGXFhAkUE2bnbr8rA94i2PekXfXRbeg'; // Replace with your actual API key
+	const response = await fetch(`https://maps.googleapis.com/maps/api/geocode/json?address=${encodeURIComponent(address)}&key=${YOUR_API_KEY}`);
+	const data = await response.json();
+
+	if (data.status === 'OK' && data.results.length > 0) {
+		const location = data.results[0].geometry.location;
+		return {
+			latitude: location.lat,
+			longitude: location.lng,
+		};
+	} else {
+		throw new Error('Unable to geocode address');
+	}
+}
 
 const sendTrafficViolationsReport = async () => {
-	const reportTime = `${year.value}-${month.value}-${day.value} ${hour.value}:${minute.value}:${second.value}`;
-	const componentData = {
-		ReporterName: '匿名',
-		ContactPhone: '未提供',
-		Longitude: longitude.value,
-		Latitude: latitude.value,
-		Address: '無',
-		ReportTime: reportTime,
-		Vehicle: vehicleType.value,
-		Violation: '違規停車',
-		Comments: '無'
-	};
-
-	year.value = "";
-	day.value = "";
-	month.value = "";
-	hour.value = "";
-	minute.value = "";
-	second.value = "";
-	// address.value = "";
-	vehicleType.value = "";
-	longitude.value = "";
-	latitude.value = "";
-
-	// eslint-disable-next-line no-console
-	console.log("Component Data:", componentData);
-	adminStore.sendTrafficViolationsReport(componentData);
+	try {
+		const location = await geocodeAddress(address.value);
+		const componentData = {
+			ReporterName: reportName.value,
+			ContactPhone: contactPhone.value,
+			Longitude: location.longitude.toString(),
+			Latitude: location.latitude.toString(),
+			Address: address.value,
+			ReportTime: getFormattedDateTime(),
+			Vehicle: vehicleType.value,
+			Violation: '違停',
+			Comments: comments.value,
+			VehicleNum: vehicleNum.value,
+		};
+		console.log("Component Data:", componentData);
+		adminStore.sendTrafficViolationsReport(componentData);
+	} catch (error) {
+		console.error("Error geocoding address:", error);
+	}
 }
 </script>
 
 <template>
 	<div class="dashboardcomponent font-ms grid-1">
 		<div>違停舉報</div>
+		<div>舉報人姓名：<input v-model="reportName" type="text" /></div>
+		<div>舉報人電話：<input v-model="contactPhone" type="text" /></div>
 		<div>
+			違停車輛類型：
+			<select v-model="vehicleType">
+				<option>請選擇車輛類型</option>
+				<option value="汽車">汽車</option>
+				<option value="重型機車">重型機車</option>
+				<option value="機車">機車</option>
+				<option value="腳踏車">腳踏車</option>
+			</select>
+		</div>
+		<div>車牌：<input v-model="vehicleNum" type="text" /></div>
+		<div>地點：<input v-model="address" type="text" /></div>
+		<div>補充說明：<input v-model="comments" type="text" /></div>
+		<!-- <div>
 			日期：<input v-model="year" type="text" style="width: 48px" />年
 			<input v-model="month" type="text" style="width: 48px" />月
 			<input v-model="day" type="text" style="width: 48px" />日
@@ -63,21 +97,7 @@ const sendTrafficViolationsReport = async () => {
 				<input v-model="minute" type="text" style="width: 48px" />分
 				<input v-model="second" type="text" style="width: 48px" />秒
 			</span>
-		</div>
-		<!-- <div>地點：<input v-model="address" type="text" /></div> -->
-		<div>經度：<input v-model="longitude" type="text" /></div>
-		<div>緯度：<input v-model="latitude" type="text" /></div>
-		<div>
-			違停車輛類型：
-			<select v-model="vehicleType">
-				<option>請選擇車輛類型</option>
-				<option value="汽車">汽車</option>
-				<option value="重型機車">重型機車</option>
-				<option value="機車">機車</option>
-				<option value="自行車">自行車</option>
-				<option value="貨車">貨車</option>
-			</select>
-		</div>
+		</div> -->
 		<div class="right"><input class="right" type="button" value="送出檢舉" @click="sendTrafficViolationsReport" /></div>
 	</div>
 </template>

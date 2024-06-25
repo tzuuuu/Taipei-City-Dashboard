@@ -1,1269 +1,135 @@
 {
   "type": "FeatureCollection",
-  "crs": {
-    "type": "name",
-    "properties": {
-      "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
-    }
-  },
   "features": [
     {
       "type": "Feature",
       "properties": {
-        "ReporterName": "匿名",
-        "ContactPhone": "未提供",
-        "Longitude": 121.5636109,
-        "Latitude": 25.038319,
-        "Address": "無",
-        "ReportTime": "2024-06-11 12:53:19",
-        "Vehicle": "機車",
-        "Violation": "違規停車",
-        "Comments": "無"
+        "舉報人姓名": "傅子杰",
+        "舉報地點地址": "台北市中山區新生北路二段31巷",
+        "舉報地點經度": "121.5283666",
+        "舉報地點緯度": "25.0540366",
+        "舉報時間": "2024-06-24 02:22:43",
+        "補充內容": "他停在我家啦",
+        "車牌": "ZRC-1042",
+        "通報人聯絡電話": "0902203103",
+        "違規交通工具": "機車",
+        "違規項目": "違停"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          121.5636109,
-          25.038319
+          121.5283666,
+          25.0540366
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "ReporterName": "匿名",
-        "ContactPhone": "未提供",
-        "Longitude": 121.5634915,
-        "Latitude": 25.038184,
-        "Address": "無",
-        "ReportTime": "2024-06-14 12:43:47",
-        "Vehicle": "汽車",
-        "Violation": "違規停車",
-        "Comments": "無"
+        "舉報人姓名": "王小明",
+        "舉報地點地址": "10480台北市中山區民生東路三段6號",
+        "舉報地點經度": "121.5375504",
+        "舉報地點緯度": "25.057504",
+        "舉報時間": "2024-06-24 02:23:20",
+        "補充內容": "adfsdfsf",
+        "車牌": "sdasdasd",
+        "通報人聯絡電話": "09xxxxxxxxx",
+        "違規交通工具": "腳踏車",
+        "違規項目": "違停"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          121.5634915,
-          25.038184
+          121.5375504,
+          25.057504
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "ReporterName": "匿名",
-        "ContactPhone": "未提供",
-        "Longitude": 121.5634835,
-        "Latitude": 25.038082,
-        "Address": "無",
-        "ReportTime": "2024-06-17 12:13:53",
-        "Vehicle": "貨車",
-        "Violation": "違規停車",
-        "Comments": "無"
+        "舉報人姓名": "郭富城",
+        "舉報地點地址": "104台北市中山區吉林路49號",
+        "舉報地點經度": "121.530352",
+        "舉報地點緯度": "25.0531472",
+        "舉報時間": "2024-06-24 02:23:57",
+        "補充內容": "fsgdfg",
+        "車牌": "edfsdf",
+        "通報人聯絡電話": "09xxxxxxxx",
+        "違規交通工具": "重型機車",
+        "違規項目": "違停"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          121.5634835,
-          25.038082
+          121.530352,
+          25.0531472
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "ReporterName": "匿名",
-        "ContactPhone": "未提供",
-        "Longitude": 121.5635955,
-        "Latitude": 25.037374,
-        "Address": "無",
-        "ReportTime": "2024-06-01 12:19:26",
-        "Vehicle": "機車",
-        "Violation": "違規停車",
-        "Comments": "無"
+        "舉報人姓名": "劉德滑",
+        "舉報地點地址": "10548台北市松山區敦化北路158號",
+        "舉報地點經度": "121.5483535",
+        "舉報地點緯度": "25.0555893",
+        "舉報時間": "2024-06-24 02:24:20",
+        "補充內容": "fsgdfg",
+        "車牌": "sgdgsdfgds",
+        "通報人聯絡電話": "09xxxxxxxx",
+        "違規交通工具": "汽車",
+        "違規項目": "違停"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          121.5635955,
-          25.037374
+          121.5483535,
+          25.0555893
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "ReporterName": "匿名",
-        "ContactPhone": "未提供",
-        "Longitude": 121.5635847,
-        "Latitude": 25.036956,
-        "Address": "無",
-        "ReportTime": "2024-06-02 12:04:31",
-        "Vehicle": "汽車",
-        "Violation": "違規停車",
-        "Comments": "無"
+        "舉報人姓名": "張學友",
+        "舉報地點地址": "10446台北市中山區中山北路一段105巷4號",
+        "舉報地點經度": "121.5227326",
+        "舉報地點緯度": "25.0507383",
+        "舉報時間": "2024-06-24 02:24:44",
+        "補充內容": "fsgdfg",
+        "車牌": "sgdgsdfgds",
+        "通報人聯絡電話": "09xxxxxxxx",
+        "違規交通工具": "汽車",
+        "違規項目": "違停"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          121.5635847,
-          25.036956
+          121.5227326,
+          25.0507383
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "ReporterName": "匿名",
-        "ContactPhone": "未提供",
-        "Longitude": 121.5635955,
-        "Latitude": 25.036416,
-        "Address": "無",
-        "ReportTime": "2024-06-02 12:40:57",
-        "Vehicle": "機車",
-        "Violation": "違規停車",
-        "Comments": "無"
+        "舉報人姓名": "克里斯保羅",
+        "舉報地點地址": "10576台北市松山區敦化北路338號",
+        "舉報地點經度": "121.5520633",
+        "舉報地點緯度": "25.063988",
+        "舉報時間": "2024-06-25 12:30:58",
+        "補充內容": "停在飛機場裡面",
+        "車牌": "dfsdf",
+        "通報人聯絡電話": "0902203103",
+        "違規交通工具": "重型機車",
+        "違規項目": "違停"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          121.5635955,
-          25.036416
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "ReporterName": "匿名",
-        "ContactPhone": "未提供",
-        "Longitude": 121.5654033,
-        "Latitude": 25.036961,
-        "Address": "無",
-        "ReportTime": "2024-06-05 12:53:18",
-        "Vehicle": "腳踏車",
-        "Violation": "違規停車",
-        "Comments": "無"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          121.5654033,
-          25.036961
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "ReporterName": "匿名",
-        "ContactPhone": "未提供",
-        "Longitude": 121.5654945,
-        "Latitude": 25.036445,
-        "Address": "無",
-        "ReportTime": "2024-06-01 12:01:54",
-        "Vehicle": "汽車",
-        "Violation": "違規停車",
-        "Comments": "無"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          121.5654945,
-          25.036445
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "ReporterName": "匿名",
-        "ContactPhone": "未提供",
-        "Longitude": 121.5654998,
-        "Latitude": 25.036241,
-        "Address": "無",
-        "ReportTime": "2024-06-16 12:34:38",
-        "Vehicle": "汽車",
-        "Violation": "違規停車",
-        "Comments": "無"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          121.5654998,
-          25.036241
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "ReporterName": "匿名",
-        "ContactPhone": "未提供",
-        "Longitude": 121.5655604,
-        "Latitude": 25.038901,
-        "Address": "無",
-        "ReportTime": "2024-06-05 12:31:24",
-        "Vehicle": "機車",
-        "Violation": "違規停車",
-        "Comments": "無"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          121.5655604,
-          25.038901
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "ReporterName": "匿名",
-        "ContactPhone": "未提供",
-        "Longitude": 121.5654263,
-        "Latitude": 25.038789,
-        "Address": "無",
-        "ReportTime": "2024-06-20 12:58:44",
-        "Vehicle": "重型機車",
-        "Violation": "違規停車",
-        "Comments": "無"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          121.5654263,
-          25.038789
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "ReporterName": "匿名",
-        "ContactPhone": "未提供",
-        "Longitude": 121.5643319,
-        "Latitude": 25.039105,
-        "Address": "無",
-        "ReportTime": "2024-06-09 12:28:09",
-        "Vehicle": "貨車",
-        "Violation": "違規停車",
-        "Comments": "無"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          121.5643319,
-          25.039105
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "ReporterName": "匿名",
-        "ContactPhone": "未提供",
-        "Longitude": 121.5645879,
-        "Latitude": 25.043293,
-        "Address": "無",
-        "ReportTime": "2024-06-21 12:51:56",
-        "Vehicle": "機車",
-        "Violation": "違規停車",
-        "Comments": "無"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          121.5645879,
-          25.043293
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "ReporterName": "匿名",
-        "ContactPhone": "未提供",
-        "Longitude": 121.5640302,
-        "Latitude": 25.043298,
-        "Address": "無",
-        "ReportTime": "2024-06-06 12:46:38",
-        "Vehicle": "機車",
-        "Violation": "違規停車",
-        "Comments": "無"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          121.5640302,
-          25.043298
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "ReporterName": "匿名",
-        "ContactPhone": "未提供",
-        "Longitude": 121.5652478,
-        "Latitude": 25.043108,
-        "Address": "無",
-        "ReportTime": "2024-06-01 12:27:56",
-        "Vehicle": "機車",
-        "Violation": "違規停車",
-        "Comments": "無"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          121.5652478,
-          25.043108
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "ReporterName": "匿名",
-        "ContactPhone": "未提供",
-        "Longitude": 121.5537025,
-        "Latitude": 25.042064,
-        "Address": "無",
-        "ReportTime": "2024-06-21 12:58:36",
-        "Vehicle": "汽車",
-        "Violation": "違規停車",
-        "Comments": "無"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          121.5537025,
-          25.042064
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "ReporterName": "匿名",
-        "ContactPhone": "未提供",
-        "Longitude": 121.5578653,
-        "Latitude": 25.043464,
-        "Address": "無",
-        "ReportTime": "2024-06-11 12:45:52",
-        "Vehicle": "汽車",
-        "Violation": "違規停車",
-        "Comments": "無"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          121.5578653,
-          25.043464
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "ReporterName": "匿名",
-        "ContactPhone": "未提供",
-        "Longitude": 121.5575649,
-        "Latitude": 25.04465,
-        "Address": "無",
-        "ReportTime": "2024-06-08 12:52:01",
-        "Vehicle": "機車",
-        "Violation": "違規停車",
-        "Comments": "無"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          121.5575649,
-          25.04465
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "ReporterName": "匿名",
-        "ContactPhone": "未提供",
-        "Longitude": 121.5565779,
-        "Latitude": 25.047507,
-        "Address": "無",
-        "ReportTime": "2024-06-18 12:19:36",
-        "Vehicle": "汽車",
-        "Violation": "違規停車",
-        "Comments": "無"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          121.5565779,
-          25.047507
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "ReporterName": "匿名",
-        "ContactPhone": "未提供",
-        "Longitude": 121.5525438,
-        "Latitude": 25.048168,
-        "Address": "無",
-        "ReportTime": "2024-06-14 12:30:41",
-        "Vehicle": "機車",
-        "Violation": "違規停車",
-        "Comments": "無"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          121.5525438,
-          25.048168
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "ReporterName": "匿名",
-        "ContactPhone": "未提供",
-        "Longitude": 121.5492179,
-        "Latitude": 25.048227,
-        "Address": "無",
-        "ReportTime": "2024-06-10 12:09:08",
-        "Vehicle": "機車",
-        "Violation": "違規停車",
-        "Comments": "無"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          121.5492179,
-          25.048227
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "ReporterName": "匿名",
-        "ContactPhone": "未提供",
-        "Longitude": 121.5543677,
-        "Latitude": 25.049257,
-        "Address": "無",
-        "ReportTime": "2024-06-05 12:42:42",
-        "Vehicle": "汽車",
-        "Violation": "違規停車",
-        "Comments": "無"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          121.5543677,
-          25.049257
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "ReporterName": "匿名",
-        "ContactPhone": "未提供",
-        "Longitude": 121.5611968,
-        "Latitude": 25.046796,
-        "Address": "無",
-        "ReportTime": "2024-06-11 12:58:17",
-        "Vehicle": "貨車",
-        "Violation": "違規停車",
-        "Comments": "無"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          121.5611968,
-          25.046796
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "ReporterName": "匿名",
-        "ContactPhone": "未提供",
-        "Longitude": 121.5613006,
-        "Latitude": 25.033035,
-        "Address": "無",
-        "ReportTime": "2024-06-02 12:18:32",
-        "Vehicle": "腳踏車",
-        "Violation": "違規停車",
-        "Comments": "無"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          121.5613006,
-          25.033035
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "ReporterName": "匿名",
-        "ContactPhone": "未提供",
-        "Longitude": 121.5644978,
-        "Latitude": 25.033016,
-        "Address": "無",
-        "ReportTime": "2024-06-17 12:26:23",
-        "Vehicle": "汽車",
-        "Violation": "違規停車",
-        "Comments": "無"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          121.5644978,
-          25.033016
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "ReporterName": "匿名",
-        "ContactPhone": "未提供",
-        "Longitude": 121.5491068,
-        "Latitude": 25.033866,
-        "Address": "無",
-        "ReportTime": "2024-06-19 12:20:49",
-        "Vehicle": "汽車",
-        "Violation": "違規停車",
-        "Comments": "無"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          121.5491068,
-          25.033866
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "ReporterName": "匿名",
-        "ContactPhone": "未提供",
-        "Longitude": 121.5462207,
-        "Latitude": 25.033195,
-        "Address": "無",
-        "ReportTime": "2024-06-15 12:09:11",
-        "Vehicle": "機車",
-        "Violation": "違規停車",
-        "Comments": "無"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          121.5462207,
-          25.033195
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "ReporterName": "匿名",
-        "ContactPhone": "未提供",
-        "Longitude": 121.5510595,
-        "Latitude": 25.033166,
-        "Address": "無",
-        "ReportTime": "2024-06-19 12:43:05",
-        "Vehicle": "機車",
-        "Violation": "違規停車",
-        "Comments": "無"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          121.5510595,
-          25.033166
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "ReporterName": "匿名",
-        "ContactPhone": "未提供",
-        "Longitude": 121.5526473,
-        "Latitude": 25.033166,
-        "Address": "無",
-        "ReportTime": "2024-06-04 12:13:14",
-        "Vehicle": "汽車",
-        "Violation": "違規停車",
-        "Comments": "無"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          121.5526473,
-          25.033166
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "ReporterName": "匿名",
-        "ContactPhone": "未提供",
-        "Longitude": 121.5496511,
-        "Latitude": 25.046667,
-        "Address": "無",
-        "ReportTime": "2024-06-21 12:24:31",
-        "Vehicle": "汽車",
-        "Violation": "違規停車",
-        "Comments": "無"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          121.5496511,
-          25.046667
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "ReporterName": "匿名",
-        "ContactPhone": "未提供",
-        "Longitude": 121.5531594,
-        "Latitude": 25.046181,
-        "Address": "無",
-        "ReportTime": "2024-06-06 12:04:04",
-        "Vehicle": "汽車",
-        "Violation": "違規停車",
-        "Comments": "無"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          121.5531594,
-          25.046181
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "ReporterName": "匿名",
-        "ContactPhone": "未提供",
-        "Longitude": 121.548589,
-        "Latitude": 25.0496906,
-        "Address": "無",
-        "ReportTime": "2024-06-19 12:41:05",
-        "Vehicle": "機車",
-        "Violation": "違規停車",
-        "Comments": "無"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          121.548589,
-          25.0496906
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "ReporterName": "匿名",
-        "ContactPhone": "未提供",
-        "Longitude": 121.5458853,
-        "Latitude": 25.051673,
-        "Address": "無",
-        "ReportTime": "2024-06-12 12:34:18",
-        "Vehicle": "汽車",
-        "Violation": "違規停車",
-        "Comments": "無"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          121.5458853,
-          25.051673
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "ReporterName": "匿名",
-        "ContactPhone": "未提供",
-        "Longitude": 121.5472802,
-        "Latitude": 25.051654,
-        "Address": "無",
-        "ReportTime": "2024-06-12 12:23:39",
-        "Vehicle": "汽車",
-        "Violation": "違規停車",
-        "Comments": "無"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          121.5472802,
-          25.051654
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "ReporterName": "匿名",
-        "ContactPhone": "未提供",
-        "Longitude": 121.5429017,
-        "Latitude": 25.047244,
-        "Address": "無",
-        "ReportTime": "2024-06-21 12:13:39",
-        "Vehicle": "貨車",
-        "Violation": "違規停車",
-        "Comments": "無"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          121.5429017,
-          25.047244
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "ReporterName": "匿名",
-        "ContactPhone": "未提供",
-        "Longitude": 121.574478,
-        "Latitude": 25.0365143,
-        "Address": "無",
-        "ReportTime": "2024-06-21 12:59:47",
-        "Vehicle": "汽車",
-        "Violation": "違規停車",
-        "Comments": "無"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          121.574478,
-          25.0365143
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "ReporterName": "匿名",
-        "ContactPhone": "未提供",
-        "Longitude": 121.5720318,
-        "Latitude": 25.04046,
-        "Address": "無",
-        "ReportTime": "2024-06-08 12:33:29",
-        "Vehicle": "汽車",
-        "Violation": "違規停車",
-        "Comments": "無"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          121.5720318,
-          25.04046
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "ReporterName": "匿名",
-        "ContactPhone": "未提供",
-        "Longitude": 121.5718279,
-        "Latitude": 25.037379,
-        "Address": "無",
-        "ReportTime": "2024-06-11 12:06:49",
-        "Vehicle": "腳踏車",
-        "Violation": "違規停車",
-        "Comments": "無"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          121.5718279,
-          25.037379
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "ReporterName": "匿名",
-        "ContactPhone": "未提供",
-        "Longitude": 121.5789267,
-        "Latitude": 25.035557,
-        "Address": "無",
-        "ReportTime": "2024-06-16 12:43:26",
-        "Vehicle": "機車",
-        "Violation": "違規停車",
-        "Comments": "無"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          121.5789267,
-          25.035557
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "ReporterName": "匿名",
-        "ContactPhone": "未提供",
-        "Longitude": 121.5681979,
-        "Latitude": 25.030302,
-        "Address": "無",
-        "ReportTime": "2024-06-01 12:08:28",
-        "Vehicle": "汽車",
-        "Violation": "違規停車",
-        "Comments": "無"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          121.5681979,
-          25.030302
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "ReporterName": "匿名",
-        "ContactPhone": "未提供",
-        "Longitude": 121.5682194,
-        "Latitude": 25.028611,
-        "Address": "無",
-        "ReportTime": "2024-06-14 12:36:29",
-        "Vehicle": "汽車",
-        "Violation": "違規停車",
-        "Comments": "無"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          121.5682194,
-          25.028611
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "ReporterName": "匿名",
-        "ContactPhone": "未提供",
-        "Longitude": 121.5822808,
-        "Latitude": 25.037709,
-        "Address": "無",
-        "ReportTime": "2024-06-08 12:31:28",
-        "Vehicle": "機車",
-        "Violation": "違規停車",
-        "Comments": "無"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          121.5822808,
-          25.037709
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "ReporterName": "匿名",
-        "ContactPhone": "未提供",
-        "Longitude": 121.5777533,
-        "Latitude": 25.049044,
-        "Address": "無",
-        "ReportTime": "2024-06-07 12:42:08",
-        "Vehicle": "汽車",
-        "Violation": "違規停車",
-        "Comments": "無"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          121.5777533,
-          25.049044
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "ReporterName": "匿名",
-        "ContactPhone": "未提供",
-        "Longitude": 121.5787618,
-        "Latitude": 25.046595,
-        "Address": "無",
-        "ReportTime": "2024-06-13 12:48:21",
-        "Vehicle": "汽車",
-        "Violation": "違規停車",
-        "Comments": "無"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          121.5787618,
-          25.046595
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "ReporterName": "匿名",
-        "ContactPhone": "未提供",
-        "Longitude": 121.5777748,
-        "Latitude": 25.051727,
-        "Address": "無",
-        "ReportTime": "2024-06-08 12:36:18",
-        "Vehicle": "機車",
-        "Violation": "違規停車",
-        "Comments": "無"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          121.5777748,
-          25.051727
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "ReporterName": "匿名",
-        "ContactPhone": "未提供",
-        "Longitude": 121.5731185,
-        "Latitude": 25.047567,
-        "Address": "無",
-        "ReportTime": "2024-06-01 12:01:02",
-        "Vehicle": "機車",
-        "Violation": "違規停車",
-        "Comments": "無"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          121.5731185,
-          25.047567
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "ReporterName": "匿名",
-        "ContactPhone": "未提供",
-        "Longitude": 121.570392,
-        "Latitude": 25.0479658,
-        "Address": "無",
-        "ReportTime": "2024-06-01 12:51:13",
-        "Vehicle": "機車",
-        "Violation": "違規停車",
-        "Comments": "無"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          121.570392,
-          25.0479658
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "ReporterName": "匿名",
-        "ContactPhone": "未提供",
-        "Longitude": 121.5660805,
-        "Latitude": 25.058687,
-        "Address": "無",
-        "ReportTime": "2024-06-03 12:02:56",
-        "Vehicle": "汽車",
-        "Violation": "違規停車",
-        "Comments": "無"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          121.5660805,
-          25.058687
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "ReporterName": "匿名",
-        "ContactPhone": "未提供",
-        "Longitude": 121.5615743,
-        "Latitude": 25.062594,
-        "Address": "無",
-        "ReportTime": "2024-06-20 12:38:29",
-        "Vehicle": "貨車",
-        "Violation": "違規停車",
-        "Comments": "無"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          121.5615743,
-          25.062594
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "ReporterName": "匿名",
-        "ContactPhone": "未提供",
-        "Longitude": 121.581066,
-        "Latitude": 25.0593718,
-        "Address": "無",
-        "ReportTime": "2024-06-10 12:00:41",
-        "Vehicle": "機車",
-        "Violation": "違規停車",
-        "Comments": "無"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          121.581066,
-          25.0593718
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "ReporterName": "匿名",
-        "ContactPhone": "未提供",
-        "Longitude": 121.5754226,
-        "Latitude": 25.060693,
-        "Address": "無",
-        "ReportTime": "2024-06-08 12:22:52",
-        "Vehicle": "腳踏車",
-        "Violation": "違規停車",
-        "Comments": "無"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          121.5754226,
-          25.060693
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "ReporterName": "匿名",
-        "ContactPhone": "未提供",
-        "Longitude": 121.5518247,
-        "Latitude": 25.029905,
-        "Address": "無",
-        "ReportTime": "2024-06-16 12:45:54",
-        "Vehicle": "汽車",
-        "Violation": "違規停車",
-        "Comments": "無"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          121.5518247,
-          25.029905
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "ReporterName": "匿名",
-        "ContactPhone": "未提供",
-        "Longitude": 121.5497863,
-        "Latitude": 25.028039,
-        "Address": "無",
-        "ReportTime": "2024-06-08 12:14:08",
-        "Vehicle": "汽車",
-        "Violation": "違規停車",
-        "Comments": "無"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          121.5497863,
-          25.028039
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "ReporterName": "匿名",
-        "ContactPhone": "未提供",
-        "Longitude": 121.5341438,
-        "Latitude": 25.021671,
-        "Address": "無",
-        "ReportTime": "2024-06-11 12:13:36",
-        "Vehicle": "機車",
-        "Violation": "違規停車",
-        "Comments": "無"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          121.5341438,
-          25.021671
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "ReporterName": "匿名",
-        "ContactPhone": "未提供",
-        "Longitude": 121.5334786,
-        "Latitude": 25.018677,
-        "Address": "無",
-        "ReportTime": "2024-06-18 12:45:22",
-        "Vehicle": "汽車",
-        "Violation": "違規停車",
-        "Comments": "無"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          121.5334786,
-          25.018677
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "ReporterName": "匿名",
-        "ContactPhone": "未提供",
-        "Longitude": 121.5347369,
-        "Latitude": 25.014155,
-        "Address": "無",
-        "ReportTime": "2024-06-13 12:00:56",
-        "Vehicle": "腳踏車",
-        "Violation": "違規停車",
-        "Comments": "無"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          121.5347369,
-          25.014155
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "ReporterName": "匿名",
-        "ContactPhone": "未提供",
-        "Longitude": 121.5335138,
-        "Latitude": 25.015808,
-        "Address": "無",
-        "ReportTime": "2024-06-02 12:14:04",
-        "Vehicle": "汽車",
-        "Violation": "違規停車",
-        "Comments": "無"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          121.5335138,
-          25.015808
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "ReporterName": "匿名",
-        "ContactPhone": "未提供",
-        "Longitude": 121.5403875,
-        "Latitude": 25.05108,
-        "Address": "無",
-        "ReportTime": "2024-06-01 12:57:30",
-        "Vehicle": "貨車",
-        "Violation": "違規停車",
-        "Comments": "無"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          121.5403875,
-          25.05108
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "ReporterName": "匿名",
-        "ContactPhone": "未提供",
-        "Longitude": 121.5369542,
-        "Latitude": 25.049894,
-        "Address": "無",
-        "ReportTime": "2024-06-05 12:37:52",
-        "Vehicle": "汽車",
-        "Violation": "違規停車",
-        "Comments": "無"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          121.5369542,
-          25.049894
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "ReporterName": "匿名",
-        "ContactPhone": "未提供",
-        "Longitude": 121.5319546,
-        "Latitude": 25.049389,
-        "Address": "無",
-        "ReportTime": "2024-06-08 12:39:09",
-        "Vehicle": "汽車",
-        "Violation": "違規停車",
-        "Comments": "無"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          121.5319546,
-          25.049389
+          121.5520633,
+          25.063988
         ]
       }
     }
