@@ -934,18 +934,24 @@ button:hover {
 .quartile-centered {
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	justify-content: flex-start;
 	align-items: stretch;
 	overflow: hidden;
 }
 
 .quartile-centered :deep(.QuartileChart) {
-	height: auto;
+	height: 100%;
 	max-height: 100%;
 }
 
 .quartile-centered :deep(.QuartileChart__list) {
-	height: auto;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.quartile-centered :deep(.QuartileChart__noData) {
+	flex: 1;
 }
 
 .preview {
