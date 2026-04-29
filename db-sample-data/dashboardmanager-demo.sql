@@ -573,7 +573,7 @@ CREATE TABLE public.query_charts (
     long_desc text,
     use_case text,
     links text[],
-    contributors text[] NOT NULL,
+    contributors text[],
     created_at timestamp with time zone NOT NULL,
     updated_at timestamp with time zone NOT NULL,
     query_type character varying,
@@ -770,7 +770,7 @@ COPY public.auth_user_group_roles (auth_user_id, group_id, role_id) FROM stdin;
 --
 
 COPY public.auth_users (id, name, email, password, idno, uuid, tp_account, member_type, verify_level, is_admin, is_active, is_whitelist, is_blacked, expired_at, created_at, login_at) FROM stdin;
-1	admin	admin@gmail.com	8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918	\N	\N	\N	\N	\N	t	t	t	f	\N	2026-04-28 03:12:29.252503+00	2026-04-29 12:12:43.513884+00
+1	admin	seed-admin@gmail.com	8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918	\N	\N	\N	\N	\N	t	t	t	f	\N	2026-04-28 03:12:29.252503+00	2026-04-29 15:38:33.551874+00
 \.
 
 
@@ -854,7 +854,6 @@ COPY public.dashboard_groups (dashboard_id, group_id) FROM stdin;
 359	3
 358	3
 360	4
-361	4
 400	3
 400	4
 \.
@@ -873,8 +872,7 @@ COPY public.dashboards (id, index, name, components, icon, updated_at, created_a
 1	09a25cd9cb7d	收藏組件	\N	favorite	2025-03-14 07:34:22.247753+00	2025-03-14 07:34:22.247753+00
 2	3245d9eace5f	我的新儀表板	{215,218,216,213,212,214,60,146}	star	2025-03-14 14:55:11.732116+00	2025-03-14 14:55:11.732116+00
 360	07dd6b2a6bc0	收藏組件	\N	favorite	2026-04-28 03:12:29.258762+00	2026-04-28 03:12:29.258762+00
-361	aacb438496e1	我的新儀表板	{44}	star	2026-04-28 07:02:31.709019+00	2026-04-28 07:02:31.709019+00
-400	it_is_all_you_need	通勤達理	{1}	favorite	2026-04-29 05:25:52.001099+00	2026-04-29 05:25:52.001099+00
+400	it_is_all_you_need	通勤達理	{1,44}	favorite	2026-04-29 05:25:52.001099+00	2026-04-29 05:25:52.001099+00
 \.
 
 
@@ -948,6 +946,12 @@ COPY public.roles (id, name, access_control, modify, read) FROM stdin;
 7	admin	t	t	t
 8	editor	f	t	t
 9	viewer	f	f	t
+10	admin	t	t	t
+11	editor	f	t	t
+12	viewer	f	f	t
+13	admin	t	t	t
+14	editor	f	t	t
+15	viewer	f	f	t
 \.
 
 
@@ -1016,6 +1020,30 @@ COPY topology.layer (topology_id, layer_id, schema_name, table_name, feature_col
 
 
 --
+-- Ensure relation rows exist even when this file is imported into pre-migrated schemas.
+-- In migrateDB flow, foreign keys may already exist before COPY order is replayed.
+--
+
+INSERT INTO public.auth_user_group_roles (auth_user_id, group_id, role_id) VALUES
+    (1, 4, 1),
+    (1, 1, 1),
+    (1, 2, 1),
+    (1, 3, 1)
+ON CONFLICT (auth_user_id, group_id, role_id) DO NOTHING;
+
+INSERT INTO public.dashboard_groups (dashboard_id, group_id) VALUES
+    (106, 2),
+    (356, 2),
+    (355, 3),
+    (359, 3),
+    (358, 3),
+    (360, 4),
+    (400, 3),
+    (400, 4)
+ON CONFLICT (dashboard_id, group_id) DO NOTHING;
+
+
+--
 -- Name: ai_chatlog_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
@@ -1026,7 +1054,7 @@ SELECT pg_catalog.setval('public.ai_chatlog_id_seq', 1, false);
 -- Name: auth_users_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('public.auth_users_id_seq', 3, true);
+SELECT pg_catalog.setval('public.auth_users_id_seq', 5, true);
 
 
 --
@@ -1089,7 +1117,7 @@ SELECT pg_catalog.setval('public.issues_id_seq', 1, false);
 -- Name: roles_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('public.roles_id_seq', 9, true);
+SELECT pg_catalog.setval('public.roles_id_seq', 15, true);
 
 
 --

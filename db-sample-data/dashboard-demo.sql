@@ -659,6 +659,19 @@ ALTER SEQUENCE public.population_age_distribution_tpe_ogc_fid_seq OWNED BY publi
 
 
 --
+-- Name: rent_level; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.rent_level (
+    "縣市" text,
+    "行政區" text,
+    "租金50分位數" numeric
+);
+
+
+ALTER TABLE public.rent_level OWNER TO postgres;
+
+--
 -- Name: rent_quartiles_stats; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -764,19 +777,6 @@ ALTER SEQUENCE public.tran_ubike_realtime_new_tpe_ogc_fid_seq OWNER TO postgres;
 
 ALTER SEQUENCE public.tran_ubike_realtime_new_tpe_ogc_fid_seq OWNED BY public.tran_ubike_realtime_new_tpe.ogc_fid;
 
-
---
--- Name: rent_level; Type: TABLE; Schema: public; Owner: postgres
---
-
-CREATE TABLE public.rent_level (
-    "縣市" text,
-    "行政區" text,
-    "租金50分位數" numeric
-);
-
-
-ALTER TABLE public.rent_level OWNER TO postgres;
 
 --
 -- Name: tran_ubike_realtime_ogc_fid_seq; Type: SEQUENCE; Schema: public; Owner: postgres
@@ -17794,6 +17794,55 @@ COPY public.population_age_distribution_tpe (ogc_fid, year, young_population, yo
 
 
 --
+-- Data for Name: rent_level; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.rent_level ("縣市", "行政區", "租金50分位數") FROM stdin;
+臺北市	北投區	14000
+臺北市	士林區	12000
+臺北市	內湖區	15000
+臺北市	南港區	13000
+臺北市	松山區	14500
+臺北市	信義區	13500
+臺北市	中山區	13800
+臺北市	大同區	12900
+臺北市	中正區	10000
+臺北市	萬華區	12000
+臺北市	大安區	12333
+臺北市	文山區	11500
+新北市	新莊區	14000
+新北市	淡水區	9000
+新北市	汐止區	15000
+新北市	板橋區	13000
+新北市	三重區	13000
+新北市	樹林區	14000
+新北市	土城區	15000
+新北市	蘆洲區	15000
+新北市	中和區	14000
+新北市	永和區	12200
+新北市	新店區	15000
+新北市	鶯歌區	14000
+新北市	三峽區	10500
+新北市	瑞芳區	8000
+新北市	五股區	16000
+新北市	泰山區	12000
+新北市	林口區	17000
+新北市	深坑區	12000
+新北市	石碇區	0
+新北市	坪林區	0
+新北市	三芝區	7500
+新北市	石門區	0
+新北市	八里區	14600
+新北市	平溪區	0
+新北市	雙溪區	0
+新北市	貢寮區	5000
+新北市	金山區	9000
+新北市	萬里區	6500
+新北市	烏來區	0
+\.
+
+
+--
 -- Data for Name: rent_quartiles_stats; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
@@ -17943,55 +17992,6 @@ COPY public.rent_quartiles_stats (id, city_name, district_name, house_category, 
 143	臺北市	全市	整戶(層)	20253	15000.00	20000.00	27000.00	2026-04-29 08:45:40.465841+00	2026-04-29 08:45:40.465841+00
 144	臺北市	全市	獨立套房	9150	11000.00	15000.00	19000.00	2026-04-29 08:45:40.465841+00	2026-04-29 08:45:40.465841+00
 145	臺北市	全市	分租套(雅)房	25244	7500.00	9500.00	12500.00	2026-04-29 08:45:40.465841+00	2026-04-29 08:45:40.465841+00
-\.
-
-
---
--- Data for Name: rent_level; Type: TABLE DATA; Schema: public; Owner: postgres
---
-
-COPY public.rent_level ("縣市", "行政區", "租金50分位數") FROM stdin;
-臺北市	北投區	14000
-臺北市	士林區	12000
-臺北市	內湖區	15000
-臺北市	南港區	13000
-臺北市	松山區	14500
-臺北市	信義區	13500
-臺北市	中山區	13800
-臺北市	大同區	12900
-臺北市	中正區	10000
-臺北市	萬華區	12000
-臺北市	大安區	12333
-臺北市	文山區	11500
-新北市	新莊區	14000
-新北市	淡水區	9000
-新北市	汐止區	15000
-新北市	板橋區	13000
-新北市	三重區	13000
-新北市	樹林區	14000
-新北市	土城區	15000
-新北市	蘆洲區	15000
-新北市	中和區	14000
-新北市	永和區	12200
-新北市	新店區	15000
-新北市	鶯歌區	14000
-新北市	三峽區	10500
-新北市	瑞芳區	8000
-新北市	五股區	16000
-新北市	泰山區	12000
-新北市	林口區	17000
-新北市	深坑區	12000
-新北市	石碇區	0
-新北市	坪林區	0
-新北市	三芝區	7500
-新北市	石門區	0
-新北市	八里區	14600
-新北市	平溪區	0
-新北市	雙溪區	0
-新北市	貢寮區	5000
-新北市	金山區	9000
-新北市	萬里區	6500
-新北市	烏來區	0
 \.
 
 
