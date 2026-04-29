@@ -83,6 +83,13 @@ func GetComponentChartData(c *gin.Context) {
 			return
 		}
 		c.JSON(http.StatusOK, gin.H{"status": "success", "data": chartData})
+	} else if queryType == "quartile" {
+		chartData, err := models.GetQuartileData(&queryString, timeFrom, timeTo)
+		if err != nil {
+			c.JSON(http.StatusInternalServerError, gin.H{"status": "error", "message": err.Error()})
+			return
+		}
+		c.JSON(http.StatusOK, gin.H{"status": "success", "data": chartData})
 	}
 }
 

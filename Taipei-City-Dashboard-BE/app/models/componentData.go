@@ -112,6 +112,36 @@ type MapLegendData struct {
 	Value float64 `gorm:"column:value" json:"value"`
 }
 
+/*
+QuartileData Json Format (for QuartileChart):
+
+	[
+		{
+			"name": "全部",
+			"icon": "pie_chart",
+			"min": 3000,
+			"q1": 6000,
+			"median": 12000,
+			"q3": 18000,
+			"max": 26000
+		},
+		...
+	]
+*/
+type QuartileData struct {
+	Name         string   `gorm:"column:name" json:"name"`
+	Icon         *string  `gorm:"column:icon" json:"icon"`
+	CityName     *string  `gorm:"column:city_name" json:"city_name"`
+	DistrictName *string  `gorm:"column:district_name" json:"district_name"`
+	IsNoData     bool     `gorm:"column:is_no_data" json:"is_no_data"`
+	NoDataReason *string  `gorm:"column:no_data_reason" json:"no_data_reason"`
+	Min          *float64 `gorm:"column:min" json:"min"`
+	Q1           float64  `gorm:"column:q1" json:"q1"`
+	Median       float64  `gorm:"column:median" json:"median"`
+	Q3           float64  `gorm:"column:q3" json:"q3"`
+	Max          *float64 `gorm:"column:max" json:"max"`
+}
+
 /* ----- Handlers ----- */
 
 func GetComponentChartDataQuery(id int, city string) (queryType string, queryString string, err error) {
@@ -340,6 +370,25 @@ func GetMapLegendData(query *string, timeFrom string, timeTo string) (chartData 
 		return chartData, err
 	}
 	if len(chartData) == 0 {
+		return chartData, err
+	}
+
+	return chartData, nil
+}
+
+func GetQuartileData(query *string, timeFrom string, timeTo string) (chartData []QuartileData, err error) {
+	var queryString string
+
+	// 1. Check if query contains substring '%s'. If so, the component can be queried by time.
+	if strings.Count(*query, "%s") == 2 {
+		queryString = fmt.Sprintf(*query, timeFrom, timeTo)
+	} else {
+		queryString = *query
+	}
+
+	// 2. Get the data from the database
+	err = DBDashboard.Raw(queryString).Scan(&chartData).Error
+	if err != nil {
 		return chartData, err
 	}
 
