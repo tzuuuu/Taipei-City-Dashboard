@@ -791,6 +791,7 @@ purchase_subsidy_application_status	{#D3A021,#7C4DFF,#4EA3FF,#7CB342}	{TimelineS
 repair_subsidy_application_status	{#D3A021,#7C4DFF,#4EA3FF,#7CB342}	{TimelineSeparateChart}	件
 social_housing	{#D3A021,#7C4DFF,#4EA3FF,#7CB342}	{HeatmapChart}	間
 rent_heatmap	{#D3A021,#7C4DFF,#4EA3FF,#7CB342}	{QuartileChart}	元/月
+isochrone_default	{#2DD4BF,#34D399,#A3E635,#FACC15,#FB923C}	{MapLegend}	分鐘
 \.
 
 
@@ -811,6 +812,7 @@ COPY public.component_maps (id, index, title, type, source, size, icon, paint, p
 102	rent_heatmap_type_whole	租屋熱力（整戶）	heatmap	geojson	\N	\N	{"heatmap-opacity":0.68,"heatmap-color":["interpolate",["linear"],["heatmap-density"],0,"rgba(180,130,255,0)",0.18,"rgba(180,130,255,0.55)",0.42,"rgba(160,95,255,0.82)",0.68,"rgba(140,70,245,0.94)",1,"rgba(120,45,230,0.98)"]}	[]
 103	rent_heatmap_type_suite	租屋熱力（獨立套房）	heatmap	geojson	\N	\N	{"heatmap-opacity":0.68,"heatmap-color":["interpolate",["linear"],["heatmap-density"],0,"rgba(110,200,255,0)",0.18,"rgba(110,200,255,0.58)",0.42,"rgba(70,175,255,0.85)",0.68,"rgba(40,150,245,0.95)",1,"rgba(25,125,220,0.98)"]}	[]
 104	rent_heatmap_type_shared	租屋熱力（分租套房）	heatmap	geojson	\N	\N	{"heatmap-opacity":0.68,"heatmap-color":["interpolate",["linear"],["heatmap-density"],0,"rgba(165,225,95,0)",0.18,"rgba(165,225,95,0.55)",0.42,"rgba(130,200,60,0.82)",0.68,"rgba(100,175,40,0.94)",1,"rgba(75,145,25,0.98)"]}	[]
+105	isochrone_default	大眾運輸等時圈	isochrone	geojson	\N	\N	{\n  "fill-color": ["get", "color"],\n  "fill-opacity": 0.35,\n  "stops_property": [\n    {"key": "stop_name", "name": "站名"},\n    {"key": "transit_type", "name": "類型"},\n    {"key": "minutes", "name": "到達時間(分)"}\n  ]\n}	[{"key":"minutes","name":"分鐘數"},{"key":"time_slot","name":"時段"},{"key":"color","name":"顏色"}]
 \.
 
 
@@ -834,6 +836,7 @@ COPY public.components (id, index, name) FROM stdin;
 5	purchase_subsidy_application_status	自購住宅貸款利息補貼受理情形
 6	repair_subsidy_application_status	修繕住宅貸款利息受理情形
 7	social_housing	社會住宅興辦進度
+8	isochrone_default	大眾運輸等時圈
 \.
 
 
@@ -950,6 +953,8 @@ bike_network	\N	{100,101}	{\n  "mode": "byParam",\n  "byParam": {\n    "xParam":
 rent_heatmap	\N	{3,4,102,103,104}	\N	static	\N	\N	\N	內政部國土管理署	租屋緩衝區四分位與熱區	於地圖上點選位置後，向內政部 MOI calrentbuffer 查詢 1 公里緩衝區；熱區圖使用「全部類別」回應，四分位圖匯整四種房屋類型之 Q1／中位數／Q3（無縣市／行政區下拉）。選點成功後結果寫入 public.rent_heatmap_moi_quartiles。	比較查詢位置周邊各租屋類型租金分布與熱區樣點。	{https://moisagis.moi.gov.tw/rent/}	{king}	2026-04-29 02:44:30.206957+00	2026-05-02 12:10:38.15812+00	quartile	\nSELECT\n  name,\n  icon,\n  NULL::text AS city_name,\n  NULL::text AS district_name,\n  is_no_data,\n  no_data_reason,\n  q1_rent AS min,\n  q1_rent AS q1,\n  median_rent AS median,\n  q3_rent AS q3,\n  q3_rent AS max\nFROM public.rent_heatmap_moi_quartiles\nORDER BY sort_key;\n	\N	metrotaipei
 social_housing	\N	{5}	[\n  "==",\n  ["get", "縣市"],\n  "臺北市"\n]	static	\N	\N	\N	內政部	呈現臺北各行政區社會住宅興辦進度與分布情形	展示臺北市各行政區社會住宅之興辦進度，依「已決標待開工」、「興建中」、「新完工」及「既有」等階段進行分類，呈現各區在不同進度階段的戶數分布情形。使用者可透過顏色與數值快速比較各行政區社會住宅的供給現況與建設進度，了解不同區域在興建推動上的差異，以及整體社會住宅政策的落實情形。上方亦提供總戶數統計，作為整體供給規模的參考。資料來源為內政部不動產相關資料，並依行政區與執行階段彙整呈現。	分析社會住宅資源在臺北各行政區的分布與發展狀況，例如觀察哪些區域已具備較高既有供給、哪些區域仍處於興建或規劃階段。民眾可藉此了解各區未來社會住宅供給潛力，作為居住選擇參考；政府與研究單位則可透過進度與區域分布分析，評估社會住宅政策推動是否均衡，並作為後續土地規劃、住宅政策調整及資源配置之依據。	{https://pip.moi.gov.tw/V3/B/SCRB0505.aspx?city=臺北市}	{king}	2026-04-30 05:56:00+00	2026-04-30 05:56:00+00	three_d	SELECT\n    d.行政區 AS x_axis,\n    s.執行情況 AS y_axis,\n    COUNT(t.執行情況) AS data\nFROM (\n    VALUES\n        ('北投區'), ('士林區'), ('內湖區'), ('南港區'), ('松山區'), ('信義區'),\n        ('中山區'), ('大同區'), ('中正區'), ('萬華區'), ('大安區'), ('文山區')\n) AS d(行政區)\n\nCROSS JOIN (\n    VALUES\n        ('既有'),\n        ('新完工'),\n        ('興建中'),\n        ('已決標 待開工')\n) AS s(執行情況)\n\nLEFT JOIN social_housing_tp t\n    ON t.行政區 = d.行政區\n    AND t.執行情況 = s.執行情況\n\nGROUP BY d.行政區, s.執行情況\n\nORDER BY\n    CASE d.行政區\n        WHEN '北投區' THEN 1\n        WHEN '士林區' THEN 2\n        WHEN '內湖區' THEN 3\n        WHEN '南港區' THEN 4\n        WHEN '松山區' THEN 5\n        WHEN '信義區' THEN 6\n        WHEN '中山區' THEN 7\n        WHEN '大同區' THEN 8\n        WHEN '中正區' THEN 9\n        WHEN '萬華區' THEN 10\n        WHEN '大安區' THEN 11\n        WHEN '文山區' THEN 12\n    END,\n    CASE s.執行情況\n        WHEN '既有' THEN 1\n        WHEN '新完工' THEN 2\n        WHEN '興建中' THEN 3\n        WHEN '已決標 待開工' THEN 4\n    END;	\N	taipei
 rent_heatmap	\N	{3,4,102,103,104}	\N	static	\N	\N	\N	內政部國土管理署	租屋緩衝區四分位與熱區	於地圖上點選位置後，向內政部 MOI calrentbuffer 查詢 1 公里緩衝區；熱區圖使用「全部類別」回應，四分位圖匯整四種房屋類型之 Q1／中位數／Q3（無縣市／行政區下拉）。選點成功後結果寫入 public.rent_heatmap_moi_quartiles。	比較查詢位置周邊各租屋類型租金分布與熱區樣點。	{https://moisagis.moi.gov.tw/rent/}	{king}	2026-05-02 09:48:04.973879+00	2026-05-02 12:10:38.15812+00	quartile	\nSELECT\n  name,\n  icon,\n  NULL::text AS city_name,\n  NULL::text AS district_name,\n  is_no_data,\n  no_data_reason,\n  q1_rent AS min,\n  q1_rent AS q1,\n  median_rent AS median,\n  q3_rent AS q3,\n  q3_rent AS max\nFROM public.rent_heatmap_moi_quartiles\nORDER BY sort_key;\n	\N	taipei
+isochrone_default	\N	{105}	{"mode": "byParam", "byParam": {"xParam": "name", "yParam": null}}	static	\N	\N	\N	臺北市都市智慧中心	顯示從台北車站出發，不同時段的大眾運輸等時圈	顯示從台北車站出發，不同時段（06:00, 08:00, 10:00, 12:00, 17:00, 21:00）的大眾運輸等時圈。等時圈表示在指定時間內搭乘公車、捷運、火車可到達的範圍，使用不同顏色區分 15/30/60/90/120 分鐘的可達範圍。	用於交通可達性分析、通勤時間評估、都市規劃與房地產選址參考	{}	{TUIC}	2026-04-30 05:35:38.223872+00	2026-04-30 05:35:38.223872+00	map_legend	SELECT unnest(ARRAY['15分鐘', '30分鐘', '60分鐘', '90分鐘', '120分鐘']) AS name, 'fill' AS type	\N	taipei
+isochrone_default	\N	{105}	{"mode": "byParam", "byParam": {"xParam": "name", "yParam": null}}	static	\N	\N	\N	臺北市都市智慧中心	顯示從台北車站出發，不同時段的大眾運輸等時圈	顯示從台北車站出發，不同時段（06:00, 08:00, 10:00, 12:00, 17:00, 21:00）的大眾運輸等時圈。等時圈表示在指定時間內搭乘公車、捷運、火車可到達的範圍，使用不同顏色區分 15/30/60/90/120 分鐘的可達範圍。	用於交通可達性分析、通勤時間評估、都市規劃與房地產選址參考	{}	{TUIC}	2026-04-30 05:35:45.998295+00	2026-04-30 05:35:45.998295+00	map_legend	SELECT unnest(ARRAY['15分鐘', '30分鐘', '60分鐘', '90分鐘', '120分鐘']) AS name, 'fill' AS type	\N	metrotaipei
 \.
 
 
@@ -1088,14 +1093,14 @@ SELECT pg_catalog.setval('public.chat_logs_id_seq', 1, false);
 -- Name: component_maps_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('public.component_maps_id_seq', 5, true);
+SELECT pg_catalog.setval('public.component_maps_id_seq', 105, true);
 
 
 --
 -- Name: components_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('public.components_id_seq', 7, true);
+SELECT pg_catalog.setval('public.components_id_seq', 218, true);
 
 
 --

@@ -30,6 +30,7 @@ import IconPercentChart from "./components/IconPercentChart.vue";
 import IndicatorChart from "./components/IndicatorChart.vue";
 import TextUnitChart from "./components/TextUnitChart.vue";
 import QuartileChart from "./components/QuartileChart.vue";
+import MapPickButton from "../components/map/MapPickButton.vue";
 
 import MapLegendSvg from "./assets/chart/MapLegend.svg";
 import DistrictChartSvg from "./assets/chart/DistrictChart.svg";
@@ -75,6 +76,13 @@ function handleRentHeatmapMapPickToggle() {
 	mapStore.startRentHeatmapPickToggle();
 }
 
+function handleIsochroneMapPickToggle() {
+	if (!hasIsochroneMapLayer.value) {
+		return;
+	}
+	mapStore.startIsochronePickToggle();
+}
+
 const props = defineProps({
 	style: { type: Object, default: () => ({}) },
 	mode: {
@@ -117,6 +125,11 @@ const emits = defineEmits([
 ]);
 
 const activeChart = ref(props.config.chart_config.types[0]);
+
+const hasIsochroneMapLayer = computed(() =>
+	Array.isArray(props.config.map_config) &&
+	props.config.map_config.some((item) => item?.type === "isochrone"),
+);
 
 /** Rent heatmap: show quartiles from latest map pick when API returned rent_quartile_series */
 const seriesForCharts = computed(() => {
@@ -220,48 +233,48 @@ function changeShowTagTooltipState(state) {
 }
 function returnChartComponent(name, svg) {
 	switch (name) {
-		case "DistrictChart":
-			return svg ? DistrictChartSvg : DistrictChart;
-		case "BarChart":
-			return svg ? BarChartSvg : BarChart;
-		case "MapLegend":
-			return svg ? MapLegendSvg : MapLegend;
-		case "MetroChart":
-			return svg ? MetroChartSvg : MetroChart;
-		case "TimelineSeparateChart":
-			return svg ? TimelineSeparateChartSvg : TimelineSeparateChart;
-		case "TimelineStackedChart":
-			return svg ? TimelineStackedChartSvg : TimelineStackedChart;
-		case "PolarAreaChart":
-			return svg ? PolarAreaChartSvg : PolarAreaChart;
-		case "IconPercentChart":
-			return svg ? IconPercentChartSvg : IconPercentChart;
-		case "ColumnChart":
-			return svg ? ColumnChartSvg : ColumnChart;
-		case "DonutChart":
-			return svg ? DonutChartSvg : DonutChart;
-		case "TreemapChart":
-			return svg ? TreemapChartSvg : TreemapChart;
-		case "BarPercentChart":
-			return svg ? BarPercentChartSvg : BarPercentChart;
-		case "GuageChart":
-			return svg ? GuageChartSvg : GuageChart;
-		case "RadarChart":
-			return svg ? RadarChartSvg : RadarChart;
-		case "HeatmapChart":
-			return svg ? HeatmapChartSvg : HeatmapChart;
-		case "ColumnLineChart":
-			return svg ? ColumnLineChartSvg : ColumnLineChart;
-		case "BarChartWithGoal":
-			return svg ? BarChartWithGoalSvg : BarChartWithGoal;
-		case "IndicatorChart":
-			return svg ? IndicatorChartSvg : IndicatorChart;
-		case "TextUnitChart":
-			return svg ? TextUnitChartSvg : TextUnitChart;
-		case "QuartileChart":
-			return svg ? BarChartSvg : QuartileChart;
-		default:
-			return svg ? MapLegendSvg : MapLegend;
+	case "DistrictChart":
+		return svg ? DistrictChartSvg : DistrictChart;
+	case "BarChart":
+		return svg ? BarChartSvg : BarChart;
+	case "MapLegend":
+		return svg ? MapLegendSvg : MapLegend;
+	case "MetroChart":
+		return svg ? MetroChartSvg : MetroChart;
+	case "TimelineSeparateChart":
+		return svg ? TimelineSeparateChartSvg : TimelineSeparateChart;
+	case "TimelineStackedChart":
+		return svg ? TimelineStackedChartSvg : TimelineStackedChart;
+	case "PolarAreaChart":
+		return svg ? PolarAreaChartSvg : PolarAreaChart;
+	case "IconPercentChart":
+		return svg ? IconPercentChartSvg : IconPercentChart;
+	case "ColumnChart":
+		return svg ? ColumnChartSvg : ColumnChart;
+	case "DonutChart":
+		return svg ? DonutChartSvg : DonutChart;
+	case "TreemapChart":
+		return svg ? TreemapChartSvg : TreemapChart;
+	case "BarPercentChart":
+		return svg ? BarPercentChartSvg : BarPercentChart;
+	case "GuageChart":
+		return svg ? GuageChartSvg : GuageChart;
+	case "RadarChart":
+		return svg ? RadarChartSvg : RadarChart;
+	case "HeatmapChart":
+		return svg ? HeatmapChartSvg : HeatmapChart;
+	case "ColumnLineChart":
+		return svg ? ColumnLineChartSvg : ColumnLineChart;
+	case "BarChartWithGoal":
+		return svg ? BarChartWithGoalSvg : BarChartWithGoal;
+	case "IndicatorChart":
+		return svg ? IndicatorChartSvg : IndicatorChart;
+	case "TextUnitChart":
+		return svg ? TextUnitChartSvg : TextUnitChart;
+	case "QuartileChart":
+		return svg ? BarChartSvg : QuartileChart;
+	default:
+		return svg ? MapLegendSvg : MapLegend;
 	}
 }
 </script>
@@ -390,7 +403,8 @@ function returnChartComponent(name, svg) {
 				(!mode.includes('map') || toggleOn) &&
 				mode !== 'preview' &&
 				((selectBtn && !selectBtnDisabled) ||
-					config?.chart_config?.types?.length > 1) &&
+					config?.chart_config?.types?.length > 1 ||
+					(hasIsochroneMapLayer && mode.includes('map') && toggleOn)) &&
 				activeChart !== 'QuartileChart'
 			"
 			class="dashboardcomponent-control"
@@ -408,6 +422,13 @@ function returnChartComponent(name, svg) {
 					</option>
 				</template>
 			</select>
+			<MapPickButton
+				v-if="hasIsochroneMapLayer && mode.includes('map') && toggleOn"
+				title="Pick isochrone center on map"
+				aria-label="Pick isochrone center on map"
+				:armed="mapStore.isochronePickArmed"
+				@toggle="handleIsochroneMapPickToggle"
+			/>
 			<div
 				v-if="config.chart_config.types.length > 1"
 				class="dashboardcomponent-control-group"
@@ -743,6 +764,9 @@ button:hover {
 			min-height: var(--font-ms);
 			min-width: 2rem;
 			margin-top: 4px;
+			display: flex;
+			align-items: center;
+			gap: 8px;
 		}
 
 		@media (max-width: 760px) {
@@ -769,6 +793,7 @@ button:hover {
 		display: flex;
 		// justify-content: center;
 		align-items: center;
+		gap: 8px;
 		// position: absolute;
 		top: 4.2rem;
 		left: 0;

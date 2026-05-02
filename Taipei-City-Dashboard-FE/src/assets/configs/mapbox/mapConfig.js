@@ -44,6 +44,7 @@ export const mapTypes = {
 	arc: "立體弧線圖",
 	voronoi: "泰森多邊形",
 	isoline: "等高線圖",
+	isochrone: "等時圈",
 	"symbol-3d": "三維捷運動態地圖",
 };
 
@@ -359,6 +360,9 @@ export const maplayerCommonPaint = {
 			0.15,
 		],
 	},
+	isochrone: {
+		"fill-opacity": 0.35,
+	},
 	line: {
 		"line-width": [
 			"interpolate",
@@ -488,6 +492,7 @@ export const maplayerCommonLayout = {
 		"line-cap": "round",
 	},
 	fill: {},
+	isochrone: {},
 	"fill-extrusion": {},
 	circle: {},
 	heatmap: {},

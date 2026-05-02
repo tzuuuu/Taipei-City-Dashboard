@@ -3,6 +3,7 @@
 <script setup>
 import { computed, ref, watch } from "vue";
 import "material-icons/iconfont/material-icons.css";
+import MapPickButton from "../../components/map/MapPickButton.vue";
 
 const props = defineProps([
 	"chart_config",
@@ -266,7 +267,7 @@ function rentHeatmapRowActive(it, rowIndex) {
 	return f === rentHeatmapFocusFromRow(it, rowIndex);
 }
 
-function whiskerStyle(type, _i) {
+function whiskerStyle(type) {
 	// color is applied via inline styles below
 	return { left: type === "min" ? "0%" : "100%" };
 }
@@ -313,19 +314,13 @@ function whiskerStyle(type, _i) {
 					{{ opt.label }}
 				</option>
 			</select>
-			<button
+			<MapPickButton
 				v-if="showMapPickControl"
-				type="button"
-				class="QuartileChart__mapPickBtn"
-				:class="{
-					'QuartileChart__mapPickBtn--armed': map_pick_armed,
-				}"
 				title="先按此鈕，再於地圖上點選查詢中心"
 				aria-label="於地圖上點選租屋熱區查詢中心"
-				@click="emit('toggleMapPick')"
-			>
-				<span class="QuartileChart__mapPickIcon" aria-hidden="true">place</span>
-			</button>
+				:armed="map_pick_armed"
+				@toggle="emit('toggleMapPick')"
+			/>
 		</div>
 
 		<Transition name="quartile-fade" mode="out-in">
@@ -514,33 +509,6 @@ function whiskerStyle(type, _i) {
 		min-width: 100px;
 		width: auto !important;
 		max-width: 50vw !important;
-	}
-
-	&__mapPickBtn {
-		flex-shrink: 0;
-		display: inline-flex;
-		align-items: center;
-		justify-content: center;
-		padding: 4px 6px;
-		min-width: 32px;
-		min-height: 28px;
-		border: 1px solid var(--color-border);
-		border-radius: 4px;
-		background: var(--color-component-background);
-		color: var(--color-complement-text);
-		cursor: pointer;
-
-		&--armed {
-			color: var(--color-highlight);
-			border-color: var(--color-highlight);
-		}
-	}
-
-	&__mapPickIcon {
-		font-family: var(--font-icon);
-		font-size: 1.15rem;
-		line-height: 1;
-		user-select: none;
 	}
 
 	&__noData {
