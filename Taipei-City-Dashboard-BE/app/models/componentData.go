@@ -391,6 +391,10 @@ func GetQuartileData(query *string, timeFrom string, timeTo string) (chartData [
 	if err != nil {
 		return chartData, err
 	}
+	// nil slice JSON-encodes as null; frontend treats null as error ("組件資料異常").
+	if chartData == nil {
+		chartData = []QuartileData{}
+	}
 
 	return chartData, nil
 }

@@ -43,6 +43,7 @@ import {
 } from "../assets/configs/mapbox/mapConfig.js";
 import mapStyle from "../assets/configs/mapbox/mapStyle.js";
 import { hexToRGB } from "../assets/utilityFunctions/colorConvert.js";
+import { wgs84ToEPSG3826 } from "../assets/utilityFunctions/moiRentHeatmapGeojson.js";
 import { interpolation } from "../assets/utilityFunctions/interpolation.js";
 import { marchingSquare } from "../assets/utilityFunctions/marchingSquare.js";
 import { voronoi } from "../assets/utilityFunctions/voronoi.js";
@@ -57,6 +58,50 @@ import {
 	getCrowdColor,
 	mrtLineColor,
 } from "../assets/utilityFunctions/getThematicColor.js";
+
+/** Fetch GeoJSON from /public/mapData; rejects HTML (e.g. Vite SPA fallback when the file is missing). */
+async function fetchPublicMapDataGeoJson(url) {
+	const res = await fetch(url);
+	const text = await res.text();
+	if (!res.ok) {
+		throw new Error(`GeoJSON HTTP ${res.status}: ${url}`);
+	}
+	const trimmed = text.trim();
+	if (trimmed.startsWith("<")) {
+		throw new Error(
+			`GeoJSON URL returned HTML (file missing or wrong path): ${url}. Ensure public/mapData/<component_maps.index>.geojson exists and index matches the filename.`,
+		);
+	}
+	try {
+		return JSON.parse(text);
+	} catch (e) {
+		throw new Error(`GeoJSON JSON.parse failed (${url}): ${e.message}`);
+	}
+}
+
+function applyRentHeatmapPickCursorToMap(map, cursor) {
+	if (!map) return;
+	const value = cursor || "";
+	const targets = [map.getCanvas?.(), map.getCanvasContainer?.(), map.getContainer?.()];
+	for (const el of targets) {
+		if (!el || !el.style) continue;
+		if (value) {
+			el.style.setProperty("cursor", value, "important");
+		} else {
+			el.style.removeProperty("cursor");
+		}
+	}
+}
+
+function getMapboxMarkerSvgElement() {
+	try {
+		const markerEl = new mapboxGl.Marker().getElement();
+		const svg = markerEl?.querySelector?.("svg");
+		return svg ? svg.cloneNode(true) : null;
+	} catch {
+		return null;
+	}
+}
 
 export const useMapStore = defineStore("map", {
 	state: () => ({
@@ -95,6 +140,22 @@ export const useMapStore = defineStore("map", {
 		layerUpdateTime: {
 			// [layerId]: Date
 		},
+		// 租屋熱區：選點後由後端打 MOI 並寫入 public/mapData/*.geojson，前端再讀本地檔更新 source
+		rentHeatmapLayersActive: false,
+		rentHeatmapPickArmed: false,
+		rentHeatmapLayerConfigs: [],
+		/** Latest MOI quartile series from /rent/calrentbuffer; null = use dashboard SQL only */
+		rentHeatmapQuartileSeries: null,
+		/** MOI form field selectedbuffer; must match site options exactly */
+		rentHeatmapSelectedBuffer: "1公里",
+		/** Last map pick for re-query when buffer changes */
+		rentHeatmapLastPick: null,
+		/** Quartile row: single heat layer — main (黃/全部) | whole | suite | shared */
+		rentHeatmapChartFocus: "main",
+		/** Custom pick cursor overlay (reuse existing mapbox marker svg) */
+		rentHeatmapPickCursorEl: null,
+		rentHeatmapPickCursorMoveHandler: null,
+		rentHeatmapPickCursorLeaveHandler: null,
 	}),
 	actions: {
 		/* Initialize Mapbox */
@@ -134,6 +195,13 @@ export const useMapStore = defineStore("map", {
 				.on("click", (event) => {
 					if (this.popup) {
 						this.popup = null;
+					}
+					if (this.rentHeatmapPickArmed) {
+						void this.finishRentHeatmapPickFromMap(
+							event.lngLat.lng,
+							event.lngLat.lat,
+						);
+						return;
 					}
 					this.addPopup(event);
 				})
@@ -184,8 +252,7 @@ export const useMapStore = defineStore("map", {
 
 			if (!this.map) return;
 			// metroTaipei District Labels
-			fetch(`/mapData/metrotaipei_town.geojson`)
-				.then((response) => response.json())
+			fetchPublicMapDataGeoJson(`/mapData/metrotaipei_town.geojson`)
 				.then((data) => {
 					this.map
 						.addSource("metrotaipei_town_label", {
@@ -193,10 +260,10 @@ export const useMapStore = defineStore("map", {
 							data: data,
 						})
 						.addLayer(metroTaipeiTown);
-				});
+				})
+				.catch((e) => console.error(e));
 			// metroTaipei Village Labels
-			fetch(`/mapData/metrotaipei_village.geojson`)
-				.then((response) => response.json())
+			fetchPublicMapDataGeoJson(`/mapData/metrotaipei_village.geojson`)
 				.then((data) => {
 					this.map
 						.addSource("metrotaipei_village_label", {
@@ -204,7 +271,8 @@ export const useMapStore = defineStore("map", {
 							data: data,
 						})
 						.addLayer(metroTaipeiVillage);
-				});
+				})
+				.catch((e) => console.error(e));
 			// Taipei 3D Buildings
 			if (!authStore.isMobileDevice) {
 				this.map
@@ -422,54 +490,605 @@ export const useMapStore = defineStore("map", {
 
 		/* Adding Map Layers */
 		// 1. Passes in the map_config (an Array of Objects) of a component and adds all layers to the map layer list
-		addToMapLayerList(map_config) {
-			map_config.forEach((element) => {
-				let mapLayerId = `${element.index}-${element.type}-${element.city}`;
+		//    Sequential loads preserve style stack order: earlier entries end up below later ones.
+		//    Note: Mapbox draws heatmap above fill layers by spec—choropleth fill under a dense heatmap will look "missing".
+		async addToMapLayerList(map_config) {
+			if (!Array.isArray(map_config)) {
+				return;
+			}
+			const rentCfgs = [];
+			for (const element of map_config) {
+				if (
+					!element ||
+					element.index == null ||
+					String(element.index).trim() === ""
+				) {
+					console.warn(
+						"[mapStore] skip invalid map_config (missing index). Check query_charts.map_config_ids match component_maps.id).",
+						element,
+					);
+					continue;
+				}
+				const mapLayerId = `${element.index}-${element.type}-${element.city}`;
+				if (
+					element.index === "rent_heatmap" ||
+					element.index === "rent_heatmap_bounds" ||
+					(typeof element.index === "string" &&
+						element.index.startsWith("rent_heatmap_type_"))
+				) {
+					rentCfgs.push({ ...element, layerId: mapLayerId });
+				}
 				// 1-1. If the layer exists, simply turn on the visibility and add it to the visible layers list
 				if (
-					this.currentLayers.find((element) => element === mapLayerId)
+					this.currentLayers.find((id) => id === mapLayerId)
 				) {
 					this.loadingLayers.push("rendering");
 					this.turnOnMapLayerVisibility(mapLayerId);
 					if (
 						!this.currentVisibleLayers.find(
-							(element) => element === mapLayerId,
+							(id) => id === mapLayerId,
 						)
 					) {
 						this.currentVisibleLayers.push(mapLayerId);
 					}
-					return;
+					continue;
 				}
-				let appendLayer = { ...element };
+				const appendLayer = { ...element };
 				appendLayer.layerId = mapLayerId;
 				// 1-2. If the layer doesn't exist, call an API to get the layer data
 				this.loadingLayers.push(appendLayer.layerId);
-				if (element.source === "geojson") {
-					this.fetchLocalGeoJson(appendLayer);
-				} else if (element.source === "raster") {
-					this.addRasterSource(appendLayer);
+				try {
+					if (element.source === "geojson") {
+						await this.fetchLocalGeoJson(appendLayer);
+					} else if (element.source === "raster") {
+						await this.addRasterSource(appendLayer);
+					}
+				} catch (e) {
+					console.error(e);
+					this.loadingLayers = this.loadingLayers.filter(
+						(el) => el !== appendLayer.layerId,
+					);
 				}
-			});
+			}
+			if (rentCfgs.length > 0) {
+				this.rentHeatmapLayerConfigs = rentCfgs.sort((a, b) => {
+					if (
+						a.index === "rent_heatmap_bounds" &&
+						b.index !== "rent_heatmap_bounds"
+					) {
+						return -1;
+					}
+					if (
+						b.index === "rent_heatmap_bounds" &&
+						a.index !== "rent_heatmap_bounds"
+					) {
+						return 1;
+					}
+					return 0;
+				});
+				this.rentHeatmapLayersActive = true;
+				this.ensureRentHeatmapBoundsLayerAboveHeatmap();
+				this.applyRentHeatmapHeatLayerVisibility();
+			}
+		},
+		resetRentHeatmapUI() {
+			this.rentHeatmapLayersActive = false;
+			this.rentHeatmapPickArmed = false;
+			this.rentHeatmapLayerConfigs = [];
+			this.rentHeatmapQuartileSeries = null;
+			this.rentHeatmapSelectedBuffer = "1公里";
+			this.rentHeatmapLastPick = null;
+			this.rentHeatmapChartFocus = "main";
+			this.disableRentHeatmapPickCursorOverlay();
+			applyRentHeatmapPickCursorToMap(this.map, "");
+		},
+		enableRentHeatmapPickCursorOverlay() {
+			if (!this.map || this.rentHeatmapPickCursorEl) {
+				return;
+			}
+			const container = this.map.getCanvasContainer?.();
+			const mapRoot = this.map.getContainer?.();
+			if (!container) {
+				return;
+			}
+			const pinSvg = getMapboxMarkerSvgElement();
+			if (!pinSvg) {
+				return;
+			}
+			const el = document.createElement("div");
+			el.style.position = "absolute";
+			el.style.left = "0";
+			el.style.top = "0";
+			el.style.transform = "translate(-50%, -100%)";
+			el.style.pointerEvents = "none";
+			el.style.zIndex = "50";
+			el.style.display = "none";
+			el.style.width = "27px";
+			el.style.height = "41px";
+			pinSvg.setAttribute("width", "27");
+			pinSvg.setAttribute("height", "41");
+			pinSvg.style.width = "27px";
+			pinSvg.style.height = "41px";
+			el.appendChild(pinSvg);
+			const onMove = (evt) => {
+				const rect = container.getBoundingClientRect();
+				el.style.left = `${evt.clientX - rect.left}px`;
+				el.style.top = `${evt.clientY - rect.top}px`;
+				el.style.display = "block";
+			};
+			const onLeave = () => {
+				el.style.display = "none";
+			};
+			container.appendChild(el);
+			container.addEventListener("mousemove", onMove);
+			container.addEventListener("mouseleave", onLeave);
+			container.classList.add("rent-heatmap-pick-mode");
+			if (mapRoot) {
+				mapRoot.classList.add("rent-heatmap-pick-mode");
+			}
+			this.rentHeatmapPickCursorEl = el;
+			this.rentHeatmapPickCursorMoveHandler = onMove;
+			this.rentHeatmapPickCursorLeaveHandler = onLeave;
+		},
+		disableRentHeatmapPickCursorOverlay() {
+			const container = this.map?.getCanvasContainer?.();
+			const mapRoot = this.map?.getContainer?.();
+			if (container && this.rentHeatmapPickCursorMoveHandler) {
+				container.removeEventListener(
+					"mousemove",
+					this.rentHeatmapPickCursorMoveHandler,
+				);
+			}
+			if (container && this.rentHeatmapPickCursorLeaveHandler) {
+				container.removeEventListener(
+					"mouseleave",
+					this.rentHeatmapPickCursorLeaveHandler,
+				);
+			}
+			if (this.rentHeatmapPickCursorEl?.parentNode) {
+				this.rentHeatmapPickCursorEl.parentNode.removeChild(
+					this.rentHeatmapPickCursorEl,
+				);
+			}
+			if (container) {
+				container.classList.remove("rent-heatmap-pick-mode");
+			}
+			if (mapRoot) {
+				mapRoot.classList.remove("rent-heatmap-pick-mode");
+			}
+			this.rentHeatmapPickCursorEl = null;
+			this.rentHeatmapPickCursorMoveHandler = null;
+			this.rentHeatmapPickCursorLeaveHandler = null;
+		},
+		/** @param {string} formValue MOI selectedbuffer e.g. "1公里" */
+		setRentHeatmapQueryBuffer(formValue) {
+			this.rentHeatmapSelectedBuffer = formValue;
+			if (this.rentHeatmapLastPick) {
+				void this.finishRentHeatmapPickFromMap(
+					this.rentHeatmapLastPick.lng,
+					this.rentHeatmapLastPick.lat,
+				);
+			}
+		},
+		startRentHeatmapPickToggle() {
+			if (!this.rentHeatmapLayersActive || !this.map) {
+				return;
+			}
+			this.rentHeatmapPickArmed = !this.rentHeatmapPickArmed;
+			if (this.rentHeatmapPickArmed) {
+				this.enableRentHeatmapPickCursorOverlay();
+				applyRentHeatmapPickCursorToMap(this.map, "none");
+			} else {
+				this.disableRentHeatmapPickCursorOverlay();
+				applyRentHeatmapPickCursorToMap(this.map, "");
+			}
+			if (this.rentHeatmapPickArmed) {
+				const dialogStore = useDialogStore();
+				dialogStore.showNotification("info", "請在地圖上點選查詢位置");
+			}
+		},
+		async reloadRentHeatmapSourcesFromDisk() {
+			const cfgs = this.rentHeatmapLayerConfigs;
+			if (!this.map || !cfgs?.length) {
+				return;
+			}
+			const bust = Date.now();
+			for (const el of cfgs) {
+				const sid = `${el.layerId}-source`;
+				const src = this.map.getSource(sid);
+				if (!src || typeof src.setData !== "function") {
+					continue;
+				}
+				const data = await fetchPublicMapDataGeoJson(
+					`/mapData/${el.index}.geojson?v=${bust}`,
+				);
+				src.setData(data);
+			}
+			this.ensureRentHeatmapBoundsLayerAboveHeatmap();
+			this.applyRentHeatmapHeatLayerVisibility();
+		},
+		/** @param {'main'|'whole'|'suite'|'shared'|'all'} focus — all 視同 main（僅黃色主熱力） */
+		setRentHeatmapChartFocus(focus) {
+			let f = focus === "all" ? "main" : focus;
+			const ok = new Set(["main", "whole", "suite", "shared"]);
+			this.rentHeatmapChartFocus = ok.has(f) ? f : "main";
+			this.applyRentHeatmapHeatLayerVisibility();
+			this.ensureRentHeatmapBoundsLayerAboveHeatmap();
+		},
+		applyRentHeatmapHeatLayerVisibility() {
+			const cfgs = this.rentHeatmapLayerConfigs;
+			if (!this.map || !cfgs?.length) {
+				return;
+			}
+			let focus = this.rentHeatmapChartFocus || "main";
+			if (focus === "all") focus = "main";
+			const heatIndexes = new Set([
+				"rent_heatmap",
+				"rent_heatmap_type_whole",
+				"rent_heatmap_type_suite",
+				"rent_heatmap_type_shared",
+			]);
+			const visibleHeat = new Set();
+			if (focus === "whole") {
+				visibleHeat.add("rent_heatmap_type_whole");
+			} else if (focus === "suite") {
+				visibleHeat.add("rent_heatmap_type_suite");
+			} else if (focus === "shared") {
+				visibleHeat.add("rent_heatmap_type_shared");
+			} else {
+				visibleHeat.add("rent_heatmap");
+			}
+			for (const c of cfgs) {
+				if (!this.map.getLayer(c.layerId)) {
+					continue;
+				}
+				if (c.index === "rent_heatmap_bounds") {
+					this.map.setLayoutProperty(
+						c.layerId,
+						"visibility",
+						"visible",
+					);
+					continue;
+				}
+				if (heatIndexes.has(c.index)) {
+					this.map.setLayoutProperty(
+						c.layerId,
+						"visibility",
+						visibleHeat.has(c.index) ? "visible" : "none",
+					);
+				}
+			}
+		},
+		// Prefer API payload: backend may write to a path the nginx /mapData static root never sees (e.g. /tmp in K8s).
+		applyRentHeatmapGeojsonFromApiResponse(payload) {
+			const byIndex = {
+				rent_heatmap: payload.rent_heatmap,
+				rent_heatmap_bounds: payload.rent_heatmap_bounds,
+				rent_heatmap_type_whole: payload.rent_heatmap_type_whole,
+				rent_heatmap_type_suite: payload.rent_heatmap_type_suite,
+				rent_heatmap_type_shared: payload.rent_heatmap_type_shared,
+			};
+			const cfgs = this.rentHeatmapLayerConfigs;
+			if (!this.map || !cfgs?.length) {
+				return;
+			}
+			for (const el of cfgs) {
+				let geo = byIndex[el.index];
+				if (!geo || typeof geo !== "object") {
+					if (import.meta.env.DEV && el.index === "rent_heatmap_bounds") {
+						console.warn(
+							"[mapStore] rent_heatmap_bounds missing in API payload; check Network response JSON keys",
+						);
+					}
+					continue;
+				}
+				try {
+					geo = JSON.parse(JSON.stringify(geo));
+				} catch (e) {
+					console.error(e);
+					continue;
+				}
+				if (
+					el.index === "rent_heatmap_bounds" &&
+					geo.type === "FeatureCollection" &&
+					Array.isArray(geo.features) &&
+					geo.features.length === 0
+				) {
+					console.warn(
+						"[mapStore] rent_heatmap_bounds FeatureCollection has 0 features (MOI geometry may not have parsed on server)",
+					);
+				}
+				const layerType = String(el.type || "").toLowerCase();
+				if (
+					(layerType === "heatmap" || layerType === "circle") &&
+					geo.type === "FeatureCollection" &&
+					Array.isArray(geo.features)
+				) {
+					const pointFeatures = geo.features.filter(
+						(f) =>
+							f &&
+							f.geometry &&
+							(f.geometry.type === "Point" ||
+								f.geometry.type === "MultiPoint"),
+					);
+					geo = {
+						type: "FeatureCollection",
+						features: pointFeatures,
+					};
+				}
+				const sid = `${el.layerId}-source`;
+				const src = this.map.getSource(sid);
+				if (!src || typeof src.setData !== "function") {
+					if (import.meta.env.DEV && el.index === "rent_heatmap_bounds") {
+						console.warn(
+							`[mapStore] no geojson source ${sid}; layer may not be on map`,
+						);
+					}
+					continue;
+				}
+				src.setData(geo);
+				if (el.index === "rent_heatmap_bounds" && this.map.getLayer(el.layerId)) {
+					this.map.setFilter(el.layerId, null);
+					this.map.setLayoutProperty(
+						el.layerId,
+						"visibility",
+						"visible",
+					);
+				}
+			}
+			this.ensureRentHeatmapBoundsLayerAboveHeatmap();
+			this.applyRentHeatmapHeatLayerVisibility();
+		},
+		// Stack (bottom → top): 主熱力（最底）→ 範圍線 → 三戶型熱力（最上、較亮）。
+		ensureRentHeatmapBoundsLayerAboveHeatmap() {
+			const cfgs = this.rentHeatmapLayerConfigs;
+			if (!this.map || !cfgs?.length) {
+				return;
+			}
+			const mainCfg = cfgs.find((c) => c.index === "rent_heatmap");
+			const boundsCfg = cfgs.find((c) => c.index === "rent_heatmap_bounds");
+			const typeOrder = [
+				"rent_heatmap_type_whole",
+				"rent_heatmap_type_suite",
+				"rent_heatmap_type_shared",
+			];
+			const typeCfgs = typeOrder
+				.map((idx) => cfgs.find((c) => c.index === idx))
+				.filter((c) => c && this.map.getLayer(c.layerId));
+			const layersAboveMain = [boundsCfg, ...typeCfgs].filter(
+				(c) => c && this.map.getLayer(c.layerId),
+			);
+			if (mainCfg && this.map.getLayer(mainCfg.layerId)) {
+				for (
+					let pass = 0;
+					pass < Math.max(3, layersAboveMain.length + 1);
+					pass++
+				) {
+					const layers = this.map.getStyle()?.layers;
+					if (!layers?.length) {
+						return;
+					}
+					for (const other of layersAboveMain) {
+						const mIdx = layers.findIndex((l) => l.id === mainCfg.layerId);
+						const oIdx = layers.findIndex((l) => l.id === other.layerId);
+						if (mIdx === -1 || oIdx === -1) {
+							continue;
+						}
+						if (mIdx > oIdx) {
+							try {
+								this.map.moveLayer(mainCfg.layerId, other.layerId);
+							} catch (e) {
+								console.warn(
+									"[mapStore] rent_heatmap pin below overlay:",
+									e,
+								);
+							}
+						}
+					}
+				}
+			}
+			const stack = [mainCfg, boundsCfg, ...typeCfgs].filter(
+				(c) => c && this.map.getLayer(c.layerId),
+			);
+			if (stack.length < 2) {
+				return;
+			}
+			for (let pass = 0; pass < stack.length; pass++) {
+				const layers = this.map.getStyle()?.layers;
+				if (!layers?.length) {
+					return;
+				}
+				for (let i = 1; i < stack.length; i++) {
+					const prevId = stack[i - 1].layerId;
+					const curId = stack[i].layerId;
+					const prevIdx = layers.findIndex((l) => l.id === prevId);
+					const curIdx = layers.findIndex((l) => l.id === curId);
+					if (prevIdx === -1 || curIdx === -1) {
+						continue;
+					}
+					if (curIdx <= prevIdx) {
+						try {
+							const beforeId = layers[prevIdx + 1]?.id;
+							if (beforeId && beforeId !== curId) {
+								this.map.moveLayer(curId, beforeId);
+							}
+						} catch (e) {
+							console.warn(
+								"[mapStore] ensureRentHeatmapBoundsLayerAboveHeatmap:",
+								e,
+							);
+						}
+					}
+				}
+			}
+		},
+		async finishRentHeatmapPickFromMap(lng, lat) {
+			this.rentHeatmapPickArmed = false;
+			this.disableRentHeatmapPickCursorOverlay();
+			applyRentHeatmapPickCursorToMap(this.map, "");
+			const cfgs = this.rentHeatmapLayerConfigs;
+			if (!cfgs?.length) {
+				return;
+			}
+			this.rentHeatmapLastPick = { lng, lat };
+			const dialogStore = useDialogStore();
+			const layerIds = cfgs.map((c) => c.layerId);
+			for (const id of layerIds) {
+				if (!this.loadingLayers.includes(id)) {
+					this.loadingLayers.push(id);
+				}
+			}
+			try {
+				const [cx, cy] = wgs84ToEPSG3826(lng, lat);
+				const res = await http.post("/rent/calrentbuffer", {
+					cx,
+					cy,
+					lng,
+					lat,
+					selected_buffer: this.rentHeatmapSelectedBuffer,
+				});
+				if (res.data?.status !== "success") {
+					throw new Error(res.data?.message || "租屋熱區查詢失敗");
+				}
+				if (
+					res.data?.rent_heatmap &&
+					res.data?.rent_heatmap_bounds
+				) {
+					if (Array.isArray(res.data?.rent_quartile_series)) {
+						this.rentHeatmapQuartileSeries =
+							res.data.rent_quartile_series;
+					}
+					this.applyRentHeatmapGeojsonFromApiResponse(res.data);
+				} else {
+					await this.reloadRentHeatmapSourcesFromDisk();
+				}
+			} catch (e) {
+				console.error(e);
+				const msg =
+					e?.response?.data?.message ||
+					e?.message ||
+					"租屋熱區查詢失敗";
+				dialogStore.showNotification("fail", msg);
+			} finally {
+				for (const id of layerIds) {
+					this.loadingLayers = this.loadingLayers.filter(
+						(el) => el !== id,
+					);
+				}
+			}
 		},
 		// 2. Call an API to get the layer data
 		fetchLocalGeoJson(map_config) {
-			axios
-				.get(`/mapData/${map_config.index}.geojson`)
-				.then((rs) => {
-					this.addGeojsonSource(map_config, rs.data);
+			const url = `/mapData/${map_config.index}.geojson`;
+			return fetchPublicMapDataGeoJson(url)
+				.then((data) => {
+					this.addGeojsonSource(map_config, data);
 				})
-				.catch((e) => console.error(e));
+				.catch((e) => {
+					console.error(e);
+					this.loadingLayers = this.loadingLayers.filter(
+						(el) => el !== map_config.layerId,
+					);
+					throw e;
+				});
 		},
 		// 3-1. Add a local geojson as a source in mapbox
 		addGeojsonSource(map_config, data) {
+			let geojson = data;
+			if (typeof geojson === "string") {
+				try {
+					geojson = JSON.parse(geojson);
+				} catch (e) {
+					console.error(
+						`GeoJSON JSON.parse failed (${map_config.index}):`,
+						e,
+					);
+					this.loadingLayers = this.loadingLayers.filter(
+						(el) => el !== map_config.layerId,
+					);
+					return;
+				}
+			}
+			if (!geojson || typeof geojson !== "object") {
+				console.error(
+					`GeoJSON payload invalid (${map_config.index}):`,
+					typeof data,
+				);
+				this.loadingLayers = this.loadingLayers.filter(
+					(el) => el !== map_config.layerId,
+				);
+				return;
+			}
+			// Heatmap / circle layers only consume points; mixed Polygon/LineString in the same FC can make Mapbox GL reject the payload.
+			const layerType = String(map_config.type || "").toLowerCase();
+			if (
+				(layerType === "heatmap" || layerType === "circle") &&
+				geojson.type === "FeatureCollection" &&
+				Array.isArray(geojson.features)
+			) {
+				const pointFeatures = geojson.features.filter(
+					(f) =>
+						f &&
+						f.geometry &&
+						(f.geometry.type === "Point" ||
+							f.geometry.type === "MultiPoint"),
+				);
+				if (pointFeatures.length !== geojson.features.length) {
+					console.warn(
+						`[mapStore] ${layerType} "${map_config.index}": dropped ${
+							geojson.features.length - pointFeatures.length
+						} non-point feature(s) for Mapbox compatibility`,
+					);
+				}
+				geojson = {
+					type: "FeatureCollection",
+					features: pointFeatures,
+				};
+				const allowEmptyPoints =
+					typeof map_config.index === "string" &&
+					map_config.index.startsWith("rent_heatmap_type_");
+				if (pointFeatures.length === 0 && !allowEmptyPoints) {
+					console.error(
+						`[mapStore] ${layerType} "${map_config.index}": no Point/MultiPoint features after filter`,
+					);
+					this.loadingLayers = this.loadingLayers.filter(
+						(el) => el !== map_config.layerId,
+					);
+					return;
+				}
+			}
+			// Plain JSON object for the worker (strips Vue proxies / odd enumerables).
+			try {
+				geojson = JSON.parse(JSON.stringify(geojson));
+			} catch (e) {
+				console.error(
+					`GeoJSON clone failed (${map_config.index}):`,
+					e,
+				);
+				this.loadingLayers = this.loadingLayers.filter(
+					(el) => el !== map_config.layerId,
+				);
+				return;
+			}
 			if (
 				!["voronoi", "isoline"].includes(map_config.type) &&
 				map_config.type !== "symbol-3d"
 			) {
-				this.map.addSource(`${map_config.layerId}-source`, {
-					type: "geojson",
-					data: { ...data },
-				});
+				try {
+					this.map.addSource(`${map_config.layerId}-source`, {
+						type: "geojson",
+						data: geojson,
+					});
+				} catch (e) {
+					console.error(
+						`addSource failed (${map_config.layerId}):`,
+						e,
+					);
+					this.loadingLayers = this.loadingLayers.filter(
+						(el) => el !== map_config.layerId,
+					);
+					return;
+				}
 			}
 			if (map_config.type === "arc") {
 				this.AddArcMapLayer(map_config, data);
@@ -609,17 +1228,22 @@ export const useMapStore = defineStore("map", {
 		// 4-1. Using the mapbox source and map config, create a new layer
 		// The styles and configs can be edited in /assets/configs/mapbox/mapConfig.js
 		addMapLayer(map_config) {
+			// Mapbox / mapConfig 鍵名皆小寫；DB 若存成 Heatmap 會讀不到 maplayerCommonPaint.heatmap
+			const effectiveMapType =
+				String(map_config.type || "").toLowerCase() === "heatmap"
+					? "heatmap"
+					: map_config.type;
 			let extra_paint_configs = {};
 			let extra_layout_configs = {};
 			if (map_config.icon) {
 				extra_paint_configs = {
 					...maplayerCommonPaint[
-						`${map_config.type}-${map_config.icon}`
+						`${effectiveMapType}-${map_config.icon}`
 					],
 				};
 				extra_layout_configs = {
 					...maplayerCommonLayout[
-						`${map_config.type}-${map_config.icon}`
+						`${effectiveMapType}-${map_config.icon}`
 					],
 				};
 			}
@@ -627,13 +1251,13 @@ export const useMapStore = defineStore("map", {
 				extra_paint_configs = {
 					...extra_paint_configs,
 					...maplayerCommonPaint[
-						`${map_config.type}-${map_config.size}`
+						`${effectiveMapType}-${map_config.size}`
 					],
 				};
 				extra_layout_configs = {
 					...extra_layout_configs,
 					...maplayerCommonLayout[
-						`${map_config.type}-${map_config.size}`
+						`${effectiveMapType}-${map_config.size}`
 					],
 				};
 			}
@@ -646,22 +1270,49 @@ export const useMapStore = defineStore("map", {
 
 			// 初始 filter 設定為第一組 (6 小時降雨)
 			const initialFilter = ["in", "hazard_class", ...filterClass[0]];
+			const typePaint = maplayerCommonPaint[`${effectiveMapType}`] || {};
+			const dbPaint =
+				map_config.paint &&
+				typeof map_config.paint === "object" &&
+				!Array.isArray(map_config.paint)
+					? map_config.paint
+					: {};
+			const basePaintForType = { ...typePaint, ...extra_paint_configs };
+			// component_maps.paint 若含 heatmap-radius / intensity 等會蓋掉 mapConfig。熱力圖核心欄位改由程式統一（paint 為空時等同只用 mapConfig）。
+			let mergedPaint;
+			if (effectiveMapType === "heatmap") {
+				const idx = map_config.index;
+				const isRentMain = idx === "rent_heatmap";
+				const isRentTypeSplit =
+					typeof idx === "string" && idx.startsWith("rent_heatmap_type_");
+				mergedPaint = { ...basePaintForType, ...dbPaint };
+				mergedPaint["heatmap-weight"] = basePaintForType["heatmap-weight"];
+				if (!isRentMain && !isRentTypeSplit) {
+					mergedPaint["heatmap-intensity"] =
+						basePaintForType["heatmap-intensity"];
+					mergedPaint["heatmap-radius"] = basePaintForType["heatmap-radius"];
+					mergedPaint["heatmap-color"] = basePaintForType["heatmap-color"];
+					if (Object.prototype.hasOwnProperty.call(dbPaint, "heatmap-opacity")) {
+						mergedPaint["heatmap-opacity"] = dbPaint["heatmap-opacity"];
+					}
+				}
+			} else {
+				mergedPaint = { ...basePaintForType, ...dbPaint };
+			}
+			// GeoJSON / non-vector sources must NOT set source-layer (Mapbox prohibits "" for geojson).
 			const config = {
 				id: map_config.layerId,
-				type: map_config.type,
-				"source-layer":
-					map_config.source === "raster" ? map_config.index : "",
-				paint: {
-					...maplayerCommonPaint[`${map_config.type}`],
-					...extra_paint_configs,
-					...map_config.paint,
-				},
+				type: effectiveMapType,
+				paint: mergedPaint,
 				layout: {
-					...maplayerCommonLayout[`${map_config.type}`],
+					...maplayerCommonLayout[`${effectiveMapType}`],
 					...extra_layout_configs,
 				},
 				source: `${map_config.layerId}-source`,
 			};
+			if (map_config.source === "raster") {
+				config["source-layer"] = map_config.index;
+			}
 			if (
 				map_config.layerId ===
 					"wee_hazard_water-fill-extrusion-metrotaipei" ||
@@ -1805,6 +2456,10 @@ export const useMapStore = defineStore("map", {
 		},
 		//  5. Turn on the visibility for a exisiting map layer
 		turnOnMapLayerVisibility(mapLayerId) {
+			const isRentHeatLayer =
+				mapLayerId.startsWith("rent_heatmap-") ||
+				mapLayerId.startsWith("rent_heatmap_bounds-") ||
+				mapLayerId.startsWith("rent_heatmap_type_");
 			if (mapLayerId.indexOf("-arc") !== -1) {
 				this.deckGlLayer[mapLayerId].config.visible = true;
 				this.step = 1;
@@ -1843,10 +2498,25 @@ export const useMapStore = defineStore("map", {
 					);
 				}
 			}
+			if (isRentHeatLayer) {
+				this.applyRentHeatmapHeatLayerVisibility();
+				this.ensureRentHeatmapBoundsLayerAboveHeatmap();
+			}
 		},
 		// 6. Turn off the visibility of an exisiting map layer but don't remove it completely
 		turnOffMapLayerVisibility(map_config) {
 			this.stopAnimation();
+			const hasRentHeat = map_config?.some(
+				(el) =>
+					el &&
+					(el.index === "rent_heatmap" ||
+						el.index === "rent_heatmap_bounds" ||
+						(typeof el.index === "string" &&
+							el.index.startsWith("rent_heatmap_type_"))),
+			);
+			if (hasRentHeat) {
+				this.resetRentHeatmapUI();
+			}
 			map_config.forEach((element) => {
 				let mapLayerId = `${element.index}-${element.type}-${element.city}`;
 				this.loadingLayers = this.loadingLayers.filter(
@@ -2321,6 +2991,18 @@ export const useMapStore = defineStore("map", {
 			}
 			map_configs.map((map_config) => {
 				let mapLayerId = `${map_config.index}-${map_config.type}-${map_config.city}`;
+				// Point heatmaps typically lack admin keys (e.g. TNAME); chart-driven filters would hide all points.
+				if (String(map_config.type || "").toLowerCase() === "heatmap") {
+					return;
+				}
+				// MOI buffer polygon only has rent_* / name; not 行政區 or TNAME — same as heatmap, skip chart filters.
+				if (
+					map_config.index === "rent_heatmap_bounds" ||
+					(typeof map_config.index === "string" &&
+						map_config.index.startsWith("rent_heatmap_type_"))
+				) {
+					return;
+				}
 				if (map_config && map_config.type === "arc") {
 					this.deckGlLayer[mapLayerId].config.data = this.deckGlLayer[
 						mapLayerId
@@ -2565,10 +3247,13 @@ export const useMapStore = defineStore("map", {
 		/* Clearing the map */
 		// 1. Called when the user is switching between maps
 		clearOnlyLayers() {
-			this.currentLayers.forEach((element) => {
-				this.map.removeLayer(element);
-				if (this.map.getSource(`${element}-source`)) {
-					this.map.removeSource(`${element}-source`);
+			[...this.currentLayers].reverse().forEach((element) => {
+				if (this.map.getLayer(element)) {
+					this.map.removeLayer(element);
+				}
+				const srcId = `${element}-source`;
+				if (this.map.getSource(srcId)) {
+					this.map.removeSource(srcId);
 				}
 			});
 			this.currentLayers = [];

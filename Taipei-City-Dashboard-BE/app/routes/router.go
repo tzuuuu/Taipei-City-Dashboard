@@ -41,6 +41,16 @@ func ConfigureRoutes() {
 	configureContributorRoutes()
 	configureChatLogRoutes()
 	configureAIRoutes()
+	configureRentRoutes()
+}
+
+func configureRentRoutes() {
+	rentRoutes := RouterGroup.Group("/rent")
+	rentRoutes.Use(middleware.LimitAPIRequests(global.ComponentLimitAPIRequestsTimes, global.LimitRequestsDuration))
+	rentRoutes.Use(middleware.LimitTotalRequests(global.ComponentLimitTotalRequestsTimes, global.LimitRequestsDuration))
+	{
+		rentRoutes.POST("/calrentbuffer", controllers.PostRentCalRentBuffer)
+	}
 }
 
 func configureAuthRoutes() {

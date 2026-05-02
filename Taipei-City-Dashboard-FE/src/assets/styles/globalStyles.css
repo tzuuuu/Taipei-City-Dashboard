@@ -215,6 +215,14 @@ td:last-child {
 	display: none;
 }
 
+/* Rent heatmap pick mode: hide native hand/grab cursor entirely. */
+.rent-heatmap-pick-mode,
+.rent-heatmap-pick-mode *,
+.rent-heatmap-pick-mode .mapboxgl-canvas-container.mapboxgl-interactive,
+.rent-heatmap-pick-mode .mapboxgl-canvas-container.mapboxgl-interactive:active {
+	cursor: none !important;
+}
+
 html .mapboxgl-popup {
 	max-width: 260px !important;
 	min-width: 100px !important;

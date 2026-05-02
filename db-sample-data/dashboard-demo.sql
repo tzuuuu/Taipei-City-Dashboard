@@ -691,6 +691,30 @@ CREATE TABLE public.purchase_subsidy_application_status_tp (
 ALTER TABLE public.purchase_subsidy_application_status_tp OWNER TO postgres;
 
 --
+-- Name: rent_heatmap_moi_quartiles; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.rent_heatmap_moi_quartiles (
+    rent_type text NOT NULL,
+    name text NOT NULL,
+    icon text,
+    q1_rent double precision,
+    median_rent double precision,
+    q3_rent double precision,
+    center_cx double precision,
+    center_cy double precision,
+    lng double precision,
+    lat double precision,
+    sort_key integer NOT NULL,
+    updated_at timestamp with time zone DEFAULT now() NOT NULL,
+    is_no_data boolean DEFAULT false NOT NULL,
+    no_data_reason text
+);
+
+
+ALTER TABLE public.rent_heatmap_moi_quartiles OWNER TO postgres;
+
+--
 -- Name: rent_level; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -18003,6 +18027,18 @@ COPY public.purchase_subsidy_application_status_tp ("縣市", "項目", "購買�
 
 
 --
+-- Data for Name: rent_heatmap_moi_quartiles; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.rent_heatmap_moi_quartiles (rent_type, name, icon, q1_rent, median_rent, q3_rent, center_cx, center_cy, lng, lat, sort_key, updated_at, is_no_data, no_data_reason) FROM stdin;
+全部類別	全部類別	pie_chart	9000	12800	19000	302201.8892526752	2768656.013319107	121.51725817397397	25.02508776075831	1	2026-05-02 16:17:52.187642+00	f	\N
+整戶(層)	整戶(層)	apartment	15000	22000	28000	302201.8892526752	2768656.013319107	121.51725817397397	25.02508776075831	2	2026-05-02 16:17:52.187642+00	f	\N
+獨立套房	獨立套房	bed	12000	16500	21500	302201.8892526752	2768656.013319107	121.51725817397397	25.02508776075831	3	2026-05-02 16:17:52.187642+00	f	\N
+分租套(雅)房	分租套(雅)房	group	8000	10000	12800	302201.8892526752	2768656.013319107	121.51725817397397	25.02508776075831	4	2026-05-02 16:17:52.187642+00	f	\N
+\.
+
+
+--
 -- Data for Name: rent_level; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
@@ -21933,6 +21969,14 @@ ALTER TABLE ONLY public.population_age_distribution_new_tpe
 
 ALTER TABLE ONLY public.population_age_distribution_tpe
     ADD CONSTRAINT population_age_distribution_tpe_pkey PRIMARY KEY (ogc_fid);
+
+
+--
+-- Name: rent_heatmap_moi_quartiles rent_heatmap_moi_quartiles_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.rent_heatmap_moi_quartiles
+    ADD CONSTRAINT rent_heatmap_moi_quartiles_pkey PRIMARY KEY (rent_type);
 
 
 --

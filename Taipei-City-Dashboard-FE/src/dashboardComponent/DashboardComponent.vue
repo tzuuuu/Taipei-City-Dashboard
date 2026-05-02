@@ -1,5 +1,6 @@
 <script setup>
 import { computed, ref } from "vue";
+import { useMapStore } from "../store/mapStore";
 // import "./styles/chartStyles.css";
 // import "./styles/toggleswitch.css";
 import "material-icons/iconfont/material-icons.css";
@@ -51,6 +52,29 @@ import IndicatorChartSvg from "./assets/chart/IndicatorChart.svg";
 import TextUnitChartSvg from "./assets/chart/TextUnitChart.svg";
 
 
+const mapStore = useMapStore();
+
+/** MOI multipart field `selectedbuffer` — labels are display-only */
+const rentHeatmapBufferFilterOptions = [
+	{ value: "1公里", label: "1 公里" },
+	{ value: "2.5公里", label: "2.5 公里" },
+	{ value: "5公里", label: "5 公里" },
+];
+
+function handleRentHeatmapBufferFilter(formValue) {
+	if (props.config.index !== "rent_heatmap") {
+		return;
+	}
+	mapStore.setRentHeatmapQueryBuffer(formValue);
+}
+
+function handleRentHeatmapMapPickToggle() {
+	if (props.config.index !== "rent_heatmap") {
+		return;
+	}
+	mapStore.startRentHeatmapPickToggle();
+}
+
 const props = defineProps({
 	style: { type: Object, default: () => ({}) },
 	mode: {
@@ -93,6 +117,17 @@ const emits = defineEmits([
 ]);
 
 const activeChart = ref(props.config.chart_config.types[0]);
+
+/** Rent heatmap: show quartiles from latest map pick when API returned rent_quartile_series */
+const seriesForCharts = computed(() => {
+	if (props.config.index === "rent_heatmap") {
+		const live = mapStore.rentHeatmapQuartileSeries;
+		if (Array.isArray(live) && live.length > 0) {
+			return live;
+		}
+	}
+	return props.config.chart_data;
+});
 const activeCity = computed({
 	get: () => props.activeCity,
 	set: (value) => {
@@ -438,10 +473,34 @@ function returnChartComponent(name, svg) {
 				:active-chart="activeChart"
 				:active-city="activeCity"
 				:chart_config="config.chart_config"
-				:series="config.chart_data"
+				:series="seriesForCharts"
 				:map_config="config.map_config"
 				:map_filter="config.map_filter"
 				:map_filter_on="mode.includes('map')"
+				:buffer_filter_options="
+					config.index === 'rent_heatmap'
+						? rentHeatmapBufferFilterOptions
+						: undefined
+				"
+				:buffer_filter_value="
+					config.index === 'rent_heatmap'
+						? mapStore.rentHeatmapSelectedBuffer
+						: undefined
+				"
+				:map_pick_show="
+					config.index === 'rent_heatmap' &&
+					mapStore.rentHeatmapLayersActive
+				"
+				:map_pick_armed="
+					config.index === 'rent_heatmap' &&
+					mapStore.rentHeatmapPickArmed
+				"
+				:rent_heatmap_row_mode="
+					config.index === 'rent_heatmap' &&
+					mode.includes('map') &&
+					toggleOn
+				"
+				:heatmap_chart_focus="mapStore.rentHeatmapChartFocus"
 				@filter-by-param="
 					(map_filter, map_config, x, y) =>
 						$emit('filterByParam', map_filter, map_config, x, y)
@@ -456,6 +515,9 @@ function returnChartComponent(name, svg) {
 					(map_config) => $emit('clearByLayerFilter', map_config)
 				"
 				@fly="(location) => $emit('fly', location)"
+				@update:buffer-filter="handleRentHeatmapBufferFilter"
+				@toggle-map-pick="handleRentHeatmapMapPickToggle"
+				@rent-heatmap-focus="mapStore.setRentHeatmapChartFocus"
 			/>
 		</div>
 		<div

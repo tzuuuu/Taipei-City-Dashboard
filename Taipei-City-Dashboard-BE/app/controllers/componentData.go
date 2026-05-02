@@ -90,6 +90,11 @@ func GetComponentChartData(c *gin.Context) {
 			return
 		}
 		c.JSON(http.StatusOK, gin.H{"status": "success", "data": chartData})
+	} else {
+		c.JSON(http.StatusInternalServerError, gin.H{
+			"status":  "error",
+			"message": "unsupported query_type: " + queryType,
+		})
 	}
 }
 

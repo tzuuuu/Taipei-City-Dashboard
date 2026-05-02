@@ -2,6 +2,7 @@
 <!-- Quartile (Q1/Median/Q3) multi-group chart, narrow-width friendly -->
 <script setup>
 import { computed, ref, watch } from "vue";
+import "material-icons/iconfont/material-icons.css";
 
 const props = defineProps([
 	"chart_config",
@@ -10,6 +11,21 @@ const props = defineProps([
 	"map_config",
 	"map_filter",
 	"map_filter_on",
+	"buffer_filter_options",
+	"buffer_filter_value",
+	/** 租屋熱區：與距離選單並排，顯示「地圖選點」按鈕 */
+	"map_pick_show",
+	"map_pick_armed",
+	/** 租屋熱區：四分位列可點選以切換地圖熱力圖 */
+	"rent_heatmap_row_mode",
+	/** 目前選中的熱力：main（黃）| whole | suite | shared */
+	"heatmap_chart_focus",
+]);
+
+const emit = defineEmits([
+	"update:bufferFilter",
+	"toggleMapPick",
+	"rentHeatmapFocus",
 ]);
 
 const items = computed(() => (Array.isArray(props.series) ? props.series : []));
@@ -122,6 +138,45 @@ const showAreaSelectors = computed(() =>
 	normalizedItems.value.some((it) => it.cityName || it.districtName),
 );
 
+const bufferFilterOptionsList = computed(() =>
+	Array.isArray(props.buffer_filter_options) ? props.buffer_filter_options : [],
+);
+
+const showBufferSelector = computed(
+	() => bufferFilterOptionsList.value.length > 0,
+);
+
+const showMapPickControl = computed(() => Boolean(props.map_pick_show));
+
+const showFilterRow = computed(
+	() =>
+		showAreaSelectors.value ||
+		showBufferSelector.value ||
+		showMapPickControl.value,
+);
+
+const selectedBufferModel = computed({
+	get() {
+		const opts = bufferFilterOptionsList.value;
+		const v = props.buffer_filter_value;
+		if (v != null && opts.some((o) => o.value === v)) {
+			return v;
+		}
+		return opts[0]?.value ?? "";
+	},
+	set(next) {
+		emit("update:bufferFilter", next);
+	},
+});
+
+const bufferFilterTransitionKey = computed(() =>
+	[
+		selectedCity.value || "all",
+		selectedDistrict.value || "all",
+		selectedBufferModel.value || "buf",
+	].join("-"),
+);
+
 watch(
 	normalizedItems,
 	() => {
@@ -179,6 +234,38 @@ function medianStyle() {
 	return { left: "50%" };
 }
 
+function rentHeatmapFocusFromRow(it, rowIndex) {
+	const name = String(it?.name || "");
+	if (name.includes("全部")) return "main";
+	if (name.includes("整戶")) return "whole";
+	if (name.includes("獨立套房")) return "suite";
+	if (name.includes("分租") || name.includes("雅房")) return "shared";
+	const sk = Number(it.sortKey);
+	if (sk === 1) return "main";
+	if (sk === 2) return "whole";
+	if (sk === 3) return "suite";
+	if (sk === 4) return "shared";
+	if (rowIndex === 0) return "main";
+	if (rowIndex === 1) return "whole";
+	if (rowIndex === 2) return "suite";
+	if (rowIndex === 3) return "shared";
+	return "main";
+}
+
+function onRentHeatmapRowClick(it, rowIndex) {
+	if (!props.rent_heatmap_row_mode) return;
+	emit("rentHeatmapFocus", rentHeatmapFocusFromRow(it, rowIndex));
+}
+
+function rentHeatmapRowActive(it, rowIndex) {
+	if (!props.rent_heatmap_row_mode) return false;
+	const f =
+		props.heatmap_chart_focus != null
+			? String(props.heatmap_chart_focus)
+			: "main";
+	return f === rentHeatmapFocusFromRow(it, rowIndex);
+}
+
 function whiskerStyle(type, _i) {
 	// color is applied via inline styles below
 	return { left: type === "min" ? "0%" : "100%" };
@@ -187,13 +274,24 @@ function whiskerStyle(type, _i) {
 
 <template>
 	<div v-if="activeChart === 'QuartileChart'" class="QuartileChart">
-		<div v-if="showAreaSelectors" class="QuartileChart__filters">
-			<select v-model="selectedCity">
+		<div
+			v-if="showFilterRow"
+			class="QuartileChart__filters"
+			:class="{
+				'QuartileChart__filters--bufferOnly':
+					showBufferSelector && !showAreaSelectors,
+				'QuartileChart__filters--bufferAndPick':
+					showBufferSelector &&
+					showMapPickControl &&
+					!showAreaSelectors,
+			}"
+		>
+			<select v-if="showAreaSelectors" v-model="selectedCity">
 				<option v-for="city in cityOptions" :key="city" :value="city">
 					{{ city }}
 				</option>
 			</select>
-			<select v-model="selectedDistrict">
+			<select v-if="showAreaSelectors" v-model="selectedDistrict">
 				<option
 					v-for="district in districtOptions"
 					:key="district"
@@ -202,11 +300,37 @@ function whiskerStyle(type, _i) {
 					{{ district }}
 				</option>
 			</select>
+			<select
+				v-if="showBufferSelector"
+				v-model="selectedBufferModel"
+				class="QuartileChart__selectBuffer"
+			>
+				<option
+					v-for="opt in bufferFilterOptionsList"
+					:key="opt.value"
+					:value="opt.value"
+				>
+					{{ opt.label }}
+				</option>
+			</select>
+			<button
+				v-if="showMapPickControl"
+				type="button"
+				class="QuartileChart__mapPickBtn"
+				:class="{
+					'QuartileChart__mapPickBtn--armed': map_pick_armed,
+				}"
+				title="先按此鈕，再於地圖上點選查詢中心"
+				aria-label="於地圖上點選租屋熱區查詢中心"
+				@click="emit('toggleMapPick')"
+			>
+				<span class="QuartileChart__mapPickIcon" aria-hidden="true">place</span>
+			</button>
 		</div>
 
 		<Transition name="quartile-fade" mode="out-in">
 			<div
-				:key="`${selectedCity || 'all'}-${selectedDistrict || 'all'}`"
+				:key="bufferFilterTransitionKey"
 				:class="[
 					'QuartileChart__list',
 					{
@@ -220,6 +344,15 @@ function whiskerStyle(type, _i) {
 						v-for="(it, i) in displayItems"
 						:key="`${it.name}-${i}`"
 						class="QuartileChart__row"
+						:class="{
+							'QuartileChart__row--selectable': rent_heatmap_row_mode,
+							'QuartileChart__row--active': rentHeatmapRowActive(it, i),
+						}"
+						role="button"
+						:tabindex="rent_heatmap_row_mode ? 0 : undefined"
+						@click="onRentHeatmapRowClick(it, i)"
+						@keydown.enter.prevent="onRentHeatmapRowClick(it, i)"
+						@keydown.space.prevent="onRentHeatmapRowClick(it, i)"
 					>
 						<div class="QuartileChart__left">
 							<div
@@ -284,7 +417,7 @@ function whiskerStyle(type, _i) {
 									}"
 								/>
 								<div
-									class="QuartileChart__whisker"
+									class="QuartileChart__whisker QuartileChart__whisker--min"
 									:style="{
 										...whiskerStyle('min', i),
 										backgroundColor: colorForIndex(i),
@@ -292,7 +425,7 @@ function whiskerStyle(type, _i) {
 									}"
 								/>
 								<div
-									class="QuartileChart__whisker"
+									class="QuartileChart__whisker QuartileChart__whisker--max"
 									:style="{
 										...whiskerStyle('max', i),
 										backgroundColor: colorForIndex(i),
@@ -346,7 +479,7 @@ function whiskerStyle(type, _i) {
 
 	&__filters {
 		display: grid;
-		grid-template-columns: auto auto;
+		grid-template-columns: repeat(auto-fill, minmax(85px, max-content));
 		justify-content: start;
 		gap: 6px;
 		padding: 2px 2px 6px;
@@ -361,6 +494,53 @@ function whiskerStyle(type, _i) {
 			max-width: 44vw;
 			justify-self: start;
 		}
+
+		&--bufferOnly select {
+			min-width: 100px;
+			width: auto;
+		}
+
+		&--bufferAndPick {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			width: 100%;
+			box-sizing: border-box;
+			gap: 8px;
+		}
+	}
+
+	&__selectBuffer {
+		min-width: 100px;
+		width: auto !important;
+		max-width: 50vw !important;
+	}
+
+	&__mapPickBtn {
+		flex-shrink: 0;
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		padding: 4px 6px;
+		min-width: 32px;
+		min-height: 28px;
+		border: 1px solid var(--color-border);
+		border-radius: 4px;
+		background: var(--color-component-background);
+		color: var(--color-complement-text);
+		cursor: pointer;
+
+		&--armed {
+			color: var(--color-highlight);
+			border-color: var(--color-highlight);
+		}
+	}
+
+	&__mapPickIcon {
+		font-family: var(--font-icon);
+		font-size: 1.15rem;
+		line-height: 1;
+		user-select: none;
 	}
 
 	&__noData {
@@ -381,6 +561,62 @@ function whiskerStyle(type, _i) {
 		column-gap: 6px;
 		padding: 6px 2px;
 		border-bottom: 1px solid var(--color-border);
+
+		&.QuartileChart__row--selectable {
+			column-gap: 2px;
+			grid-template-columns: minmax(72px, 100px) minmax(0, 1fr);
+		}
+	}
+
+	&__row--selectable {
+		cursor: pointer;
+		border-radius: 8px;
+		margin: 3px -2px;
+		padding: 7px 6px 7px 4px;
+		transform: scale(1);
+		transform-origin: left center;
+		opacity: 0.5;
+		transition:
+			transform 0.2s cubic-bezier(0.32, 0.72, 0, 1),
+			opacity 0.2s ease;
+
+		&.QuartileChart__row--active {
+			position: relative;
+			z-index: 1;
+			opacity: 1;
+			transform: translateX(-2px) scale(1.036);
+
+			// Active row is slightly zoomed; shrink quartile track a bit
+			// so min/max whiskers are less likely to be clipped.
+			:deep(.QuartileChart__trackLine) {
+				left: 2px;
+				right: 10px;
+			}
+			:deep(.QuartileChart__range) {
+				left: calc(16.6667% + 2px);
+				width: calc(66.6667% - 12px);
+			}
+			:deep(.QuartileChart__whisker) {
+				z-index: 6;
+				height: 13px;
+				opacity: 0.5;
+			}
+			:deep(.QuartileChart__whisker--max) {
+				left: calc(100% - 8px) !important;
+			}
+			:deep(.QuartileChart__whisker--min) {
+				left: 4px !important;
+			}
+		}
+
+		&:hover:not(.QuartileChart__row--active) {
+			opacity: 0.72;
+		}
+
+		&:focus-visible {
+			outline: 2px solid var(--color-highlight);
+			outline-offset: 1px;
+		}
 	}
 
 	&__row:last-child {
@@ -393,6 +629,10 @@ function whiskerStyle(type, _i) {
 		align-items: center;
 		gap: 6px;
 		min-width: 0;
+	}
+
+	&__row--selectable &__left {
+		gap: 4px;
 	}
 
 	&__icon {
