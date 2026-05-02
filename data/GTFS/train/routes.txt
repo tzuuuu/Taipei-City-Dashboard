@@ -1,0 +1,5 @@
+route_id,agency_id,route_short_name,route_long_name,route_desc,route_type,route_url,route_color,route_text_color
+WEST,TRA,西部走廊,西部幹線與海線直通班次,,2,,,
+EAST,TRA,東部走廊,東部幹線直通班次,,2,,,
+SOUTH_LINK,TRA,南迴走廊,南迴線主走廊班次,,2,,,
+BRANCH,TRA,支線,各支線與短區間支線班次,,2,,,
