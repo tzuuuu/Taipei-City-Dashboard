@@ -122,6 +122,8 @@ var (
 		MaxConcurrent: getIntEnv("TWCC_MAX_CONCURRENT", 100),
 	}
 	
+	GTFSDir = getEnv("GTFS_DIR", "/opt/gtfs")
+
 	LMSession *ort.DynamicSession[int64, float32]
 	LMTokenizer *tokenizer.Tokenizer
 )
