@@ -1,0 +1,4570 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.500325,
+          25.03528
+        ]
+      },
+      "properties": {
+        "station_name": "龍山寺",
+        "cityName": "臺北市",
+        "townName": "萬華區",
+        "address": "108015臺北市萬華區西園路1段153號",
+        "price": {
+          "rent": {
+            "PRICE_NEW_YEAR": "1636",
+            "PRICE_NEW": "1385",
+            "pre_owned_house_year_average_price": "1429",
+            "pre_owned_house_history_price": "1260",
+            "PRICE_APARTMENT_YEAR": "1358",
+            "PRICE_APARTMENT": "1125",
+            "PRICE_BUILDING_YEAR": "1496",
+            "PRICE_BUILDING": "1322",
+            "pre_owned_suite_year_average_price": "0",
+            "pre_owned_suite_history_price": "1442",
+            "PRICE_AVERAGE_YEAR": "1431",
+            "RENT_AVERAGE_YEAR": "1278"
+          },
+          "transaction": {
+            "PRICE_NEW_YEAR": "829434",
+            "PRICE_NEW": "640974",
+            "pre_owned_house_year_average_price": "645225",
+            "pre_owned_house_history_price": "516716",
+            "PRICE_APARTMENT_YEAR": "490947",
+            "PRICE_APARTMENT": "406008",
+            "PRICE_BUILDING_YEAR": "689638",
+            "PRICE_BUILDING": "564205",
+            "pre_owned_suite_year_average_price": "0",
+            "pre_owned_suite_history_price": "0",
+            "PRICE_AVERAGE_YEAR": "657371",
+            "RENT_AVERAGE_YEAR": "574373"
+          }
+        },
+        "rent_average_year": 1431.0,
+        "RENT_AVERAGE_YEAR": 1431.0,
+        "line": [
+          "blue"
+        ],
+        "line_tw": [
+          "板南線"
+        ],
+        "line_colors": [
+          "#0072CE"
+        ],
+        "badge_colors": [
+          "#0072CE",
+          "#0072CE"
+        ],
+        "badge_icon": "station-rent-0072ce-0072ce"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.508175,
+          25.042025
+        ]
+      },
+      "properties": {
+        "station_name": "西門",
+        "cityName": "臺北市",
+        "townName": "中正區",
+        "address": "100005臺北市中正區寶慶路32之1號B1",
+        "price": {
+          "rent": {
+            "PRICE_NEW_YEAR": "1741",
+            "PRICE_NEW": "1459",
+            "pre_owned_house_year_average_price": "1744",
+            "pre_owned_house_history_price": "1532",
+            "PRICE_APARTMENT_YEAR": "1812",
+            "PRICE_APARTMENT": "1611",
+            "PRICE_BUILDING_YEAR": "1724",
+            "PRICE_BUILDING": "1495",
+            "pre_owned_suite_year_average_price": "0",
+            "pre_owned_suite_history_price": "1574",
+            "PRICE_AVERAGE_YEAR": "1744",
+            "RENT_AVERAGE_YEAR": "1525"
+          },
+          "transaction": {
+            "PRICE_NEW_YEAR": "1184638",
+            "PRICE_NEW": "769856",
+            "pre_owned_house_year_average_price": "751071",
+            "pre_owned_house_history_price": "632155",
+            "PRICE_APARTMENT_YEAR": "742172",
+            "PRICE_APARTMENT": "518199",
+            "PRICE_BUILDING_YEAR": "751738",
+            "PRICE_BUILDING": "638250",
+            "pre_owned_suite_year_average_price": "0",
+            "pre_owned_suite_history_price": "0",
+            "PRICE_AVERAGE_YEAR": "847709",
+            "RENT_AVERAGE_YEAR": "690157"
+          }
+        },
+        "rent_average_year": 1744.0,
+        "RENT_AVERAGE_YEAR": 1744.0,
+        "line": [
+          "blue",
+          "green"
+        ],
+        "line_tw": [
+          "板南線",
+          "松山新店線"
+        ],
+        "line_colors": [
+          "#0072CE",
+          "#008659"
+        ],
+        "badge_colors": [
+          "#0072CE",
+          "#008659"
+        ],
+        "badge_icon": "station-rent-0072ce-008659"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.517415,
+          25.04631
+        ]
+      },
+      "properties": {
+        "station_name": "台北車站",
+        "cityName": "臺北市",
+        "townName": "中正區",
+        "address": "100009臺北市中正區忠孝西路1段49號",
+        "price": {
+          "rent": {
+            "PRICE_NEW_YEAR": "2245",
+            "PRICE_NEW": "1796",
+            "pre_owned_house_year_average_price": "1825",
+            "pre_owned_house_history_price": "1616",
+            "PRICE_APARTMENT_YEAR": "1733",
+            "PRICE_APARTMENT": "1427",
+            "PRICE_BUILDING_YEAR": "1847",
+            "PRICE_BUILDING": "1637",
+            "pre_owned_suite_year_average_price": "0",
+            "pre_owned_suite_history_price": "1652",
+            "PRICE_AVERAGE_YEAR": "1849",
+            "RENT_AVERAGE_YEAR": "1637"
+          },
+          "transaction": {
+            "PRICE_NEW_YEAR": "1252455",
+            "PRICE_NEW": "1027938",
+            "pre_owned_house_year_average_price": "842039",
+            "pre_owned_house_history_price": "722412",
+            "PRICE_APARTMENT_YEAR": "757807",
+            "PRICE_APARTMENT": "632908",
+            "PRICE_BUILDING_YEAR": "847848",
+            "PRICE_BUILDING": "734009",
+            "pre_owned_suite_year_average_price": "0",
+            "pre_owned_suite_history_price": "0",
+            "PRICE_AVERAGE_YEAR": "997997",
+            "RENT_AVERAGE_YEAR": "801623"
+          }
+        },
+        "rent_average_year": 1849.0,
+        "RENT_AVERAGE_YEAR": 1849.0,
+        "line": [
+          "blue",
+          "red"
+        ],
+        "line_tw": [
+          "板南線",
+          "淡水信義線"
+        ],
+        "line_colors": [
+          "#0072CE",
+          "#E60012"
+        ],
+        "badge_colors": [
+          "#0072CE",
+          "#E60012"
+        ],
+        "badge_icon": "station-rent-0072ce-e60012"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.523885,
+          25.04468
+        ]
+      },
+      "properties": {
+        "station_name": "善導寺",
+        "cityName": "臺北市",
+        "townName": "中正區",
+        "address": "100024臺北市中正區忠孝東路1段58號B1",
+        "price": {
+          "rent": {
+            "PRICE_NEW_YEAR": "2307",
+            "PRICE_NEW": "1845",
+            "pre_owned_house_year_average_price": "1841",
+            "pre_owned_house_history_price": "1555",
+            "PRICE_APARTMENT_YEAR": "1813",
+            "PRICE_APARTMENT": "1525",
+            "PRICE_BUILDING_YEAR": "1854",
+            "PRICE_BUILDING": "1551",
+            "pre_owned_suite_year_average_price": "0",
+            "pre_owned_suite_history_price": "1638",
+            "PRICE_AVERAGE_YEAR": "1875",
+            "RENT_AVERAGE_YEAR": "1573"
+          },
+          "transaction": {
+            "PRICE_NEW_YEAR": "1236673",
+            "PRICE_NEW": "1094824",
+            "pre_owned_house_year_average_price": "871717",
+            "pre_owned_house_history_price": "792415",
+            "PRICE_APARTMENT_YEAR": "762427",
+            "PRICE_APARTMENT": "748245",
+            "PRICE_BUILDING_YEAR": "901866",
+            "PRICE_BUILDING": "800918",
+            "pre_owned_suite_year_average_price": "0",
+            "pre_owned_suite_history_price": "0",
+            "PRICE_AVERAGE_YEAR": "955353",
+            "RENT_AVERAGE_YEAR": "884782"
+          }
+        },
+        "rent_average_year": 1875.0,
+        "RENT_AVERAGE_YEAR": 1875.0,
+        "line": [
+          "blue"
+        ],
+        "line_tw": [
+          "板南線"
+        ],
+        "line_colors": [
+          "#0072CE"
+        ],
+        "badge_colors": [
+          "#0072CE",
+          "#0072CE"
+        ],
+        "badge_icon": "station-rent-0072ce-0072ce"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.53321,
+          25.042498
+        ]
+      },
+      "properties": {
+        "station_name": "忠孝新生",
+        "cityName": "臺北市",
+        "townName": "大安區",
+        "address": "106083臺北市大安區新生南路1段67號",
+        "price": {
+          "rent": {
+            "PRICE_NEW_YEAR": "2743",
+            "PRICE_NEW": "2023",
+            "pre_owned_house_year_average_price": "2066",
+            "pre_owned_house_history_price": "1569",
+            "PRICE_APARTMENT_YEAR": "1986",
+            "PRICE_APARTMENT": "1572",
+            "PRICE_BUILDING_YEAR": "2117",
+            "PRICE_BUILDING": "1558",
+            "pre_owned_suite_year_average_price": "0",
+            "pre_owned_suite_history_price": "1647",
+            "PRICE_AVERAGE_YEAR": "2089",
+            "RENT_AVERAGE_YEAR": "1595"
+          },
+          "transaction": {
+            "PRICE_NEW_YEAR": "1562635",
+            "PRICE_NEW": "1255851",
+            "pre_owned_house_year_average_price": "1019273",
+            "pre_owned_house_history_price": "874648",
+            "PRICE_APARTMENT_YEAR": "930890",
+            "PRICE_APARTMENT": "787972",
+            "PRICE_BUILDING_YEAR": "1040607",
+            "PRICE_BUILDING": "899156",
+            "pre_owned_suite_year_average_price": "0",
+            "pre_owned_suite_history_price": "0",
+            "PRICE_AVERAGE_YEAR": "1054556",
+            "RENT_AVERAGE_YEAR": "944653"
+          }
+        },
+        "rent_average_year": 2089.0,
+        "RENT_AVERAGE_YEAR": 2089.0,
+        "line": [
+          "blue",
+          "orange"
+        ],
+        "line_tw": [
+          "板南線",
+          "中和新蘆線"
+        ],
+        "line_colors": [
+          "#0072CE",
+          "#F58220"
+        ],
+        "badge_colors": [
+          "#0072CE",
+          "#F58220"
+        ],
+        "badge_icon": "station-rent-0072ce-f58220"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.545026,
+          25.041749
+        ]
+      },
+      "properties": {
+        "station_name": "忠孝復興",
+        "cityName": "臺北市",
+        "townName": "大安區",
+        "address": "106071臺北市大安區忠孝東路4段47號",
+        "price": {
+          "rent": {
+            "PRICE_NEW_YEAR": "3375",
+            "PRICE_NEW": "2302",
+            "pre_owned_house_year_average_price": "2095",
+            "pre_owned_house_history_price": "1515",
+            "PRICE_APARTMENT_YEAR": "2468",
+            "PRICE_APARTMENT": "1601",
+            "PRICE_BUILDING_YEAR": "1829",
+            "PRICE_BUILDING": "1481",
+            "pre_owned_suite_year_average_price": "0",
+            "pre_owned_suite_history_price": "1857",
+            "PRICE_AVERAGE_YEAR": "2180",
+            "RENT_AVERAGE_YEAR": "1543"
+          },
+          "transaction": {
+            "PRICE_NEW_YEAR": "1646722",
+            "PRICE_NEW": "1535905",
+            "pre_owned_house_year_average_price": "1058293",
+            "pre_owned_house_history_price": "928808",
+            "PRICE_APARTMENT_YEAR": "967570",
+            "PRICE_APARTMENT": "805239",
+            "PRICE_BUILDING_YEAR": "1066473",
+            "PRICE_BUILDING": "948275",
+            "pre_owned_suite_year_average_price": "0",
+            "pre_owned_suite_history_price": "0",
+            "PRICE_AVERAGE_YEAR": "1166592",
+            "RENT_AVERAGE_YEAR": "1033508"
+          }
+        },
+        "rent_average_year": 2180.0,
+        "RENT_AVERAGE_YEAR": 2180.0,
+        "line": [
+          "blue",
+          "brown"
+        ],
+        "line_tw": [
+          "板南線",
+          "文湖線"
+        ],
+        "line_colors": [
+          "#0072CE",
+          "#8B5A2B"
+        ],
+        "badge_colors": [
+          "#0072CE",
+          "#8B5A2B"
+        ],
+        "badge_icon": "station-rent-0072ce-8b5a2b"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.55045,
+          25.041505
+        ]
+      },
+      "properties": {
+        "station_name": "忠孝敦化",
+        "cityName": "臺北市",
+        "townName": "大安區",
+        "address": "106057臺北市大安區忠孝東路4段182號",
+        "price": {
+          "rent": {
+            "PRICE_NEW_YEAR": "2465",
+            "PRICE_NEW": "2078",
+            "pre_owned_house_year_average_price": "2087",
+            "pre_owned_house_history_price": "1531",
+            "PRICE_APARTMENT_YEAR": "2184",
+            "PRICE_APARTMENT": "1487",
+            "PRICE_BUILDING_YEAR": "2038",
+            "PRICE_BUILDING": "1520",
+            "pre_owned_suite_year_average_price": "0",
+            "pre_owned_suite_history_price": "1833",
+            "PRICE_AVERAGE_YEAR": "2090",
+            "RENT_AVERAGE_YEAR": "1544"
+          },
+          "transaction": {
+            "PRICE_NEW_YEAR": "0",
+            "PRICE_NEW": "1438125",
+            "pre_owned_house_year_average_price": "1054323",
+            "pre_owned_house_history_price": "959914",
+            "PRICE_APARTMENT_YEAR": "924137",
+            "PRICE_APARTMENT": "813328",
+            "PRICE_BUILDING_YEAR": "1068589",
+            "PRICE_BUILDING": "981303",
+            "pre_owned_suite_year_average_price": "0",
+            "pre_owned_suite_history_price": "0",
+            "PRICE_AVERAGE_YEAR": "1054323",
+            "RENT_AVERAGE_YEAR": "981001"
+          }
+        },
+        "rent_average_year": 2090.0,
+        "RENT_AVERAGE_YEAR": 2090.0,
+        "line": [
+          "blue"
+        ],
+        "line_tw": [
+          "板南線"
+        ],
+        "line_colors": [
+          "#0072CE"
+        ],
+        "badge_colors": [
+          "#0072CE",
+          "#0072CE"
+        ],
+        "badge_icon": "station-rent-0072ce-0072ce"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.557815,
+          25.04137
+        ]
+      },
+      "properties": {
+        "station_name": "國父紀念館",
+        "cityName": "臺北市",
+        "townName": "信義區",
+        "address": "110054臺北市信義區忠孝東路4段400號",
+        "price": {
+          "rent": {
+            "PRICE_NEW_YEAR": "0",
+            "PRICE_NEW": "1701",
+            "pre_owned_house_year_average_price": "1941",
+            "pre_owned_house_history_price": "1480",
+            "PRICE_APARTMENT_YEAR": "1764",
+            "PRICE_APARTMENT": "1440",
+            "PRICE_BUILDING_YEAR": "2040",
+            "PRICE_BUILDING": "1466",
+            "pre_owned_suite_year_average_price": "0",
+            "pre_owned_suite_history_price": "1837",
+            "PRICE_AVERAGE_YEAR": "1941",
+            "RENT_AVERAGE_YEAR": "1486"
+          },
+          "transaction": {
+            "PRICE_NEW_YEAR": "0",
+            "PRICE_NEW": "1512154",
+            "pre_owned_house_year_average_price": "1029335",
+            "pre_owned_house_history_price": "934171",
+            "PRICE_APARTMENT_YEAR": "861070",
+            "PRICE_APARTMENT": "777682",
+            "PRICE_BUILDING_YEAR": "1057811",
+            "PRICE_BUILDING": "960520",
+            "pre_owned_suite_year_average_price": "0",
+            "pre_owned_suite_history_price": "0",
+            "PRICE_AVERAGE_YEAR": "1029335",
+            "RENT_AVERAGE_YEAR": "971439"
+          }
+        },
+        "rent_average_year": 1941.0,
+        "RENT_AVERAGE_YEAR": 1941.0,
+        "line": [
+          "blue"
+        ],
+        "line_tw": [
+          "板南線"
+        ],
+        "line_colors": [
+          "#0072CE"
+        ],
+        "badge_colors": [
+          "#0072CE",
+          "#0072CE"
+        ],
+        "badge_icon": "station-rent-0072ce-0072ce"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.565685,
+          25.041135
+        ]
+      },
+      "properties": {
+        "station_name": "市政府",
+        "cityName": "臺北市",
+        "townName": "信義區",
+        "address": "110060臺北市信義區忠孝東路5段2號",
+        "price": {
+          "rent": {
+            "PRICE_NEW_YEAR": "0",
+            "PRICE_NEW": "1829",
+            "pre_owned_house_year_average_price": "2928",
+            "pre_owned_house_history_price": "1870",
+            "PRICE_APARTMENT_YEAR": "2351",
+            "PRICE_APARTMENT": "1619",
+            "PRICE_BUILDING_YEAR": "3226",
+            "PRICE_BUILDING": "1906",
+            "pre_owned_suite_year_average_price": "0",
+            "pre_owned_suite_history_price": "2043",
+            "PRICE_AVERAGE_YEAR": "2928",
+            "RENT_AVERAGE_YEAR": "1869"
+          },
+          "transaction": {
+            "PRICE_NEW_YEAR": "0",
+            "PRICE_NEW": "1385271",
+            "pre_owned_house_year_average_price": "1146215",
+            "pre_owned_house_history_price": "909278",
+            "PRICE_APARTMENT_YEAR": "842326",
+            "PRICE_APARTMENT": "743216",
+            "PRICE_BUILDING_YEAR": "1206993",
+            "PRICE_BUILDING": "951792",
+            "pre_owned_suite_year_average_price": "0",
+            "pre_owned_suite_history_price": "0",
+            "PRICE_AVERAGE_YEAR": "1146215",
+            "RENT_AVERAGE_YEAR": "981527"
+          }
+        },
+        "rent_average_year": 2928.0,
+        "RENT_AVERAGE_YEAR": 2928.0,
+        "line": [
+          "blue"
+        ],
+        "line_tw": [
+          "板南線"
+        ],
+        "line_colors": [
+          "#0072CE"
+        ],
+        "badge_colors": [
+          "#0072CE",
+          "#0072CE"
+        ],
+        "badge_icon": "station-rent-0072ce-0072ce"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5762,
+          25.040855
+        ]
+      },
+      "properties": {
+        "station_name": "永春",
+        "cityName": "臺北市",
+        "townName": "信義區",
+        "address": "110037臺北市信義區忠孝東路5段455號",
+        "price": {
+          "rent": {
+            "PRICE_NEW_YEAR": "3780",
+            "PRICE_NEW": "2063",
+            "pre_owned_house_year_average_price": "2101",
+            "pre_owned_house_history_price": "1558",
+            "PRICE_APARTMENT_YEAR": "1553",
+            "PRICE_APARTMENT": "1234",
+            "PRICE_BUILDING_YEAR": "2776",
+            "PRICE_BUILDING": "1689",
+            "pre_owned_suite_year_average_price": "0",
+            "pre_owned_suite_history_price": "1964",
+            "PRICE_AVERAGE_YEAR": "2111",
+            "RENT_AVERAGE_YEAR": "1570"
+          },
+          "transaction": {
+            "PRICE_NEW_YEAR": "1396366",
+            "PRICE_NEW": "1163621",
+            "pre_owned_house_year_average_price": "1007644",
+            "pre_owned_house_history_price": "801504",
+            "PRICE_APARTMENT_YEAR": "799125",
+            "PRICE_APARTMENT": "655983",
+            "PRICE_BUILDING_YEAR": "1113332",
+            "PRICE_BUILDING": "892394",
+            "pre_owned_suite_year_average_price": "0",
+            "pre_owned_suite_history_price": "0",
+            "PRICE_AVERAGE_YEAR": "1017964",
+            "RENT_AVERAGE_YEAR": "838291"
+          }
+        },
+        "rent_average_year": 2111.0,
+        "RENT_AVERAGE_YEAR": 2111.0,
+        "line": [
+          "blue"
+        ],
+        "line_tw": [
+          "板南線"
+        ],
+        "line_colors": [
+          "#0072CE"
+        ],
+        "badge_colors": [
+          "#0072CE",
+          "#0072CE"
+        ],
+        "badge_icon": "station-rent-0072ce-0072ce"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.58227,
+          25.044715
+        ]
+      },
+      "properties": {
+        "station_name": "後山埤",
+        "cityName": "臺北市",
+        "townName": "南港區",
+        "address": "115025臺北市南港區忠孝東路6段2號",
+        "price": {
+          "rent": {
+            "PRICE_NEW_YEAR": "2365",
+            "PRICE_NEW": "1821",
+            "pre_owned_house_year_average_price": "1637",
+            "pre_owned_house_history_price": "1218",
+            "PRICE_APARTMENT_YEAR": "1589",
+            "PRICE_APARTMENT": "1184",
+            "PRICE_BUILDING_YEAR": "1809",
+            "PRICE_BUILDING": "1264",
+            "pre_owned_suite_year_average_price": "0",
+            "pre_owned_suite_history_price": "1521",
+            "PRICE_AVERAGE_YEAR": "1713",
+            "RENT_AVERAGE_YEAR": "1289"
+          },
+          "transaction": {
+            "PRICE_NEW_YEAR": "1207149",
+            "PRICE_NEW": "939206",
+            "pre_owned_house_year_average_price": "867870",
+            "pre_owned_house_history_price": "678353",
+            "PRICE_APARTMENT_YEAR": "796992",
+            "PRICE_APARTMENT": "609668",
+            "PRICE_BUILDING_YEAR": "907039",
+            "PRICE_BUILDING": "747946",
+            "pre_owned_suite_year_average_price": "0",
+            "pre_owned_suite_history_price": "0",
+            "PRICE_AVERAGE_YEAR": "965974",
+            "RENT_AVERAGE_YEAR": "737614"
+          }
+        },
+        "rent_average_year": 1713.0,
+        "RENT_AVERAGE_YEAR": 1713.0,
+        "line": [
+          "blue"
+        ],
+        "line_tw": [
+          "板南線"
+        ],
+        "line_colors": [
+          "#0072CE"
+        ],
+        "badge_colors": [
+          "#0072CE",
+          "#0072CE"
+        ],
+        "badge_icon": "station-rent-0072ce-0072ce"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.593228,
+          25.050459
+        ]
+      },
+      "properties": {
+        "station_name": "昆陽",
+        "cityName": "臺北市",
+        "townName": "南港區",
+        "address": "115007臺北市南港區忠孝東路6段451號",
+        "price": {
+          "rent": {
+            "PRICE_NEW_YEAR": "0",
+            "PRICE_NEW": "970",
+            "pre_owned_house_year_average_price": "1705",
+            "pre_owned_house_history_price": "1474",
+            "PRICE_APARTMENT_YEAR": "1758",
+            "PRICE_APARTMENT": "1487",
+            "PRICE_BUILDING_YEAR": "883",
+            "PRICE_BUILDING": "892",
+            "pre_owned_suite_year_average_price": "0",
+            "pre_owned_suite_history_price": "1706",
+            "PRICE_AVERAGE_YEAR": "1705",
+            "RENT_AVERAGE_YEAR": "1461"
+          },
+          "transaction": {
+            "PRICE_NEW_YEAR": "1024288",
+            "PRICE_NEW": "854048",
+            "pre_owned_house_year_average_price": "751535",
+            "pre_owned_house_history_price": "571513",
+            "PRICE_APARTMENT_YEAR": "697480",
+            "PRICE_APARTMENT": "562670",
+            "PRICE_BUILDING_YEAR": "1075868",
+            "PRICE_BUILDING": "693266",
+            "pre_owned_suite_year_average_price": "0",
+            "pre_owned_suite_history_price": "0",
+            "PRICE_AVERAGE_YEAR": "785629",
+            "RENT_AVERAGE_YEAR": "640478"
+          }
+        },
+        "rent_average_year": 1705.0,
+        "RENT_AVERAGE_YEAR": 1705.0,
+        "line": [
+          "blue"
+        ],
+        "line_tw": [
+          "板南線"
+        ],
+        "line_colors": [
+          "#0072CE"
+        ],
+        "badge_colors": [
+          "#0072CE",
+          "#0072CE"
+        ],
+        "badge_icon": "station-rent-0072ce-0072ce"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.60697,
+          25.052035
+        ]
+      },
+      "properties": {
+        "station_name": "南港",
+        "cityName": "臺北市",
+        "townName": "南港區",
+        "address": "115011臺北市南港區忠孝東路7段380號",
+        "price": {
+          "rent": {
+            "PRICE_NEW_YEAR": "0",
+            "PRICE_NEW": "1003",
+            "pre_owned_house_year_average_price": "1405",
+            "pre_owned_house_history_price": "1068",
+            "PRICE_APARTMENT_YEAR": "1076",
+            "PRICE_APARTMENT": "1009",
+            "PRICE_BUILDING_YEAR": "1514",
+            "PRICE_BUILDING": "1088",
+            "pre_owned_suite_year_average_price": "0",
+            "pre_owned_suite_history_price": "0",
+            "PRICE_AVERAGE_YEAR": "1405",
+            "RENT_AVERAGE_YEAR": "1059"
+          },
+          "transaction": {
+            "PRICE_NEW_YEAR": "0",
+            "PRICE_NEW": "636954",
+            "pre_owned_house_year_average_price": "958928",
+            "pre_owned_house_history_price": "725735",
+            "PRICE_APARTMENT_YEAR": "0",
+            "PRICE_APARTMENT": "544284",
+            "PRICE_BUILDING_YEAR": "958928",
+            "PRICE_BUILDING": "760338",
+            "pre_owned_suite_year_average_price": "0",
+            "pre_owned_suite_history_price": "0",
+            "PRICE_AVERAGE_YEAR": "958928",
+            "RENT_AVERAGE_YEAR": "692388"
+          }
+        },
+        "rent_average_year": 1405.0,
+        "RENT_AVERAGE_YEAR": 1405.0,
+        "line": [
+          "blue"
+        ],
+        "line_tw": [
+          "板南線"
+        ],
+        "line_colors": [
+          "#0072CE"
+        ],
+        "badge_colors": [
+          "#0072CE",
+          "#0072CE"
+        ],
+        "badge_icon": "station-rent-0072ce-0072ce"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.616861,
+          25.054919
+        ]
+      },
+      "properties": {
+        "station_name": "南港展覽館",
+        "cityName": "臺北市",
+        "townName": "南港區",
+        "address": "板南線：115021臺北市南港區研究院路1段1號",
+        "price": {
+          "rent": {
+            "PRICE_NEW_YEAR": "1820",
+            "PRICE_NEW": "1820",
+            "pre_owned_house_year_average_price": "1840",
+            "pre_owned_house_history_price": "1373",
+            "PRICE_APARTMENT_YEAR": "1400",
+            "PRICE_APARTMENT": "1041",
+            "PRICE_BUILDING_YEAR": "2564",
+            "PRICE_BUILDING": "1676",
+            "pre_owned_suite_year_average_price": "0",
+            "pre_owned_suite_history_price": "1602",
+            "PRICE_AVERAGE_YEAR": "1840",
+            "RENT_AVERAGE_YEAR": "1376"
+          },
+          "transaction": {
+            "PRICE_NEW_YEAR": "0",
+            "PRICE_NEW": "719288",
+            "pre_owned_house_year_average_price": "768486",
+            "pre_owned_house_history_price": "547985",
+            "PRICE_APARTMENT_YEAR": "710152",
+            "PRICE_APARTMENT": "550590",
+            "PRICE_BUILDING_YEAR": "836541",
+            "PRICE_BUILDING": "545304",
+            "pre_owned_suite_year_average_price": "0",
+            "pre_owned_suite_history_price": "0",
+            "PRICE_AVERAGE_YEAR": "768486",
+            "RENT_AVERAGE_YEAR": "590901"
+          }
+        },
+        "rent_average_year": 1840.0,
+        "RENT_AVERAGE_YEAR": 1840.0,
+        "line": [
+          "blue",
+          "brown"
+        ],
+        "line_tw": [
+          "板南線",
+          "文湖線"
+        ],
+        "line_colors": [
+          "#0072CE",
+          "#8B5A2B"
+        ],
+        "badge_colors": [
+          "#0072CE",
+          "#8B5A2B"
+        ],
+        "badge_icon": "station-rent-0072ce-8b5a2b"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.579501,
+          24.998205
+        ]
+      },
+      "properties": {
+        "station_name": "動物園",
+        "cityName": "臺北市",
+        "townName": "文山區",
+        "address": "116016臺北市文山區新光路2段32號",
+        "price": {
+          "rent": {
+            "PRICE_NEW_YEAR": "0",
+            "PRICE_NEW": "0",
+            "pre_owned_house_year_average_price": "667",
+            "pre_owned_house_history_price": "774",
+            "PRICE_APARTMENT_YEAR": "667",
+            "PRICE_APARTMENT": "714",
+            "PRICE_BUILDING_YEAR": "0",
+            "PRICE_BUILDING": "925",
+            "pre_owned_suite_year_average_price": "0",
+            "pre_owned_suite_history_price": "0",
+            "PRICE_AVERAGE_YEAR": "667",
+            "RENT_AVERAGE_YEAR": "774"
+          },
+          "transaction": {
+            "PRICE_NEW_YEAR": "0",
+            "PRICE_NEW": "0",
+            "pre_owned_house_year_average_price": "647770",
+            "pre_owned_house_history_price": "451303",
+            "PRICE_APARTMENT_YEAR": "0",
+            "PRICE_APARTMENT": "364732",
+            "PRICE_BUILDING_YEAR": "647770",
+            "PRICE_BUILDING": "496650",
+            "pre_owned_suite_year_average_price": "0",
+            "pre_owned_suite_history_price": "0",
+            "PRICE_AVERAGE_YEAR": "647770",
+            "RENT_AVERAGE_YEAR": "451303"
+          }
+        },
+        "rent_average_year": 667.0,
+        "RENT_AVERAGE_YEAR": 667.0,
+        "line": [
+          "brown"
+        ],
+        "line_tw": [
+          "文湖線"
+        ],
+        "line_colors": [
+          "#8B5A2B"
+        ],
+        "badge_colors": [
+          "#8B5A2B",
+          "#8B5A2B"
+        ],
+        "badge_icon": "station-rent-8b5a2b-8b5a2b"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.573127,
+          24.99824
+        ]
+      },
+      "properties": {
+        "station_name": "木柵",
+        "cityName": "臺北市",
+        "townName": "文山區",
+        "address": "116027臺北市文山區木柵路4段135號",
+        "price": {
+          "rent": {
+            "PRICE_NEW_YEAR": "0",
+            "PRICE_NEW": "623",
+            "pre_owned_house_year_average_price": "832",
+            "pre_owned_house_history_price": "830",
+            "PRICE_APARTMENT_YEAR": "718",
+            "PRICE_APARTMENT": "676",
+            "PRICE_BUILDING_YEAR": "886",
+            "PRICE_BUILDING": "873",
+            "pre_owned_suite_year_average_price": "0",
+            "pre_owned_suite_history_price": "1290",
+            "PRICE_AVERAGE_YEAR": "832",
+            "RENT_AVERAGE_YEAR": "818"
+          },
+          "transaction": {
+            "PRICE_NEW_YEAR": "0",
+            "PRICE_NEW": "605912",
+            "pre_owned_house_year_average_price": "621697",
+            "pre_owned_house_history_price": "467305",
+            "PRICE_APARTMENT_YEAR": "428067",
+            "PRICE_APARTMENT": "376110",
+            "PRICE_BUILDING_YEAR": "634606",
+            "PRICE_BUILDING": "482722",
+            "pre_owned_suite_year_average_price": "0",
+            "pre_owned_suite_history_price": "0",
+            "PRICE_AVERAGE_YEAR": "621697",
+            "RENT_AVERAGE_YEAR": "501573"
+          }
+        },
+        "rent_average_year": 832.0,
+        "RENT_AVERAGE_YEAR": 832.0,
+        "line": [
+          "brown"
+        ],
+        "line_tw": [
+          "文湖線"
+        ],
+        "line_colors": [
+          "#8B5A2B"
+        ],
+        "badge_colors": [
+          "#8B5A2B",
+          "#8B5A2B"
+        ],
+        "badge_icon": "station-rent-8b5a2b-8b5a2b"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.568088,
+          24.99857
+        ]
+      },
+      "properties": {
+        "station_name": "萬芳社區",
+        "cityName": "臺北市",
+        "townName": "文山區",
+        "address": "116027臺北市文山區萬芳路60號",
+        "price": {
+          "rent": {
+            "PRICE_NEW_YEAR": "0",
+            "PRICE_NEW": "606",
+            "pre_owned_house_year_average_price": "883",
+            "pre_owned_house_history_price": "876",
+            "PRICE_APARTMENT_YEAR": "712",
+            "PRICE_APARTMENT": "664",
+            "PRICE_BUILDING_YEAR": "941",
+            "PRICE_BUILDING": "933",
+            "pre_owned_suite_year_average_price": "0",
+            "pre_owned_suite_history_price": "666",
+            "PRICE_AVERAGE_YEAR": "883",
+            "RENT_AVERAGE_YEAR": "866"
+          },
+          "transaction": {
+            "PRICE_NEW_YEAR": "1062666",
+            "PRICE_NEW": "740382",
+            "pre_owned_house_year_average_price": "599471",
+            "pre_owned_house_history_price": "462103",
+            "PRICE_APARTMENT_YEAR": "449049",
+            "PRICE_APARTMENT": "401483",
+            "PRICE_BUILDING_YEAR": "631704",
+            "PRICE_BUILDING": "477405",
+            "pre_owned_suite_year_average_price": "0",
+            "pre_owned_suite_history_price": "0",
+            "PRICE_AVERAGE_YEAR": "800189",
+            "RENT_AVERAGE_YEAR": "535250"
+          }
+        },
+        "rent_average_year": 883.0,
+        "RENT_AVERAGE_YEAR": 883.0,
+        "line": [
+          "brown"
+        ],
+        "line_tw": [
+          "文湖線"
+        ],
+        "line_colors": [
+          "#8B5A2B"
+        ],
+        "badge_colors": [
+          "#8B5A2B",
+          "#8B5A2B"
+        ],
+        "badge_icon": "station-rent-8b5a2b-8b5a2b"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.558092,
+          24.99932
+        ]
+      },
+      "properties": {
+        "station_name": "萬芳醫院",
+        "cityName": "臺北市",
+        "townName": "文山區",
+        "address": "116081臺北市文山區興隆路3段113號",
+        "price": {
+          "rent": {
+            "PRICE_NEW_YEAR": "0",
+            "PRICE_NEW": "1200",
+            "pre_owned_house_year_average_price": "1184",
+            "pre_owned_house_history_price": "1095",
+            "PRICE_APARTMENT_YEAR": "986",
+            "PRICE_APARTMENT": "940",
+            "PRICE_BUILDING_YEAR": "1592",
+            "PRICE_BUILDING": "1404",
+            "pre_owned_suite_year_average_price": "0",
+            "pre_owned_suite_history_price": "1395",
+            "PRICE_AVERAGE_YEAR": "1184",
+            "RENT_AVERAGE_YEAR": "1107"
+          },
+          "transaction": {
+            "PRICE_NEW_YEAR": "1012090",
+            "PRICE_NEW": "608822",
+            "pre_owned_house_year_average_price": "743001",
+            "pre_owned_house_history_price": "529421",
+            "PRICE_APARTMENT_YEAR": "553006",
+            "PRICE_APARTMENT": "462646",
+            "PRICE_BUILDING_YEAR": "837999",
+            "PRICE_BUILDING": "587823",
+            "pre_owned_suite_year_average_price": "0",
+            "pre_owned_suite_history_price": "0",
+            "PRICE_AVERAGE_YEAR": "768033",
+            "RENT_AVERAGE_YEAR": "564413"
+          }
+        },
+        "rent_average_year": 1184.0,
+        "RENT_AVERAGE_YEAR": 1184.0,
+        "line": [
+          "brown"
+        ],
+        "line_tw": [
+          "文湖線"
+        ],
+        "line_colors": [
+          "#8B5A2B"
+        ],
+        "badge_colors": [
+          "#8B5A2B",
+          "#8B5A2B"
+        ],
+        "badge_icon": "station-rent-8b5a2b-8b5a2b"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.557046,
+          25.005455
+        ]
+      },
+      "properties": {
+        "station_name": "辛亥",
+        "cityName": "臺北市",
+        "townName": "文山區",
+        "address": "116081臺北市文山區辛亥路4段128號",
+        "price": {
+          "rent": {
+            "PRICE_NEW_YEAR": "0",
+            "PRICE_NEW": "1200",
+            "pre_owned_house_year_average_price": "1030",
+            "pre_owned_house_history_price": "946",
+            "PRICE_APARTMENT_YEAR": "888",
+            "PRICE_APARTMENT": "846",
+            "PRICE_BUILDING_YEAR": "1314",
+            "PRICE_BUILDING": "1163",
+            "pre_owned_suite_year_average_price": "0",
+            "pre_owned_suite_history_price": "1026",
+            "PRICE_AVERAGE_YEAR": "1030",
+            "RENT_AVERAGE_YEAR": "984"
+          },
+          "transaction": {
+            "PRICE_NEW_YEAR": "0",
+            "PRICE_NEW": "719899",
+            "pre_owned_house_year_average_price": "778740",
+            "pre_owned_house_history_price": "520788",
+            "PRICE_APARTMENT_YEAR": "541312",
+            "PRICE_APARTMENT": "419225",
+            "PRICE_BUILDING_YEAR": "841221",
+            "PRICE_BUILDING": "570509",
+            "pre_owned_suite_year_average_price": "0",
+            "pre_owned_suite_history_price": "0",
+            "PRICE_AVERAGE_YEAR": "778740",
+            "RENT_AVERAGE_YEAR": "577350"
+          }
+        },
+        "rent_average_year": 1030.0,
+        "RENT_AVERAGE_YEAR": 1030.0,
+        "line": [
+          "brown"
+        ],
+        "line_tw": [
+          "文湖線"
+        ],
+        "line_colors": [
+          "#8B5A2B"
+        ],
+        "badge_colors": [
+          "#8B5A2B",
+          "#8B5A2B"
+        ],
+        "badge_icon": "station-rent-8b5a2b-8b5a2b"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.558834,
+          25.018495
+        ]
+      },
+      "properties": {
+        "station_name": "麟光",
+        "cityName": "臺北市",
+        "townName": "大安區",
+        "address": "106043臺北市大安區和平東路3段410號",
+        "price": {
+          "rent": {
+            "PRICE_NEW_YEAR": "0",
+            "PRICE_NEW": "1635",
+            "pre_owned_house_year_average_price": "1801",
+            "pre_owned_house_history_price": "1276",
+            "PRICE_APARTMENT_YEAR": "1878",
+            "PRICE_APARTMENT": "1227",
+            "PRICE_BUILDING_YEAR": "1695",
+            "PRICE_BUILDING": "1311",
+            "pre_owned_suite_year_average_price": "0",
+            "pre_owned_suite_history_price": "1537",
+            "PRICE_AVERAGE_YEAR": "1801",
+            "RENT_AVERAGE_YEAR": "1285"
+          },
+          "transaction": {
+            "PRICE_NEW_YEAR": "1077226",
+            "PRICE_NEW": "784519",
+            "pre_owned_house_year_average_price": "771568",
+            "pre_owned_house_history_price": "625203",
+            "PRICE_APARTMENT_YEAR": "677744",
+            "PRICE_APARTMENT": "556798",
+            "PRICE_BUILDING_YEAR": "842875",
+            "PRICE_BUILDING": "699202",
+            "pre_owned_suite_year_average_price": "0",
+            "pre_owned_suite_history_price": "0",
+            "PRICE_AVERAGE_YEAR": "784858",
+            "RENT_AVERAGE_YEAR": "647236"
+          }
+        },
+        "rent_average_year": 1801.0,
+        "RENT_AVERAGE_YEAR": 1801.0,
+        "line": [
+          "brown"
+        ],
+        "line_tw": [
+          "文湖線"
+        ],
+        "line_colors": [
+          "#8B5A2B"
+        ],
+        "badge_colors": [
+          "#8B5A2B",
+          "#8B5A2B"
+        ],
+        "badge_icon": "station-rent-8b5a2b-8b5a2b"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.55302,
+          25.02381
+        ]
+      },
+      "properties": {
+        "station_name": "六張犁",
+        "cityName": "臺北市",
+        "townName": "大安區",
+        "address": "106039臺北市大安區和平東路3段168號",
+        "price": {
+          "rent": {
+            "PRICE_NEW_YEAR": "0",
+            "PRICE_NEW": "1769",
+            "pre_owned_house_year_average_price": "2501",
+            "pre_owned_house_history_price": "1642",
+            "PRICE_APARTMENT_YEAR": "1963",
+            "PRICE_APARTMENT": "1363",
+            "PRICE_BUILDING_YEAR": "2727",
+            "PRICE_BUILDING": "1716",
+            "pre_owned_suite_year_average_price": "0",
+            "pre_owned_suite_history_price": "1580",
+            "PRICE_AVERAGE_YEAR": "2501",
+            "RENT_AVERAGE_YEAR": "1654"
+          },
+          "transaction": {
+            "PRICE_NEW_YEAR": "0",
+            "PRICE_NEW": "891467",
+            "pre_owned_house_year_average_price": "879976",
+            "pre_owned_house_history_price": "742657",
+            "PRICE_APARTMENT_YEAR": "689558",
+            "PRICE_APARTMENT": "604225",
+            "PRICE_BUILDING_YEAR": "926419",
+            "PRICE_BUILDING": "794596",
+            "pre_owned_suite_year_average_price": "0",
+            "pre_owned_suite_history_price": "0",
+            "PRICE_AVERAGE_YEAR": "879976",
+            "RENT_AVERAGE_YEAR": "765870"
+          }
+        },
+        "rent_average_year": 2501.0,
+        "RENT_AVERAGE_YEAR": 2501.0,
+        "line": [
+          "brown"
+        ],
+        "line_tw": [
+          "文湖線"
+        ],
+        "line_colors": [
+          "#8B5A2B"
+        ],
+        "badge_colors": [
+          "#8B5A2B",
+          "#8B5A2B"
+        ],
+        "badge_icon": "station-rent-8b5a2b-8b5a2b"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.543462,
+          25.02612
+        ]
+      },
+      "properties": {
+        "station_name": "科技大樓",
+        "cityName": "臺北市",
+        "townName": "大安區",
+        "address": "106101臺北市大安區復興南路2段235號",
+        "price": {
+          "rent": {
+            "PRICE_NEW_YEAR": "2363",
+            "PRICE_NEW": "2148",
+            "pre_owned_house_year_average_price": "2060",
+            "pre_owned_house_history_price": "2203",
+            "PRICE_APARTMENT_YEAR": "2219",
+            "PRICE_APARTMENT": "1689",
+            "PRICE_BUILDING_YEAR": "1869",
+            "PRICE_BUILDING": "2471",
+            "pre_owned_suite_year_average_price": "0",
+            "pre_owned_suite_history_price": "1762",
+            "PRICE_AVERAGE_YEAR": "2063",
+            "RENT_AVERAGE_YEAR": "2194"
+          },
+          "transaction": {
+            "PRICE_NEW_YEAR": "1770728",
+            "PRICE_NEW": "1352101",
+            "pre_owned_house_year_average_price": "1023999",
+            "pre_owned_house_history_price": "858075",
+            "PRICE_APARTMENT_YEAR": "928593",
+            "PRICE_APARTMENT": "807776",
+            "PRICE_BUILDING_YEAR": "1032062",
+            "PRICE_BUILDING": "871326",
+            "pre_owned_suite_year_average_price": "0",
+            "pre_owned_suite_history_price": "0",
+            "PRICE_AVERAGE_YEAR": "1086227",
+            "RENT_AVERAGE_YEAR": "918022"
+          }
+        },
+        "rent_average_year": 2063.0,
+        "RENT_AVERAGE_YEAR": 2063.0,
+        "line": [
+          "brown"
+        ],
+        "line_tw": [
+          "文湖線"
+        ],
+        "line_colors": [
+          "#8B5A2B"
+        ],
+        "badge_colors": [
+          "#8B5A2B",
+          "#8B5A2B"
+        ],
+        "badge_icon": "station-rent-8b5a2b-8b5a2b"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.54237,
+          25.033311
+        ]
+      },
+      "properties": {
+        "station_name": "大安",
+        "cityName": "臺北市",
+        "townName": "大安區",
+        "address": "106097臺北市大安區信義路4段2號",
+        "price": {
+          "rent": {
+            "PRICE_NEW_YEAR": "1537",
+            "PRICE_NEW": "2171",
+            "pre_owned_house_year_average_price": "2215",
+            "pre_owned_house_history_price": "1662",
+            "PRICE_APARTMENT_YEAR": "2287",
+            "PRICE_APARTMENT": "1596",
+            "PRICE_BUILDING_YEAR": "2187",
+            "PRICE_BUILDING": "1660",
+            "pre_owned_suite_year_average_price": "0",
+            "pre_owned_suite_history_price": "1852",
+            "PRICE_AVERAGE_YEAR": "2207",
+            "RENT_AVERAGE_YEAR": "1727"
+          },
+          "transaction": {
+            "PRICE_NEW_YEAR": "1536450",
+            "PRICE_NEW": "1376110",
+            "pre_owned_house_year_average_price": "1269951",
+            "pre_owned_house_history_price": "999653",
+            "PRICE_APARTMENT_YEAR": "1097334",
+            "PRICE_APARTMENT": "875345",
+            "PRICE_BUILDING_YEAR": "1301505",
+            "PRICE_BUILDING": "1023809",
+            "pre_owned_suite_year_average_price": "0",
+            "pre_owned_suite_history_price": "0",
+            "PRICE_AVERAGE_YEAR": "1290107",
+            "RENT_AVERAGE_YEAR": "1062483"
+          }
+        },
+        "rent_average_year": 2207.0,
+        "RENT_AVERAGE_YEAR": 2207.0,
+        "line": [
+          "brown",
+          "red"
+        ],
+        "line_tw": [
+          "文湖線",
+          "淡水信義線"
+        ],
+        "line_colors": [
+          "#8B5A2B",
+          "#E60012"
+        ],
+        "badge_colors": [
+          "#8B5A2B",
+          "#E60012"
+        ],
+        "badge_icon": "station-rent-8b5a2b-e60012"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.544303,
+          25.052044
+        ]
+      },
+      "properties": {
+        "station_name": "南京復興",
+        "cityName": "臺北市",
+        "townName": "松山區",
+        "address": "105020臺北市松山區南京東路3段253號",
+        "price": {
+          "rent": {
+            "PRICE_NEW_YEAR": "2186",
+            "PRICE_NEW": "1755",
+            "pre_owned_house_year_average_price": "1993",
+            "pre_owned_house_history_price": "1620",
+            "PRICE_APARTMENT_YEAR": "2007",
+            "PRICE_APARTMENT": "1565",
+            "PRICE_BUILDING_YEAR": "1989",
+            "PRICE_BUILDING": "1602",
+            "pre_owned_suite_year_average_price": "0",
+            "pre_owned_suite_history_price": "1772",
+            "PRICE_AVERAGE_YEAR": "1993",
+            "RENT_AVERAGE_YEAR": "1628"
+          },
+          "transaction": {
+            "PRICE_NEW_YEAR": "1319363",
+            "PRICE_NEW": "1194802",
+            "pre_owned_house_year_average_price": "974283",
+            "pre_owned_house_history_price": "811769",
+            "PRICE_APARTMENT_YEAR": "781728",
+            "PRICE_APARTMENT": "678543",
+            "PRICE_BUILDING_YEAR": "986042",
+            "PRICE_BUILDING": "828636",
+            "pre_owned_suite_year_average_price": "0",
+            "pre_owned_suite_history_price": "0",
+            "PRICE_AVERAGE_YEAR": "979178",
+            "RENT_AVERAGE_YEAR": "882162"
+          }
+        },
+        "rent_average_year": 1993.0,
+        "RENT_AVERAGE_YEAR": 1993.0,
+        "line": [
+          "brown",
+          "green"
+        ],
+        "line_tw": [
+          "文湖線",
+          "松山新店線"
+        ],
+        "line_colors": [
+          "#8B5A2B",
+          "#008659"
+        ],
+        "badge_colors": [
+          "#8B5A2B",
+          "#008659"
+        ],
+        "badge_icon": "station-rent-8b5a2b-008659"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.544215,
+          25.06085
+        ]
+      },
+      "properties": {
+        "station_name": "中山國中",
+        "cityName": "臺北市",
+        "townName": "中山區",
+        "address": "104079臺北市中山區復興北路376號",
+        "price": {
+          "rent": {
+            "PRICE_NEW_YEAR": "0",
+            "PRICE_NEW": "1524",
+            "pre_owned_house_year_average_price": "1775",
+            "pre_owned_house_history_price": "1314",
+            "PRICE_APARTMENT_YEAR": "1979",
+            "PRICE_APARTMENT": "1149",
+            "PRICE_BUILDING_YEAR": "1704",
+            "PRICE_BUILDING": "1338",
+            "pre_owned_suite_year_average_price": "0",
+            "pre_owned_suite_history_price": "1536",
+            "PRICE_AVERAGE_YEAR": "1775",
+            "RENT_AVERAGE_YEAR": "1318"
+          },
+          "transaction": {
+            "PRICE_NEW_YEAR": "0",
+            "PRICE_NEW": "935055",
+            "pre_owned_house_year_average_price": "828898",
+            "pre_owned_house_history_price": "721959",
+            "PRICE_APARTMENT_YEAR": "702453",
+            "PRICE_APARTMENT": "615835",
+            "PRICE_BUILDING_YEAR": "846406",
+            "PRICE_BUILDING": "746124",
+            "pre_owned_suite_year_average_price": "0",
+            "pre_owned_suite_history_price": "0",
+            "PRICE_AVERAGE_YEAR": "828898",
+            "RENT_AVERAGE_YEAR": "731928"
+          }
+        },
+        "rent_average_year": 1775.0,
+        "RENT_AVERAGE_YEAR": 1775.0,
+        "line": [
+          "brown"
+        ],
+        "line_tw": [
+          "文湖線"
+        ],
+        "line_colors": [
+          "#8B5A2B"
+        ],
+        "badge_colors": [
+          "#8B5A2B",
+          "#8B5A2B"
+        ],
+        "badge_icon": "station-rent-8b5a2b-8b5a2b"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.55201,
+          25.062908
+        ]
+      },
+      "properties": {
+        "station_name": "松山機場",
+        "cityName": "臺北市",
+        "townName": "松山區",
+        "address": "105008臺北市松山區敦化北路338號",
+        "price": {
+          "rent": {
+            "PRICE_NEW_YEAR": "0",
+            "PRICE_NEW": "1414",
+            "pre_owned_house_year_average_price": "2030",
+            "pre_owned_house_history_price": "1435",
+            "PRICE_APARTMENT_YEAR": "2390",
+            "PRICE_APARTMENT": "1221",
+            "PRICE_BUILDING_YEAR": "1978",
+            "PRICE_BUILDING": "1441",
+            "pre_owned_suite_year_average_price": "0",
+            "pre_owned_suite_history_price": "1696",
+            "PRICE_AVERAGE_YEAR": "2030",
+            "RENT_AVERAGE_YEAR": "1434"
+          },
+          "transaction": {
+            "PRICE_NEW_YEAR": "0",
+            "PRICE_NEW": "908709",
+            "pre_owned_house_year_average_price": "874779",
+            "pre_owned_house_history_price": "757177",
+            "PRICE_APARTMENT_YEAR": "883629",
+            "PRICE_APARTMENT": "754903",
+            "PRICE_BUILDING_YEAR": "872736",
+            "PRICE_BUILDING": "757871",
+            "pre_owned_suite_year_average_price": "0",
+            "pre_owned_suite_history_price": "0",
+            "PRICE_AVERAGE_YEAR": "874779",
+            "RENT_AVERAGE_YEAR": "759232"
+          }
+        },
+        "rent_average_year": 2030.0,
+        "RENT_AVERAGE_YEAR": 2030.0,
+        "line": [
+          "brown"
+        ],
+        "line_tw": [
+          "文湖線"
+        ],
+        "line_colors": [
+          "#8B5A2B"
+        ],
+        "badge_colors": [
+          "#8B5A2B",
+          "#8B5A2B"
+        ],
+        "badge_icon": "station-rent-8b5a2b-8b5a2b"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.54679,
+          25.07943
+        ]
+      },
+      "properties": {
+        "station_name": "大直",
+        "cityName": "臺北市",
+        "townName": "中山區",
+        "address": "104044臺北市中山區北安路534之1號",
+        "price": {
+          "rent": {
+            "PRICE_NEW_YEAR": "3067",
+            "PRICE_NEW": "2370",
+            "pre_owned_house_year_average_price": "1099",
+            "pre_owned_house_history_price": "1217",
+            "PRICE_APARTMENT_YEAR": "1075",
+            "PRICE_APARTMENT": "1010",
+            "PRICE_BUILDING_YEAR": "1158",
+            "PRICE_BUILDING": "1298",
+            "pre_owned_suite_year_average_price": "0",
+            "pre_owned_suite_history_price": "1194",
+            "PRICE_AVERAGE_YEAR": "1170",
+            "RENT_AVERAGE_YEAR": "1230"
+          },
+          "transaction": {
+            "PRICE_NEW_YEAR": "1533736",
+            "PRICE_NEW": "1427392",
+            "pre_owned_house_year_average_price": "879962",
+            "pre_owned_house_history_price": "808181",
+            "PRICE_APARTMENT_YEAR": "719733",
+            "PRICE_APARTMENT": "643159",
+            "PRICE_BUILDING_YEAR": "952065",
+            "PRICE_BUILDING": "882827",
+            "pre_owned_suite_year_average_price": "0",
+            "pre_owned_suite_history_price": "0",
+            "PRICE_AVERAGE_YEAR": "922141",
+            "RENT_AVERAGE_YEAR": "854095"
+          }
+        },
+        "rent_average_year": 1170.0,
+        "RENT_AVERAGE_YEAR": 1170.0,
+        "line": [
+          "brown"
+        ],
+        "line_tw": [
+          "文湖線"
+        ],
+        "line_colors": [
+          "#8B5A2B"
+        ],
+        "badge_colors": [
+          "#8B5A2B",
+          "#8B5A2B"
+        ],
+        "badge_icon": "station-rent-8b5a2b-8b5a2b"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.555582,
+          25.08483
+        ]
+      },
+      "properties": {
+        "station_name": "劍南路",
+        "cityName": "臺北市",
+        "townName": "中山區",
+        "address": "104051臺北市中山區北安路798號",
+        "price": {
+          "rent": {
+            "PRICE_NEW_YEAR": "3119",
+            "PRICE_NEW": "1742",
+            "pre_owned_house_year_average_price": "2111",
+            "pre_owned_house_history_price": "1788",
+            "PRICE_APARTMENT_YEAR": "1606",
+            "PRICE_APARTMENT": "1316",
+            "PRICE_BUILDING_YEAR": "2218",
+            "PRICE_BUILDING": "1856",
+            "pre_owned_suite_year_average_price": "0",
+            "pre_owned_suite_history_price": "1853",
+            "PRICE_AVERAGE_YEAR": "2128",
+            "RENT_AVERAGE_YEAR": "1783"
+          },
+          "transaction": {
+            "PRICE_NEW_YEAR": "1086180",
+            "PRICE_NEW": "884287",
+            "pre_owned_house_year_average_price": "996660",
+            "pre_owned_house_history_price": "847134",
+            "PRICE_APARTMENT_YEAR": "605103",
+            "PRICE_APARTMENT": "529784",
+            "PRICE_BUILDING_YEAR": "1018413",
+            "PRICE_BUILDING": "887943",
+            "pre_owned_suite_year_average_price": "0",
+            "pre_owned_suite_history_price": "0",
+            "PRICE_AVERAGE_YEAR": "1003210",
+            "RENT_AVERAGE_YEAR": "856543"
+          }
+        },
+        "rent_average_year": 2128.0,
+        "RENT_AVERAGE_YEAR": 2128.0,
+        "line": [
+          "brown"
+        ],
+        "line_tw": [
+          "文湖線"
+        ],
+        "line_colors": [
+          "#8B5A2B"
+        ],
+        "badge_colors": [
+          "#8B5A2B",
+          "#8B5A2B"
+        ],
+        "badge_icon": "station-rent-8b5a2b-8b5a2b"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.567227,
+          25.08216
+        ]
+      },
+      "properties": {
+        "station_name": "西湖",
+        "cityName": "臺北市",
+        "townName": "內湖區",
+        "address": "114066臺北市內湖區內湖路1段256號",
+        "price": {
+          "rent": {
+            "PRICE_NEW_YEAR": "0",
+            "PRICE_NEW": "1667",
+            "pre_owned_house_year_average_price": "1488",
+            "pre_owned_house_history_price": "1238",
+            "PRICE_APARTMENT_YEAR": "1533",
+            "PRICE_APARTMENT": "1205",
+            "PRICE_BUILDING_YEAR": "1292",
+            "PRICE_BUILDING": "1260",
+            "pre_owned_suite_year_average_price": "0",
+            "pre_owned_suite_history_price": "1358",
+            "PRICE_AVERAGE_YEAR": "1488",
+            "RENT_AVERAGE_YEAR": "1265"
+          },
+          "transaction": {
+            "PRICE_NEW_YEAR": "0",
+            "PRICE_NEW": "867588",
+            "pre_owned_house_year_average_price": "853251",
+            "pre_owned_house_history_price": "628893",
+            "PRICE_APARTMENT_YEAR": "677297",
+            "PRICE_APARTMENT": "520459",
+            "PRICE_BUILDING_YEAR": "1009656",
+            "PRICE_BUILDING": "764529",
+            "pre_owned_suite_year_average_price": "0",
+            "pre_owned_suite_history_price": "0",
+            "PRICE_AVERAGE_YEAR": "853251",
+            "RENT_AVERAGE_YEAR": "656648"
+          }
+        },
+        "rent_average_year": 1488.0,
+        "RENT_AVERAGE_YEAR": 1488.0,
+        "line": [
+          "brown"
+        ],
+        "line_tw": [
+          "文湖線"
+        ],
+        "line_colors": [
+          "#8B5A2B"
+        ],
+        "badge_colors": [
+          "#8B5A2B",
+          "#8B5A2B"
+        ],
+        "badge_icon": "station-rent-8b5a2b-8b5a2b"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.57516,
+          25.08007
+        ]
+      },
+      "properties": {
+        "station_name": "港墘",
+        "cityName": "臺北市",
+        "townName": "內湖區",
+        "address": "114004臺北市內湖區內湖路1段663號",
+        "price": {
+          "rent": {
+            "PRICE_NEW_YEAR": "0",
+            "PRICE_NEW": "1188",
+            "pre_owned_house_year_average_price": "1602",
+            "pre_owned_house_history_price": "1142",
+            "PRICE_APARTMENT_YEAR": "1617",
+            "PRICE_APARTMENT": "1136",
+            "PRICE_BUILDING_YEAR": "1467",
+            "PRICE_BUILDING": "1130",
+            "pre_owned_suite_year_average_price": "0",
+            "pre_owned_suite_history_price": "1541",
+            "PRICE_AVERAGE_YEAR": "1602",
+            "RENT_AVERAGE_YEAR": "1145"
+          },
+          "transaction": {
+            "PRICE_NEW_YEAR": "0",
+            "PRICE_NEW": "645349",
+            "pre_owned_house_year_average_price": "733916",
+            "pre_owned_house_history_price": "577386",
+            "PRICE_APARTMENT_YEAR": "638947",
+            "PRICE_APARTMENT": "515061",
+            "PRICE_BUILDING_YEAR": "869586",
+            "PRICE_BUILDING": "705005",
+            "pre_owned_suite_year_average_price": "0",
+            "pre_owned_suite_history_price": "0",
+            "PRICE_AVERAGE_YEAR": "733916",
+            "RENT_AVERAGE_YEAR": "586004"
+          }
+        },
+        "rent_average_year": 1602.0,
+        "RENT_AVERAGE_YEAR": 1602.0,
+        "line": [
+          "brown"
+        ],
+        "line_tw": [
+          "文湖線"
+        ],
+        "line_colors": [
+          "#8B5A2B"
+        ],
+        "badge_colors": [
+          "#8B5A2B",
+          "#8B5A2B"
+        ],
+        "badge_icon": "station-rent-8b5a2b-8b5a2b"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.584999,
+          25.078455
+        ]
+      },
+      "properties": {
+        "station_name": "文德",
+        "cityName": "臺北市",
+        "townName": "內湖區",
+        "address": "114053臺北市內湖區文德路214號",
+        "price": {
+          "rent": {
+            "PRICE_NEW_YEAR": "1682",
+            "PRICE_NEW": "1484",
+            "pre_owned_house_year_average_price": "1463",
+            "pre_owned_house_history_price": "1149",
+            "PRICE_APARTMENT_YEAR": "1429",
+            "PRICE_APARTMENT": "1065",
+            "PRICE_BUILDING_YEAR": "1514",
+            "PRICE_BUILDING": "1204",
+            "pre_owned_suite_year_average_price": "0",
+            "pre_owned_suite_history_price": "1335",
+            "PRICE_AVERAGE_YEAR": "1466",
+            "RENT_AVERAGE_YEAR": "1172"
+          },
+          "transaction": {
+            "PRICE_NEW_YEAR": "0",
+            "PRICE_NEW": "844318",
+            "pre_owned_house_year_average_price": "821148",
+            "pre_owned_house_history_price": "619609",
+            "PRICE_APARTMENT_YEAR": "676600",
+            "PRICE_APARTMENT": "505538",
+            "PRICE_BUILDING_YEAR": "878968",
+            "PRICE_BUILDING": "695427",
+            "pre_owned_suite_year_average_price": "0",
+            "pre_owned_suite_history_price": "0",
+            "PRICE_AVERAGE_YEAR": "821148",
+            "RENT_AVERAGE_YEAR": "688653"
+          }
+        },
+        "rent_average_year": 1466.0,
+        "RENT_AVERAGE_YEAR": 1466.0,
+        "line": [
+          "brown"
+        ],
+        "line_tw": [
+          "文湖線"
+        ],
+        "line_colors": [
+          "#8B5A2B"
+        ],
+        "badge_colors": [
+          "#8B5A2B",
+          "#8B5A2B"
+        ],
+        "badge_icon": "station-rent-8b5a2b-8b5a2b"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.594363,
+          25.083675
+        ]
+      },
+      "properties": {
+        "station_name": "內湖",
+        "cityName": "臺北市",
+        "townName": "內湖區",
+        "address": "114049臺北市內湖區成功路4段186號",
+        "price": {
+          "rent": {
+            "PRICE_NEW_YEAR": "2038",
+            "PRICE_NEW": "1331",
+            "pre_owned_house_year_average_price": "1365",
+            "pre_owned_house_history_price": "1169",
+            "PRICE_APARTMENT_YEAR": "1213",
+            "PRICE_APARTMENT": "1061",
+            "PRICE_BUILDING_YEAR": "1497",
+            "PRICE_BUILDING": "1216",
+            "pre_owned_suite_year_average_price": "0",
+            "pre_owned_suite_history_price": "1350",
+            "PRICE_AVERAGE_YEAR": "1399",
+            "RENT_AVERAGE_YEAR": "1183"
+          },
+          "transaction": {
+            "PRICE_NEW_YEAR": "1062353",
+            "PRICE_NEW": "771618",
+            "pre_owned_house_year_average_price": "814128",
+            "pre_owned_house_history_price": "652662",
+            "PRICE_APARTMENT_YEAR": "623599",
+            "PRICE_APARTMENT": "495630",
+            "PRICE_BUILDING_YEAR": "875370",
+            "PRICE_BUILDING": "727937",
+            "pre_owned_suite_year_average_price": "0",
+            "pre_owned_suite_history_price": "0",
+            "PRICE_AVERAGE_YEAR": "826858",
+            "RENT_AVERAGE_YEAR": "674664"
+          }
+        },
+        "rent_average_year": 1399.0,
+        "RENT_AVERAGE_YEAR": 1399.0,
+        "line": [
+          "brown"
+        ],
+        "line_tw": [
+          "文湖線"
+        ],
+        "line_colors": [
+          "#8B5A2B"
+        ],
+        "badge_colors": [
+          "#8B5A2B",
+          "#8B5A2B"
+        ],
+        "badge_icon": "station-rent-8b5a2b-8b5a2b"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.602214,
+          25.083805
+        ]
+      },
+      "properties": {
+        "station_name": "大湖公園",
+        "cityName": "臺北市",
+        "townName": "內湖區",
+        "address": "114041臺北市內湖區成功路5段11號",
+        "price": {
+          "rent": {
+            "PRICE_NEW_YEAR": "0",
+            "PRICE_NEW": "0",
+            "pre_owned_house_year_average_price": "1110",
+            "pre_owned_house_history_price": "916",
+            "PRICE_APARTMENT_YEAR": "1221",
+            "PRICE_APARTMENT": "845",
+            "PRICE_BUILDING_YEAR": "664",
+            "PRICE_BUILDING": "1034",
+            "pre_owned_suite_year_average_price": "0",
+            "pre_owned_suite_history_price": "1467",
+            "PRICE_AVERAGE_YEAR": "1110",
+            "RENT_AVERAGE_YEAR": "916"
+          },
+          "transaction": {
+            "PRICE_NEW_YEAR": "629982",
+            "PRICE_NEW": "629982",
+            "pre_owned_house_year_average_price": "675484",
+            "pre_owned_house_history_price": "552098",
+            "PRICE_APARTMENT_YEAR": "633979",
+            "PRICE_APARTMENT": "491359",
+            "PRICE_BUILDING_YEAR": "748118",
+            "PRICE_BUILDING": "609554",
+            "pre_owned_suite_year_average_price": "0",
+            "pre_owned_suite_history_price": "0",
+            "PRICE_AVERAGE_YEAR": "671692",
+            "RENT_AVERAGE_YEAR": "552314"
+          }
+        },
+        "rent_average_year": 1110.0,
+        "RENT_AVERAGE_YEAR": 1110.0,
+        "line": [
+          "brown"
+        ],
+        "line_tw": [
+          "文湖線"
+        ],
+        "line_colors": [
+          "#8B5A2B"
+        ],
+        "badge_colors": [
+          "#8B5A2B",
+          "#8B5A2B"
+        ],
+        "badge_icon": "station-rent-8b5a2b-8b5a2b"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.607146,
+          25.07271
+        ]
+      },
+      "properties": {
+        "station_name": "葫洲",
+        "cityName": "臺北市",
+        "townName": "內湖區",
+        "address": "114046臺北市內湖區康寧路3段16號",
+        "price": {
+          "rent": {
+            "PRICE_NEW_YEAR": "1378",
+            "PRICE_NEW": "1455",
+            "pre_owned_house_year_average_price": "1265",
+            "pre_owned_house_history_price": "1069",
+            "PRICE_APARTMENT_YEAR": "1162",
+            "PRICE_APARTMENT": "934",
+            "PRICE_BUILDING_YEAR": "1412",
+            "PRICE_BUILDING": "1106",
+            "pre_owned_suite_year_average_price": "0",
+            "pre_owned_suite_history_price": "1228",
+            "PRICE_AVERAGE_YEAR": "1268",
+            "RENT_AVERAGE_YEAR": "1109"
+          },
+          "transaction": {
+            "PRICE_NEW_YEAR": "0",
+            "PRICE_NEW": "632684",
+            "pre_owned_house_year_average_price": "836599",
+            "pre_owned_house_history_price": "660975",
+            "PRICE_APARTMENT_YEAR": "610065",
+            "PRICE_APARTMENT": "481663",
+            "PRICE_BUILDING_YEAR": "862124",
+            "PRICE_BUILDING": "689043",
+            "pre_owned_suite_year_average_price": "0",
+            "pre_owned_suite_history_price": "0",
+            "PRICE_AVERAGE_YEAR": "836599",
+            "RENT_AVERAGE_YEAR": "657443"
+          }
+        },
+        "rent_average_year": 1268.0,
+        "RENT_AVERAGE_YEAR": 1268.0,
+        "line": [
+          "brown"
+        ],
+        "line_tw": [
+          "文湖線"
+        ],
+        "line_colors": [
+          "#8B5A2B"
+        ],
+        "badge_colors": [
+          "#8B5A2B",
+          "#8B5A2B"
+        ],
+        "badge_icon": "station-rent-8b5a2b-8b5a2b"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.611535,
+          25.067455
+        ]
+      },
+      "properties": {
+        "station_name": "東湖",
+        "cityName": "臺北市",
+        "townName": "內湖區",
+        "address": "114056臺北市內湖區康寧路3段235號",
+        "price": {
+          "rent": {
+            "PRICE_NEW_YEAR": "0",
+            "PRICE_NEW": "1408",
+            "pre_owned_house_year_average_price": "1442",
+            "pre_owned_house_history_price": "1068",
+            "PRICE_APARTMENT_YEAR": "1412",
+            "PRICE_APARTMENT": "978",
+            "PRICE_BUILDING_YEAR": "1496",
+            "PRICE_BUILDING": "1130",
+            "pre_owned_suite_year_average_price": "0",
+            "pre_owned_suite_history_price": "1259",
+            "PRICE_AVERAGE_YEAR": "1442",
+            "RENT_AVERAGE_YEAR": "1101"
+          },
+          "transaction": {
+            "PRICE_NEW_YEAR": "0",
+            "PRICE_NEW": "575437",
+            "pre_owned_house_year_average_price": "754080",
+            "pre_owned_house_history_price": "573936",
+            "PRICE_APARTMENT_YEAR": "542693",
+            "PRICE_APARTMENT": "440444",
+            "PRICE_BUILDING_YEAR": "854741",
+            "PRICE_BUILDING": "642035",
+            "pre_owned_suite_year_average_price": "0",
+            "pre_owned_suite_history_price": "0",
+            "PRICE_AVERAGE_YEAR": "754080",
+            "RENT_AVERAGE_YEAR": "574177"
+          }
+        },
+        "rent_average_year": 1442.0,
+        "RENT_AVERAGE_YEAR": 1442.0,
+        "line": [
+          "brown"
+        ],
+        "line_tw": [
+          "文湖線"
+        ],
+        "line_colors": [
+          "#8B5A2B"
+        ],
+        "badge_colors": [
+          "#8B5A2B",
+          "#8B5A2B"
+        ],
+        "badge_icon": "station-rent-8b5a2b-8b5a2b"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.615,
+          25.05992
+        ]
+      },
+      "properties": {
+        "station_name": "南港軟體園區",
+        "cityName": "臺北市",
+        "townName": "南港區",
+        "address": "115018臺北市南港區經貿二路183號",
+        "price": {
+          "rent": {
+            "PRICE_NEW_YEAR": "1870",
+            "PRICE_NEW": "1069",
+            "pre_owned_house_year_average_price": "1648",
+            "pre_owned_house_history_price": "1160",
+            "PRICE_APARTMENT_YEAR": "2318",
+            "PRICE_APARTMENT": "995",
+            "PRICE_BUILDING_YEAR": "1369",
+            "PRICE_BUILDING": "1155",
+            "pre_owned_suite_year_average_price": "0",
+            "pre_owned_suite_history_price": "1512",
+            "PRICE_AVERAGE_YEAR": "1660",
+            "RENT_AVERAGE_YEAR": "1132"
+          },
+          "transaction": {
+            "PRICE_NEW_YEAR": "1059421",
+            "PRICE_NEW": "736214",
+            "pre_owned_house_year_average_price": "967055",
+            "pre_owned_house_history_price": "744807",
+            "PRICE_APARTMENT_YEAR": "0",
+            "PRICE_APARTMENT": "582456",
+            "PRICE_BUILDING_YEAR": "967055",
+            "PRICE_BUILDING": "748939",
+            "pre_owned_suite_year_average_price": "0",
+            "pre_owned_suite_history_price": "0",
+            "PRICE_AVERAGE_YEAR": "977317",
+            "RENT_AVERAGE_YEAR": "740110"
+          }
+        },
+        "rent_average_year": 1660.0,
+        "RENT_AVERAGE_YEAR": 1660.0,
+        "line": [
+          "brown"
+        ],
+        "line_tw": [
+          "文湖線"
+        ],
+        "line_colors": [
+          "#8B5A2B"
+        ],
+        "badge_colors": [
+          "#8B5A2B",
+          "#8B5A2B"
+        ],
+        "badge_icon": "station-rent-8b5a2b-8b5a2b"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.540697,
+          24.992824
+        ]
+      },
+      "properties": {
+        "station_name": "景美",
+        "cityName": "臺北市",
+        "townName": "文山區",
+        "address": "116056臺北市文山區羅斯福路6段216號",
+        "price": {
+          "rent": {
+            "PRICE_NEW_YEAR": "1370",
+            "PRICE_NEW": "926",
+            "pre_owned_house_year_average_price": "1312",
+            "pre_owned_house_history_price": "1098",
+            "PRICE_APARTMENT_YEAR": "1429",
+            "PRICE_APARTMENT": "1012",
+            "PRICE_BUILDING_YEAR": "1260",
+            "PRICE_BUILDING": "1134",
+            "pre_owned_suite_year_average_price": "0",
+            "pre_owned_suite_history_price": "1141",
+            "PRICE_AVERAGE_YEAR": "1312",
+            "RENT_AVERAGE_YEAR": "1078"
+          },
+          "transaction": {
+            "PRICE_NEW_YEAR": "883542",
+            "PRICE_NEW": "662116",
+            "pre_owned_house_year_average_price": "715270",
+            "pre_owned_house_history_price": "564148",
+            "PRICE_APARTMENT_YEAR": "577066",
+            "PRICE_APARTMENT": "483035",
+            "PRICE_BUILDING_YEAR": "773741",
+            "PRICE_BUILDING": "602212",
+            "pre_owned_suite_year_average_price": "0",
+            "pre_owned_suite_history_price": "0",
+            "PRICE_AVERAGE_YEAR": "721826",
+            "RENT_AVERAGE_YEAR": "599850"
+          }
+        },
+        "rent_average_year": 1312.0,
+        "RENT_AVERAGE_YEAR": 1312.0,
+        "line": [
+          "green"
+        ],
+        "line_tw": [
+          "松山新店線"
+        ],
+        "line_colors": [
+          "#008659"
+        ],
+        "badge_colors": [
+          "#008659",
+          "#008659"
+        ],
+        "badge_icon": "station-rent-008659-008659"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.539008,
+          25.001978
+        ]
+      },
+      "properties": {
+        "station_name": "萬隆",
+        "cityName": "臺北市",
+        "townName": "文山區",
+        "address": "116060臺北市文山區羅斯福路5段214號",
+        "price": {
+          "rent": {
+            "PRICE_NEW_YEAR": "1694",
+            "PRICE_NEW": "865",
+            "pre_owned_house_year_average_price": "1668",
+            "pre_owned_house_history_price": "1123",
+            "PRICE_APARTMENT_YEAR": "1604",
+            "PRICE_APARTMENT": "1090",
+            "PRICE_BUILDING_YEAR": "1804",
+            "PRICE_BUILDING": "1132",
+            "pre_owned_suite_year_average_price": "0",
+            "pre_owned_suite_history_price": "1366",
+            "PRICE_AVERAGE_YEAR": "1668",
+            "RENT_AVERAGE_YEAR": "1116"
+          },
+          "transaction": {
+            "PRICE_NEW_YEAR": "836290",
+            "PRICE_NEW": "691539",
+            "pre_owned_house_year_average_price": "674856",
+            "pre_owned_house_history_price": "549728",
+            "PRICE_APARTMENT_YEAR": "588062",
+            "PRICE_APARTMENT": "503650",
+            "PRICE_BUILDING_YEAR": "753759",
+            "PRICE_BUILDING": "589453",
+            "pre_owned_suite_year_average_price": "0",
+            "pre_owned_suite_history_price": "0",
+            "PRICE_AVERAGE_YEAR": "677378",
+            "RENT_AVERAGE_YEAR": "564401"
+          }
+        },
+        "rent_average_year": 1668.0,
+        "RENT_AVERAGE_YEAR": 1668.0,
+        "line": [
+          "green"
+        ],
+        "line_tw": [
+          "松山新店線"
+        ],
+        "line_colors": [
+          "#008659"
+        ],
+        "badge_colors": [
+          "#008659",
+          "#008659"
+        ],
+        "badge_icon": "station-rent-008659-008659"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.534358,
+          25.014781
+        ]
+      },
+      "properties": {
+        "station_name": "公館",
+        "cityName": "臺北市",
+        "townName": "大安區",
+        "address": "100046臺北市中正區羅斯福路4段64之1號B1",
+        "price": {
+          "rent": {
+            "PRICE_NEW_YEAR": "1475",
+            "PRICE_NEW": "1687",
+            "pre_owned_house_year_average_price": "2109",
+            "pre_owned_house_history_price": "1501",
+            "PRICE_APARTMENT_YEAR": "2492",
+            "PRICE_APARTMENT": "2018",
+            "PRICE_BUILDING_YEAR": "1486",
+            "PRICE_BUILDING": "1283",
+            "pre_owned_suite_year_average_price": "0",
+            "pre_owned_suite_history_price": "1512",
+            "PRICE_AVERAGE_YEAR": "2094",
+            "RENT_AVERAGE_YEAR": "1524"
+          },
+          "transaction": {
+            "PRICE_NEW_YEAR": "1503286",
+            "PRICE_NEW": "1173895",
+            "pre_owned_house_year_average_price": "950095",
+            "pre_owned_house_history_price": "804831",
+            "PRICE_APARTMENT_YEAR": "785072",
+            "PRICE_APARTMENT": "687057",
+            "PRICE_BUILDING_YEAR": "979216",
+            "PRICE_BUILDING": "843711",
+            "pre_owned_suite_year_average_price": "0",
+            "pre_owned_suite_history_price": "0",
+            "PRICE_AVERAGE_YEAR": "1000385",
+            "RENT_AVERAGE_YEAR": "907990"
+          }
+        },
+        "rent_average_year": 2094.0,
+        "RENT_AVERAGE_YEAR": 2094.0,
+        "line": [
+          "green"
+        ],
+        "line_tw": [
+          "松山新店線"
+        ],
+        "line_colors": [
+          "#008659"
+        ],
+        "badge_colors": [
+          "#008659",
+          "#008659"
+        ],
+        "badge_icon": "station-rent-008659-008659"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.528143,
+          25.020733
+        ]
+      },
+      "properties": {
+        "station_name": "台電大樓",
+        "cityName": "臺北市",
+        "townName": "大安區",
+        "address": "100043臺北市中正區羅斯福路3段126之5號B1",
+        "price": {
+          "rent": {
+            "PRICE_NEW_YEAR": "1475",
+            "PRICE_NEW": "1476",
+            "pre_owned_house_year_average_price": "2316",
+            "pre_owned_house_history_price": "1618",
+            "PRICE_APARTMENT_YEAR": "2440",
+            "PRICE_APARTMENT": "1843",
+            "PRICE_BUILDING_YEAR": "2015",
+            "PRICE_BUILDING": "1442",
+            "pre_owned_suite_year_average_price": "0",
+            "pre_owned_suite_history_price": "1563",
+            "PRICE_AVERAGE_YEAR": "2312",
+            "RENT_AVERAGE_YEAR": "1607"
+          },
+          "transaction": {
+            "PRICE_NEW_YEAR": "1358032",
+            "PRICE_NEW": "1054832",
+            "pre_owned_house_year_average_price": "1009461",
+            "pre_owned_house_history_price": "814917",
+            "PRICE_APARTMENT_YEAR": "832306",
+            "PRICE_APARTMENT": "715387",
+            "PRICE_BUILDING_YEAR": "1086229",
+            "PRICE_BUILDING": "873108",
+            "pre_owned_suite_year_average_price": "0",
+            "pre_owned_suite_history_price": "0",
+            "PRICE_AVERAGE_YEAR": "1055233",
+            "RENT_AVERAGE_YEAR": "896119"
+          }
+        },
+        "rent_average_year": 2312.0,
+        "RENT_AVERAGE_YEAR": 2312.0,
+        "line": [
+          "green"
+        ],
+        "line_tw": [
+          "松山新店線"
+        ],
+        "line_colors": [
+          "#008659"
+        ],
+        "badge_colors": [
+          "#008659",
+          "#008659"
+        ],
+        "badge_icon": "station-rent-008659-008659"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.522868,
+          25.026373
+        ]
+      },
+      "properties": {
+        "station_name": "古亭",
+        "cityName": "臺北市",
+        "townName": "中正區",
+        "address": "100032臺北市中正區羅斯福路2段164之1號B1",
+        "price": {
+          "rent": {
+            "PRICE_NEW_YEAR": "2878",
+            "PRICE_NEW": "1852",
+            "pre_owned_house_year_average_price": "2114",
+            "pre_owned_house_history_price": "1370",
+            "PRICE_APARTMENT_YEAR": "2146",
+            "PRICE_APARTMENT": "1467",
+            "PRICE_BUILDING_YEAR": "2077",
+            "PRICE_BUILDING": "1395",
+            "pre_owned_suite_year_average_price": "0",
+            "pre_owned_suite_history_price": "1225",
+            "PRICE_AVERAGE_YEAR": "2134",
+            "RENT_AVERAGE_YEAR": "1418"
+          },
+          "transaction": {
+            "PRICE_NEW_YEAR": "1296677",
+            "PRICE_NEW": "964837",
+            "pre_owned_house_year_average_price": "1138025",
+            "pre_owned_house_history_price": "872295",
+            "PRICE_APARTMENT_YEAR": "886278",
+            "PRICE_APARTMENT": "692100",
+            "PRICE_BUILDING_YEAR": "1214074",
+            "PRICE_BUILDING": "948692",
+            "pre_owned_suite_year_average_price": "0",
+            "pre_owned_suite_history_price": "0",
+            "PRICE_AVERAGE_YEAR": "1145291",
+            "RENT_AVERAGE_YEAR": "904311"
+          }
+        },
+        "rent_average_year": 2134.0,
+        "RENT_AVERAGE_YEAR": 2134.0,
+        "line": [
+          "green",
+          "orange"
+        ],
+        "line_tw": [
+          "松山新店線",
+          "中和新蘆線"
+        ],
+        "line_colors": [
+          "#008659",
+          "#F58220"
+        ],
+        "badge_colors": [
+          "#008659",
+          "#F58220"
+        ],
+        "badge_icon": "station-rent-008659-f58220"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.518273,
+          25.032767
+        ]
+      },
+      "properties": {
+        "station_name": "中正紀念堂",
+        "cityName": "臺北市",
+        "townName": "中正區",
+        "address": "100207臺北市中正區羅斯福路1段8之1號B1?",
+        "price": {
+          "rent": {
+            "PRICE_NEW_YEAR": "0",
+            "PRICE_NEW": "1583",
+            "pre_owned_house_year_average_price": "1661",
+            "pre_owned_house_history_price": "1460",
+            "PRICE_APARTMENT_YEAR": "1358",
+            "PRICE_APARTMENT": "1155",
+            "PRICE_BUILDING_YEAR": "1843",
+            "PRICE_BUILDING": "1500",
+            "pre_owned_suite_year_average_price": "0",
+            "pre_owned_suite_history_price": "1717",
+            "PRICE_AVERAGE_YEAR": "1661",
+            "RENT_AVERAGE_YEAR": "1475"
+          },
+          "transaction": {
+            "PRICE_NEW_YEAR": "1711331",
+            "PRICE_NEW": "1008186",
+            "pre_owned_house_year_average_price": "1207240",
+            "pre_owned_house_history_price": "944256",
+            "PRICE_APARTMENT_YEAR": "1091416",
+            "PRICE_APARTMENT": "841294",
+            "PRICE_BUILDING_YEAR": "1218823",
+            "PRICE_BUILDING": "965271",
+            "pre_owned_suite_year_average_price": "0",
+            "pre_owned_suite_history_price": "0",
+            "PRICE_AVERAGE_YEAR": "1239416",
+            "RENT_AVERAGE_YEAR": "959873"
+          }
+        },
+        "rent_average_year": 1661.0,
+        "RENT_AVERAGE_YEAR": 1661.0,
+        "line": [
+          "green",
+          "red"
+        ],
+        "line_tw": [
+          "松山新店線",
+          "淡水信義線"
+        ],
+        "line_colors": [
+          "#008659",
+          "#E60012"
+        ],
+        "badge_colors": [
+          "#008659",
+          "#E60012"
+        ],
+        "badge_icon": "station-rent-008659-e60012"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.51088,
+          25.035585
+        ]
+      },
+      "properties": {
+        "station_name": "小南門",
+        "cityName": "臺北市",
+        "townName": "中正區",
+        "address": "100057臺北市中正區愛國西路22號B1",
+        "price": {
+          "rent": {
+            "PRICE_NEW_YEAR": "0",
+            "PRICE_NEW": "1247",
+            "pre_owned_house_year_average_price": "1943",
+            "pre_owned_house_history_price": "1614",
+            "PRICE_APARTMENT_YEAR": "2114",
+            "PRICE_APARTMENT": "1989",
+            "PRICE_BUILDING_YEAR": "1338",
+            "PRICE_BUILDING": "1149",
+            "pre_owned_suite_year_average_price": "0",
+            "pre_owned_suite_history_price": "1645",
+            "PRICE_AVERAGE_YEAR": "1943",
+            "RENT_AVERAGE_YEAR": "1592"
+          },
+          "transaction": {
+            "PRICE_NEW_YEAR": "1723420",
+            "PRICE_NEW": "827576",
+            "pre_owned_house_year_average_price": "801896",
+            "pre_owned_house_history_price": "737058",
+            "PRICE_APARTMENT_YEAR": "610790",
+            "PRICE_APARTMENT": "598058",
+            "PRICE_BUILDING_YEAR": "819269",
+            "PRICE_BUILDING": "744166",
+            "pre_owned_suite_year_average_price": "0",
+            "pre_owned_suite_history_price": "0",
+            "PRICE_AVERAGE_YEAR": "872782",
+            "RENT_AVERAGE_YEAR": "771850"
+          }
+        },
+        "rent_average_year": 1943.0,
+        "RENT_AVERAGE_YEAR": 1943.0,
+        "line": [
+          "green"
+        ],
+        "line_tw": [
+          "松山新店線"
+        ],
+        "line_colors": [
+          "#008659"
+        ],
+        "badge_colors": [
+          "#008659",
+          "#008659"
+        ],
+        "badge_icon": "station-rent-008659-008659"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.510184,
+          25.049554
+        ]
+      },
+      "properties": {
+        "station_name": "北門",
+        "cityName": "臺北市",
+        "townName": "大同區",
+        "address": "103005臺北市大同區塔城街10號",
+        "price": {
+          "rent": {
+            "PRICE_NEW_YEAR": "1904",
+            "PRICE_NEW": "1524",
+            "pre_owned_house_year_average_price": "1667",
+            "pre_owned_house_history_price": "1451",
+            "PRICE_APARTMENT_YEAR": "1503",
+            "PRICE_APARTMENT": "1437",
+            "PRICE_BUILDING_YEAR": "1681",
+            "PRICE_BUILDING": "1465",
+            "pre_owned_suite_year_average_price": "0",
+            "pre_owned_suite_history_price": "1381",
+            "PRICE_AVERAGE_YEAR": "1675",
+            "RENT_AVERAGE_YEAR": "1460"
+          },
+          "transaction": {
+            "PRICE_NEW_YEAR": "1236083",
+            "PRICE_NEW": "799336",
+            "pre_owned_house_year_average_price": "749817",
+            "pre_owned_house_history_price": "617596",
+            "PRICE_APARTMENT_YEAR": "823247",
+            "PRICE_APARTMENT": "555559",
+            "PRICE_BUILDING_YEAR": "743863",
+            "PRICE_BUILDING": "621449",
+            "pre_owned_suite_year_average_price": "0",
+            "pre_owned_suite_history_price": "0",
+            "PRICE_AVERAGE_YEAR": "897811",
+            "RENT_AVERAGE_YEAR": "690435"
+          }
+        },
+        "rent_average_year": 1675.0,
+        "RENT_AVERAGE_YEAR": 1675.0,
+        "line": [
+          "green"
+        ],
+        "line_tw": [
+          "松山新店線"
+        ],
+        "line_colors": [
+          "#008659"
+        ],
+        "badge_colors": [
+          "#008659",
+          "#008659"
+        ],
+        "badge_icon": "station-rent-008659-008659"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.520364,
+          25.052621
+        ]
+      },
+      "properties": {
+        "station_name": "中山",
+        "cityName": "臺北市",
+        "townName": "中山區",
+        "address": "103022臺北市大同區南京西路55號",
+        "price": {
+          "rent": {
+            "PRICE_NEW_YEAR": "2072",
+            "PRICE_NEW": "1906",
+            "pre_owned_house_year_average_price": "1972",
+            "pre_owned_house_history_price": "1679",
+            "PRICE_APARTMENT_YEAR": "2178",
+            "PRICE_APARTMENT": "1616",
+            "PRICE_BUILDING_YEAR": "1925",
+            "PRICE_BUILDING": "1684",
+            "pre_owned_suite_year_average_price": "0",
+            "pre_owned_suite_history_price": "1715",
+            "PRICE_AVERAGE_YEAR": "1979",
+            "RENT_AVERAGE_YEAR": "1708"
+          },
+          "transaction": {
+            "PRICE_NEW_YEAR": "1255756",
+            "PRICE_NEW": "950260",
+            "pre_owned_house_year_average_price": "852050",
+            "pre_owned_house_history_price": "701717",
+            "PRICE_APARTMENT_YEAR": "831322",
+            "PRICE_APARTMENT": "633945",
+            "PRICE_BUILDING_YEAR": "854376",
+            "PRICE_BUILDING": "714538",
+            "pre_owned_suite_year_average_price": "0",
+            "pre_owned_suite_history_price": "0",
+            "PRICE_AVERAGE_YEAR": "917264",
+            "RENT_AVERAGE_YEAR": "780152"
+          }
+        },
+        "rent_average_year": 1979.0,
+        "RENT_AVERAGE_YEAR": 1979.0,
+        "line": [
+          "green",
+          "red"
+        ],
+        "line_tw": [
+          "松山新店線",
+          "淡水信義線"
+        ],
+        "line_colors": [
+          "#008659",
+          "#E60012"
+        ],
+        "badge_colors": [
+          "#008659",
+          "#E60012"
+        ],
+        "badge_icon": "station-rent-008659-e60012"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.53285,
+          25.052693
+        ]
+      },
+      "properties": {
+        "station_name": "松江南京",
+        "cityName": "臺北市",
+        "townName": "中山區",
+        "address": "104092臺北市中山區松江路126號B1",
+        "price": {
+          "rent": {
+            "PRICE_NEW_YEAR": "2917",
+            "PRICE_NEW": "1937",
+            "pre_owned_house_year_average_price": "1978",
+            "pre_owned_house_history_price": "1661",
+            "PRICE_APARTMENT_YEAR": "1846",
+            "PRICE_APARTMENT": "1429",
+            "PRICE_BUILDING_YEAR": "2043",
+            "PRICE_BUILDING": "1695",
+            "pre_owned_suite_year_average_price": "0",
+            "pre_owned_suite_history_price": "1709",
+            "PRICE_AVERAGE_YEAR": "2001",
+            "RENT_AVERAGE_YEAR": "1694"
+          },
+          "transaction": {
+            "PRICE_NEW_YEAR": "1425509",
+            "PRICE_NEW": "1028387",
+            "pre_owned_house_year_average_price": "943466",
+            "pre_owned_house_history_price": "794395",
+            "PRICE_APARTMENT_YEAR": "831568",
+            "PRICE_APARTMENT": "659957",
+            "PRICE_BUILDING_YEAR": "950786",
+            "PRICE_BUILDING": "813920",
+            "pre_owned_suite_year_average_price": "0",
+            "pre_owned_suite_history_price": "0",
+            "PRICE_AVERAGE_YEAR": "971352",
+            "RENT_AVERAGE_YEAR": "866922"
+          }
+        },
+        "rent_average_year": 2001.0,
+        "RENT_AVERAGE_YEAR": 2001.0,
+        "line": [
+          "green",
+          "orange"
+        ],
+        "line_tw": [
+          "松山新店線",
+          "中和新蘆線"
+        ],
+        "line_colors": [
+          "#008659",
+          "#F58220"
+        ],
+        "badge_colors": [
+          "#008659",
+          "#F58220"
+        ],
+        "badge_icon": "station-rent-008659-f58220"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.552549,
+          25.05152
+        ]
+      },
+      "properties": {
+        "station_name": "台北小巨蛋",
+        "cityName": "臺北市",
+        "townName": "松山區",
+        "address": "105037臺北市松山區南京東路4段10之1號",
+        "price": {
+          "rent": {
+            "PRICE_NEW_YEAR": "2211",
+            "PRICE_NEW": "2045",
+            "pre_owned_house_year_average_price": "2031",
+            "pre_owned_house_history_price": "1537",
+            "PRICE_APARTMENT_YEAR": "1346",
+            "PRICE_APARTMENT": "1194",
+            "PRICE_BUILDING_YEAR": "2111",
+            "PRICE_BUILDING": "1544",
+            "pre_owned_suite_year_average_price": "0",
+            "pre_owned_suite_history_price": "1791",
+            "PRICE_AVERAGE_YEAR": "2033",
+            "RENT_AVERAGE_YEAR": "1554"
+          },
+          "transaction": {
+            "PRICE_NEW_YEAR": "1407613",
+            "PRICE_NEW": "1402543",
+            "pre_owned_house_year_average_price": "1023155",
+            "pre_owned_house_history_price": "803467",
+            "PRICE_APARTMENT_YEAR": "761892",
+            "PRICE_APARTMENT": "711806",
+            "PRICE_BUILDING_YEAR": "1050657",
+            "PRICE_BUILDING": "825211",
+            "pre_owned_suite_year_average_price": "0",
+            "pre_owned_suite_history_price": "0",
+            "PRICE_AVERAGE_YEAR": "1097090",
+            "RENT_AVERAGE_YEAR": "912527"
+          }
+        },
+        "rent_average_year": 2033.0,
+        "RENT_AVERAGE_YEAR": 2033.0,
+        "line": [
+          "green"
+        ],
+        "line_tw": [
+          "松山新店線"
+        ],
+        "line_colors": [
+          "#008659"
+        ],
+        "badge_colors": [
+          "#008659",
+          "#008659"
+        ],
+        "badge_icon": "station-rent-008659-008659"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.56471,
+          25.051588
+        ]
+      },
+      "properties": {
+        "station_name": "南京三民",
+        "cityName": "臺北市",
+        "townName": "松山區",
+        "address": "105062臺北市松山區南京東路5段237號",
+        "price": {
+          "rent": {
+            "PRICE_NEW_YEAR": "0",
+            "PRICE_NEW": "1530",
+            "pre_owned_house_year_average_price": "1719",
+            "pre_owned_house_history_price": "1423",
+            "PRICE_APARTMENT_YEAR": "1830",
+            "PRICE_APARTMENT": "1376",
+            "PRICE_BUILDING_YEAR": "1611",
+            "PRICE_BUILDING": "1389",
+            "pre_owned_suite_year_average_price": "0",
+            "pre_owned_suite_history_price": "1628",
+            "PRICE_AVERAGE_YEAR": "1719",
+            "RENT_AVERAGE_YEAR": "1428"
+          },
+          "transaction": {
+            "PRICE_NEW_YEAR": "1542865",
+            "PRICE_NEW": "1037593",
+            "pre_owned_house_year_average_price": "848998",
+            "pre_owned_house_history_price": "716781",
+            "PRICE_APARTMENT_YEAR": "729894",
+            "PRICE_APARTMENT": "622109",
+            "PRICE_BUILDING_YEAR": "876011",
+            "PRICE_BUILDING": "740713",
+            "pre_owned_suite_year_average_price": "0",
+            "pre_owned_suite_history_price": "0",
+            "PRICE_AVERAGE_YEAR": "854780",
+            "RENT_AVERAGE_YEAR": "750928"
+          }
+        },
+        "rent_average_year": 1719.0,
+        "RENT_AVERAGE_YEAR": 1719.0,
+        "line": [
+          "green"
+        ],
+        "line_tw": [
+          "松山新店線"
+        ],
+        "line_colors": [
+          "#008659"
+        ],
+        "badge_colors": [
+          "#008659",
+          "#008659"
+        ],
+        "badge_icon": "station-rent-008659-008659"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.577706,
+          25.050118
+        ]
+      },
+      "properties": {
+        "station_name": "松山",
+        "cityName": "臺北市",
+        "townName": "松山區",
+        "address": "105057臺北市松山區八德路4段742號",
+        "price": {
+          "rent": {
+            "PRICE_NEW_YEAR": "2511",
+            "PRICE_NEW": "1830",
+            "pre_owned_house_year_average_price": "1774",
+            "pre_owned_house_history_price": "1366",
+            "PRICE_APARTMENT_YEAR": "1931",
+            "PRICE_APARTMENT": "1332",
+            "PRICE_BUILDING_YEAR": "1561",
+            "PRICE_BUILDING": "1377",
+            "pre_owned_suite_year_average_price": "0",
+            "pre_owned_suite_history_price": "1480",
+            "PRICE_AVERAGE_YEAR": "1895",
+            "RENT_AVERAGE_YEAR": "1445"
+          },
+          "transaction": {
+            "PRICE_NEW_YEAR": "1151185",
+            "PRICE_NEW": "828227",
+            "pre_owned_house_year_average_price": "879492",
+            "pre_owned_house_history_price": "706091",
+            "PRICE_APARTMENT_YEAR": "655215",
+            "PRICE_APARTMENT": "565653",
+            "PRICE_BUILDING_YEAR": "933051",
+            "PRICE_BUILDING": "764291",
+            "pre_owned_suite_year_average_price": "0",
+            "pre_owned_suite_history_price": "0",
+            "PRICE_AVERAGE_YEAR": "923402",
+            "RENT_AVERAGE_YEAR": "757924"
+          }
+        },
+        "rent_average_year": 1895.0,
+        "RENT_AVERAGE_YEAR": 1895.0,
+        "line": [
+          "green"
+        ],
+        "line_tw": [
+          "松山新店線"
+        ],
+        "line_colors": [
+          "#008659"
+        ],
+        "badge_colors": [
+          "#008659",
+          "#008659"
+        ],
+        "badge_icon": "station-rent-008659-008659"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.528766,
+          25.033894
+        ]
+      },
+      "properties": {
+        "station_name": "東門",
+        "cityName": "臺北市",
+        "townName": "大安區",
+        "address": "10650臺北市大安區信義路2段166號B1",
+        "price": {
+          "rent": {
+            "PRICE_NEW_YEAR": "2017",
+            "PRICE_NEW": "2303",
+            "pre_owned_house_year_average_price": "1961",
+            "pre_owned_house_history_price": "1582",
+            "PRICE_APARTMENT_YEAR": "1973",
+            "PRICE_APARTMENT": "1403",
+            "PRICE_BUILDING_YEAR": "1938",
+            "PRICE_BUILDING": "1622",
+            "pre_owned_suite_year_average_price": "0",
+            "pre_owned_suite_history_price": "1868",
+            "PRICE_AVERAGE_YEAR": "1964",
+            "RENT_AVERAGE_YEAR": "1694"
+          },
+          "transaction": {
+            "PRICE_NEW_YEAR": "1506230",
+            "PRICE_NEW": "1362767",
+            "pre_owned_house_year_average_price": "1218356",
+            "pre_owned_house_history_price": "993318",
+            "PRICE_APARTMENT_YEAR": "957823",
+            "PRICE_APARTMENT": "840904",
+            "PRICE_BUILDING_YEAR": "1350908",
+            "PRICE_BUILDING": "1088443",
+            "pre_owned_suite_year_average_price": "0",
+            "pre_owned_suite_history_price": "0",
+            "PRICE_AVERAGE_YEAR": "1228060",
+            "RENT_AVERAGE_YEAR": "1080749"
+          }
+        },
+        "rent_average_year": 1964.0,
+        "RENT_AVERAGE_YEAR": 1964.0,
+        "line": [
+          "orange",
+          "red"
+        ],
+        "line_tw": [
+          "中和新蘆線",
+          "淡水信義線"
+        ],
+        "line_colors": [
+          "#F58220",
+          "#E60012"
+        ],
+        "badge_colors": [
+          "#F58220",
+          "#E60012"
+        ],
+        "badge_icon": "station-rent-f58220-e60012"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.53315,
+          25.05924
+        ]
+      },
+      "properties": {
+        "station_name": "行天宮",
+        "cityName": "臺北市",
+        "townName": "中山區",
+        "address": "104023臺北市中山區松江路316號B1",
+        "price": {
+          "rent": {
+            "PRICE_NEW_YEAR": "2657",
+            "PRICE_NEW": "1712",
+            "pre_owned_house_year_average_price": "1697",
+            "pre_owned_house_history_price": "1424",
+            "PRICE_APARTMENT_YEAR": "1691",
+            "PRICE_APARTMENT": "1358",
+            "PRICE_BUILDING_YEAR": "1705",
+            "PRICE_BUILDING": "1428",
+            "pre_owned_suite_year_average_price": "0",
+            "pre_owned_suite_history_price": "1565",
+            "PRICE_AVERAGE_YEAR": "1708",
+            "RENT_AVERAGE_YEAR": "1445"
+          },
+          "transaction": {
+            "PRICE_NEW_YEAR": "1259729",
+            "PRICE_NEW": "956441",
+            "pre_owned_house_year_average_price": "821283",
+            "pre_owned_house_history_price": "674034",
+            "PRICE_APARTMENT_YEAR": "733769",
+            "PRICE_APARTMENT": "601577",
+            "PRICE_BUILDING_YEAR": "859005",
+            "PRICE_BUILDING": "708121",
+            "pre_owned_suite_year_average_price": "0",
+            "pre_owned_suite_history_price": "0",
+            "PRICE_AVERAGE_YEAR": "831599",
+            "RENT_AVERAGE_YEAR": "738845"
+          }
+        },
+        "rent_average_year": 1708.0,
+        "RENT_AVERAGE_YEAR": 1708.0,
+        "line": [
+          "orange"
+        ],
+        "line_tw": [
+          "中和新蘆線"
+        ],
+        "line_colors": [
+          "#F58220"
+        ],
+        "badge_colors": [
+          "#F58220",
+          "#F58220"
+        ],
+        "badge_icon": "station-rent-f58220-f58220"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.526609,
+          25.062665
+        ]
+      },
+      "properties": {
+        "station_name": "中山國小",
+        "cityName": "臺北市",
+        "townName": "中山區",
+        "address": "104028臺北市中山區民權東路1段71號B1",
+        "price": {
+          "rent": {
+            "PRICE_NEW_YEAR": "2700",
+            "PRICE_NEW": "1811",
+            "pre_owned_house_year_average_price": "2037",
+            "pre_owned_house_history_price": "1699",
+            "PRICE_APARTMENT_YEAR": "1851",
+            "PRICE_APARTMENT": "1442",
+            "PRICE_BUILDING_YEAR": "2057",
+            "PRICE_BUILDING": "1745",
+            "pre_owned_suite_year_average_price": "0",
+            "pre_owned_suite_history_price": "1573",
+            "PRICE_AVERAGE_YEAR": "2053",
+            "RENT_AVERAGE_YEAR": "1710"
+          },
+          "transaction": {
+            "PRICE_NEW_YEAR": "1147931",
+            "PRICE_NEW": "886186",
+            "pre_owned_house_year_average_price": "801137",
+            "pre_owned_house_history_price": "633940",
+            "PRICE_APARTMENT_YEAR": "721737",
+            "PRICE_APARTMENT": "566659",
+            "PRICE_BUILDING_YEAR": "806212",
+            "PRICE_BUILDING": "640935",
+            "pre_owned_suite_year_average_price": "0",
+            "pre_owned_suite_history_price": "0",
+            "PRICE_AVERAGE_YEAR": "816368",
+            "RENT_AVERAGE_YEAR": "691212"
+          }
+        },
+        "rent_average_year": 2053.0,
+        "RENT_AVERAGE_YEAR": 2053.0,
+        "line": [
+          "orange"
+        ],
+        "line_tw": [
+          "中和新蘆線"
+        ],
+        "line_colors": [
+          "#F58220"
+        ],
+        "badge_colors": [
+          "#F58220",
+          "#F58220"
+        ],
+        "badge_icon": "station-rent-f58220-f58220"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.519585,
+          25.06235
+        ]
+      },
+      "properties": {
+        "station_name": "民權西路",
+        "cityName": "臺北市",
+        "townName": "中山區",
+        "address": "103045臺北市大同區民權西路72號",
+        "price": {
+          "rent": {
+            "PRICE_NEW_YEAR": "2243",
+            "PRICE_NEW": "1798",
+            "pre_owned_house_year_average_price": "2213",
+            "pre_owned_house_history_price": "1809",
+            "PRICE_APARTMENT_YEAR": "1634",
+            "PRICE_APARTMENT": "1414",
+            "PRICE_BUILDING_YEAR": "2368",
+            "PRICE_BUILDING": "1914",
+            "pre_owned_suite_year_average_price": "0",
+            "pre_owned_suite_history_price": "1588",
+            "PRICE_AVERAGE_YEAR": "2215",
+            "RENT_AVERAGE_YEAR": "1808"
+          },
+          "transaction": {
+            "PRICE_NEW_YEAR": "1141992",
+            "PRICE_NEW": "854673",
+            "pre_owned_house_year_average_price": "868632",
+            "pre_owned_house_history_price": "705907",
+            "PRICE_APARTMENT_YEAR": "638515",
+            "PRICE_APARTMENT": "545045",
+            "PRICE_BUILDING_YEAR": "899314",
+            "PRICE_BUILDING": "738367",
+            "pre_owned_suite_year_average_price": "0",
+            "pre_owned_suite_history_price": "0",
+            "PRICE_AVERAGE_YEAR": "910792",
+            "RENT_AVERAGE_YEAR": "768516"
+          }
+        },
+        "rent_average_year": 2215.0,
+        "RENT_AVERAGE_YEAR": 2215.0,
+        "line": [
+          "orange",
+          "red"
+        ],
+        "line_tw": [
+          "中和新蘆線",
+          "淡水信義線"
+        ],
+        "line_colors": [
+          "#F58220",
+          "#E60012"
+        ],
+        "badge_colors": [
+          "#F58220",
+          "#E60012"
+        ],
+        "badge_icon": "station-rent-f58220-e60012"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.513003,
+          25.06322
+        ]
+      },
+      "properties": {
+        "station_name": "大橋頭",
+        "cityName": "臺北市",
+        "townName": "大同區",
+        "address": "103041臺北市大同區民權西路223號B1",
+        "price": {
+          "rent": {
+            "PRICE_NEW_YEAR": "2415",
+            "PRICE_NEW": "1320",
+            "pre_owned_house_year_average_price": "1757",
+            "pre_owned_house_history_price": "1496",
+            "PRICE_APARTMENT_YEAR": "1351",
+            "PRICE_APARTMENT": "1146",
+            "PRICE_BUILDING_YEAR": "2128",
+            "PRICE_BUILDING": "1808",
+            "pre_owned_suite_year_average_price": "0",
+            "pre_owned_suite_history_price": "1543",
+            "PRICE_AVERAGE_YEAR": "1792",
+            "RENT_AVERAGE_YEAR": "1474"
+          },
+          "transaction": {
+            "PRICE_NEW_YEAR": "1169399",
+            "PRICE_NEW": "725462",
+            "pre_owned_house_year_average_price": "684181",
+            "pre_owned_house_history_price": "560209",
+            "PRICE_APARTMENT_YEAR": "554653",
+            "PRICE_APARTMENT": "472536",
+            "PRICE_BUILDING_YEAR": "760570",
+            "PRICE_BUILDING": "614647",
+            "pre_owned_suite_year_average_price": "0",
+            "pre_owned_suite_history_price": "0",
+            "PRICE_AVERAGE_YEAR": "773563",
+            "RENT_AVERAGE_YEAR": "635110"
+          }
+        },
+        "rent_average_year": 1792.0,
+        "RENT_AVERAGE_YEAR": 1792.0,
+        "line": [
+          "orange"
+        ],
+        "line_tw": [
+          "中和新蘆線"
+        ],
+        "line_colors": [
+          "#F58220"
+        ],
+        "badge_colors": [
+          "#F58220",
+          "#F58220"
+        ],
+        "badge_icon": "station-rent-f58220-f58220"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.570116,
+          25.032395
+        ]
+      },
+      "properties": {
+        "station_name": "象山",
+        "cityName": "臺北市",
+        "townName": "信義區",
+        "address": "110022臺北市信義區信義路5段152號B1",
+        "price": {
+          "rent": {
+            "PRICE_NEW_YEAR": "0",
+            "PRICE_NEW": "2075",
+            "pre_owned_house_year_average_price": "2427",
+            "pre_owned_house_history_price": "1787",
+            "PRICE_APARTMENT_YEAR": "3053",
+            "PRICE_APARTMENT": "1574",
+            "PRICE_BUILDING_YEAR": "2279",
+            "PRICE_BUILDING": "1794",
+            "pre_owned_suite_year_average_price": "0",
+            "pre_owned_suite_history_price": "1818",
+            "PRICE_AVERAGE_YEAR": "2427",
+            "RENT_AVERAGE_YEAR": "1802"
+          },
+          "transaction": {
+            "PRICE_NEW_YEAR": "2114881",
+            "PRICE_NEW": "1622168",
+            "pre_owned_house_year_average_price": "1121542",
+            "pre_owned_house_history_price": "1063257",
+            "PRICE_APARTMENT_YEAR": "671870",
+            "PRICE_APARTMENT": "638556",
+            "PRICE_BUILDING_YEAR": "1164368",
+            "PRICE_BUILDING": "1095020",
+            "pre_owned_suite_year_average_price": "0",
+            "pre_owned_suite_history_price": "0",
+            "PRICE_AVERAGE_YEAR": "1142677",
+            "RENT_AVERAGE_YEAR": "1152809"
+          }
+        },
+        "rent_average_year": 2427.0,
+        "RENT_AVERAGE_YEAR": 2427.0,
+        "line": [
+          "red"
+        ],
+        "line_tw": [
+          "淡水信義線"
+        ],
+        "line_colors": [
+          "#E60012"
+        ],
+        "badge_colors": [
+          "#E60012",
+          "#E60012"
+        ],
+        "badge_icon": "station-rent-e60012-e60012"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.563667,
+          25.032865
+        ]
+      },
+      "properties": {
+        "station_name": "台北101/世貿",
+        "cityName": "臺北市",
+        "townName": "信義區",
+        "address": "110013臺北市信義區信義路5段20號B1",
+        "price": {
+          "rent": {
+            "PRICE_NEW_YEAR": "0",
+            "PRICE_NEW": "2156",
+            "pre_owned_house_year_average_price": "1691",
+            "pre_owned_house_history_price": "1601",
+            "PRICE_APARTMENT_YEAR": "1606",
+            "PRICE_APARTMENT": "1273",
+            "PRICE_BUILDING_YEAR": "1735",
+            "PRICE_BUILDING": "1596",
+            "pre_owned_suite_year_average_price": "0",
+            "pre_owned_suite_history_price": "2027",
+            "PRICE_AVERAGE_YEAR": "1691",
+            "RENT_AVERAGE_YEAR": "1613"
+          },
+          "transaction": {
+            "PRICE_NEW_YEAR": "0",
+            "PRICE_NEW": "1518947",
+            "pre_owned_house_year_average_price": "992014",
+            "pre_owned_house_history_price": "892159",
+            "PRICE_APARTMENT_YEAR": "728491",
+            "PRICE_APARTMENT": "700957",
+            "PRICE_BUILDING_YEAR": "1024955",
+            "PRICE_BUILDING": "917813",
+            "pre_owned_suite_year_average_price": "0",
+            "pre_owned_suite_history_price": "0",
+            "PRICE_AVERAGE_YEAR": "992014",
+            "RENT_AVERAGE_YEAR": "909345"
+          }
+        },
+        "rent_average_year": 1691.0,
+        "RENT_AVERAGE_YEAR": 1691.0,
+        "line": [
+          "red"
+        ],
+        "line_tw": [
+          "淡水信義線"
+        ],
+        "line_colors": [
+          "#E60012"
+        ],
+        "badge_colors": [
+          "#E60012",
+          "#E60012"
+        ],
+        "badge_icon": "station-rent-e60012-e60012"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.552326,
+          25.033015
+        ]
+      },
+      "properties": {
+        "station_name": "信義安和",
+        "cityName": "臺北市",
+        "townName": "大安區",
+        "address": "106049臺北市大安區信義路4段212之1號B1",
+        "price": {
+          "rent": {
+            "PRICE_NEW_YEAR": "2538",
+            "PRICE_NEW": "2185",
+            "pre_owned_house_year_average_price": "2093",
+            "pre_owned_house_history_price": "1489",
+            "PRICE_APARTMENT_YEAR": "2315",
+            "PRICE_APARTMENT": "1661",
+            "PRICE_BUILDING_YEAR": "1958",
+            "PRICE_BUILDING": "1457",
+            "pre_owned_suite_year_average_price": "0",
+            "pre_owned_suite_history_price": "1660",
+            "PRICE_AVERAGE_YEAR": "2118",
+            "RENT_AVERAGE_YEAR": "1524"
+          },
+          "transaction": {
+            "PRICE_NEW_YEAR": "1648584",
+            "PRICE_NEW": "1257281",
+            "pre_owned_house_year_average_price": "1021476",
+            "pre_owned_house_history_price": "906469",
+            "PRICE_APARTMENT_YEAR": "826706",
+            "PRICE_APARTMENT": "732262",
+            "PRICE_BUILDING_YEAR": "1048156",
+            "PRICE_BUILDING": "939568",
+            "pre_owned_suite_year_average_price": "0",
+            "pre_owned_suite_history_price": "0",
+            "PRICE_AVERAGE_YEAR": "1079732",
+            "RENT_AVERAGE_YEAR": "923816"
+          }
+        },
+        "rent_average_year": 2118.0,
+        "RENT_AVERAGE_YEAR": 2118.0,
+        "line": [
+          "red"
+        ],
+        "line_tw": [
+          "淡水信義線"
+        ],
+        "line_colors": [
+          "#E60012"
+        ],
+        "badge_colors": [
+          "#E60012",
+          "#E60012"
+        ],
+        "badge_icon": "station-rent-e60012-e60012"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.536151,
+          25.033225
+        ]
+      },
+      "properties": {
+        "station_name": "大安森林公園",
+        "cityName": "臺北市",
+        "townName": "大安區",
+        "address": "106008臺北市大安區信義路3段100號B1",
+        "price": {
+          "rent": {
+            "PRICE_NEW_YEAR": "2820",
+            "PRICE_NEW": "2592",
+            "pre_owned_house_year_average_price": "2123",
+            "pre_owned_house_history_price": "1550",
+            "PRICE_APARTMENT_YEAR": "1703",
+            "PRICE_APARTMENT": "1276",
+            "PRICE_BUILDING_YEAR": "2321",
+            "PRICE_BUILDING": "1598",
+            "pre_owned_suite_year_average_price": "0",
+            "pre_owned_suite_history_price": "1879",
+            "PRICE_AVERAGE_YEAR": "2136",
+            "RENT_AVERAGE_YEAR": "1727"
+          },
+          "transaction": {
+            "PRICE_NEW_YEAR": "1502830",
+            "PRICE_NEW": "1560048",
+            "pre_owned_house_year_average_price": "1304836",
+            "pre_owned_house_history_price": "997682",
+            "PRICE_APARTMENT_YEAR": "932597",
+            "PRICE_APARTMENT": "835949",
+            "PRICE_BUILDING_YEAR": "1405782",
+            "PRICE_BUILDING": "1055065",
+            "pre_owned_suite_year_average_price": "0",
+            "pre_owned_suite_history_price": "0",
+            "PRICE_AVERAGE_YEAR": "1314861",
+            "RENT_AVERAGE_YEAR": "1117537"
+          }
+        },
+        "rent_average_year": 2136.0,
+        "RENT_AVERAGE_YEAR": 2136.0,
+        "line": [
+          "red"
+        ],
+        "line_tw": [
+          "淡水信義線"
+        ],
+        "line_colors": [
+          "#E60012"
+        ],
+        "badge_colors": [
+          "#E60012",
+          "#E60012"
+        ],
+        "badge_icon": "station-rent-e60012-e60012"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.51602,
+          25.041399
+        ]
+      },
+      "properties": {
+        "station_name": "台大醫院",
+        "cityName": "臺北市",
+        "townName": "中正區",
+        "address": "100006臺北市中正區公園路52號B1",
+        "price": {
+          "rent": {
+            "PRICE_NEW_YEAR": "1952",
+            "PRICE_NEW": "1397",
+            "pre_owned_house_year_average_price": "1961",
+            "pre_owned_house_history_price": "1594",
+            "PRICE_APARTMENT_YEAR": "1856",
+            "PRICE_APARTMENT": "1762",
+            "PRICE_BUILDING_YEAR": "2019",
+            "PRICE_BUILDING": "1554",
+            "pre_owned_suite_year_average_price": "0",
+            "pre_owned_suite_history_price": "1569",
+            "PRICE_AVERAGE_YEAR": "1961",
+            "RENT_AVERAGE_YEAR": "1589"
+          },
+          "transaction": {
+            "PRICE_NEW_YEAR": "1287154",
+            "PRICE_NEW": "1070232",
+            "pre_owned_house_year_average_price": "856303",
+            "pre_owned_house_history_price": "736877",
+            "PRICE_APARTMENT_YEAR": "0",
+            "PRICE_APARTMENT": "608997",
+            "PRICE_BUILDING_YEAR": "856303",
+            "PRICE_BUILDING": "740234",
+            "pre_owned_suite_year_average_price": "0",
+            "pre_owned_suite_history_price": "0",
+            "PRICE_AVERAGE_YEAR": "1037714",
+            "RENT_AVERAGE_YEAR": "817423"
+          }
+        },
+        "rent_average_year": 1961.0,
+        "RENT_AVERAGE_YEAR": 1961.0,
+        "line": [
+          "red"
+        ],
+        "line_tw": [
+          "淡水信義線"
+        ],
+        "line_colors": [
+          "#E60012"
+        ],
+        "badge_colors": [
+          "#E60012",
+          "#E60012"
+        ],
+        "badge_icon": "station-rent-e60012-e60012"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.520685,
+          25.057575
+        ]
+      },
+      "properties": {
+        "station_name": "雙連",
+        "cityName": "臺北市",
+        "townName": "中山區",
+        "address": "103018臺北市大同區民生西路47號",
+        "price": {
+          "rent": {
+            "PRICE_NEW_YEAR": "2003",
+            "PRICE_NEW": "1897",
+            "pre_owned_house_year_average_price": "1893",
+            "pre_owned_house_history_price": "1680",
+            "PRICE_APARTMENT_YEAR": "1856",
+            "PRICE_APARTMENT": "1445",
+            "PRICE_BUILDING_YEAR": "1900",
+            "PRICE_BUILDING": "1725",
+            "pre_owned_suite_year_average_price": "0",
+            "pre_owned_suite_history_price": "1549",
+            "PRICE_AVERAGE_YEAR": "1901",
+            "RENT_AVERAGE_YEAR": "1706"
+          },
+          "transaction": {
+            "PRICE_NEW_YEAR": "1188641",
+            "PRICE_NEW": "941146",
+            "pre_owned_house_year_average_price": "894105",
+            "pre_owned_house_history_price": "699634",
+            "PRICE_APARTMENT_YEAR": "742785",
+            "PRICE_APARTMENT": "639304",
+            "PRICE_BUILDING_YEAR": "912447",
+            "PRICE_BUILDING": "712331",
+            "pre_owned_suite_year_average_price": "0",
+            "pre_owned_suite_history_price": "0",
+            "PRICE_AVERAGE_YEAR": "946467",
+            "RENT_AVERAGE_YEAR": "792517"
+          }
+        },
+        "rent_average_year": 1901.0,
+        "RENT_AVERAGE_YEAR": 1901.0,
+        "line": [
+          "red"
+        ],
+        "line_tw": [
+          "淡水信義線"
+        ],
+        "line_colors": [
+          "#E60012"
+        ],
+        "badge_colors": [
+          "#E60012",
+          "#E60012"
+        ],
+        "badge_icon": "station-rent-e60012-e60012"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.520074,
+          25.071409
+        ]
+      },
+      "properties": {
+        "station_name": "圓山",
+        "cityName": "臺北市",
+        "townName": "中山區",
+        "address": "103032臺北市大同區酒泉街9之1號",
+        "price": {
+          "rent": {
+            "PRICE_NEW_YEAR": "2203",
+            "PRICE_NEW": "1367",
+            "pre_owned_house_year_average_price": "1403",
+            "pre_owned_house_history_price": "1188",
+            "PRICE_APARTMENT_YEAR": "1344",
+            "PRICE_APARTMENT": "1019",
+            "PRICE_BUILDING_YEAR": "1532",
+            "PRICE_BUILDING": "1358",
+            "pre_owned_suite_year_average_price": "0",
+            "pre_owned_suite_history_price": "1417",
+            "PRICE_AVERAGE_YEAR": "1433",
+            "RENT_AVERAGE_YEAR": "1225"
+          },
+          "transaction": {
+            "PRICE_NEW_YEAR": "1079825",
+            "PRICE_NEW": "685526",
+            "pre_owned_house_year_average_price": "681021",
+            "pre_owned_house_history_price": "586215",
+            "PRICE_APARTMENT_YEAR": "583659",
+            "PRICE_APARTMENT": "499956",
+            "PRICE_BUILDING_YEAR": "778383",
+            "PRICE_BUILDING": "643721",
+            "pre_owned_suite_year_average_price": "0",
+            "pre_owned_suite_history_price": "0",
+            "PRICE_AVERAGE_YEAR": "694773",
+            "RENT_AVERAGE_YEAR": "621224"
+          }
+        },
+        "rent_average_year": 1433.0,
+        "RENT_AVERAGE_YEAR": 1433.0,
+        "line": [
+          "red"
+        ],
+        "line_tw": [
+          "淡水信義線"
+        ],
+        "line_colors": [
+          "#E60012"
+        ],
+        "badge_colors": [
+          "#E60012",
+          "#E60012"
+        ],
+        "badge_icon": "station-rent-e60012-e60012"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.524955,
+          25.084201
+        ]
+      },
+      "properties": {
+        "station_name": "劍潭",
+        "cityName": "臺北市",
+        "townName": "士林區",
+        "address": "111011臺北市士林區中山北路5段65號",
+        "price": {
+          "rent": {
+            "PRICE_NEW_YEAR": "0",
+            "PRICE_NEW": "1203",
+            "pre_owned_house_year_average_price": "1622",
+            "pre_owned_house_history_price": "1471",
+            "PRICE_APARTMENT_YEAR": "1609",
+            "PRICE_APARTMENT": "1398",
+            "PRICE_BUILDING_YEAR": "1644",
+            "PRICE_BUILDING": "1442",
+            "pre_owned_suite_year_average_price": "0",
+            "pre_owned_suite_history_price": "1717",
+            "PRICE_AVERAGE_YEAR": "1622",
+            "RENT_AVERAGE_YEAR": "1466"
+          },
+          "transaction": {
+            "PRICE_NEW_YEAR": "1034829",
+            "PRICE_NEW": "759496",
+            "pre_owned_house_year_average_price": "822153",
+            "pre_owned_house_history_price": "684208",
+            "PRICE_APARTMENT_YEAR": "626805",
+            "PRICE_APARTMENT": "495591",
+            "PRICE_BUILDING_YEAR": "952385",
+            "PRICE_BUILDING": "790642",
+            "pre_owned_suite_year_average_price": "0",
+            "pre_owned_suite_history_price": "0",
+            "PRICE_AVERAGE_YEAR": "852535",
+            "RENT_AVERAGE_YEAR": "704960"
+          }
+        },
+        "rent_average_year": 1622.0,
+        "RENT_AVERAGE_YEAR": 1622.0,
+        "line": [
+          "red"
+        ],
+        "line_tw": [
+          "淡水信義線"
+        ],
+        "line_colors": [
+          "#E60012"
+        ],
+        "badge_colors": [
+          "#E60012",
+          "#E60012"
+        ],
+        "badge_icon": "station-rent-e60012-e60012"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.52623,
+          25.093492
+        ]
+      },
+      "properties": {
+        "station_name": "士林",
+        "cityName": "臺北市",
+        "townName": "士林區",
+        "address": "111012臺北市士林區福德路1號",
+        "price": {
+          "rent": {
+            "PRICE_NEW_YEAR": "2107",
+            "PRICE_NEW": "1460",
+            "pre_owned_house_year_average_price": "1788",
+            "pre_owned_house_history_price": "1466",
+            "PRICE_APARTMENT_YEAR": "1793",
+            "PRICE_APARTMENT": "1416",
+            "PRICE_BUILDING_YEAR": "1758",
+            "PRICE_BUILDING": "1378",
+            "pre_owned_suite_year_average_price": "0",
+            "pre_owned_suite_history_price": "1813",
+            "PRICE_AVERAGE_YEAR": "1793",
+            "RENT_AVERAGE_YEAR": "1465"
+          },
+          "transaction": {
+            "PRICE_NEW_YEAR": "1026281",
+            "PRICE_NEW": "795042",
+            "pre_owned_house_year_average_price": "818682",
+            "pre_owned_house_history_price": "673618",
+            "PRICE_APARTMENT_YEAR": "669095",
+            "PRICE_APARTMENT": "570394",
+            "PRICE_BUILDING_YEAR": "904159",
+            "PRICE_BUILDING": "776842",
+            "pre_owned_suite_year_average_price": "0",
+            "pre_owned_suite_history_price": "0",
+            "PRICE_AVERAGE_YEAR": "835982",
+            "RENT_AVERAGE_YEAR": "720838"
+          }
+        },
+        "rent_average_year": 1793.0,
+        "RENT_AVERAGE_YEAR": 1793.0,
+        "line": [
+          "red"
+        ],
+        "line_tw": [
+          "淡水信義線"
+        ],
+        "line_colors": [
+          "#E60012"
+        ],
+        "badge_colors": [
+          "#E60012",
+          "#E60012"
+        ],
+        "badge_icon": "station-rent-e60012-e60012"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.522546,
+          25.102718
+        ]
+      },
+      "properties": {
+        "station_name": "芝山",
+        "cityName": "臺北市",
+        "townName": "士林區",
+        "address": "111031臺北市士林區福國路70號",
+        "price": {
+          "rent": {
+            "PRICE_NEW_YEAR": "0",
+            "PRICE_NEW": "1605",
+            "pre_owned_house_year_average_price": "1621",
+            "pre_owned_house_history_price": "1325",
+            "PRICE_APARTMENT_YEAR": "1453",
+            "PRICE_APARTMENT": "1160",
+            "PRICE_BUILDING_YEAR": "1861",
+            "PRICE_BUILDING": "1411",
+            "pre_owned_suite_year_average_price": "0",
+            "pre_owned_suite_history_price": "1562",
+            "PRICE_AVERAGE_YEAR": "1621",
+            "RENT_AVERAGE_YEAR": "1361"
+          },
+          "transaction": {
+            "PRICE_NEW_YEAR": "0",
+            "PRICE_NEW": "771697",
+            "pre_owned_house_year_average_price": "747895",
+            "pre_owned_house_history_price": "644926",
+            "PRICE_APARTMENT_YEAR": "682845",
+            "PRICE_APARTMENT": "586094",
+            "PRICE_BUILDING_YEAR": "817949",
+            "PRICE_BUILDING": "703757",
+            "pre_owned_suite_year_average_price": "0",
+            "pre_owned_suite_history_price": "0",
+            "PRICE_AVERAGE_YEAR": "747895",
+            "RENT_AVERAGE_YEAR": "684593"
+          }
+        },
+        "rent_average_year": 1621.0,
+        "RENT_AVERAGE_YEAR": 1621.0,
+        "line": [
+          "red"
+        ],
+        "line_tw": [
+          "淡水信義線"
+        ],
+        "line_colors": [
+          "#E60012"
+        ],
+        "badge_colors": [
+          "#E60012",
+          "#E60012"
+        ],
+        "badge_icon": "station-rent-e60012-e60012"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.518785,
+          25.109815
+        ]
+      },
+      "properties": {
+        "station_name": "明德",
+        "cityName": "臺北市",
+        "townName": "北投區",
+        "address": "112038臺北市北投區明德路95號",
+        "price": {
+          "rent": {
+            "PRICE_NEW_YEAR": "0",
+            "PRICE_NEW": "1470",
+            "pre_owned_house_year_average_price": "1342",
+            "pre_owned_house_history_price": "1252",
+            "PRICE_APARTMENT_YEAR": "1246",
+            "PRICE_APARTMENT": "1054",
+            "PRICE_BUILDING_YEAR": "1542",
+            "PRICE_BUILDING": "1356",
+            "pre_owned_suite_year_average_price": "0",
+            "pre_owned_suite_history_price": "1532",
+            "PRICE_AVERAGE_YEAR": "1342",
+            "RENT_AVERAGE_YEAR": "1276"
+          },
+          "transaction": {
+            "PRICE_NEW_YEAR": "0",
+            "PRICE_NEW": "786672",
+            "pre_owned_house_year_average_price": "754710",
+            "pre_owned_house_history_price": "591826",
+            "PRICE_APARTMENT_YEAR": "627537",
+            "PRICE_APARTMENT": "528280",
+            "PRICE_BUILDING_YEAR": "924274",
+            "PRICE_BUILDING": "704949",
+            "pre_owned_suite_year_average_price": "0",
+            "pre_owned_suite_history_price": "0",
+            "PRICE_AVERAGE_YEAR": "754710",
+            "RENT_AVERAGE_YEAR": "657560"
+          }
+        },
+        "rent_average_year": 1342.0,
+        "RENT_AVERAGE_YEAR": 1342.0,
+        "line": [
+          "red"
+        ],
+        "line_tw": [
+          "淡水信義線"
+        ],
+        "line_colors": [
+          "#E60012"
+        ],
+        "badge_colors": [
+          "#E60012",
+          "#E60012"
+        ],
+        "badge_icon": "station-rent-e60012-e60012"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.515572,
+          25.114455
+        ]
+      },
+      "properties": {
+        "station_name": "石牌",
+        "cityName": "臺北市",
+        "townName": "北投區",
+        "address": "112052臺北市北投區石牌路1段200號",
+        "price": {
+          "rent": {
+            "PRICE_NEW_YEAR": "1851",
+            "PRICE_NEW": "1493",
+            "pre_owned_house_year_average_price": "1333",
+            "pre_owned_house_history_price": "1210",
+            "PRICE_APARTMENT_YEAR": "1211",
+            "PRICE_APARTMENT": "975",
+            "PRICE_BUILDING_YEAR": "1628",
+            "PRICE_BUILDING": "1363",
+            "pre_owned_suite_year_average_price": "0",
+            "pre_owned_suite_history_price": "1446",
+            "PRICE_AVERAGE_YEAR": "1338",
+            "RENT_AVERAGE_YEAR": "1248"
+          },
+          "transaction": {
+            "PRICE_NEW_YEAR": "1063336",
+            "PRICE_NEW": "730817",
+            "pre_owned_house_year_average_price": "746113",
+            "pre_owned_house_history_price": "590959",
+            "PRICE_APARTMENT_YEAR": "643744",
+            "PRICE_APARTMENT": "523813",
+            "PRICE_BUILDING_YEAR": "908196",
+            "PRICE_BUILDING": "716379",
+            "pre_owned_suite_year_average_price": "0",
+            "pre_owned_suite_history_price": "0",
+            "PRICE_AVERAGE_YEAR": "765339",
+            "RENT_AVERAGE_YEAR": "625288"
+          }
+        },
+        "rent_average_year": 1338.0,
+        "RENT_AVERAGE_YEAR": 1338.0,
+        "line": [
+          "red"
+        ],
+        "line_tw": [
+          "淡水信義線"
+        ],
+        "line_colors": [
+          "#E60012"
+        ],
+        "badge_colors": [
+          "#E60012",
+          "#E60012"
+        ],
+        "badge_icon": "station-rent-e60012-e60012"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.506234,
+          25.120852
+        ]
+      },
+      "properties": {
+        "station_name": "唭哩岸",
+        "cityName": "臺北市",
+        "townName": "北投區",
+        "address": "112025臺北市北投區東華街2段301號",
+        "price": {
+          "rent": {
+            "PRICE_NEW_YEAR": "1671",
+            "PRICE_NEW": "1325",
+            "pre_owned_house_year_average_price": "1072",
+            "pre_owned_house_history_price": "1046",
+            "PRICE_APARTMENT_YEAR": "1032",
+            "PRICE_APARTMENT": "904",
+            "PRICE_BUILDING_YEAR": "1216",
+            "PRICE_BUILDING": "1111",
+            "pre_owned_suite_year_average_price": "0",
+            "pre_owned_suite_history_price": "1742",
+            "PRICE_AVERAGE_YEAR": "1125",
+            "RENT_AVERAGE_YEAR": "1078"
+          },
+          "transaction": {
+            "PRICE_NEW_YEAR": "906320",
+            "PRICE_NEW": "670274",
+            "pre_owned_house_year_average_price": "680358",
+            "pre_owned_house_history_price": "511180",
+            "PRICE_APARTMENT_YEAR": "584608",
+            "PRICE_APARTMENT": "460173",
+            "PRICE_BUILDING_YEAR": "785226",
+            "PRICE_BUILDING": "615505",
+            "pre_owned_suite_year_average_price": "0",
+            "pre_owned_suite_history_price": "0",
+            "PRICE_AVERAGE_YEAR": "690182",
+            "RENT_AVERAGE_YEAR": "573980"
+          }
+        },
+        "rent_average_year": 1125.0,
+        "RENT_AVERAGE_YEAR": 1125.0,
+        "line": [
+          "red"
+        ],
+        "line_tw": [
+          "淡水信義線"
+        ],
+        "line_colors": [
+          "#E60012"
+        ],
+        "badge_colors": [
+          "#E60012",
+          "#E60012"
+        ],
+        "badge_icon": "station-rent-e60012-e60012"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.50114,
+          25.12547
+        ]
+      },
+      "properties": {
+        "station_name": "奇岩",
+        "cityName": "臺北市",
+        "townName": "北投區",
+        "address": "112057臺北市北投區三合街2段489號",
+        "price": {
+          "rent": {
+            "PRICE_NEW_YEAR": "1109",
+            "PRICE_NEW": "967",
+            "pre_owned_house_year_average_price": "986",
+            "pre_owned_house_history_price": "936",
+            "PRICE_APARTMENT_YEAR": "819",
+            "PRICE_APARTMENT": "795",
+            "PRICE_BUILDING_YEAR": "1231",
+            "PRICE_BUILDING": "1060",
+            "pre_owned_suite_year_average_price": "0",
+            "pre_owned_suite_history_price": "1332",
+            "PRICE_AVERAGE_YEAR": "993",
+            "RENT_AVERAGE_YEAR": "942"
+          },
+          "transaction": {
+            "PRICE_NEW_YEAR": "750447",
+            "PRICE_NEW": "665934",
+            "pre_owned_house_year_average_price": "693049",
+            "pre_owned_house_history_price": "557064",
+            "PRICE_APARTMENT_YEAR": "560300",
+            "PRICE_APARTMENT": "439630",
+            "PRICE_BUILDING_YEAR": "811048",
+            "PRICE_BUILDING": "635722",
+            "pre_owned_suite_year_average_price": "0",
+            "pre_owned_suite_history_price": "0",
+            "PRICE_AVERAGE_YEAR": "708925",
+            "RENT_AVERAGE_YEAR": "628852"
+          }
+        },
+        "rent_average_year": 993.0,
+        "RENT_AVERAGE_YEAR": 993.0,
+        "line": [
+          "red"
+        ],
+        "line_tw": [
+          "淡水信義線"
+        ],
+        "line_colors": [
+          "#E60012"
+        ],
+        "badge_colors": [
+          "#E60012",
+          "#E60012"
+        ],
+        "badge_icon": "station-rent-e60012-e60012"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.498648,
+          25.131819
+        ]
+      },
+      "properties": {
+        "station_name": "北投",
+        "cityName": "臺北市",
+        "townName": "北投區",
+        "address": "112006臺北市北投區光明路1號",
+        "price": {
+          "rent": {
+            "PRICE_NEW_YEAR": "1230",
+            "PRICE_NEW": "1053",
+            "pre_owned_house_year_average_price": "906",
+            "pre_owned_house_history_price": "889",
+            "PRICE_APARTMENT_YEAR": "833",
+            "PRICE_APARTMENT": "817",
+            "PRICE_BUILDING_YEAR": "995",
+            "PRICE_BUILDING": "924",
+            "pre_owned_suite_year_average_price": "0",
+            "pre_owned_suite_history_price": "1207",
+            "PRICE_AVERAGE_YEAR": "962",
+            "RENT_AVERAGE_YEAR": "904"
+          },
+          "transaction": {
+            "PRICE_NEW_YEAR": "825161",
+            "PRICE_NEW": "613247",
+            "pre_owned_house_year_average_price": "676730",
+            "pre_owned_house_history_price": "538194",
+            "PRICE_APARTMENT_YEAR": "538002",
+            "PRICE_APARTMENT": "433760",
+            "PRICE_BUILDING_YEAR": "785301",
+            "PRICE_BUILDING": "598645",
+            "pre_owned_suite_year_average_price": "0",
+            "pre_owned_suite_history_price": "0",
+            "PRICE_AVERAGE_YEAR": "723733",
+            "RENT_AVERAGE_YEAR": "572617"
+          }
+        },
+        "rent_average_year": 962.0,
+        "RENT_AVERAGE_YEAR": 962.0,
+        "line": [
+          "red"
+        ],
+        "line_tw": [
+          "淡水信義線"
+        ],
+        "line_colors": [
+          "#E60012"
+        ],
+        "badge_colors": [
+          "#E60012",
+          "#E60012"
+        ],
+        "badge_icon": "station-rent-e60012-e60012"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.485456,
+          25.137497
+        ]
+      },
+      "properties": {
+        "station_name": "復興崗",
+        "cityName": "臺北市",
+        "townName": "北投區",
+        "address": "112054臺北市北投區中央北路3段53巷10號",
+        "price": {
+          "rent": {
+            "PRICE_NEW_YEAR": "0",
+            "PRICE_NEW": "838",
+            "pre_owned_house_year_average_price": "824",
+            "pre_owned_house_history_price": "768",
+            "PRICE_APARTMENT_YEAR": "831",
+            "PRICE_APARTMENT": "723",
+            "PRICE_BUILDING_YEAR": "811",
+            "PRICE_BUILDING": "802",
+            "pre_owned_suite_year_average_price": "0",
+            "pre_owned_suite_history_price": "1005",
+            "PRICE_AVERAGE_YEAR": "824",
+            "RENT_AVERAGE_YEAR": "773"
+          },
+          "transaction": {
+            "PRICE_NEW_YEAR": "713638",
+            "PRICE_NEW": "448270",
+            "pre_owned_house_year_average_price": "495975",
+            "pre_owned_house_history_price": "405936",
+            "PRICE_APARTMENT_YEAR": "391663",
+            "PRICE_APARTMENT": "321840",
+            "PRICE_BUILDING_YEAR": "628735",
+            "PRICE_BUILDING": "473859",
+            "pre_owned_suite_year_average_price": "0",
+            "pre_owned_suite_history_price": "0",
+            "PRICE_AVERAGE_YEAR": "504346",
+            "RENT_AVERAGE_YEAR": "422260"
+          }
+        },
+        "rent_average_year": 824.0,
+        "RENT_AVERAGE_YEAR": 824.0,
+        "line": [
+          "red"
+        ],
+        "line_tw": [
+          "淡水信義線"
+        ],
+        "line_colors": [
+          "#E60012"
+        ],
+        "badge_colors": [
+          "#E60012",
+          "#E60012"
+        ],
+        "badge_icon": "station-rent-e60012-e60012"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.473298,
+          25.130923
+        ]
+      },
+      "properties": {
+        "station_name": "忠義",
+        "cityName": "臺北市",
+        "townName": "北投區",
+        "address": "112017臺北市北投區中央北路4段301號",
+        "price": {
+          "rent": {
+            "PRICE_NEW_YEAR": "0",
+            "PRICE_NEW": "0",
+            "pre_owned_house_year_average_price": "738",
+            "pre_owned_house_history_price": "682",
+            "PRICE_APARTMENT_YEAR": "738",
+            "PRICE_APARTMENT": "682",
+            "PRICE_BUILDING_YEAR": "0",
+            "PRICE_BUILDING": "0",
+            "pre_owned_suite_year_average_price": "0",
+            "pre_owned_suite_history_price": "0",
+            "PRICE_AVERAGE_YEAR": "738",
+            "RENT_AVERAGE_YEAR": "682"
+          },
+          "transaction": {
+            "PRICE_NEW_YEAR": "0",
+            "PRICE_NEW": "0",
+            "pre_owned_house_year_average_price": "432156",
+            "pre_owned_house_history_price": "330163",
+            "PRICE_APARTMENT_YEAR": "432156",
+            "PRICE_APARTMENT": "325199",
+            "PRICE_BUILDING_YEAR": "0",
+            "PRICE_BUILDING": "430423",
+            "pre_owned_suite_year_average_price": "0",
+            "pre_owned_suite_history_price": "0",
+            "PRICE_AVERAGE_YEAR": "432156",
+            "RENT_AVERAGE_YEAR": "330163"
+          }
+        },
+        "rent_average_year": 738.0,
+        "RENT_AVERAGE_YEAR": 738.0,
+        "line": [
+          "red"
+        ],
+        "line_tw": [
+          "淡水信義線"
+        ],
+        "line_colors": [
+          "#E60012"
+        ],
+        "badge_colors": [
+          "#E60012",
+          "#E60012"
+        ],
+        "badge_icon": "station-rent-e60012-e60012"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.467,
+          25.12551
+        ]
+      },
+      "properties": {
+        "station_name": "關渡",
+        "cityName": "臺北市",
+        "townName": "北投區",
+        "address": "112021臺北市北投區大度路3段296巷51號",
+        "price": {
+          "rent": {
+            "PRICE_NEW_YEAR": "0",
+            "PRICE_NEW": "888",
+            "pre_owned_house_year_average_price": "985",
+            "pre_owned_house_history_price": "998",
+            "PRICE_APARTMENT_YEAR": "834",
+            "PRICE_APARTMENT": "814",
+            "PRICE_BUILDING_YEAR": "1174",
+            "PRICE_BUILDING": "1075",
+            "pre_owned_suite_year_average_price": "0",
+            "pre_owned_suite_history_price": "1136",
+            "PRICE_AVERAGE_YEAR": "985",
+            "RENT_AVERAGE_YEAR": "993"
+          },
+          "transaction": {
+            "PRICE_NEW_YEAR": "0",
+            "PRICE_NEW": "535590",
+            "pre_owned_house_year_average_price": "535800",
+            "pre_owned_house_history_price": "410877",
+            "PRICE_APARTMENT_YEAR": "372140",
+            "PRICE_APARTMENT": "329326",
+            "PRICE_BUILDING_YEAR": "626721",
+            "PRICE_BUILDING": "473637",
+            "pre_owned_suite_year_average_price": "0",
+            "pre_owned_suite_history_price": "0",
+            "PRICE_AVERAGE_YEAR": "535800",
+            "RENT_AVERAGE_YEAR": "447719"
+          }
+        },
+        "rent_average_year": 985.0,
+        "RENT_AVERAGE_YEAR": 985.0,
+        "line": [
+          "red"
+        ],
+        "line_tw": [
+          "淡水信義線"
+        ],
+        "line_colors": [
+          "#E60012"
+        ],
+        "badge_colors": [
+          "#E60012",
+          "#E60012"
+        ],
+        "badge_icon": "station-rent-e60012-e60012"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.502595,
+          25.136931
+        ]
+      },
+      "properties": {
+        "station_name": "新北投",
+        "cityName": "臺北市",
+        "townName": "北投區",
+        "address": "112028臺北市北投區大業路700號",
+        "price": {
+          "rent": {
+            "PRICE_NEW_YEAR": "1796",
+            "PRICE_NEW": "1221",
+            "pre_owned_house_year_average_price": "1160",
+            "pre_owned_house_history_price": "1084",
+            "PRICE_APARTMENT_YEAR": "967",
+            "PRICE_APARTMENT": "853",
+            "PRICE_BUILDING_YEAR": "1265",
+            "PRICE_BUILDING": "1162",
+            "pre_owned_suite_year_average_price": "0",
+            "pre_owned_suite_history_price": "1206",
+            "PRICE_AVERAGE_YEAR": "1179",
+            "RENT_AVERAGE_YEAR": "1087"
+          },
+          "transaction": {
+            "PRICE_NEW_YEAR": "0",
+            "PRICE_NEW": "574936",
+            "pre_owned_house_year_average_price": "573245",
+            "pre_owned_house_history_price": "475828",
+            "PRICE_APARTMENT_YEAR": "421719",
+            "PRICE_APARTMENT": "364874",
+            "PRICE_BUILDING_YEAR": "612349",
+            "PRICE_BUILDING": "508872",
+            "pre_owned_suite_year_average_price": "0",
+            "pre_owned_suite_history_price": "0",
+            "PRICE_AVERAGE_YEAR": "573245",
+            "RENT_AVERAGE_YEAR": "492886"
+          }
+        },
+        "rent_average_year": 1179.0,
+        "RENT_AVERAGE_YEAR": 1179.0,
+        "line": [
+          "red"
+        ],
+        "line_tw": [
+          "淡水信義線"
+        ],
+        "line_colors": [
+          "#E60012"
+        ],
+        "badge_colors": [
+          "#E60012",
+          "#E60012"
+        ],
+        "badge_icon": "station-rent-e60012-e60012"
+      }
+    }
+  ]
+}

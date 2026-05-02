@@ -58,6 +58,11 @@ import {
 	getCrowdColor,
 	mrtLineColor,
 } from "../assets/utilityFunctions/getThematicColor.js";
+import {
+	createStationBadgeSvgDataUrl,
+	getStationBadgeColors,
+	getStationBadgeIconKey,
+} from "../assets/utilityFunctions/stationBadgeSvg.js";
 
 /** Fetch GeoJSON from /public/mapData; rejects HTML (e.g. Vite SPA fallback when the file is missing). */
 async function fetchPublicMapDataGeoJson(url) {
@@ -589,6 +594,14 @@ export const useMapStore = defineStore("map", {
 				this.applyRentHeatmapHeatLayerVisibility();
 			}
 		},
+		getIsochroneRenderLayerIds(layerId) {
+			return [
+				layerId,
+				`${layerId}-network`,
+				`${layerId}-outline`,
+				`${layerId}-network-stops`,
+			];
+		},
 		resetRentHeatmapUI() {
 			this.rentHeatmapLayersActive = false;
 			this.rentHeatmapPickArmed = false;
@@ -1040,7 +1053,7 @@ export const useMapStore = defineStore("map", {
 			const url = `/mapData/${map_config.index}.geojson`;
 			return fetchPublicMapDataGeoJson(url)
 				.then((data) => {
-					this.addGeojsonSource(map_config, data);
+					return this.addGeojsonSource(map_config, data);
 				})
 				.catch((e) => {
 					console.error(e);
@@ -1051,7 +1064,7 @@ export const useMapStore = defineStore("map", {
 				});
 		},
 		// 3-1. Add a local geojson as a source in mapbox
-		addGeojsonSource(map_config, data) {
+		async addGeojsonSource(map_config, data) {
 			let geojson = data;
 			if (typeof geojson === "string") {
 				try {
@@ -1076,6 +1089,14 @@ export const useMapStore = defineStore("map", {
 					(el) => el !== map_config.layerId,
 				);
 				return;
+			}
+			if (
+				map_config.icon === "station_rent" &&
+				geojson?.type === "FeatureCollection" &&
+				Array.isArray(geojson.features)
+			) {
+				geojson = await this.prepareStationRentBadgeGeojson(geojson);
+				await this.registerStationRentBadgeImages(geojson);
 			}
 			// Heatmap / circle layers only consume points; mixed Polygon/LineString in the same FC can make Mapbox GL reject the payload.
 			const layerType = String(map_config.type || "").toLowerCase();
@@ -1291,6 +1312,71 @@ export const useMapStore = defineStore("map", {
 					);
 				}
 			}
+		},
+		async prepareStationRentBadgeGeojson(geojson) {
+			const cloned = JSON.parse(JSON.stringify(geojson));
+			for (const feature of cloned.features || []) {
+				if (!feature || typeof feature !== "object") {
+					continue;
+				}
+				const properties = feature.properties || {};
+				const colors = getStationBadgeColors(feature);
+				const iconKey = getStationBadgeIconKey(colors);
+				const priceRent = properties?.price?.rent || {};
+				const rentAverage =
+					priceRent.PRICE_AVERAGE_YEAR ??
+					properties.rent_average_year ??
+					"";
+				feature.properties = {
+					...properties,
+					badge_colors: colors,
+					badge_icon: iconKey,
+					rent_average_year: rentAverage,
+					RENT_AVERAGE_YEAR: rentAverage,
+					rent_price_new_year: priceRent.PRICE_NEW_YEAR ?? "",
+					rent_price_building_year: priceRent.PRICE_BUILDING_YEAR ?? "",
+					rent_price_apartment_year: priceRent.PRICE_APARTMENT_YEAR ?? "",
+				};
+			}
+			return cloned;
+		},
+		async registerStationRentBadgeImages(geojson) {
+			if (!this.map || !geojson?.features?.length) {
+				return;
+			}
+			const uniqueIcons = new Map();
+			for (const feature of geojson.features) {
+				const colors = getStationBadgeColors(feature);
+				const iconKey = getStationBadgeIconKey(colors);
+				if (!this.map.hasImage(iconKey)) {
+					uniqueIcons.set(iconKey, colors);
+				}
+			}
+			const SIZE = 72;
+			await Promise.all(
+				[...uniqueIcons.entries()].map(([iconKey, colors]) => {
+					return new Promise((resolve, reject) => {
+						const img = new Image(SIZE, SIZE);
+						img.onload = () => {
+							try {
+								const canvas = document.createElement("canvas");
+								canvas.width = SIZE;
+								canvas.height = SIZE;
+								const ctx = canvas.getContext("2d");
+								ctx.drawImage(img, 0, 0, SIZE, SIZE);
+								if (!this.map.hasImage(iconKey)) {
+									this.map.addImage(iconKey, ctx.getImageData(0, 0, SIZE, SIZE));
+								}
+								resolve();
+							} catch (e) {
+								reject(e);
+							}
+						};
+						img.onerror = reject;
+						img.src = createStationBadgeSvgDataUrl(colors);
+					});
+				}),
+			);
 		},
 		// 4-1. Using the mapbox source and map config, create a new layer
 		// The styles and configs can be edited in /assets/configs/mapbox/mapConfig.js
@@ -1996,6 +2082,7 @@ export const useMapStore = defineStore("map", {
 			if (!this.currentVisibleLayers.includes(map_config.layerId)) {
 				this.currentVisibleLayers.push(map_config.layerId);
 			}
+			this.moveIsochroneLayersToBottom(map_config.layerId);
 			this._registerStopsLayer(map_config);
 			this.enableIsochroneQuery(map_config);
 			dialogStore.showDialog("isochroneSettings");
@@ -2841,6 +2928,7 @@ export const useMapStore = defineStore("map", {
 					if (!this.currentVisibleLayers.includes(mapLayerId)) {
 						this.currentVisibleLayers.push(mapLayerId);
 					}
+					this.moveIsochroneLayersToBottom(mapLayerId);
 					this._registerStopsLayer(mapConfig);
 					this.enableIsochroneQuery(mapConfig);
 					useDialogStore().showDialog("isochroneSettings");
@@ -3476,11 +3564,17 @@ export const useMapStore = defineStore("map", {
 				}
 				// default to filter by x
 				else if (map_filter.byParam.xParam && xParam) {
-					this.map.setFilter(mapLayerId, [
-						"==",
-						["get", map_filter.byParam.xParam],
-						xParam,
-					]);
+					if (map_filter.byParam.filterMode === "in") {
+						this.map.setFilter(mapLayerId, [
+							"in", xParam, ["get", map_filter.byParam.xParam],
+						]);
+					} else {
+						this.map.setFilter(mapLayerId, [
+							"==",
+							["get", map_filter.byParam.xParam],
+							xParam,
+						]);
+					}
 				}
 			});
 		},

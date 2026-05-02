@@ -560,6 +560,9 @@ function handleClose() {
                   <option value="metro-density">
                     metro-density (符號圖)
                   </option>
+                  <option value="station_rent">
+                    station_rent (捷運站租金 badge)
+                  </option>
                   <option value="triangle_green">
                     triangle_green (符號圖)
                   </option>
