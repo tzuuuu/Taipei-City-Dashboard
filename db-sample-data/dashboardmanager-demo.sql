@@ -754,22 +754,6 @@ COPY public.ai_chatlog (id, session_id, user_id, provider, model, question, answ
 
 
 --
--- Data for Name: auth_user_group_roles; Type: TABLE DATA; Schema: public; Owner: postgres
---
-
-COPY public.auth_user_group_roles (auth_user_id, group_id, role_id) FROM stdin;
-1	4	1
-1	1	1
-1	2	1
-1	3	1
-6	5	1
-6	1	1
-6	2	1
-6	3	1
-\.
-
-
---
 -- Data for Name: auth_users; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
@@ -865,24 +849,22 @@ COPY public.contributors (id, user_id, user_name, image, link, identity, descrip
 
 
 --
--- Data for Name: dashboard_groups; Type: TABLE DATA; Schema: public; Owner: postgres
+-- Data for Name: groups; Type: TABLE DATA; Schema: public; Owner: postgres
+-- (Must precede dashboards/dashboard_groups due FK dependencies.)
 --
 
-COPY public.dashboard_groups (dashboard_id, group_id) FROM stdin;
-106	2
-356	2
-355	3
-359	3
-358	3
-360	4
-400	3
-400	4
-362	5
+COPY public.groups (id, name, is_personal, create_by) FROM stdin;
+1	public	f	\N
+2	taipei	f	\N
+3	metrotaipei	f	\N
+4	user: 1's personal group	t	1
+5	user: 6's personal group	t	6
 \.
 
 
 --
 -- Data for Name: dashboards; Type: TABLE DATA; Schema: public; Owner: postgres
+-- (Must precede dashboard_groups due FK dashboard_id -> dashboards.id)
 --
 
 COPY public.dashboards (id, index, name, components, icon, updated_at, created_at) FROM stdin;
@@ -900,15 +882,20 @@ COPY public.dashboards (id, index, name, components, icon, updated_at, created_a
 
 
 --
--- Data for Name: groups; Type: TABLE DATA; Schema: public; Owner: postgres
+-- Data for Name: dashboard_groups; Type: TABLE DATA; Schema: public; Owner: postgres
+-- (After dashboards and groups due FK dependencies)
 --
 
-COPY public.groups (id, name, is_personal, create_by) FROM stdin;
-1	public	f	\N
-2	taipei	f	\N
-3	metrotaipei	f	\N
-4	user: 1's personal group	t	1
-5	user: 6's personal group	t	6
+COPY public.dashboard_groups (dashboard_id, group_id) FROM stdin;
+106	2
+356	2
+355	3
+359	3
+358	3
+360	4
+400	3
+400	4
+362	5
 \.
 
 
@@ -992,6 +979,23 @@ COPY public.roles (id, name, access_control, modify, read) FROM stdin;
 19	admin	t	t	t
 20	editor	f	t	t
 21	viewer	f	f	t
+\.
+
+
+--
+-- Data for Name: auth_user_group_roles; Type: TABLE DATA; Schema: public; Owner: postgres
+-- (After auth_users, groups, roles due FK dependencies)
+--
+
+COPY public.auth_user_group_roles (auth_user_id, group_id, role_id) FROM stdin;
+1	4	1
+1	1	1
+1	2	1
+1	3	1
+6	5	1
+6	1	1
+6	2	1
+6	3	1
 \.
 
 
