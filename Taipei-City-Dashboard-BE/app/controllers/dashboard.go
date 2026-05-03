@@ -15,6 +15,17 @@ import (
 	"gorm.io/gorm"
 )
 
+// permissionsForDashboard returns permissions for access checks. Logged-in users
+// load from DB (auth_user_group_roles) so a stale JWT still matches CreateDashboard
+// and GetAllDashboards personal queries.
+func permissionsForDashboard(c *gin.Context) ([]models.Permission, error) {
+	_, accountID, _, _, ctxPerms := util.GetUserInfoFromContext(c)
+	if accountID > 0 {
+		return models.GetUserPermission(accountID)
+	}
+	return ctxPerms, nil
+}
+
 /*
 GetAllDashboards retrieves all dashboards from the database
 GET /api/v1/dashboard
@@ -51,8 +62,12 @@ Guest: Only public dashboards
 User, Admin: Public and personal dashboards
 */
 func GetDashboardByIndex(c *gin.Context) {
-	_, _, _, _, permissions := util.GetUserInfoFromContext(c)
-	groups := util.GetPermissionAllGroupIDs(permissions)
+	perms, err := permissionsForDashboard(c)
+	if err != nil {
+		c.JSON(http.StatusInternalServerError, gin.H{"status": "error", "message": err.Error()})
+		return
+	}
+	groups := util.GetPermissionAllGroupIDs(perms)
 
 	dashboardIndex := c.Param("index")
 	city := c.Query("city")
@@ -98,7 +113,7 @@ User, Admin: Allowed
 func CreatePersonalDashboard(c *gin.Context) {
 	var dashboard models.Dashboard
 
-	_, accountID, _, _, permissions := util.GetUserInfoFromContext(c)
+	_, accountID, _, _, _ := util.GetUserInfoFromContext(c)
 
 	// Get Group ID
 	groupID, err := models.GetUserPersonalGroup(accountID)
@@ -107,9 +122,13 @@ func CreatePersonalDashboard(c *gin.Context) {
 		return
 	}
 
-	// check has permission, role admin(id=1) editor(id=2)
-	if !util.HasPermission(permissions, groupID, 1) && !util.HasPermission(permissions, groupID, 2) {
-		// c.JSON(http.StatusUnauthorized, gin.H{"message": "permission denied"})
+	// Prefer DB roles over JWT: tokens may omit personal group after DB/seed changes.
+	allowed, err := models.UserHasAnyRoleOnGroup(accountID, groupID, []int{1, 2})
+	if err != nil {
+		c.JSON(http.StatusInternalServerError, gin.H{"status": "error", "message": err.Error()})
+		return
+	}
+	if !allowed {
 		c.JSON(http.StatusBadRequest, gin.H{"status": "error", "message": "permission denied"})
 		return
 	}
@@ -215,14 +234,18 @@ Admin: Public and personal dashboards
 func UpdateDashboard(c *gin.Context) {
 	var dashboard models.Dashboard
 
-	_, _, _, _, permissions := util.GetUserInfoFromContext(c)
-	adminGroups := util.GetPermissionGroupIDs(permissions, 1)  // role=admin
-	editorGroups := util.GetPermissionGroupIDs(permissions, 2) // role=editor
+	perms, err := permissionsForDashboard(c)
+	if err != nil {
+		c.JSON(http.StatusInternalServerError, gin.H{"status": "error", "message": err.Error()})
+		return
+	}
+	adminGroups := util.GetPermissionGroupIDs(perms, 1)  // role=admin
+	editorGroups := util.GetPermissionGroupIDs(perms, 2) // role=editor
 	groups := util.MergeAndRemoveDuplicates(adminGroups, editorGroups)
 
 	dashboardIndex := c.Param("index")
 
-	err := c.ShouldBindJSON(&dashboard)
+	err = c.ShouldBindJSON(&dashboard)
 	if err != nil {
 		c.JSON(http.StatusBadRequest, gin.H{"status": "error", "message": err.Error()})
 		return
@@ -249,7 +272,15 @@ User: Only personal dashboards
 Admin: Public and personal dashboards
 */
 func DeleteDashboard(c *gin.Context) {
-	_, _, _, _, permissions := util.GetUserInfoFromContext(c)
+	_, accountID, _, _, permissions := util.GetUserInfoFromContext(c)
+	if accountID > 0 {
+		dbPerms, err := models.GetUserPermission(accountID)
+		if err != nil {
+			c.JSON(http.StatusInternalServerError, gin.H{"status": "error", "message": err.Error()})
+			return
+		}
+		permissions = dbPerms
+	}
 	adminGroups := util.GetPermissionGroupIDs(permissions, 1)  // role=admin
 	editorGroups := util.GetPermissionGroupIDs(permissions, 2) // role=editor
 	groups := util.MergeAndRemoveDuplicates(adminGroups, editorGroups)

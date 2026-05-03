@@ -1,9 +1,10 @@
 <!-- Developed by Taipei Urban Intelligence Center 2026 -->
 <!-- Quartile (Q1/Median/Q3) multi-group chart, narrow-width friendly -->
 <script setup>
-import { computed, ref, watch } from "vue";
+import { computed, nextTick, ref, watch } from "vue";
 import "material-icons/iconfont/material-icons.css";
 import MapPickButton from "../../components/map/MapPickButton.vue";
+import { useMapStore } from "../../store/mapStore";
 
 const props = defineProps([
 	"chart_config",
@@ -27,7 +28,11 @@ const emit = defineEmits([
 	"update:bufferFilter",
 	"toggleMapPick",
 	"rentHeatmapFocus",
+	"filterByParam",
+	"clearByParamFilter",
 ]);
+
+const mapStore = useMapStore();
 
 const items = computed(() => (Array.isArray(props.series) ? props.series : []));
 const selectedCity = ref("");
@@ -88,6 +93,17 @@ const cityOptions = computed(() => {
 	];
 	return values.sort((a, b) => a.localeCompare(b, "zh-Hant"));
 });
+
+/** 雙北資料：縣市下拉排序仍照筆劃，但開啟組件時預設優先臺北市 */
+const PREFERRED_DEFAULT_CITIES = ["臺北市", "台北市"];
+
+function defaultCityFromOptions(cities) {
+	if (!cities.length) return "";
+	for (const name of PREFERRED_DEFAULT_CITIES) {
+		if (cities.includes(name)) return name;
+	}
+	return cities[0];
+}
 
 const districtOptions = computed(() => {
 	const source = normalizedItems.value.filter((it) => {
@@ -186,7 +202,7 @@ watch(
 				!selectedCity.value ||
 				!cityOptions.value.includes(selectedCity.value)
 			) {
-				selectedCity.value = cityOptions.value[0] ?? "";
+				selectedCity.value = defaultCityFromOptions(cityOptions.value);
 			}
 			if (
 				!selectedDistrict.value ||
@@ -207,6 +223,91 @@ watch(selectedCity, () => {
 		selectedDistrict.value = districtOptions.value[0] ?? "";
 	}
 });
+
+function pushRentMapFilter() {
+	if (!props.map_filter_on || !props.map_config?.length) return;
+	const mf = props.map_filter;
+	if (!mf || mf.mode !== "byParam" || !mf.byParam) return;
+
+	const bp = mf.byParam;
+	const city = selectedCity.value;
+	const dist = selectedDistrict.value;
+
+	if (!city) {
+		emit("clearByParamFilter", props.map_config);
+		return;
+	}
+
+	// 行政區選「全市」：圖表仍顯示該縣市彙總，地圖取消篩選以恢復雙北（或單一市）全區著色（不變更目前縮放與中心）
+	if (dist === "全市" || dist === "") {
+		emit("clearByParamFilter", props.map_config);
+		return;
+	}
+
+	if (bp.xParam && bp.yParam) {
+		emit("filterByParam", mf, props.map_config, dist, city);
+	} else if (bp.xParam) {
+		emit("filterByParam", mf, props.map_config, dist, null);
+	}
+}
+
+watch(
+	[selectedCity, selectedDistrict],
+	() => {
+		pushRentMapFilter();
+	},
+	{ immediate: true },
+);
+
+watch(
+	() => mapStore.quartileDistrictFromMap?.seq,
+	(seq) => {
+		if (seq == null || !showAreaSelectors.value) return;
+		const m = mapStore.quartileDistrictFromMap;
+		if (!m?.tName) return;
+
+		const matchCity =
+			cityOptions.value.find((c) => c === m.pName) ??
+			cityOptions.value.find(
+				(c) =>
+					m.pName &&
+					(m.pName.includes(c) || c.includes(m.pName)),
+			);
+		if (!matchCity) return;
+
+		// 與圖資 TNAME 對齊的行政區名（不依賴 districtOptions 時序）
+		const districtNames = [
+			...new Set(
+				normalizedItems.value
+					.filter((it) => it.cityName === matchCity)
+					.map((it) => it.districtName)
+					.filter((d) => d && d !== "全市"),
+			),
+		];
+		const matchDist =
+			districtNames.find((d) => d === m.tName) ??
+			districtNames.find(
+				(d) =>
+					m.tName &&
+					(m.tName.includes(d) || d.includes(m.tName)),
+			);
+		if (!matchDist) return;
+
+		// 地圖上再點同一行政區：組件改為該縣市「全市」、地圖由 pushRentMapFilter 清篩選並還原視角
+		if (
+			selectedCity.value === matchCity &&
+			selectedDistrict.value === matchDist
+		) {
+			selectedDistrict.value = "全市";
+			return;
+		}
+
+		selectedCity.value = matchCity;
+		nextTick(() => {
+			if (matchDist) selectedDistrict.value = matchDist;
+		});
+	},
+);
 
 function colorForIndex(i) {
 	const colors = props.chart_config?.color;

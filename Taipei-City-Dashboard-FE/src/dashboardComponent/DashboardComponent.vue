@@ -1,5 +1,5 @@
 <script setup>
-import { computed, ref } from "vue";
+import { computed, onMounted, ref } from "vue";
 import { useMapStore } from "../store/mapStore";
 // import "./styles/chartStyles.css";
 // import "./styles/toggleswitch.css";
@@ -137,15 +137,49 @@ const hasIsochroneMapLayer = computed(
 		props.config.map_config.some((item) => item?.type === "isochrone"),
 );
 
-/** Rent heatmap: show quartiles from latest map pick when API returned rent_quartile_series */
+function rentHeatmapDbSeriesHasRenderableQuartiles(chartData) {
+	if (!Array.isArray(chartData) || chartData.length === 0) {
+		return false;
+	}
+	return chartData.some((row) => {
+		if (!row || row.is_no_data === true) {
+			return false;
+		}
+		const q1 = Number(row.q1);
+		const med = Number(row.median);
+		const q3 = Number(row.q3);
+		return (
+			Number.isFinite(q1) &&
+			Number.isFinite(med) &&
+			Number.isFinite(q3)
+		);
+	});
+}
+
+/** Rent heatmap: live API series → DB → static JSON (aligned with demo GeoJSON) */
 const seriesForCharts = computed(() => {
 	if (props.config.index === "rent_heatmap") {
 		const live = mapStore.rentHeatmapQuartileSeries;
 		if (Array.isArray(live) && live.length > 0) {
 			return live;
 		}
+		const db = props.config.chart_data;
+		if (rentHeatmapDbSeriesHasRenderableQuartiles(db)) {
+			return db;
+		}
+		const pub = mapStore.rentHeatmapPublicQuartileSeries;
+		if (Array.isArray(pub) && pub.length > 0) {
+			return pub;
+		}
+		return db;
 	}
 	return props.config.chart_data;
+});
+
+onMounted(() => {
+	if (props.config.index === "rent_heatmap") {
+		void mapStore.fetchRentHeatmapPublicQuartileSeries();
+	}
 });
 const activeCity = computed({
 	get: () => props.activeCity,
@@ -417,7 +451,6 @@ function returnChartComponent(name, svg) {
 				mode !== 'preview' &&
 				((selectBtn && !selectBtnDisabled) ||
 					config?.chart_config?.types?.length > 1) &&
-					(hasIsochroneMapLayer && mode.includes('map') && toggleOn) &&
 				activeChart !== 'QuartileChart'
 			"
 			class="dashboardcomponent-control"

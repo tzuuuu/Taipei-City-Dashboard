@@ -156,6 +156,8 @@ export const useMapStore = defineStore("map", {
 		rentHeatmapLayerConfigs: [],
 		/** Latest MOI quartile series from /rent/calrentbuffer; null = use dashboard SQL only */
 		rentHeatmapQuartileSeries: null,
+		/** Fallback quartiles from /mapData/rent_heatmap_quartiles_static.json (aligned with bundled GeoJSON demo) */
+		rentHeatmapPublicQuartileSeries: null,
 		/** MOI form field selectedbuffer; must match site options exactly */
 		rentHeatmapSelectedBuffer: "1公里",
 		/** Last map pick for re-query when buffer changes */
@@ -166,6 +168,8 @@ export const useMapStore = defineStore("map", {
 		rentHeatmapPickCursorEl: null,
 		rentHeatmapPickCursorMoveHandler: null,
 		rentHeatmapPickCursorLeaveHandler: null,
+		/** 點選 rent_level 行政區著色層 → 同步 QuartileChart 縣市／區下拉 */
+		quartileDistrictFromMap: null,
 	}),
 	actions: {
 		/* Initialize Mapbox */
@@ -602,11 +606,42 @@ export const useMapStore = defineStore("map", {
 				`${layerId}-network-stops`,
 			];
 		},
+		/** 將等時圈疊在矢量底圖面／線之上、路名／ POI 標籤（symbol）之下，避免被線画遮住也不可插在 background 底下（會完全看不見） */
+		moveIsochroneLayersToBottom(layerId) {
+			if (!this.map) return;
+			const orderedIds = this.getIsochroneRenderLayerIds(layerId).filter(
+				(id) => this.map.getLayer(id),
+			);
+			if (!orderedIds.length) return;
+
+			const styleLayers = this.map.getStyle()?.layers ?? [];
+			const firstSymbol = styleLayers.find((l) => l.type === "symbol");
+			const anchorId =
+				firstSymbol?.id ??
+				styleLayers.find(
+					(l) =>
+						!orderedIds.includes(l.id) &&
+						l.type !== "background" &&
+						l.type !== "sky",
+				)?.id;
+
+			if (!anchorId) return;
+
+			try {
+				for (const id of orderedIds) {
+					if (id === anchorId) continue;
+					this.map.moveLayer(id, anchorId);
+				}
+			} catch (e) {
+				console.warn("[mapStore] moveIsochroneLayersToBottom:", e);
+			}
+		},
 		resetRentHeatmapUI() {
 			this.rentHeatmapLayersActive = false;
 			this.rentHeatmapPickArmed = false;
 			this.rentHeatmapLayerConfigs = [];
 			this.rentHeatmapQuartileSeries = null;
+			this.rentHeatmapPublicQuartileSeries = null;
 			this.rentHeatmapSelectedBuffer = "1公里";
 			this.rentHeatmapLastPick = null;
 			this.rentHeatmapChartFocus = "main";
@@ -777,6 +812,36 @@ export const useMapStore = defineStore("map", {
 			}
 			this.ensureRentHeatmapBoundsLayerAboveHeatmap();
 			this.applyRentHeatmapHeatLayerVisibility();
+			if (
+				!Array.isArray(this.rentHeatmapQuartileSeries) ||
+				this.rentHeatmapQuartileSeries.length === 0
+			) {
+				await this.fetchRentHeatmapPublicQuartileSeries(true);
+			}
+		},
+		/**
+		 * Load demo quartiles that match checked-in GeoJSON (when DB still has old / no-data rows).
+		 * @param {boolean} bustCache
+		 */
+		async fetchRentHeatmapPublicQuartileSeries(bustCache = false) {
+			try {
+				const q = bustCache ? `?v=${Date.now()}` : "";
+				const res = await fetch(
+					`/mapData/rent_heatmap_quartiles_static.json${q}`,
+				);
+				if (!res.ok) {
+					return;
+				}
+				const data = await res.json();
+				if (Array.isArray(data) && data.length > 0) {
+					this.rentHeatmapPublicQuartileSeries = data;
+				}
+			} catch (e) {
+				console.warn(
+					"[mapStore] fetchRentHeatmapPublicQuartileSeries:",
+					e,
+				);
+			}
 		},
 		/** @param {'main'|'whole'|'suite'|'shared'|'all'} focus — all 視同 main（僅黃色主熱力） */
 		setRentHeatmapChartFocus(focus) {
@@ -3123,6 +3188,26 @@ export const useMapStore = defineStore("map", {
 					});
 
 					layerClosestFeature[layerId] = { feature, distance: dist2 };
+				}
+			}
+
+			// 同步租屋四分位組件：點選「各行政區租金水準」圖層時帶入 PNAME／TNAME
+			for (const layerId of Object.keys(layerClosestFeature)) {
+				const cfg = this.mapConfigs[layerId];
+				const { feature } = layerClosestFeature[layerId];
+				if (
+					cfg &&
+					cfg.type === "fill" &&
+					feature?.properties?.TNAME &&
+					cfg.index &&
+					String(cfg.index).includes("rent_level")
+				) {
+					this.quartileDistrictFromMap = {
+						pName: String(feature.properties.PNAME ?? ""),
+						tName: String(feature.properties.TNAME ?? ""),
+						seq: Date.now(),
+					};
+					break;
 				}
 			}
 

@@ -621,11 +621,44 @@ export const useContentStore = defineStore("content", {
 			const { components } = this.cityDashboard;
 
 			if (components && components.length > 0) {
-				const currentCityData = components.filter(
-					(item) => item.city === this.currentDashboard.city,
-				);
+				// 儀表板「城市」對應可查詢的 query_charts.city（見 CityManager selectList）。
+				// 例如雙北 metrotaipei 需同時包含 taipei + metrotaipei，否則只比對 === metrotaipei 會濾掉僅有 taipei 列的組件。
+				const cityCfg = this.currentDashboard.city
+					? this.cityManager.getCityConfig(this.currentDashboard.city)
+					: null;
+				const allowedChartCities =
+					cityCfg?.selectList?.length > 0
+						? cityCfg.selectList
+						: this.currentDashboard.city
+							? [this.currentDashboard.city]
+							: [];
+
+				const currentCityData = (() => {
+					if (!this.currentDashboard.city) return [];
+					const matched = components.filter((item) =>
+						allowedChartCities.includes(item.city),
+					);
+					// API 回傳的 city 若與 selectList 無交集（或為空），避免整頁空白
+					if (matched.length === 0 && components.length > 0) {
+						return components;
+					}
+					// 同一組件 id 可能同時有 taipei / metrotaipei 兩列：依 selectList 順序保留優先的那一筆
+					const sorted = [...matched].sort((a, b) => {
+						const ia = allowedChartCities.indexOf(a.city);
+						const ib = allowedChartCities.indexOf(b.city);
+						return (
+							(ia === -1 ? 999 : ia) - (ib === -1 ? 999 : ib)
+						);
+					});
+					return [
+						...new Map(
+							sorted.map((item) => [item.id, item]),
+						).values(),
+					];
+				})();
+
 				const notCurrentCityData = components.filter(
-					(item) => item.city !== this.currentDashboard.city,
+					(item) => !allowedChartCities.includes(item.city),
 				);
 
 				// If city is defined, filter components by city
@@ -984,7 +1017,12 @@ export const useContentStore = defineStore("content", {
 			);
 			this.editDashboard.index = "";
 
-			const response = await http.post(`/dashboard/`, this.editDashboard);
+			const payload = {
+				name: this.editDashboard.name,
+				icon: this.editDashboard.icon,
+				components: this.editDashboard.components ?? [],
+			};
+			const response = await http.post(`/dashboard/`, payload);
 			await this.setDashboards(true);
 
 			if (
@@ -1021,10 +1059,12 @@ export const useContentStore = defineStore("content", {
 				(item) => item.id,
 			);
 
-			await http.patch(
-				`/dashboard/${this.editDashboard.index}`,
-				this.editDashboard,
-			);
+			const patchIndex = this.editDashboard.index;
+			await http.patch(`/dashboard/${patchIndex}`, {
+				name: this.editDashboard.name,
+				icon: this.editDashboard.icon,
+				components: this.editDashboard.components ?? [],
+			});
 
 			dialogStore.showNotification("success", `成功更新儀表板`);
 

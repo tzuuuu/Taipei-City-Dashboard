@@ -43,17 +43,23 @@ const availableIcons = computed(() => {
 });
 
 async function handleConfirm() {
-	if (dialogStore.addEdit === "add") {
-		// 確認個人儀表板是否超過20個
-		const response = await http.get(`/dashboard/`);
-		if (response.data?.data?.personal?.length > 20) {
-			console.error('您的個人儀表板已超出限制 20 個，請先移除既有儀表板後，重新執行本功能！');
-			dialogStore.showNotification("fail", "您的個人儀表板已超出限制 20 個，請先移除既有儀表板後，重新執行本功能！");
-			return;
+	try {
+		if (dialogStore.addEdit === "add") {
+			// 確認個人儀表板是否超過20個
+			const response = await http.get(`/dashboard/`);
+			if (response.data?.data?.personal?.length > 20) {
+				console.error('您的個人儀表板已超出限制 20 個，請先移除既有儀表板後，重新執行本功能！');
+				dialogStore.showNotification("fail", "您的個人儀表板已超出限制 20 個，請先移除既有儀表板後，重新執行本功能！");
+				return;
+			}
+			// 必須 await：否則 handleClose 會立刻清空 editDashboard，axios 序列化請求體時可能變成錯誤內容
+			await contentStore.createDashboard();
+		} else if (dialogStore.addEdit === "edit") {
+			await contentStore.editCurrentDashboard();
 		}
-		contentStore.createDashboard();
-	} else if (dialogStore.addEdit === "edit") {
-		contentStore.editCurrentDashboard();
+	} catch {
+		// axios 攔截器已顯示錯誤；避免 Uncaught (in promise) 與 Vue warn
+		return;
 	}
 	handleClose();
 }

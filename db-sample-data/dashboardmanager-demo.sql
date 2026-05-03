@@ -754,22 +754,6 @@ COPY public.ai_chatlog (id, session_id, user_id, provider, model, question, answ
 
 
 --
--- Data for Name: auth_user_group_roles; Type: TABLE DATA; Schema: public; Owner: postgres
---
-
-COPY public.auth_user_group_roles (auth_user_id, group_id, role_id) FROM stdin;
-1	4	1
-1	1	1
-1	2	1
-1	3	1
-6	5	1
-6	1	1
-6	2	1
-6	3	1
-\.
-
-
---
 -- Data for Name: auth_users; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
@@ -777,7 +761,6 @@ COPY public.auth_users (id, name, email, password, idno, uuid, tp_account, membe
 1	admin	seed-admin@gmail.com	8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918	\N	\N	\N	\N	\N	t	t	t	f	\N	2026-04-28 03:12:29.252503+00	2026-04-29 15:38:33.551874+00
 6	admin	admin@gmail.com	8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918	\N	\N	\N	\N	\N	t	t	t	f	\N	2026-04-30 05:29:59.022851+00	2026-05-02 17:07:14.094141+00
 \.
-
 
 --
 -- Data for Name: chat_logs; Type: TABLE DATA; Schema: public; Owner: postgres
@@ -812,7 +795,7 @@ isochrone_default	{#2DD4BF,#34D399,#A3E635,#FACC15,#FB923C}	{MapLegend}	分鐘
 trip_purpose_sankey	{#D3A021,#7C4DFF,#4EA3FF,#7CB342,#56B96D,#AF4137,#E170A6,#24B0DD}	{SunburstChart}	%
 commute_time_sunburst	{#4EA3FF,#F5A623}	{SunburstChart}	%
 commute_mode_sunburst	{#4EA3FF,#F5A623}	{SunburstChart}	%
-net_inflow_commuters	{#ff9e00,#7b2cbf}	{NegativeColumnChart} 人
+net_inflow_commuters	{#ff9e00,#7b2cbf}	{NegativeColumnChart}	人
 \.
 
 
@@ -825,8 +808,8 @@ COPY public.component_maps (id, index, title, type, source, size, icon, paint, p
 99	youbike_realtime_metrotaipei	youbike站點	symbol	geojson	\N	youbike	{}	[{"key":"sna","name":"場站名稱"},{"key":"sno","name":"場站ID"},{"key":"available_return_bikes","name":"可還車位"},{"key":"available_rent_general_bikes","name":"剩餘車輛"}]
 100	bike_network_tpe	自行車路網	line	geojson	\N	\N	{"line-color":["match",["get","direction"],"雙向","#097138","單向","#007BFF","#808080"]}	[\r\n  {"key": "data_time", "name": "數據時間"},\r\n  {"key": "route_name", "name": "路線名稱"},\r\n  {"key": "city_code", "name": "城市代碼"},\r\n  {"key": "city", "name": "城市"},\r\n  {"key": "road_section_start", "name": "起點路段"},\r\n  {"key": "road_section_end", "name": "終點路段"},\r\n  {"key": "direction", "name": "方向"},\r\n  {"key": "cycling_length", "name": "自行車道長度"},\r\n  {"key": "finished_time", "name": "完工時間"},\r\n  {"key": "update_time", "name": "更新時間"}\r\n]
 101	bike_network_metrotaipei	自行車路網	line	geojson	\N	\N	{"line-color":["match",["get","direction"],"雙向","#097138","單向","#007BFF","#808080"]}	[\r\n  {"key": "data_time", "name": "數據時間"},\r\n  {"key": "route_name", "name": "路線名稱"},\r\n  {"key": "city_code", "name": "城市代碼"},\r\n  {"key": "city", "name": "城市"},\r\n  {"key": "road_section_start", "name": "起點路段"},\r\n  {"key": "road_section_end", "name": "終點路段"},\r\n  {"key": "direction", "name": "方向"},\r\n  {"key": "cycling_length", "name": "自行車道長度"},\r\n  {"key": "finished_time", "name": "完工時間"},\r\n  {"key": "update_time", "name": "更新時間"}\r\n]
-1	rent_level	各行政區租金水準	fill	geojson	\N	\N	{\n  "fill-color": [\n    "case",\n    ["<", ["get", "rent_median"], 5000],\n    "#2f343a",\n\n    ["interpolate",\n      ["linear"],\n      ["get", "rent_median"],\n      5000, "#36404c",\n      8000, "#4b5b70",\n      11000, "#687b99",\n      14000, "#879dc3",\n      17000, "#a8bee8"\n    ]\n  ],\n  "fill-opacity": 0.88,\n  "fill-outline-color": "#26303a"\n}	[{"key":"PNAME","name":"縣市"},{"key":"TNAME","name":"行政區"},{"key":"rent_median","name":"租金50分位數"},{"key":"remark","name":"備註"}]
-2	rent_level_metrotaipei	各行政區租金水準	fill	geojson	\N	\N	{\n  "fill-color": [\n    "case",\n    ["<", ["get", "rent_median"], 5000],\n    "#2f343a",\n\n    ["interpolate",\n      ["linear"],\n      ["get", "rent_median"],\n      5000, "#36404c",\n      8000, "#4b5b70",\n      11000, "#687b99",\n      14000, "#879dc3",\n      17000, "#a8bee8"\n    ]\n  ],\n  "fill-opacity": 0.88,\n  "fill-outline-color": "#26303a"\n}	[{"key":"PNAME","name":"縣市"},{"key":"TNAME","name":"行政區"},{"key":"rent_median","name":"租金50分位數"},{"key":"remark","name":"備註"}]
+1	rent_level	各行政區租金水準	fill	geojson	\N	\N	{\n  "fill-color": [\n    "case",\n    ["<", ["get", "rent_median"], 5000],\n    "#2f343a",\n\n    ["interpolate",\n      ["linear"],\n      ["get", "rent_median"],\n      5000, "#36404c",\n      8000, "#4b5b70",\n      11000, "#687b99",\n      14000, "#879dc3",\n      17000, "#a8bee8"\n    ]\n  ],\n  "fill-opacity": 0.44,\n  "fill-outline-color": "#26303a"\n}	[{"key":"PNAME","name":"縣市"},{"key":"TNAME","name":"行政區"},{"key":"rent_median","name":"租金50分位數"},{"key":"remark","name":"備註"}]
+2	rent_level_metrotaipei	各行政區租金水準	fill	geojson	\N	\N	{\n  "fill-color": [\n    "case",\n    ["<", ["get", "rent_median"], 5000],\n    "#2f343a",\n\n    ["interpolate",\n      ["linear"],\n      ["get", "rent_median"],\n      5000, "#36404c",\n      8000, "#4b5b70",\n      11000, "#687b99",\n      14000, "#879dc3",\n      17000, "#a8bee8"\n    ]\n  ],\n  "fill-opacity": 0.44,\n  "fill-outline-color": "#26303a"\n}	[{"key":"PNAME","name":"縣市"},{"key":"TNAME","name":"行政區"},{"key":"rent_median","name":"租金50分位數"},{"key":"remark","name":"備註"}]
 5	social_housing	社會住宅興辦進度(柱狀體)	fill-extrusion	geojson	\N	\N	{\n  "fill-extrusion-color": "#25744f",\n  "fill-extrusion-height": [\n    "+",\n    200,\n    [\n      "*",\n      ["sqrt", ["to-number", ["get", "戶數"]]],\n      80\n    ]\n  ],\n  "fill-extrusion-base": 0,\n  "fill-extrusion-opacity": 1\n}	[\n  {\n    "key": "縣市",\n    "name": "縣市"\n  },\n  {\n    "key": "案名",\n    "name": "案名"\n  },\n  {\n    "key": "詳細地址",\n    "name": "詳細地址"\n  },\n  {\n    "key": "興辦主體",\n    "name": "興辦主體"\n  },\n  {\n    "key": "戶數",\n    "name": "戶數"\n  },\n  {\n    "key": "工程決標日期",\n    "name": "工程決標日期"\n  },\n  {\n    "key": "開工日期",\n    "name": "開工日期"\n  },\n  {\n    "key": "完工日期",\n    "name": "完工日期"\n  },\n  {\n    "key": "執行情況",\n    "name": "執行情況"\n  }\n]
 4	rent_heatmap_bounds	租屋熱力（範圍）	line	geojson	\N	\N	{"line-color":"#FFFFFF","line-width":["interpolate",["linear"],["zoom"],10,3,12,4.5,14,6,17,8],"line-opacity":0.4}	[]
 3	rent_heatmap	租屋熱力（樣點）	heatmap	geojson	\N	\N	{"heatmap-opacity":0.68,"heatmap-color":["interpolate",["linear"],["heatmap-density"],0,"rgba(255,248,220,0)",0.08,"rgba(255,236,185,0.2)",0.22,"rgba(250,215,130,0.42)",0.38,"rgba(235,185,70,0.6)",0.52,"rgba(211,160,33,0.75)",0.66,"rgba(180,125,18,0.86)",0.8,"rgba(150,95,12,0.92)",0.92,"rgba(120,72,8,0.95)",1,"rgba(95,58,6,0.96)"]}	[]
@@ -906,11 +889,11 @@ COPY public.dashboards (id, index, name, components, icon, updated_at, created_a
 359	map-layers-metrotaipei	圖資資訊	{217}	public	2024-05-16 03:56:12.76016+00	2024-03-21 10:04:24.928533+00
 358	practical_transportation_newtpe	務實交通	{60,212,213}	directions_car	2025-03-12 08:00:38.75842+00	2024-03-21 09:38:37.66+00
 1	09a25cd9cb7d	收藏組件	\N	favorite	2025-03-14 07:34:22.247753+00	2025-03-14 07:34:22.247753+00
-2	3245d9eace5f	我的新儀表板	{215,218,216,213,212,214,60,146}	star	2025-03-14 14:55:11.732116+00	2025-03-14 14:55:11.732116+00
+2	3245d9eace5f	我的新儀表板	{215,218,216,213,212,214,60}	star	2025-03-14 14:55:11.732116+00	2025-03-14 14:55:11.732116+00
 360	07dd6b2a6bc0	收藏組件	\N	favorite	2026-04-28 03:12:29.258762+00	2026-04-28 03:12:29.258762+00
 362	f5550dc8ed63	收藏組件	\N	favorite	2026-04-30 05:29:59.037538+00	2026-04-30 05:29:59.037538+00
 356	ltc_care_tpe	長照關懷	{4,5,6,7,214,215,216,218}	elderly	2025-02-26 08:43:42.86017+00	2024-03-21 09:38:37.66+00
-363	2b8a9157e0e2	通勤打理	{8,7,6,5,4,3,1,219,9,44,219,220,221,222}	star	2026-05-02 22:05:52.174685+00	2026-05-02 22:05:52.174685+00
+363	2b8a9157e0e2	通勤打理	{8,7,6,5,4,3,1,219,9,44,220,221,222}	star	2026-05-02 22:05:52.174685+00	2026-05-02 22:05:52.174685+00
 \.
 
 
@@ -924,6 +907,7 @@ COPY public.dashboard_groups (dashboard_id, group_id) FROM stdin;
 355	3
 359	3
 358	3
+363	2
 363	5
 360	4
 362	5
@@ -968,7 +952,7 @@ ebus_percent	\N	\N	\N	static	\N	\N	\N	交通局	顯示雙北電動公車比例	�
 ebus_percent	\N	\N	\N	static	\N	\N	\N	交通局	顯示臺北電動公車比例	此圖顯示臺北市電動公車的比例，呈現全市公車車隊中電動車所占比重，以及近年來電動公車數量的成長情形。圖表比較傳統燃油公車與電動公車的比例變化，並標示臺北市政府推動電動化政策、補助措施及其帶來的環保效益。透過這些數據，可評估臺北市電動公車的普及程度，及其在減碳與空氣品質改善上的貢獻，有助於進一步規劃更完善的公共運輸電動化策略，推動城市交通朝向低碳永續目標邁進。	可用於評估臺北市公共運輸電動化的進程，透過此圖顯示電動公車在市區公車總數中的占比及其成長趨勢。圖表呈現傳統燃油公車與電動公車的比例變化，並標示臺北市政府推動的政策措施、補助方案及相關環保效益等影響因素。透過這些數據，可分析臺北市電動公車的普及程度及其在減碳排放與空氣品質改善方面的貢獻，有助於進一步規劃更完善的公共運輸電動化策略，推動臺北朝向低碳與永續發展的城市目標邁進。	{https://tdx.transportdata.tw/api/basic/v2/Bus/Vehicle/City/Taipei?%24top=30&%24format=JSON}	{doit}	2025-02-15 05:56:00+00	2025-02-20 09:11:21.620625+00	percent	select '電動公車數量' as x_axis,y_axis,sum(data) data from \r\n(\r\nselect '電動巴士' as y_axis,count(*) as  data\r\nfrom public.bus_info_tpe\r\nwhere plate_numb like 'E%'\r\nunion all\r\nselect '非電動巴士' as y_axis,count(*) as  data\r\nfrom public.bus_info_tpe)d\r\ngroup by \r\ny_axis	\N	taipei
 youbike_availability	\N	{99}	\N	current	\N	10	minute	交通局	顯示當前雙北共享單車YouBike的使用情況。	顯示雙北地區（臺北市與新北市）當前共享單車 YouBike 的使用情況，格式為可借車輛數／全區車位數。資料來源為兩市交通局公開資料，每5分鐘更新一次，提供即時的車輛可用資訊與站點使用狀況，有助於掌握整體運行效率與民眾使用情形，亦可作為交通管理與營運調度的參考依據。	藉由顯示雙北地區 YouBike 的使用情況，以及觀察可借車輛數約為車柱總數的一半，可大致掌握目前停放於站點與使用中車輛的整體分布情形。使用者亦可透過地圖模式查詢雙北各站點的即時資訊，包括可借車輛數、可還空位數及站點位置，方便規劃路線與掌握使用狀況，提升共享單車的便利性與使用效率。	{https://tdx.transportdata.tw/api-service/swagger/basic/2cc9b888-a592-496f-99de-9ab35b7fb70d#/Bike/BikeApi_Availability_2181,https://tdx.transportdata.tw/api/basic/v2/Bike/Availability/City/NewTaipei?%24top=30&%24format=JSON}	{doit,ntpc}	2023-12-20 05:56:00+00	2024-03-19 06:08:17.99+00	percent	select x_axis,y_axis,sum(data)data\r\nfrom (select '在站車輛' as x_axis, \r\nunnest(ARRAY['可借車輛', '空位']) as y_axis, \r\nunnest(ARRAY[SUM(available_rent_general_bikes), SUM(available_return_bikes)]) as data\r\nfrom tran_ubike_realtime_new_tpe\r\nunion all \r\nselect '在站車輛' as x_axis, \r\nunnest(ARRAY['可借車輛', '空位']) as y_axis, \r\nunnest(ARRAY[SUM(available_rent_general_bikes), SUM(available_return_bikes)]) as data\r\nfrom tran_ubike_realtime)d\r\ngroup by x_axis,y_axis	\N	metrotaipei
 youbike_availability	\N	{70}	\N	current	\N	10	minute	交通局	顯示當前臺北市共享單車YouBike的使用情況。	顯示臺北市當前共享單車 YouBike 的使用情況，格式為可借車輛數／全市車位數。資料來源為臺北市政府交通局公開資料，每5分鐘更新一次，反映即時的使用狀況與車輛調度情形，可作為交通監測與市民使用參考依據。	藉由臺北市 YouBike 使用情況的顯示，以及全市可借車輛數約為車柱總數的一半，可大致掌握目前停放於站點與正在使用中的車輛數量。使用者可透過地圖模式查詢臺北市各站點的即時資訊，包括可借車輛數、可還空位數及站點位置，方便即時掌握使用狀況，提升共享單車的使用效率與便利性。	{https://tdx.transportdata.tw/api-service/swagger/basic/2cc9b888-a592-496f-99de-9ab35b7fb70d#/Bike/BikeApi_Availability_2181}	{doit}	2023-12-20 05:56:00+00	2024-03-19 06:08:17.99+00	percent	select '在站車輛' as x_axis, \r\nunnest(ARRAY['可借車輛', '空位']) as y_axis, \r\nunnest(ARRAY[SUM(available_rent_general_bikes), SUM(available_return_bikes)]) as data\r\nfrom tran_ubike_realtime	\N	taipei
-rent_quartiles	\N	{2}	{}	static	\N	0	\N	內政部租賃資料	顯示租金四分位，支援縣市/行政區篩選。	顯示各租屋類型租金四分位（Q1/中位數/Q3）與箱體區間，提供縣市/行政區下拉篩選（含全市彙整）。有效租約樣本少於40筆的行政區會顯示無資料說明。	比較不同行政區各類型租金的Q1/中位數/Q3差異，理解價格分布偏態，支援房市監測與社會住宅規劃。	{}	{doit}	2026-04-29 02:44:30.206957+00	2026-04-29 08:58:38.77403+00	quartile	\n    WITH base AS (\n      SELECT\n        city_name,\n        district_name,\n        house_category,\n        case_count,\n        q1_rent,\n        median_rent,\n        q3_rent\n      FROM public.rent_quartiles_stats\n    ),\n    district_totals AS (\n      SELECT\n        city_name,\n        district_name,\n        SUM(case_count) AS district_case_count\n      FROM base\n      GROUP BY city_name, district_name\n    )\n    SELECT\n      CASE WHEN b.house_category = '不分類' THEN '全部' ELSE b.house_category END AS name,\n      CASE\n        WHEN b.house_category = '不分類' THEN 'pie_chart'\n        WHEN b.house_category = '整戶(層)' THEN 'apartment'\n        WHEN b.house_category = '獨立套房' THEN 'bed'\n        WHEN b.house_category = '分租套(雅)房' THEN 'group'\n        ELSE 'stacked_line_chart'\n      END AS icon,\n\n      b.city_name,\n      b.district_name,\n\n      -- no-data 時把四分位設 NULL，前端才會顯示提示\n      CASE\n        WHEN dt.district_case_count < 40 AND b.district_name <> '全市' THEN NULL\n        ELSE b.q1_rent\n      END AS min,\n      CASE\n        WHEN dt.district_case_count < 40 AND b.district_name <> '全市' THEN NULL\n        ELSE b.q1_rent\n      END AS q1,\n      CASE\n        WHEN dt.district_case_count < 40 AND b.district_name <> '全市' THEN NULL\n        ELSE b.median_rent\n      END AS median,\n      CASE\n        WHEN dt.district_case_count < 40 AND b.district_name <> '全市' THEN NULL\n        ELSE b.q3_rent\n      END AS q3,\n      CASE\n        WHEN dt.district_case_count < 40 AND b.district_name <> '全市' THEN NULL\n        ELSE b.q3_rent\n      END AS max,\n\n      (dt.district_case_count < 40 AND b.district_name <> '全市') AS is_no_data,\n      CASE\n        WHEN dt.district_case_count < 40 AND b.district_name <> '全市'\n          THEN '有效租約樣本 未達40筆 因此無此行政區資料'\n        ELSE NULL\n      END AS no_data_reason,\n\n      CASE b.house_category\n        WHEN '不分類' THEN 1\n        WHEN '整戶(層)' THEN 2\n        WHEN '獨立套房' THEN 3\n        WHEN '分租套(雅)房' THEN 4\n        ELSE 99\n      END AS sort_key\n    FROM base b\n    JOIN district_totals dt\n      ON dt.city_name = b.city_name\n     AND dt.district_name = b.district_name\n    ORDER BY\n      b.city_name,\n      CASE WHEN b.district_name = '全市' THEN 0 ELSE 1 END,\n      b.district_name,\n      sort_key\n  	\N	metrotaipei
+rent_quartiles	\N	{2}	{"mode":"byParam","byParam":{"xParam":"TNAME","yParam":"PNAME"}}	static	\N	0	\N	內政部租賃資料	顯示租金四分位，支援縣市/行政區篩選。	顯示各租屋類型租金四分位（Q1/中位數/Q3）與箱體區間，提供縣市/行政區下拉篩選（含全市彙整）。有效租約樣本少於40筆的行政區會顯示無資料說明。	比較不同行政區各類型租金的Q1/中位數/Q3差異，理解價格分布偏態，支援房市監測與社會住宅規劃。	{}	{doit}	2026-04-29 02:44:30.206957+00	2026-04-29 08:58:38.77403+00	quartile	\n    WITH base AS (\n      SELECT\n        city_name,\n        district_name,\n        house_category,\n        case_count,\n        q1_rent,\n        median_rent,\n        q3_rent\n      FROM public.rent_quartiles_stats\n    ),\n    district_totals AS (\n      SELECT\n        city_name,\n        district_name,\n        SUM(case_count) AS district_case_count\n      FROM base\n      GROUP BY city_name, district_name\n    )\n    SELECT\n      CASE WHEN b.house_category = '不分類' THEN '全部' ELSE b.house_category END AS name,\n      CASE\n        WHEN b.house_category = '不分類' THEN 'pie_chart'\n        WHEN b.house_category = '整戶(層)' THEN 'apartment'\n        WHEN b.house_category = '獨立套房' THEN 'bed'\n        WHEN b.house_category = '分租套(雅)房' THEN 'group'\n        ELSE 'stacked_line_chart'\n      END AS icon,\n\n      b.city_name,\n      b.district_name,\n\n      -- no-data 時把四分位設 NULL，前端才會顯示提示\n      CASE\n        WHEN dt.district_case_count < 40 AND b.district_name <> '全市' THEN NULL\n        ELSE b.q1_rent\n      END AS min,\n      CASE\n        WHEN dt.district_case_count < 40 AND b.district_name <> '全市' THEN NULL\n        ELSE b.q1_rent\n      END AS q1,\n      CASE\n        WHEN dt.district_case_count < 40 AND b.district_name <> '全市' THEN NULL\n        ELSE b.median_rent\n      END AS median,\n      CASE\n        WHEN dt.district_case_count < 40 AND b.district_name <> '全市' THEN NULL\n        ELSE b.q3_rent\n      END AS q3,\n      CASE\n        WHEN dt.district_case_count < 40 AND b.district_name <> '全市' THEN NULL\n        ELSE b.q3_rent\n      END AS max,\n\n      (dt.district_case_count < 40 AND b.district_name <> '全市') AS is_no_data,\n      CASE\n        WHEN dt.district_case_count < 40 AND b.district_name <> '全市'\n          THEN '有效租約樣本 未達40筆 因此無此行政區資料'\n        ELSE NULL\n      END AS no_data_reason,\n\n      CASE b.house_category\n        WHEN '不分類' THEN 1\n        WHEN '整戶(層)' THEN 2\n        WHEN '獨立套房' THEN 3\n        WHEN '分租套(雅)房' THEN 4\n        ELSE 99\n      END AS sort_key\n    FROM base b\n    JOIN district_totals dt\n      ON dt.city_name = b.city_name\n     AND dt.district_name = b.district_name\n    ORDER BY\n      b.city_name,\n      CASE WHEN b.district_name = '全市' THEN 0 ELSE 1 END,\n      b.district_name,\n      sort_key\n  	\N	metrotaipei
 rental_subsidy_application_status	\N	\N	\N	static	\N	\N	\N	都發局	呈現台北租金補貼申請與核定戶數的歷年變化趨勢	本組件展示臺北市歷年租金補貼之「申請戶數」與「核定戶數」變化情形，透過多條折線呈現不同城市與指標的長期趨勢，協助使用者觀察租屋補貼需求與實際核定規模的變動關係。圖中可比較兩市在不同年度的申請熱度、政策核定量能，以及申請與核定之間的落差情形，進一步反映租屋市場壓力與補貼資源配置狀況。資料來源為政府公開之租金補貼統計資料，依年度彙整申請與核定戶數，並持續更新以反映最新政策執行成果。\n自111年度起，租金補貼改由中央推動「三百億元擴大租金補貼專案」，取代原地方政府辦理機制。以臺北市為例，111年申請戶數為42,546戶、核准戶數為35,274戶，並另提供加碼補貼（核准3,983戶），顯示政策擴大後補貼量能與申請需求皆明顯提升。（資料更新至113年3月22日）	可用於評估租金補貼政策成效與市場需求變化，例如觀察申請戶數快速上升是否代表租屋壓力增加，或核定戶數成長是否反映政策擴張。民眾可藉此了解補貼申請趨勢與競爭程度，作為是否申請補助的參考；政府與研究單位則可透過比較雙北差異與歷年變化，分析補貼資源是否充足、政策是否有效回應需求，並作為未來住宅政策與社會福利調整之依據。	{https://data.taipei/dataset/detail?id=6297943a-1e71-480d-967c-635855df66fe}	{king}	2026-04-30 05:56:00+00	2026-04-30 05:56:00+00	time	select\n  to_date("項目"::text || '-01-01', 'YYYY-MM-DD') as x_axis,\n  y_axis,\n  data\nfrom (\n  select\n    "項目",\n    '臺北市申請戶數' as y_axis,\n    "租金補貼申請戶數" as data\n  from rental_subsidy_application_status_tp\n  where "縣市" = '臺北市'\n\n  union all\n\n  select\n    "項目",\n    '臺北市核定戶數' as y_axis,\n    "租金補貼核定戶數" as data\n  from rental_subsidy_application_status_tp\n  where "縣市" = '臺北市'\n) d\norder by x_axis, y_axis;	\N	taipei
 rental_subsidy_application_status	\N	\N	\N	static	\N	\N	\N	都發局	呈現雙北租金補貼申請與核定戶數的歷年變化趨勢	本組件展示臺北市與新北市歷年租金補貼之「申請戶數」與「核定戶數」變化情形，透過多條折線呈現不同城市與指標的長期趨勢，協助使用者觀察租屋補貼需求與實際核定規模的變動關係。圖中可比較兩市在不同年度的申請熱度、政策核定量能，以及申請與核定之間的落差情形，進一步反映租屋市場壓力與補貼資源配置狀況。資料來源為政府公開之租金補貼統計資料，依年度彙整申請與核定戶數，並持續更新以反映最新政策執行成果。\n\n自111年度起，租金補貼改由中央推動「三百億元擴大租金補貼專案」，取代原地方政府辦理機制。以臺北市為例，111年申請戶數為42,546戶、核准戶數為35,274戶，並另提供加碼補貼（核准3,983戶），顯示政策擴大後補貼量能與申請需求皆明顯提升。（資料更新至113年3月22日）	可用於評估租金補貼政策成效與市場需求變化，例如觀察申請戶數快速上升是否代表租屋壓力增加，或核定戶數成長是否反映政策擴張。民眾可藉此了解補貼申請趨勢與競爭程度，作為是否申請補助的參考；政府與研究單位則可透過比較雙北差異與歷年變化，分析補貼資源是否充足、政策是否有效回應需求，並作為未來住宅政策與社會福利調整之依據。	{https://data.taipei/dataset/detail?id=6297943a-1e71-480d-967c-635855df66fe,https://data.ntpc.gov.tw/datasets/502d1589-3693-4f2c-9c05-22e3ec37330d}	{king}	2026-04-30 05:56:00+00	2026-04-30 05:56:00+00	time	select\n  to_date("項目"::text || '-01-01', 'YYYY-MM-DD') as x_axis,\n  y_axis,\n  data\nfrom (\n  select\n    "項目",\n    '臺北市申請戶數' as y_axis,\n    "租金補貼申請戶數" as data\n  from rental_subsidy_application_status_ntp\n  where "縣市" = '臺北市'\n\n  union all\n\n  select\n    "項目",\n    '臺北市核定戶數' as y_axis,\n    "租金補貼核定戶數" as data\n  from rental_subsidy_application_status_ntp\n  where "縣市" = '臺北市'\n  \n  union all\n\n  select\n    "項目",\n    '新北市申請戶數' as y_axis,\n    "租金補貼申請戶數" as data\n  from rental_subsidy_application_status_ntp\n  where "縣市" = '新北市'\n  \n  union all\n\n  select\n    "項目",\n    '新北市核定戶數' as y_axis,\n    "租金補貼核定戶數" as data\n  from rental_subsidy_application_status_ntp\n  where "縣市" = '新北市'\n) d\norder by x_axis, y_axis;	\N	metrotaipei
 rent_level	\N	{2}	{\n  "mode": "byParam",\n  "byParam": {\n    "xParam": "TNAME",\n    "multi": true\n  }\n}	static	\N	\N	\N	內政部國土管理署	顯示雙北各行政區之租金水準	顯示雙北各行政區之租金水準，採用租金中位數呈現不同區域的租屋成本差異，協助使用者快速掌握各區租金分布情形，並以此評估生活居住成本。資料來源為內政部國土管理署「300 億元中央擴大租金補貼專案計畫」，統計範圍為截至 114 年 9 月 30 日之有效租賃契約，約 71.7 萬筆資料，並僅納入樣本數達 40 筆以上之行政區進行分析。	用於租屋與通勤決策分析，透過比較各行政區租金水準，搭配通勤時間或交通可達性，協助民眾在「時間成本」與「居住成本」之間取得平衡，選擇最適合的居住區域。另可進行城市治理與住宅政策分析，透過觀察各行政區租金分布差異，評估區域居住壓力與租屋市場結構，作為租金補貼政策、社會住宅規劃及都市發展決策之參考依據	{https://pip.moi.gov.tw/Publicize/Info/E1080}	{king}	2026-04-29 09:19:30.92388+00	2026-04-29 09:19:30.92388+00	two_d	SELECT \n  "行政區" AS x_axis,\n  "租金50分位數" AS data,\n  TO_CHAR("租金50分位數", 'FM999,999,999') AS label\nFROM public.rent_level	\N	metrotaipei
@@ -1022,6 +1006,23 @@ COPY public.roles (id, name, access_control, modify, read) FROM stdin;
 22	admin	t	t	t
 23	editor	f	t	t
 24	viewer	f	f	t
+\.
+
+
+--
+-- Data for Name: auth_user_group_roles; Type: TABLE DATA; Schema: public; Owner: postgres
+-- Load after auth_users, groups, and roles (FK: auth_user_id, group_id, role_id).
+--
+
+COPY public.auth_user_group_roles (auth_user_id, group_id, role_id) FROM stdin;
+1	4	1
+1	1	1
+1	2	1
+1	3	1
+6	5	1
+6	1	1
+6	2	1
+6	3	1
 \.
 
 
@@ -1128,14 +1129,14 @@ SELECT pg_catalog.setval('public.components_id_seq', 222, true);
 -- Name: contributors_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('public.contributors_id_seq', 1, false);
+SELECT pg_catalog.setval('public.contributors_id_seq', 3, true);
 
 
 --
 -- Name: dashboards_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('public.dashboards_id_seq', 400, true);
+SELECT pg_catalog.setval('public.dashboards_id_seq', 363, true);
 
 
 --
@@ -1156,7 +1157,7 @@ SELECT pg_catalog.setval('public.incidents_id_seq', 1, false);
 -- Name: issues_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('public.issues_id_seq', 1, false);
+SELECT pg_catalog.setval('public.issues_id_seq', 4, true);
 
 
 --

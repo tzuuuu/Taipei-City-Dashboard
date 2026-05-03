@@ -228,6 +228,22 @@ func DeleteGroup(groupID int) error {
 
 /* --- AuthUserGroupRole --- */
 
+// UserHasAnyRoleOnGroup reports whether authUserID has any of roleIDs on groupID (from DB).
+// Use this for mutating personal resources so a stale JWT does not block valid users.
+func UserHasAnyRoleOnGroup(authUserID, groupID int, roleIDs []int) (bool, error) {
+	if len(roleIDs) == 0 {
+		return false, nil
+	}
+	var count int64
+	err := DBManager.Model(&AuthUserGroupRole{}).
+		Where("auth_user_id = ? AND group_id = ? AND role_id IN ?", authUserID, groupID, roleIDs).
+		Count(&count).Error
+	if err != nil {
+		return false, err
+	}
+	return count > 0, nil
+}
+
 // GetUserPermission retrieves permissions associated with a specific user from the database
 func GetUserPermission(authUserID int) (permissions []Permission, err error) {
 	// Query the database to find permissions associated with the provided authUserID.

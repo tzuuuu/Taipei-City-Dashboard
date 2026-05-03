@@ -32,7 +32,7 @@ function handleNewQuery() {
 }
 
 function toggleFavorite(id,name,city) {
-	if (contentStore.favorites.components.includes(id)) {
+	if (contentStore.favorites?.components?.includes(id)) {
 		contentStore.unfavoriteComponent(id);
 	} else {
 		contentStore.favoriteComponent(id);
@@ -94,7 +94,7 @@ onMounted(() => {
       "
       :city-tag="contentStore.cityManager.getTagList(item.city)"
       :favorite-btn="true"
-      :is-favorite="contentStore.favorites?.components.includes(item.id)"
+      :is-favorite="contentStore.favorites?.components?.includes(item.id) ?? false"
       info-btn-text="資訊頁面"
       @info="
         (item) => {

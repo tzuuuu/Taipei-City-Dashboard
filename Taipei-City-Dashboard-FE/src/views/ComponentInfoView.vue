@@ -36,7 +36,7 @@ const searchParams = ref({
 });
 
 function toggleFavorite(id,name,city) {
-	if (contentStore.favorites.components.includes(id)) {
+	if (contentStore.favorites?.components?.includes(id)) {
 		contentStore.unfavoriteComponent(id);
 	} else {
 		contentStore.favoriteComponent(id);
@@ -108,9 +108,7 @@ onMounted(() => {
             "
             :favorite-btn="!!authStore.token"
             :is-favorite="
-              contentStore.favorites?.components.includes(
-                item.id
-              )
+              (contentStore.favorites?.components?.includes(item.id)) ?? false
             "
             @add="
               (id, name) => {

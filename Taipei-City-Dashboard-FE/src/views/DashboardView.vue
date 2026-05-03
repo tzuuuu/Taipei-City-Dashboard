@@ -32,7 +32,7 @@ function handleOpenSettings() {
 }
 
 function toggleFavorite(id,name,city) {
-	if (contentStore.favorites.components.includes(id)) {
+	if (contentStore.favorites?.components?.includes(id)) {
 		contentStore.unfavoriteComponent(id);
 	} else {
 		contentStore.favoriteComponent(id);
@@ -87,7 +87,7 @@ function handleMoreInfo(item) {
       :select-btn-list="contentStore.cityManager.getSelectList(contentStore.currentDashboard?.city)"
       :city-tag="contentStore.cityManager.getTagList(contentStore.currentDashboard?.city)"
       :favorite-btn="authStore.token ? true : false"
-      :is-favorite="contentStore.favorites?.components.includes(item.id)"
+      :is-favorite="contentStore.favorites?.components?.includes(item.id) ?? false"
       @favorite="
         (id) => {
           toggleFavorite(id,item.name,item.city);
@@ -147,7 +147,7 @@ function handleMoreInfo(item) {
         authStore.token &&
           contentStore.currentDashboard.icon !== 'favorite'
       "
-      :is-favorite="contentStore.favorites?.components.includes(item.id)"
+      :is-favorite="contentStore.favorites?.components?.includes(item.id) ?? false"
       @favorite="
         (id) => {
           toggleFavorite(id,item.name,item.city);

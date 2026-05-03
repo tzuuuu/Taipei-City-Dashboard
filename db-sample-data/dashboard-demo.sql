@@ -702,6 +702,22 @@ ALTER SEQUENCE public.employment_age_structure_tpe_ogc_fid_seq OWNED BY public.e
 
 
 --
+-- Name: net_inflow_commuters; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.net_inflow_commuters (
+    "縣市" text,
+    "行政區" text,
+    "淨流入" numeric,
+    "平日日間活動人數" numeric,
+    "平日夜間停留人數" numeric
+);
+
+
+ALTER TABLE public.net_inflow_commuters OWNER TO postgres;
+
+
+--
 -- Name: population_age_distribution_new_tpe; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -18317,10 +18333,10 @@ COPY public.purchase_subsidy_application_status_tp ("縣市", "項目", "購買�
 --
 
 COPY public.rent_heatmap_moi_quartiles (rent_type, name, icon, q1_rent, median_rent, q3_rent, center_cx, center_cy, lng, lat, sort_key, updated_at, is_no_data, no_data_reason) FROM stdin;
-全部類別	全部類別	pie_chart	10000	15000	21500	304536.24994589837	2772158.836402478	121.540526690344	25.056628717587017	1	2026-05-02 16:34:26.888859+00	f	\N
-整戶(層)	整戶(層)	apartment	15000	22500	30000	304536.24994589837	2772158.836402478	121.540526690344	25.056628717587017	2	2026-05-02 16:34:26.888859+00	f	\N
-獨立套房	獨立套房	bed	15000	18000	23000	304536.24994589837	2772158.836402478	121.540526690344	25.056628717587017	3	2026-05-02 16:34:26.888859+00	f	\N
-分租套(雅)房	分租套(雅)房	group	8500	12000	14500	304536.24994589837	2772158.836402478	121.540526690344	25.056628717587017	4	2026-05-02 16:34:26.888859+00	f	\N
+全部類別	全部類別	pie_chart	9500	14000	19900	296976.31	2767257.15	121.4653987264447	25.003601818932346	1	2026-05-02 16:34:26.888859+00	f	\N
+整戶(層)	整戶(層)	apartment	13000	18000	23000	296976.31	2767257.15	121.4653987264447	25.003601818932346	2	2026-05-02 16:34:26.888859+00	f	\N
+獨立套房	獨立套房	bed	10000	15000	19000	296976.31	2767257.15	121.4653987264447	25.003601818932346	3	2026-05-02 16:34:26.888859+00	f	\N
+分租套(雅)房	分租套(雅)房	group	7500	9408	11800	296976.31	2767257.15	121.4653987264447	25.003601818932346	4	2026-05-02 16:34:26.888859+00	f	\N
 \.
 
 
