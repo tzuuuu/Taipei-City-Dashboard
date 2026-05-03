@@ -19,6 +19,8 @@ export const chartTypes = {
 	IndicatorChart: "指標圖",
 	MapLegend: "地圖圖例",
 	TextUnitChart: "文字單位圖",
+	SankeyChart: "桑基圖",
+	SunburstChart: "旭日圖",
 };
 
 export const chartsPerDataType = {
@@ -31,6 +33,8 @@ export const chartsPerDataType = {
 		"RadarChart",
 		"PolarAreaChart",
 		"MetroChart",
+		"SankeyChart",
+		"SunburstChart",
 	],
 	three_d: [
 		"ColumnChart",

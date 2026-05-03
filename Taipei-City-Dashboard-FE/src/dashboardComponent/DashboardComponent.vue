@@ -31,6 +31,8 @@ import IndicatorChart from "./components/IndicatorChart.vue";
 import TextUnitChart from "./components/TextUnitChart.vue";
 import QuartileChart from "./components/QuartileChart.vue";
 import MapPickButton from "../components/map/MapPickButton.vue";
+import SankeyChart from "./components/SankeyChart.vue";
+import SunburstChart from "./components/SunburstChart.vue";
 
 import MapLegendSvg from "./assets/chart/MapLegend.svg";
 import DistrictChartSvg from "./assets/chart/DistrictChart.svg";
@@ -51,6 +53,8 @@ import BarChartWithGoalSvg from "./assets/chart/BarChartWithGoal.svg";
 import TreemapChartSvg from "./assets/chart/TreemapChart.svg";
 import IndicatorChartSvg from "./assets/chart/IndicatorChart.svg";
 import TextUnitChartSvg from "./assets/chart/TextUnitChart.svg";
+import SankeyChartSvg from "./assets/chart/SankeyChart.svg";
+import SunburstChartSvg from "./assets/chart/SunburstChart.svg";
 
 
 const mapStore = useMapStore();
@@ -233,48 +237,52 @@ function changeShowTagTooltipState(state) {
 }
 function returnChartComponent(name, svg) {
 	switch (name) {
-	case "DistrictChart":
-		return svg ? DistrictChartSvg : DistrictChart;
-	case "BarChart":
-		return svg ? BarChartSvg : BarChart;
-	case "MapLegend":
-		return svg ? MapLegendSvg : MapLegend;
-	case "MetroChart":
-		return svg ? MetroChartSvg : MetroChart;
-	case "TimelineSeparateChart":
-		return svg ? TimelineSeparateChartSvg : TimelineSeparateChart;
-	case "TimelineStackedChart":
-		return svg ? TimelineStackedChartSvg : TimelineStackedChart;
-	case "PolarAreaChart":
-		return svg ? PolarAreaChartSvg : PolarAreaChart;
-	case "IconPercentChart":
-		return svg ? IconPercentChartSvg : IconPercentChart;
-	case "ColumnChart":
-		return svg ? ColumnChartSvg : ColumnChart;
-	case "DonutChart":
-		return svg ? DonutChartSvg : DonutChart;
-	case "TreemapChart":
-		return svg ? TreemapChartSvg : TreemapChart;
-	case "BarPercentChart":
-		return svg ? BarPercentChartSvg : BarPercentChart;
-	case "GuageChart":
-		return svg ? GuageChartSvg : GuageChart;
-	case "RadarChart":
-		return svg ? RadarChartSvg : RadarChart;
-	case "HeatmapChart":
-		return svg ? HeatmapChartSvg : HeatmapChart;
-	case "ColumnLineChart":
-		return svg ? ColumnLineChartSvg : ColumnLineChart;
-	case "BarChartWithGoal":
-		return svg ? BarChartWithGoalSvg : BarChartWithGoal;
-	case "IndicatorChart":
-		return svg ? IndicatorChartSvg : IndicatorChart;
-	case "TextUnitChart":
-		return svg ? TextUnitChartSvg : TextUnitChart;
-	case "QuartileChart":
-		return svg ? BarChartSvg : QuartileChart;
-	default:
-		return svg ? MapLegendSvg : MapLegend;
+		case "DistrictChart":
+			return svg ? DistrictChartSvg : DistrictChart;
+		case "BarChart":
+			return svg ? BarChartSvg : BarChart;
+		case "MapLegend":
+			return svg ? MapLegendSvg : MapLegend;
+		case "MetroChart":
+			return svg ? MetroChartSvg : MetroChart;
+		case "TimelineSeparateChart":
+			return svg ? TimelineSeparateChartSvg : TimelineSeparateChart;
+		case "TimelineStackedChart":
+			return svg ? TimelineStackedChartSvg : TimelineStackedChart;
+		case "PolarAreaChart":
+			return svg ? PolarAreaChartSvg : PolarAreaChart;
+		case "IconPercentChart":
+			return svg ? IconPercentChartSvg : IconPercentChart;
+		case "ColumnChart":
+			return svg ? ColumnChartSvg : ColumnChart;
+		case "DonutChart":
+			return svg ? DonutChartSvg : DonutChart;
+		case "TreemapChart":
+			return svg ? TreemapChartSvg : TreemapChart;
+		case "BarPercentChart":
+			return svg ? BarPercentChartSvg : BarPercentChart;
+		case "GuageChart":
+			return svg ? GuageChartSvg : GuageChart;
+		case "RadarChart":
+			return svg ? RadarChartSvg : RadarChart;
+		case "HeatmapChart":
+			return svg ? HeatmapChartSvg : HeatmapChart;
+		case "ColumnLineChart":
+			return svg ? ColumnLineChartSvg : ColumnLineChart;
+		case "BarChartWithGoal":
+			return svg ? BarChartWithGoalSvg : BarChartWithGoal;
+		case "IndicatorChart":
+			return svg ? IndicatorChartSvg : IndicatorChart;
+		case "TextUnitChart":
+			return svg ? TextUnitChartSvg : TextUnitChart;
+		case "QuartileChart":
+			return svg ? BarChartSvg : QuartileChart;
+		case "SankeyChart":
+			return svg ? SankeyChartSvg : SankeyChart;
+		case "SunburstChart":
+			return svg ? SunburstChartSvg : SunburstChart;
+		default:
+			return svg ? MapLegendSvg : MapLegend;
 	}
 }
 </script>

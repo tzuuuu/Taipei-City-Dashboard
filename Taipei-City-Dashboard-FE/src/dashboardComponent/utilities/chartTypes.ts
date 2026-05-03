@@ -24,4 +24,6 @@ export const chartTypes: chartType = {
 	MapLegend: "地圖圖例", // V
 	TextUnitChart: "文字數值圖", // V
 	QuartileChart: "四分位圖", // V
+	SankeyChart: "桑基圖", // V
+	SunburstChart: "旭日圖", // V
 };

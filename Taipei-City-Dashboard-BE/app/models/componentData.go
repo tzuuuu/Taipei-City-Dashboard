@@ -42,6 +42,14 @@ type TwoDimensionalDataOutput struct {
 	Data []TwoDimensionalData `json:"data"`
 }
 
+// SankeyData preserves source-target-value rows for SankeyChart rendering.
+type SankeyData struct {
+	Xaxis string  `gorm:"column:x_axis" json:"x_axis"`
+	Yaxis string  `gorm:"column:y_axis" json:"y_axis"`
+	Data  float64 `gorm:"column:data" json:"data"`
+	Color string  `gorm:"column:color" json:"color,omitempty"`
+}
+
 /*
 ThreeDimensionalData & PercentData Json Format:
 
@@ -61,13 +69,13 @@ type ThreeDimensionalData struct {
 	Xaxis string `gorm:"column:x_axis"`
 	Icon  string `gorm:"column:icon"`
 	Yaxis string `gorm:"column:y_axis"`
-	Data  int    `gorm:"column:data"`
+	Data  float64 `gorm:"column:data"`
 }
 
 type ThreeDimensionalDataOutput struct {
 	Name string `json:"name"`
 	Icon string `json:"icon"`
-	Data []int  `json:"data"`
+	Data []float64 `json:"data"`
 }
 
 /*
@@ -304,11 +312,30 @@ func GetThreeDimensionalData(query *string, timeFrom string, timeTo string) (cha
 
 		// If a unique yAxis is found, create a new entry in the output
 		if !foundY {
-			chartDataOutput = append(chartDataOutput, ThreeDimensionalDataOutput{Name: data.Yaxis, Icon: data.Icon, Data: []int{data.Data}})
+			chartDataOutput = append(chartDataOutput, ThreeDimensionalDataOutput{Name: data.Yaxis, Icon: data.Icon, Data: []float64{data.Data}})
 		}
 	}
 
 	return chartDataOutput, categories, nil
+}
+
+func GetSankeyData(query *string, timeFrom string, timeTo string) (chartData []SankeyData, err error) {
+	var queryString string
+
+	if strings.Count(*query, "%s") == 2 {
+		queryString = fmt.Sprintf(*query, timeFrom, timeTo)
+	} else {
+		queryString = *query
+	}
+
+	err = DBDashboard.Raw(queryString).Scan(&chartData).Error
+	if err != nil {
+		return chartData, err
+	}
+	if chartData == nil {
+		chartData = []SankeyData{}
+	}
+	return chartData, nil
 }
 
 func GetTimeSeriesData(query *string, timeFrom string, timeTo string) (chartDataOutput []TimeSeriesDataOutput, err error) {

@@ -754,12 +754,28 @@ COPY public.ai_chatlog (id, session_id, user_id, provider, model, question, answ
 
 
 --
+-- Data for Name: auth_user_group_roles; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.auth_user_group_roles (auth_user_id, group_id, role_id) FROM stdin;
+1	4	1
+1	1	1
+1	2	1
+1	3	1
+6	5	1
+6	1	1
+6	2	1
+6	3	1
+\.
+
+
+--
 -- Data for Name: auth_users; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
 COPY public.auth_users (id, name, email, password, idno, uuid, tp_account, member_type, verify_level, is_admin, is_active, is_whitelist, is_blacked, expired_at, created_at, login_at) FROM stdin;
 1	admin	seed-admin@gmail.com	8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918	\N	\N	\N	\N	\N	t	t	t	f	\N	2026-04-28 03:12:29.252503+00	2026-04-29 15:38:33.551874+00
-6	admin	admin@gmail.com	8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918	\N	\N	\N	\N	\N	t	t	t	f	\N	2026-04-30 05:29:59.022851+00	2026-05-02 08:03:50.874967+00
+6	admin	admin@gmail.com	8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918	\N	\N	\N	\N	\N	t	t	t	f	\N	2026-04-30 05:29:59.022851+00	2026-05-02 17:07:14.094141+00
 \.
 
 
@@ -793,6 +809,9 @@ repair_subsidy_application_status	{#D3A021,#7C4DFF,#4EA3FF,#7CB342}	{TimelineSep
 social_housing	{#D3A021,#7C4DFF,#4EA3FF,#7CB342}	{HeatmapChart}	間
 rent_heatmap	{#D3A021,#7C4DFF,#4EA3FF,#7CB342}	{QuartileChart}	元/月
 isochrone_default	{#2DD4BF,#34D399,#A3E635,#FACC15,#FB923C}	{MapLegend}	分鐘
+trip_purpose_sankey	{#D3A021,#7C4DFF,#4EA3FF,#7CB342,#56B96D,#AF4137,#E170A6,#24B0DD}	{SunburstChart}	%
+commute_time_sunburst	{#4EA3FF,#F5A623}	{SunburstChart}	%
+commute_mode_sunburst	{#4EA3FF,#F5A623}	{SunburstChart}	%
 \.
 
 
@@ -840,6 +859,9 @@ COPY public.components (id, index, name) FROM stdin;
 6	repair_subsidy_application_status	修繕住宅貸款利息受理情形
 7	social_housing	社會住宅興辦進度
 8	isochrone_default	大眾運輸等時圈
+222	trip_purpose_sankey	外出旅次目的 分析
+220	commute_time_sunburst	通勤時間 分析
+221	commute_mode_sunburst	通勤方式 分析
 \.
 
 
@@ -884,12 +906,12 @@ COPY public.dashboards (id, index, name, components, icon, updated_at, created_a
 362	f5550dc8ed63	收藏組件	\N	favorite	2026-04-30 05:29:59.037538+00	2026-04-30 05:29:59.037538+00
 356	ltc_care_tpe	長照關懷	{4,5,6,7,214,215,216,218}	elderly	2025-02-26 08:43:42.86017+00	2024-03-21 09:38:37.66+00
 363	2b8a9157e0e2	通勤打理	{8,7,6,5,4,3,1,219,44}	star	2026-05-02 22:05:52.174685+00	2026-05-02 22:05:52.174685+00
+400	it_is_all_you_need	通勤達理	{1,3,4,5,6,7,44,222,220,221}	favorite	2026-05-02 20:18:17.57308+00	2026-04-29 05:25:52.001099+00
 \.
 
 
 --
 -- Data for Name: dashboard_groups; Type: TABLE DATA; Schema: public; Owner: postgres
--- (After dashboards and groups due FK dependencies)
 --
 
 COPY public.dashboard_groups (dashboard_id, group_id) FROM stdin;
@@ -898,9 +920,10 @@ COPY public.dashboard_groups (dashboard_id, group_id) FROM stdin;
 355	3
 359	3
 358	3
+363	2
+400	3
 360	4
 362	5
-363	5
 \.
 
 
@@ -958,6 +981,10 @@ social_housing	\N	{5}	[\n  "==",\n  ["get", "縣市"],\n  "臺北市"\n]	static	
 rent_heatmap	\N	{3,4,102,103,104}	\N	static	\N	\N	\N	內政部國土管理署	租屋緩衝區四分位與熱區	於地圖上點選位置後，向內政部 MOI calrentbuffer 查詢 1 公里緩衝區；熱區圖使用「全部類別」回應，四分位圖匯整四種房屋類型之 Q1／中位數／Q3（無縣市／行政區下拉）。選點成功後結果寫入 public.rent_heatmap_moi_quartiles。	比較查詢位置周邊各租屋類型租金分布與熱區樣點。	{https://moisagis.moi.gov.tw/rent/}	{king}	2026-05-02 09:48:04.973879+00	2026-05-02 12:10:38.15812+00	quartile	\nSELECT\n  name,\n  icon,\n  NULL::text AS city_name,\n  NULL::text AS district_name,\n  is_no_data,\n  no_data_reason,\n  q1_rent AS min,\n  q1_rent AS q1,\n  median_rent AS median,\n  q3_rent AS q3,\n  q3_rent AS max\nFROM public.rent_heatmap_moi_quartiles\nORDER BY sort_key;\n	\N	taipei
 isochrone_default	\N	{105}	{"mode": "byParam", "byParam": {"xParam": "name", "yParam": null}}	static	\N	\N	\N	臺北市都市智慧中心	顯示從台北車站出發，不同時段的大眾運輸等時圈	顯示從台北車站出發，不同時段（06:00, 08:00, 10:00, 12:00, 17:00, 21:00）的大眾運輸等時圈。等時圈表示在指定時間內搭乘公車、捷運、火車可到達的範圍，使用不同顏色區分 15/30/60/90/120 分鐘的可達範圍。	用於交通可達性分析、通勤時間評估、都市規劃與房地產選址參考	{}	{TUIC}	2026-04-30 05:35:38.223872+00	2026-04-30 05:35:38.223872+00	map_legend	SELECT unnest(ARRAY['15分鐘', '30分鐘', '60分鐘', '90分鐘', '120分鐘']) AS name, 'fill' AS type	\N	taipei
 isochrone_default	\N	{105}	{"mode": "byParam", "byParam": {"xParam": "name", "yParam": null}}	static	\N	\N	\N	臺北市都市智慧中心	顯示從台北車站出發，不同時段的大眾運輸等時圈	顯示從台北車站出發，不同時段（06:00, 08:00, 10:00, 12:00, 17:00, 21:00）的大眾運輸等時圈。等時圈表示在指定時間內搭乘公車、捷運、火車可到達的範圍，使用不同顏色區分 15/30/60/90/120 分鐘的可達範圍。	用於交通可達性分析、通勤時間評估、都市規劃與房地產選址參考	{}	{TUIC}	2026-04-30 05:35:45.998295+00	2026-04-30 05:35:45.998295+00	map_legend	SELECT unnest(ARRAY['15分鐘', '30分鐘', '60分鐘', '90分鐘', '120分鐘']) AS name, 'fill' AS type	\N	metrotaipei
+trip_purpose_sankey	\N	{}	{}	static	\N	0	\N	臺北市交通資料	外出旅次目的 分析	以桑基圖呈現外出旅次目的分流：100% 全體外出人口先分為通勤/通學與其他旅次目的，再於第二層展開各細項比例。	協助快速掌握外出旅次由主類別到次類別的分流結構，作為交通政策與公共服務規劃參考。	{}	{king}	2026-05-02 17:06:46.341026+00	2026-05-02 18:53:42.116974+00	sankey	\n    SELECT\n      source AS x_axis,\n      target AS y_axis,\n      value  AS data,\n      color\n    FROM public.component_flow_edges\n    WHERE component_index = 'trip_purpose_sankey'\n      AND city = 'metrotaipei'\n    ORDER BY sort_order, id\n  	\N	metrotaipei
+commute_time_sunburst	\N	{}	{}	static	\N	0	\N	\N	通勤時間 分析	\N	\N	{}	{king}	2026-05-02 19:56:39.318614+00	2026-05-02 19:56:39.318614+00	sankey	SELECT x_axis, y_axis, data, color FROM public.commute_time_flow_edges WHERE city = 'metrotaipei' ORDER BY sort_order, id	\N	metrotaipei
+commute_mode_sunburst	\N	{}	{}	static	\N	0	\N	\N	通勤方式 分析	\N	\N	{}	{king}	2026-05-02 20:17:46.385266+00	2026-05-02 20:17:46.385266+00	sankey	SELECT x_axis, y_axis, data, color FROM public.commute_mode_flow_edges WHERE city = 'metrotaipei' ORDER BY sort_order, id	\N	metrotaipei
+commute_mode_sunburst	\N	{}	{}	static	\N	0	\N	\N	通勤方式 分析	\N	\N	{}	{king}	2026-05-02 20:17:46.385266+00	2026-05-02 20:17:46.385266+00	sankey	SELECT x_axis, y_axis, data, color FROM public.commute_mode_flow_edges WHERE city = 'taipei' ORDER BY sort_order, id	\N	taipei
 \.
 
 
@@ -987,23 +1014,9 @@ COPY public.roles (id, name, access_control, modify, read) FROM stdin;
 19	admin	t	t	t
 20	editor	f	t	t
 21	viewer	f	f	t
-\.
-
-
---
--- Data for Name: auth_user_group_roles; Type: TABLE DATA; Schema: public; Owner: postgres
--- (After auth_users, groups, roles due FK dependencies)
---
-
-COPY public.auth_user_group_roles (auth_user_id, group_id, role_id) FROM stdin;
-1	4	1
-1	1	1
-1	2	1
-1	3	1
-6	5	1
-6	1	1
-6	2	1
-6	3	1
+22	admin	t	t	t
+23	editor	f	t	t
+24	viewer	f	f	t
 \.
 
 
@@ -1082,7 +1095,7 @@ SELECT pg_catalog.setval('public.ai_chatlog_id_seq', 1, false);
 -- Name: auth_users_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('public.auth_users_id_seq', 7, true);
+SELECT pg_catalog.setval('public.auth_users_id_seq', 8, true);
 
 
 --
@@ -1103,7 +1116,7 @@ SELECT pg_catalog.setval('public.component_maps_id_seq', 106, true);
 -- Name: components_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('public.components_id_seq', 219, true);
+SELECT pg_catalog.setval('public.components_id_seq', 222, true);
 
 
 --
@@ -1117,7 +1130,7 @@ SELECT pg_catalog.setval('public.contributors_id_seq', 1, false);
 -- Name: dashboards_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('public.dashboards_id_seq', 363, true);
+SELECT pg_catalog.setval('public.dashboards_id_seq', 400, true);
 
 
 --
@@ -1145,7 +1158,7 @@ SELECT pg_catalog.setval('public.issues_id_seq', 1, false);
 -- Name: roles_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('public.roles_id_seq', 21, true);
+SELECT pg_catalog.setval('public.roles_id_seq', 24, true);
 
 
 --

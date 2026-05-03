@@ -395,6 +395,123 @@ CREATE TABLE public.city_age_distribution_taipei (
 ALTER TABLE public.city_age_distribution_taipei OWNER TO postgres;
 
 --
+-- Name: commute_mode_flow_edges; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.commute_mode_flow_edges (
+    id bigint NOT NULL,
+    city text NOT NULL,
+    x_axis text NOT NULL,
+    y_axis text NOT NULL,
+    data double precision NOT NULL,
+    color text,
+    sort_order integer DEFAULT 0 NOT NULL
+);
+
+
+ALTER TABLE public.commute_mode_flow_edges OWNER TO postgres;
+
+--
+-- Name: commute_mode_flow_edges_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
+--
+
+CREATE SEQUENCE public.commute_mode_flow_edges_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER SEQUENCE public.commute_mode_flow_edges_id_seq OWNER TO postgres;
+
+--
+-- Name: commute_mode_flow_edges_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
+--
+
+ALTER SEQUENCE public.commute_mode_flow_edges_id_seq OWNED BY public.commute_mode_flow_edges.id;
+
+
+--
+-- Name: commute_time_flow_edges; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.commute_time_flow_edges (
+    id bigint NOT NULL,
+    city text NOT NULL,
+    x_axis text NOT NULL,
+    y_axis text NOT NULL,
+    data double precision NOT NULL,
+    color text,
+    sort_order integer DEFAULT 0 NOT NULL
+);
+
+
+ALTER TABLE public.commute_time_flow_edges OWNER TO postgres;
+
+--
+-- Name: commute_time_flow_edges_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
+--
+
+CREATE SEQUENCE public.commute_time_flow_edges_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER SEQUENCE public.commute_time_flow_edges_id_seq OWNER TO postgres;
+
+--
+-- Name: commute_time_flow_edges_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
+--
+
+ALTER SEQUENCE public.commute_time_flow_edges_id_seq OWNED BY public.commute_time_flow_edges.id;
+
+
+--
+-- Name: component_flow_edges; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.component_flow_edges (
+    id bigint NOT NULL,
+    component_index character varying NOT NULL,
+    city character varying DEFAULT 'metrotaipei'::character varying NOT NULL,
+    source text NOT NULL,
+    target text NOT NULL,
+    value numeric NOT NULL,
+    color character varying,
+    sort_order integer DEFAULT 0 NOT NULL,
+    created_at timestamp with time zone DEFAULT now() NOT NULL,
+    updated_at timestamp with time zone DEFAULT now() NOT NULL
+);
+
+
+ALTER TABLE public.component_flow_edges OWNER TO postgres;
+
+--
+-- Name: component_flow_edges_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
+--
+
+CREATE SEQUENCE public.component_flow_edges_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER SEQUENCE public.component_flow_edges_id_seq OWNER TO postgres;
+
+--
+-- Name: component_flow_edges_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
+--
+
+ALTER SEQUENCE public.component_flow_edges_id_seq OWNED BY public.component_flow_edges.id;
+
+
+--
 -- Name: dependency_ratio_and_aging_index_new_tpe; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -992,6 +1109,27 @@ ALTER TABLE ONLY public.bus_info_new_tpe ALTER COLUMN ogc_fid SET DEFAULT nextva
 --
 
 ALTER TABLE ONLY public.bus_info_tpe ALTER COLUMN ogc_fid SET DEFAULT nextval('public.bus_info_tpe_ogc_fid_seq'::regclass);
+
+
+--
+-- Name: commute_mode_flow_edges id; Type: DEFAULT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.commute_mode_flow_edges ALTER COLUMN id SET DEFAULT nextval('public.commute_mode_flow_edges_id_seq'::regclass);
+
+
+--
+-- Name: commute_time_flow_edges id; Type: DEFAULT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.commute_time_flow_edges ALTER COLUMN id SET DEFAULT nextval('public.commute_time_flow_edges_id_seq'::regclass);
+
+
+--
+-- Name: component_flow_edges id; Type: DEFAULT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.component_flow_edges ALTER COLUMN id SET DEFAULT nextval('public.component_flow_edges_id_seq'::regclass);
 
 
 --
@@ -15828,6 +15966,90 @@ COPY public.city_age_distribution_taipei ("年份", "區域別", "統計類型",
 
 
 --
+-- Data for Name: commute_mode_flow_edges; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.commute_mode_flow_edges (id, city, x_axis, y_axis, data, color, sort_order) FROM stdin;
+1	metrotaipei	通勤運具	綠運輸	54.6	#4EA3FF	1
+2	metrotaipei	通勤運具	私人機動運具	45.4	#F5A623	2
+3	metrotaipei	綠運輸	公共運具	37.5	\N	3
+4	metrotaipei	綠運輸	非機動運具	17.1	\N	4
+5	metrotaipei	公共運具	市區公車	15.4	\N	10
+6	metrotaipei	公共運具	捷運	13.9	\N	11
+7	metrotaipei	公共運具	計程車	4.4	\N	12
+8	metrotaipei	公共運具	臺鐵	1.1	\N	13
+9	metrotaipei	公共運具	交通車	0.6	\N	14
+10	metrotaipei	公共運具	高鐵	0.4	\N	15
+11	metrotaipei	公共運具	免費公車/復康巴士	0.4	\N	16
+12	metrotaipei	公共運具	國道客運	0.3	\N	17
+13	metrotaipei	公共運具	公路客運	0.2	\N	18
+14	metrotaipei	公共運具	公共自行車	0.7	\N	19
+15	metrotaipei	公共運具	共享機車	0.1	\N	20
+16	metrotaipei	非機動運具	步行	14.4	\N	30
+17	metrotaipei	非機動運具	私人自行車	2.7	\N	31
+18	metrotaipei	私人機動運具	私人機車	31.2	\N	40
+19	metrotaipei	私人機動運具	自用小客車	13.9	\N	41
+20	metrotaipei	私人機動運具	電動汽機車	0.3	\N	42
+21	taipei	通勤運具	綠運輸	61.9	#4EA3FF	1
+22	taipei	通勤運具	私人機動運具	38.1	#F5A623	2
+23	taipei	綠運輸	公共運具	41.6	\N	3
+24	taipei	綠運輸	非機動運具	20.3	\N	4
+25	taipei	公共運具	市區公車	16.6	\N	10
+26	taipei	公共運具	捷運	15.5	\N	11
+27	taipei	公共運具	計程車	6.4	\N	12
+28	taipei	公共運具	臺鐵	0.2	\N	13
+29	taipei	公共運具	交通車	0.5	\N	14
+30	taipei	公共運具	高鐵	0.8	\N	15
+31	taipei	公共運具	免費公車/復康巴士	0.4	\N	16
+32	taipei	公共運具	國道客運	0.2	\N	17
+33	taipei	公共運具	公路客運	0.1	\N	18
+34	taipei	公共運具	公共自行車	0.8	\N	19
+35	taipei	公共運具	共享機車	0.1	\N	20
+36	taipei	非機動運具	步行	16.6	\N	30
+37	taipei	非機動運具	私人自行車	3.7	\N	31
+38	taipei	私人機動運具	私人機車	25.2	\N	40
+39	taipei	私人機動運具	自用小客車	12.8	\N	41
+40	taipei	私人機動運具	電動汽機車	0.1	\N	42
+\.
+
+
+--
+-- Data for Name: commute_time_flow_edges; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.commute_time_flow_edges (id, city, x_axis, y_axis, data, color, sort_order) FROM stdin;
+10	metrotaipei	雙北旅次	30分鐘內	65.5	#4EA3FF	1
+11	metrotaipei	雙北旅次	30分鐘(含)以上	34.5	#F5A623	2
+12	metrotaipei	30分鐘內	未滿10分鐘	12.2	\N	3
+13	metrotaipei	30分鐘內	10-未滿20分鐘	35.5	\N	4
+14	metrotaipei	30分鐘內	20-未滿30分鐘	17.8	\N	5
+15	metrotaipei	30分鐘(含)以上	30-未滿40分鐘	16	\N	6
+16	metrotaipei	30分鐘(含)以上	40-未滿50分鐘	7.9	\N	7
+17	metrotaipei	30分鐘(含)以上	50-未滿60分鐘	2.6	\N	8
+18	metrotaipei	30分鐘(含)以上	60分鐘及以上	8	\N	9
+\.
+
+
+--
+-- Data for Name: component_flow_edges; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.component_flow_edges (id, component_index, city, source, target, value, color, sort_order, created_at, updated_at) FROM stdin;
+1	trip_purpose_sankey	metrotaipei	所有外出人口	通勤/通學	44.3	#D3A021	10	2026-05-02 18:53:27.42972+00	2026-05-02 18:53:27.42972+00
+2	trip_purpose_sankey	metrotaipei	所有外出人口	其他旅次目的	55.7	#7C4DFF	20	2026-05-02 18:53:27.42972+00	2026-05-02 18:53:27.42972+00
+3	trip_purpose_sankey	metrotaipei	通勤/通學	通勤	37.6	#4EA3FF	30	2026-05-02 18:53:27.42972+00	2026-05-02 18:53:27.42972+00
+4	trip_purpose_sankey	metrotaipei	通勤/通學	通學	6.7	#24B0DD	40	2026-05-02 18:53:27.42972+00	2026-05-02 18:53:27.42972+00
+5	trip_purpose_sankey	metrotaipei	其他旅次目的	家庭及個人活動	18.5	#56B96D	50	2026-05-02 18:53:27.42972+00	2026-05-02 18:53:27.42972+00
+6	trip_purpose_sankey	metrotaipei	其他旅次目的	購物	16.8	#AF4137	60	2026-05-02 18:53:27.42972+00	2026-05-02 18:53:27.42972+00
+7	trip_purpose_sankey	metrotaipei	其他旅次目的	休閒	11.3	#E170A6	70	2026-05-02 18:53:27.42972+00	2026-05-02 18:53:27.42972+00
+8	trip_purpose_sankey	metrotaipei	其他旅次目的	就醫	3.5	#F8CF58	80	2026-05-02 18:53:27.42972+00	2026-05-02 18:53:27.42972+00
+9	trip_purpose_sankey	metrotaipei	其他旅次目的	業務外出	3.2	#5A9CF8	90	2026-05-02 18:53:27.42972+00	2026-05-02 18:53:27.42972+00
+10	trip_purpose_sankey	metrotaipei	其他旅次目的	商務	2.4	#4CB495	100	2026-05-02 18:53:27.42972+00	2026-05-02 18:53:27.42972+00
+11	trip_purpose_sankey	metrotaipei	其他旅次目的	其他	0.1	#888787	110	2026-05-02 18:53:27.42972+00	2026-05-02 18:53:27.42972+00
+\.
+
+
+--
 -- Data for Name: dependency_ratio_and_aging_index_new_tpe; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
@@ -18031,10 +18253,10 @@ COPY public.purchase_subsidy_application_status_tp ("縣市", "項目", "購買�
 --
 
 COPY public.rent_heatmap_moi_quartiles (rent_type, name, icon, q1_rent, median_rent, q3_rent, center_cx, center_cy, lng, lat, sort_key, updated_at, is_no_data, no_data_reason) FROM stdin;
-全部類別	全部類別	pie_chart	9000	12800	19000	302201.8892526752	2768656.013319107	121.51725817397397	25.02508776075831	1	2026-05-02 16:17:52.187642+00	f	\N
-整戶(層)	整戶(層)	apartment	15000	22000	28000	302201.8892526752	2768656.013319107	121.51725817397397	25.02508776075831	2	2026-05-02 16:17:52.187642+00	f	\N
-獨立套房	獨立套房	bed	12000	16500	21500	302201.8892526752	2768656.013319107	121.51725817397397	25.02508776075831	3	2026-05-02 16:17:52.187642+00	f	\N
-分租套(雅)房	分租套(雅)房	group	8000	10000	12800	302201.8892526752	2768656.013319107	121.51725817397397	25.02508776075831	4	2026-05-02 16:17:52.187642+00	f	\N
+全部類別	全部類別	pie_chart	10000	15000	21500	304536.24994589837	2772158.836402478	121.540526690344	25.056628717587017	1	2026-05-02 16:34:26.888859+00	f	\N
+整戶(層)	整戶(層)	apartment	15000	22500	30000	304536.24994589837	2772158.836402478	121.540526690344	25.056628717587017	2	2026-05-02 16:34:26.888859+00	f	\N
+獨立套房	獨立套房	bed	15000	18000	23000	304536.24994589837	2772158.836402478	121.540526690344	25.056628717587017	3	2026-05-02 16:34:26.888859+00	f	\N
+分租套(雅)房	分租套(雅)房	group	8500	12000	14500	304536.24994589837	2772158.836402478	121.540526690344	25.056628717587017	4	2026-05-02 16:34:26.888859+00	f	\N
 \.
 
 
@@ -21822,6 +22044,27 @@ SELECT pg_catalog.setval('public.bus_info_tpe_ogc_fid_seq', 108817, true);
 
 
 --
+-- Name: commute_mode_flow_edges_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('public.commute_mode_flow_edges_id_seq', 40, true);
+
+
+--
+-- Name: commute_time_flow_edges_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('public.commute_time_flow_edges_id_seq', 18, true);
+
+
+--
+-- Name: component_flow_edges_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('public.component_flow_edges_id_seq', 11, true);
+
+
+--
 -- Name: dependency_ratio_and_aging_index_new_tpe_ogc_fid_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
@@ -21924,6 +22167,30 @@ ALTER TABLE ONLY public.bus_info_tpe
 
 
 --
+-- Name: commute_mode_flow_edges commute_mode_flow_edges_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.commute_mode_flow_edges
+    ADD CONSTRAINT commute_mode_flow_edges_pkey PRIMARY KEY (id);
+
+
+--
+-- Name: commute_time_flow_edges commute_time_flow_edges_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.commute_time_flow_edges
+    ADD CONSTRAINT commute_time_flow_edges_pkey PRIMARY KEY (id);
+
+
+--
+-- Name: component_flow_edges component_flow_edges_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.component_flow_edges
+    ADD CONSTRAINT component_flow_edges_pkey PRIMARY KEY (id);
+
+
+--
 -- Name: dependency_ratio_and_aging_index_new_tpe dependency_ratio_and_aging_index_new_tpe_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -22017,6 +22284,27 @@ ALTER TABLE ONLY public.tran_ubike_realtime_new_tpe
 
 ALTER TABLE ONLY public.tran_ubike_realtime
     ADD CONSTRAINT tran_ubike_realtime_pkey PRIMARY KEY (ogc_fid);
+
+
+--
+-- Name: commute_mode_flow_edges_city_sort_idx; Type: INDEX; Schema: public; Owner: postgres
+--
+
+CREATE INDEX commute_mode_flow_edges_city_sort_idx ON public.commute_mode_flow_edges USING btree (city, sort_order);
+
+
+--
+-- Name: commute_time_flow_edges_city_sort_idx; Type: INDEX; Schema: public; Owner: postgres
+--
+
+CREATE INDEX commute_time_flow_edges_city_sort_idx ON public.commute_time_flow_edges USING btree (city, sort_order);
+
+
+--
+-- Name: idx_component_flow_edges_lookup; Type: INDEX; Schema: public; Owner: postgres
+--
+
+CREATE INDEX idx_component_flow_edges_lookup ON public.component_flow_edges USING btree (component_index, city, sort_order);
 
 
 --
