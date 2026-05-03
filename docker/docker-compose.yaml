@@ -29,16 +29,10 @@ services:
       VITE_TAIPEIPASS_SCOPE: ${ISSO_CLIENT_SCOPE}
     volumes:
       - ../Taipei-City-Dashboard-FE:/opt/Taipei-City-Dashboard-FE
-      - /opt/Taipei-City-Dashboard-FE/node_modules
     ports:
       - "8080:80"
     working_dir: /opt/Taipei-City-Dashboard-FE
-    command:
-      [
-        "sh",
-        "-c",
-        "node -e \"require.resolve('@rollup/rollup-linux-x64-musl')\" 2>/dev/null || npm ci --include=dev --include=optional; npm run dev",
-      ]
+    command: ["npm", "run", "dev"]
 
   dashboard-be:
     # image: golang:${GOLANG_IMAGE_TAG:-latest} #Go Lang Image Without Model and onnxruntime

@@ -15,6 +15,7 @@ import DonutChart from "./components/DonutChart.vue";
 import BarChart from "./components/BarChart.vue";
 import TreemapChart from "./components/TreemapChart.vue";
 import ColumnChart from "./components/ColumnChart.vue";
+import NegativeColumnChart from "./components/NegativeColumnChart.vue";
 import BarPercentChart from "./components/BarPercentChart.vue";
 import GuageChart from "./components/GuageChart.vue";
 import RadarChart from "./components/RadarChart.vue";
@@ -40,6 +41,7 @@ import TimelineStackedChartSvg from "./assets/chart/TimelineStackedChart.svg";
 import BarChartSvg from "./assets/chart/BarChart.svg";
 import BarPercentChartSvg from "./assets/chart/BarPercentChart.svg";
 import ColumnChartSvg from "./assets/chart/ColumnChart.svg";
+import ColumnChartNegativeSvg from "./assets/chart/ColumnChart.svg";
 import ColumnLineChartSvg from "./assets/chart/ColumnLineChart.svg";
 import DonutChartSvg from "./assets/chart/DonutChart.svg";
 import GuageChartSvg from "./assets/chart/GuageChart.svg";
@@ -55,7 +57,6 @@ import IndicatorChartSvg from "./assets/chart/IndicatorChart.svg";
 import TextUnitChartSvg from "./assets/chart/TextUnitChart.svg";
 import SankeyChartSvg from "./assets/chart/SankeyChart.svg";
 import SunburstChartSvg from "./assets/chart/SunburstChart.svg";
-
 
 const mapStore = useMapStore();
 
@@ -94,14 +95,14 @@ const props = defineProps({
 		default: "default",
 		validator: (value) =>
 			["default", "large", "map", "half", "halfmap", "preview"].includes(
-				value
+				value,
 			),
 	},
 	config: { type: Object, required: true },
 	selectBtn: { type: Boolean, default: false },
 	selectBtnDisabled: { type: Boolean, default: false },
-	selectBtnList: { type: Array, default: () => ([])  },
-	cityTag: { type: Array, default: () => ([]) },
+	selectBtnList: { type: Array, default: () => [] },
+	cityTag: { type: Array, default: () => [] },
 	favoriteBtn: { type: Boolean, default: false },
 	isFavorite: { type: Boolean, default: false },
 	deleteBtn: { type: Boolean, default: false },
@@ -110,7 +111,7 @@ const props = defineProps({
 	infoBtnText: { type: String, default: "組件資訊" },
 	toggleDisable: { type: Boolean, default: false },
 	footer: { type: Boolean, default: true },
-	activeCity: { type: String, default: '' },
+	activeCity: { type: String, default: "" },
 	toggleOn: { type: Boolean, default: false },
 });
 
@@ -125,14 +126,15 @@ const emits = defineEmits([
 	"clearByParamFilter",
 	"clearByLayerFilter",
 	"fly",
-	"changeCity"
+	"changeCity",
 ]);
 
 const activeChart = ref(props.config.chart_config.types[0]);
 
-const hasIsochroneMapLayer = computed(() =>
-	Array.isArray(props.config.map_config) &&
-	props.config.map_config.some((item) => item?.type === "isochrone"),
+const hasIsochroneMapLayer = computed(
+	() =>
+		Array.isArray(props.config.map_config) &&
+		props.config.map_config.some((item) => item?.type === "isochrone"),
 );
 
 /** Rent heatmap: show quartiles from latest map pick when API returned rent_quartile_series */
@@ -179,7 +181,7 @@ const dataTime = computed(() => {
 	const { timefrom, timeto } = getComponentDataTimeframe(
 		props.config.time_from,
 		props.config.time_to,
-		true
+		true,
 	);
 	if (props.config.time_from === "day_start") {
 		return `${timefrom.slice(0, 16)} ~ ${timeto.slice(11, 14)}00`;
@@ -255,6 +257,8 @@ function returnChartComponent(name, svg) {
 			return svg ? IconPercentChartSvg : IconPercentChart;
 		case "ColumnChart":
 			return svg ? ColumnChartSvg : ColumnChart;
+		case "NegativeColumnChart":
+			return svg ? ColumnChartNegativeSvg : NegativeColumnChart;
 		case "DonutChart":
 			return svg ? DonutChartSvg : DonutChart;
 		case "TreemapChart":
@@ -281,6 +285,7 @@ function returnChartComponent(name, svg) {
 			return svg ? SankeyChartSvg : SankeyChart;
 		case "SunburstChart":
 			return svg ? SunburstChartSvg : SunburstChart;
+
 		default:
 			return svg ? MapLegendSvg : MapLegend;
 	}
@@ -411,8 +416,8 @@ function returnChartComponent(name, svg) {
 				(!mode.includes('map') || toggleOn) &&
 				mode !== 'preview' &&
 				((selectBtn && !selectBtnDisabled) ||
-					config?.chart_config?.types?.length > 1 ||
-					(hasIsochroneMapLayer && mode.includes('map') && toggleOn)) &&
+					config?.chart_config?.types?.length > 1) &&
+					(hasIsochroneMapLayer && mode.includes('map') && toggleOn) &&
 				activeChart !== 'QuartileChart'
 			"
 			class="dashboardcomponent-control"
@@ -636,7 +641,8 @@ function returnChartComponent(name, svg) {
 * {
 	margin: 0;
 	padding: 0;
-	font-family: "微軟正黑體", "Microsoft JhengHei", "Droid Sans", "Open Sans",
+	font-family:
+		"微軟正黑體", "Microsoft JhengHei", "Droid Sans", "Open Sans",
 		"Helvetica";
 	overflow: hidden;
 }
@@ -748,10 +754,7 @@ button:hover {
 			button span {
 				color: var(--color-complement-text);
 				font-family: var(--font-icon);
-				font-size: calc(
-					var(--font-l) *
-						var(--font-to-icon)
-				);
+				font-size: calc(var(--font-l) * var(--font-to-icon));
 				transition: color 0.2s;
 
 				&:hover {
@@ -824,15 +827,17 @@ button:hover {
 				color: var(--color-complement-text);
 				font-size: var(--font-s);
 				text-align: center;
-				transition: color 0.2s, opacity 0.2s;
+				transition:
+					color 0.2s,
+					opacity 0.2s;
 				user-select: none;
-	
+
 				&:hover {
 					opacity: 1;
 					color: white;
 				}
 			}
-	
+
 			&-active {
 				background-color: var(--color-complement-text);
 				color: white;
@@ -1082,9 +1087,7 @@ button:hover {
 				width: 40px;
 				height: 40px;
 				border-radius: 5px;
-				background-color: var(
-					--color-complement-text
-				);
+				background-color: var(--color-complement-text);
 			}
 		}
 	}
@@ -1096,7 +1099,7 @@ button:hover {
 			margin: 4px 0;
 			display: flex;
 			gap: 5px;
-	
+
 			div:first-child {
 				margin-left: 5px;
 			}
