@@ -108,6 +108,11 @@ function getMapboxMarkerSvgElement() {
 	}
 }
 
+const DEFAULT_ISOCHRONE_PICK = {
+	lng: 121.517063,
+	lat: 25.047924,
+};
+
 export const useMapStore = defineStore("map", {
 	state: () => ({
 		// Array of layer IDs that are in the map
@@ -596,44 +601,6 @@ export const useMapStore = defineStore("map", {
 				this.rentHeatmapLayersActive = true;
 				this.ensureRentHeatmapBoundsLayerAboveHeatmap();
 				this.applyRentHeatmapHeatLayerVisibility();
-			}
-		},
-		getIsochroneRenderLayerIds(layerId) {
-			return [
-				layerId,
-				`${layerId}-network`,
-				`${layerId}-outline`,
-				`${layerId}-network-stops`,
-			];
-		},
-		/** 將等時圈疊在矢量底圖面／線之上、路名／ POI 標籤（symbol）之下，避免被線画遮住也不可插在 background 底下（會完全看不見） */
-		moveIsochroneLayersToBottom(layerId) {
-			if (!this.map) return;
-			const orderedIds = this.getIsochroneRenderLayerIds(layerId).filter(
-				(id) => this.map.getLayer(id),
-			);
-			if (!orderedIds.length) return;
-
-			const styleLayers = this.map.getStyle()?.layers ?? [];
-			const firstSymbol = styleLayers.find((l) => l.type === "symbol");
-			const anchorId =
-				firstSymbol?.id ??
-				styleLayers.find(
-					(l) =>
-						!orderedIds.includes(l.id) &&
-						l.type !== "background" &&
-						l.type !== "sky",
-				)?.id;
-
-			if (!anchorId) return;
-
-			try {
-				for (const id of orderedIds) {
-					if (id === anchorId) continue;
-					this.map.moveLayer(id, anchorId);
-				}
-			} catch (e) {
-				console.warn("[mapStore] moveIsochroneLayersToBottom:", e);
 			}
 		},
 		resetRentHeatmapUI() {
@@ -2147,7 +2114,6 @@ export const useMapStore = defineStore("map", {
 			if (!this.currentVisibleLayers.includes(map_config.layerId)) {
 				this.currentVisibleLayers.push(map_config.layerId);
 			}
-			this.moveIsochroneLayersToBottom(map_config.layerId);
 			this._registerStopsLayer(map_config);
 			this.enableIsochroneQuery(map_config);
 			dialogStore.showDialog("isochroneSettings");
@@ -2993,7 +2959,6 @@ export const useMapStore = defineStore("map", {
 					if (!this.currentVisibleLayers.includes(mapLayerId)) {
 						this.currentVisibleLayers.push(mapLayerId);
 					}
-					this.moveIsochroneLayersToBottom(mapLayerId);
 					this._registerStopsLayer(mapConfig);
 					this.enableIsochroneQuery(mapConfig);
 					useDialogStore().showDialog("isochroneSettings");
@@ -3909,6 +3874,9 @@ export const useMapStore = defineStore("map", {
 		enableIsochroneQuery(map_config) {
 			if (!this.map) return;
 			const dialogStore = useDialogStore();
+			if (!this.isochroneLastPick) {
+				this.isochroneLastPick = { ...DEFAULT_ISOCHRONE_PICK };
+			}
 			dialogStore.isochrone = {
 				...dialogStore.isochrone,
 				layerId: map_config.layerId,
