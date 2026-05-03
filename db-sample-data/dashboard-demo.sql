@@ -664,6 +664,22 @@ CREATE TABLE public.employment_age_structure_tpe (
 ALTER TABLE public.employment_age_structure_tpe OWNER TO postgres;
 
 --
+-- Name: net_inflow_commuters; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.net_inflow_commuters (
+    "縣市" text,
+    "行政區" text,
+    "淨流入" numeric,
+    "平日日間活動人數" numeric,
+    "平日夜間停留人數" numeric
+);
+
+
+ALTER TABLE public.net_inflow_commuters OWNER TO postgres;
+
+
+--
 -- Name: employment_age_structure_tpe_ogc_fid_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
