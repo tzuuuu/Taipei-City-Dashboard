@@ -2,7 +2,7 @@ version: "3.7"
 
 services:
   nginx:
-    restart: always
+    # restart: always
     container_name: nginx
     image: nginx:${NGINX_IMAGE_TAG:-latest}
     volumes:
@@ -15,7 +15,7 @@ services:
   dashboard-fe:
     image: node:${NODE_IMAGE_TAG:-latest}
     container_name: dashboard-fe
-    restart: always
+    # restart: always
     environment:
       DOCKER_COMPOSE: "true"
       NODE_ENV: ${NODE_ENV}
@@ -29,10 +29,16 @@ services:
       VITE_TAIPEIPASS_SCOPE: ${ISSO_CLIENT_SCOPE}
     volumes:
       - ../Taipei-City-Dashboard-FE:/opt/Taipei-City-Dashboard-FE
+      - dashboard-fe-node-modules:/opt/Taipei-City-Dashboard-FE/node_modules
     ports:
       - "8080:80"
     working_dir: /opt/Taipei-City-Dashboard-FE
-    command: ["npm", "run", "dev"]
+    command:
+      [
+        "sh",
+        "-c",
+        "node -e \"require.resolve('@rollup/rollup-linux-x64-musl')\" 2>/dev/null || npm ci --include=dev --include=optional; npm run dev",
+      ]
 
   dashboard-be:
     # image: golang:${GOLANG_IMAGE_TAG:-latest} #Go Lang Image Without Model and onnxruntime
@@ -42,7 +48,7 @@ services:
       context: ../Taipei-City-Dashboard-BE
       dockerfile: Dockerfile
     container_name: dashboard-be
-    restart: always
+    # restart: always
     environment:
       GIN_MODE: ${GIN_MODE}
       GIN_DOMAIN: ${GIN_DOMAIN}
@@ -104,6 +110,10 @@ networks:
   default:
     name: br_dashboard
     external: true
+
+volumes:
+  dashboard-fe-node-modules:
+    name: dashboard_fe_node_modules
 ###########################################
 ## Create docker network command sample: ##
 ## ------------------------------------- ##################################################################
