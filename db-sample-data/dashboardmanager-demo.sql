@@ -759,8 +759,9 @@ COPY public.ai_chatlog (id, session_id, user_id, provider, model, question, answ
 
 COPY public.auth_users (id, name, email, password, idno, uuid, tp_account, member_type, verify_level, is_admin, is_active, is_whitelist, is_blacked, expired_at, created_at, login_at) FROM stdin;
 1	admin	seed-admin@gmail.com	8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918	\N	\N	\N	\N	\N	t	t	t	f	\N	2026-04-28 03:12:29.252503+00	2026-04-29 15:38:33.551874+00
-6	admin	admin@gmail.com	8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918	\N	\N	\N	\N	\N	t	t	t	f	\N	2026-04-30 05:29:59.022851+00	2026-05-02 17:07:14.094141+00
+6	admin	admin@gmail.com	8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918	\N	\N	\N	\N	\N	t	t	t	f	\N	2026-04-30 05:29:59.022851+00	2026-05-06 16:34:58.702545+00
 \.
+
 
 --
 -- Data for Name: chat_logs; Type: TABLE DATA; Schema: public; Owner: postgres
@@ -808,8 +809,6 @@ COPY public.component_maps (id, index, title, type, source, size, icon, paint, p
 99	youbike_realtime_metrotaipei	youbike站點	symbol	geojson	\N	youbike	{}	[{"key":"sna","name":"場站名稱"},{"key":"sno","name":"場站ID"},{"key":"available_return_bikes","name":"可還車位"},{"key":"available_rent_general_bikes","name":"剩餘車輛"}]
 100	bike_network_tpe	自行車路網	line	geojson	\N	\N	{"line-color":["match",["get","direction"],"雙向","#097138","單向","#007BFF","#808080"]}	[\r\n  {"key": "data_time", "name": "數據時間"},\r\n  {"key": "route_name", "name": "路線名稱"},\r\n  {"key": "city_code", "name": "城市代碼"},\r\n  {"key": "city", "name": "城市"},\r\n  {"key": "road_section_start", "name": "起點路段"},\r\n  {"key": "road_section_end", "name": "終點路段"},\r\n  {"key": "direction", "name": "方向"},\r\n  {"key": "cycling_length", "name": "自行車道長度"},\r\n  {"key": "finished_time", "name": "完工時間"},\r\n  {"key": "update_time", "name": "更新時間"}\r\n]
 101	bike_network_metrotaipei	自行車路網	line	geojson	\N	\N	{"line-color":["match",["get","direction"],"雙向","#097138","單向","#007BFF","#808080"]}	[\r\n  {"key": "data_time", "name": "數據時間"},\r\n  {"key": "route_name", "name": "路線名稱"},\r\n  {"key": "city_code", "name": "城市代碼"},\r\n  {"key": "city", "name": "城市"},\r\n  {"key": "road_section_start", "name": "起點路段"},\r\n  {"key": "road_section_end", "name": "終點路段"},\r\n  {"key": "direction", "name": "方向"},\r\n  {"key": "cycling_length", "name": "自行車道長度"},\r\n  {"key": "finished_time", "name": "完工時間"},\r\n  {"key": "update_time", "name": "更新時間"}\r\n]
-1	rent_level	各行政區租金水準	fill	geojson	\N	\N	{\n  "fill-color": [\n    "case",\n    ["<", ["get", "rent_median"], 5000],\n    "#2f343a",\n\n    ["interpolate",\n      ["linear"],\n      ["get", "rent_median"],\n      5000, "#36404c",\n      8000, "#4b5b70",\n      11000, "#687b99",\n      14000, "#879dc3",\n      17000, "#a8bee8"\n    ]\n  ],\n  "fill-opacity": 0.44,\n  "fill-outline-color": "#26303a"\n}	[{"key":"PNAME","name":"縣市"},{"key":"TNAME","name":"行政區"},{"key":"rent_median","name":"租金50分位數"},{"key":"remark","name":"備註"}]
-2	rent_level_metrotaipei	各行政區租金水準	fill	geojson	\N	\N	{\n  "fill-color": [\n    "case",\n    ["<", ["get", "rent_median"], 5000],\n    "#2f343a",\n\n    ["interpolate",\n      ["linear"],\n      ["get", "rent_median"],\n      5000, "#36404c",\n      8000, "#4b5b70",\n      11000, "#687b99",\n      14000, "#879dc3",\n      17000, "#a8bee8"\n    ]\n  ],\n  "fill-opacity": 0.44,\n  "fill-outline-color": "#26303a"\n}	[{"key":"PNAME","name":"縣市"},{"key":"TNAME","name":"行政區"},{"key":"rent_median","name":"租金50分位數"},{"key":"remark","name":"備註"}]
 5	social_housing	社會住宅興辦進度(柱狀體)	fill-extrusion	geojson	\N	\N	{\n  "fill-extrusion-color": "#25744f",\n  "fill-extrusion-height": [\n    "+",\n    200,\n    [\n      "*",\n      ["sqrt", ["to-number", ["get", "戶數"]]],\n      80\n    ]\n  ],\n  "fill-extrusion-base": 0,\n  "fill-extrusion-opacity": 1\n}	[\n  {\n    "key": "縣市",\n    "name": "縣市"\n  },\n  {\n    "key": "案名",\n    "name": "案名"\n  },\n  {\n    "key": "詳細地址",\n    "name": "詳細地址"\n  },\n  {\n    "key": "興辦主體",\n    "name": "興辦主體"\n  },\n  {\n    "key": "戶數",\n    "name": "戶數"\n  },\n  {\n    "key": "工程決標日期",\n    "name": "工程決標日期"\n  },\n  {\n    "key": "開工日期",\n    "name": "開工日期"\n  },\n  {\n    "key": "完工日期",\n    "name": "完工日期"\n  },\n  {\n    "key": "執行情況",\n    "name": "執行情況"\n  }\n]
 4	rent_heatmap_bounds	租屋熱力（範圍）	line	geojson	\N	\N	{"line-color":"#FFFFFF","line-width":["interpolate",["linear"],["zoom"],10,3,12,4.5,14,6,17,8],"line-opacity":0.4}	[]
 3	rent_heatmap	租屋熱力（樣點）	heatmap	geojson	\N	\N	{"heatmap-opacity":0.68,"heatmap-color":["interpolate",["linear"],["heatmap-density"],0,"rgba(255,248,220,0)",0.08,"rgba(255,236,185,0.2)",0.22,"rgba(250,215,130,0.42)",0.38,"rgba(235,185,70,0.6)",0.52,"rgba(211,160,33,0.75)",0.66,"rgba(180,125,18,0.86)",0.8,"rgba(150,95,12,0.92)",0.92,"rgba(120,72,8,0.95)",1,"rgba(95,58,6,0.96)"]}	[]
@@ -821,6 +820,8 @@ COPY public.component_maps (id, index, title, type, source, size, icon, paint, p
 104	rent_heatmap_type_shared	租屋熱力（分租套房）	heatmap	geojson	\N	\N	{"heatmap-opacity":0.68,"heatmap-color":["interpolate",["linear"],["heatmap-density"],0,"rgba(165,225,95,0)",0.18,"rgba(165,225,95,0.55)",0.42,"rgba(130,200,60,0.82)",0.68,"rgba(100,175,40,0.94)",1,"rgba(75,145,25,0.98)"]}	[]
 105	isochrone_default	大眾運輸等時圈	isochrone	geojson	\N	\N	{\n  "fill-color": ["get", "color"],\n  "fill-opacity": 0.35,\n  "stops_property": [\n    {"key": "stop_name", "name": "站名"},\n    {"key": "transit_type", "name": "類型"},\n    {"key": "minutes", "name": "到達時間(分)"}\n  ]\n}	[{"key":"minutes","name":"分鐘數"},{"key":"time_slot","name":"時段"},{"key":"color","name":"顏色"}]
 106	station_rent	捷運站周邊平均租金	symbol	geojson	\N	station_rent	{}	[{"key":"station_name","name":"捷運站名稱"},{"key":"rent_average_year","name":"近一年均價 (元/坪)"},{"key":"rent_price_new_year","name":"新成屋"},{"key":"rent_price_building_year","name":"中古屋(大樓)"},{"key":"rent_price_apartment_year","name":"中古屋(公寓)"}]
+1	rent_level	各行政區租金水準	fill	geojson	\N	\N	{"fill-color": ["case", ["<", ["get", "rent_median"], 5000], "#2f343a", ["interpolate", ["linear"], ["get", "rent_median"], 5000, "#36404c", 8000, "#4b5b70", 11000, "#687b99", 14000, "#879dc3", 17000, "#a8bee8"]], "fill-opacity": 0.44, "fill-outline-color": "#26303a"}	[{"key":"PNAME","name":"縣市"},{"key":"TNAME","name":"行政區"},{"key":"rent_median","name":"租金50分位數"},{"key":"remark","name":"備註"}]
+2	rent_level_metrotaipei	各行政區租金水準	fill	geojson	\N	\N	{"fill-color": ["case", ["<", ["get", "rent_median"], 5000], "#2f343a", ["interpolate", ["linear"], ["get", "rent_median"], 5000, "#36404c", 8000, "#4b5b70", 11000, "#687b99", 14000, "#879dc3", 17000, "#a8bee8"]], "fill-opacity": 0.44, "fill-outline-color": "#26303a"}	[{"key":"PNAME","name":"縣市"},{"key":"TNAME","name":"行政區"},{"key":"rent_median","name":"租金50分位數"},{"key":"remark","name":"備註"}]
 \.
 
 
@@ -864,24 +865,6 @@ COPY public.contributors (id, user_id, user_name, image, link, identity, descrip
 \.
 
 
---
--- Data for Name: groups; Type: TABLE DATA; Schema: public; Owner: postgres
--- (Must precede dashboards/dashboard_groups due FK dependencies.)
---
-
-COPY public.groups (id, name, is_personal, create_by) FROM stdin;
-1	public	f	\N
-2	taipei	f	\N
-3	metrotaipei	f	\N
-4	user: 1's personal group	t	1
-5	user: 6's personal group	t	6
-\.
-
-
---
--- Data for Name: dashboards; Type: TABLE DATA; Schema: public; Owner: postgres
--- (Must precede dashboard_groups due FK dashboard_id -> dashboards.id)
---
 
 COPY public.dashboards (id, index, name, components, icon, updated_at, created_at) FROM stdin;
 106	map-layers-taipei	圖資資訊	{217}	public	2025-03-12 01:59:00.512775+00	2024-03-21 10:04:24.928533+00
@@ -893,7 +876,20 @@ COPY public.dashboards (id, index, name, components, icon, updated_at, created_a
 360	07dd6b2a6bc0	收藏組件	\N	favorite	2026-04-28 03:12:29.258762+00	2026-04-28 03:12:29.258762+00
 362	f5550dc8ed63	收藏組件	\N	favorite	2026-04-30 05:29:59.037538+00	2026-04-30 05:29:59.037538+00
 356	ltc_care_tpe	長照關懷	{4,5,6,7,214,215,216,218}	elderly	2025-02-26 08:43:42.86017+00	2024-03-21 09:38:37.66+00
-363	2b8a9157e0e2	通勤打理	{8,7,6,5,4,3,1,219,9,44,220,221,222}	star	2026-05-02 22:05:52.174685+00	2026-05-02 22:05:52.174685+00
+363	2b8a9157e0e2	通勤打理	{222,220,221,9,8,219,44,3,7,4,5,6,1}	star	2026-05-03 07:19:03.93654+00	2026-05-02 22:05:52.174685+00
+\.
+
+
+--
+-- Data for Name: groups; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.groups (id, name, is_personal, create_by) FROM stdin;
+1	public	f	\N
+2	taipei	f	\N
+3	metrotaipei	f	\N
+4	user: 1's personal group	t	1
+5	user: 6's personal group	t	6
 \.
 
 
@@ -967,9 +963,9 @@ rent_heatmap	\N	{3,4,102,103,104}	\N	static	\N	\N	\N	內政部國土管理署	�
 isochrone_default	\N	{105}	{"mode": "byParam", "byParam": {"xParam": "name", "yParam": null}}	static	\N	\N	\N	臺北市都市智慧中心	顯示從台北車站出發，不同時段的大眾運輸等時圈	顯示從台北車站出發，不同時段（06:00, 08:00, 10:00, 12:00, 17:00, 21:00）的大眾運輸等時圈。等時圈表示在指定時間內搭乘公車、捷運、火車可到達的範圍，使用不同顏色區分 15/30/60/90/120 分鐘的可達範圍。	用於交通可達性分析、通勤時間評估、都市規劃與房地產選址參考	{}	{TUIC}	2026-04-30 05:35:38.223872+00	2026-04-30 05:35:38.223872+00	map_legend	SELECT unnest(ARRAY['15分鐘', '30分鐘', '60分鐘', '90分鐘', '120分鐘']) AS name, 'fill' AS type	\N	taipei
 isochrone_default	\N	{105}	{"mode": "byParam", "byParam": {"xParam": "name", "yParam": null}}	static	\N	\N	\N	臺北市都市智慧中心	顯示從台北車站出發，不同時段的大眾運輸等時圈	顯示從台北車站出發，不同時段（06:00, 08:00, 10:00, 12:00, 17:00, 21:00）的大眾運輸等時圈。等時圈表示在指定時間內搭乘公車、捷運、火車可到達的範圍，使用不同顏色區分 15/30/60/90/120 分鐘的可達範圍。	用於交通可達性分析、通勤時間評估、都市規劃與房地產選址參考	{}	{TUIC}	2026-04-30 05:35:45.998295+00	2026-04-30 05:35:45.998295+00	map_legend	SELECT unnest(ARRAY['15分鐘', '30分鐘', '60分鐘', '90分鐘', '120分鐘']) AS name, 'fill' AS type	\N	metrotaipei
 trip_purpose_sankey	\N	{}	{}	static	\N	0	\N	臺北市交通資料	外出旅次目的 分析	以桑基圖呈現外出旅次目的分流：100% 全體外出人口先分為通勤/通學與其他旅次目的，再於第二層展開各細項比例。	協助快速掌握外出旅次由主類別到次類別的分流結構，作為交通政策與公共服務規劃參考。	{}	{king}	2026-05-02 17:06:46.341026+00	2026-05-02 18:53:42.116974+00	sankey	\n    SELECT\n      source AS x_axis,\n      target AS y_axis,\n      value  AS data,\n      color\n    FROM public.component_flow_edges\n    WHERE component_index = 'trip_purpose_sankey'\n      AND city = 'metrotaipei'\n    ORDER BY sort_order, id\n  	\N	metrotaipei
-commute_time_sunburst	\N	{}	{}	static	\N	0	\N	\N	通勤時間 分析	\N	\N	{}	{king}	2026-05-02 19:56:39.318614+00	2026-05-02 19:56:39.318614+00	sankey	SELECT x_axis, y_axis, data, color FROM public.commute_time_flow_edges WHERE city = 'metrotaipei' ORDER BY sort_order, id	\N	metrotaipei
-commute_mode_sunburst	\N	{}	{}	static	\N	0	\N	\N	通勤方式 分析	\N	\N	{}	{king}	2026-05-02 20:17:46.385266+00	2026-05-02 20:17:46.385266+00	sankey	SELECT x_axis, y_axis, data, color FROM public.commute_mode_flow_edges WHERE city = 'metrotaipei' ORDER BY sort_order, id	\N	metrotaipei
-commute_mode_sunburst	\N	{}	{}	static	\N	0	\N	\N	通勤方式 分析	\N	\N	{}	{king}	2026-05-02 20:17:46.385266+00	2026-05-02 20:17:46.385266+00	sankey	SELECT x_axis, y_axis, data, color FROM public.commute_mode_flow_edges WHERE city = 'taipei' ORDER BY sort_order, id	\N	taipei
+commute_time_sunburst	\N	{}	{}	static	\N	0	\N	交通部與通勤調查資料	通勤時間 分析	以分層結構圖呈現通勤時間分布，從整體通勤人口往下拆解不同時間區間（例如 15 分鐘內、16-30 分鐘、31-60 分鐘、60 分鐘以上），協助快速掌握雙北通勤時間長短的整體輪廓與族群占比。	可用於評估通勤負擔與交通可達性，例如觀察長通勤族群比例是否偏高、不同政策後通勤結構是否改善。民眾可作為居住與工作地點選擇參考；政府與研究單位可作為大眾運輸路網優化、尖峰疏運與通勤政策調整依據。	{}	{king}	2026-05-02 19:56:39.318614+00	2026-05-02 19:56:39.318614+00	sankey	SELECT x_axis, y_axis, data, color FROM public.commute_time_flow_edges WHERE city = 'metrotaipei' ORDER BY sort_order, id	\N	metrotaipei
+commute_mode_sunburst	\N	{}	{}	static	\N	0	\N	交通部與通勤調查資料	通勤方式 分析	以分層結構圖呈現通勤方式分布，從整體通勤人口拆解為捷運、公車、機車、汽車、步行與其他方式，並可延伸觀察主要方式下的次分類結構，協助理解雙北通勤型態與運具依賴。	可用於分析城市通勤運具結構與轉乘策略，例如比較大眾運輸與私人運具占比、辨識高依賴機車或汽車的族群。民眾可作為通勤路徑規劃參考；政府可作為公共運輸服務提升、減碳政策與道路資源配置之依據。	{}	{king}	2026-05-02 20:17:46.385266+00	2026-05-02 20:17:46.385266+00	sankey	SELECT x_axis, y_axis, data, color FROM public.commute_mode_flow_edges WHERE city = 'metrotaipei' ORDER BY sort_order, id	\N	metrotaipei
+commute_mode_sunburst	\N	{}	{}	static	\N	0	\N	交通部與通勤調查資料	通勤方式 分析	以分層結構圖呈現臺北市通勤方式分布，從整體通勤人口拆解為捷運、公車、機車、汽車、步行與其他方式，並可延伸觀察主要方式下的次分類結構，協助理解臺北市通勤型態與運具依賴。	可用於分析臺北市通勤運具結構與轉乘策略，例如比較大眾運輸與私人運具占比、辨識高依賴機車或汽車的族群。民眾可作為通勤路徑規劃參考；政府可作為公共運輸服務提升、減碳政策與道路資源配置之依據。	{}	{king}	2026-05-02 20:17:46.385266+00	2026-05-02 20:17:46.385266+00	sankey	SELECT x_axis, y_axis, data, color FROM public.commute_mode_flow_edges WHERE city = 'taipei' ORDER BY sort_order, id	\N	taipei
 net_inflow_commuters	\N	{7}	{\n  "mode": "byParam",\n  "byParam": {\n    "xParam": "TNAME"\n  }\n}	static	\N	\N	\N	內政部統計處	呈現各行政區平日白天與夜間人口差異，觀察通勤淨流入情形	使用「112年11月行政區電信信令人口統計資料_鄉鎮市區」，以各行政區之「平日日間活動人數（DAY_WORK）」扣除「平日夜間停留人數（NIGHT_WORK）」計算通勤淨流入情形，呈現不同區域在白天與夜間人口分布上的差異。當數值為正，代表該行政區白天活動人口高於夜間停留人口，可能具有較明顯的就業、商業或通勤目的地特性；當數值為負，則代表夜間停留人口較高，可能偏向居住型或通勤輸出區。透過長條圖可快速比較各行政區的人口流動強度，掌握哪些地區在平日白天吸引大量人口聚集，哪些地區則較偏向夜間居住生活機能。	可用於分析都市通勤結構與區域功能分工，例如辨識主要就業中心、商業活動聚集區，以及住宅人口較集中的行政區。民眾可藉此了解各區白天與夜間的人口型態差異，作為通勤、居住與生活圈選擇的參考；政府與研究單位則可運用此資料評估交通運輸需求、公共服務配置與都市空間規劃，並作為捷運、公車路網、停車資源、公共設施及商業發展策略調整之依據。	{https://segis.moi.gov.tw/STATCloud/QueryInterfaceView?COL=zVTg8Fn91RUFg2R9uBdHTA%3d%3d}	{king}	2026-04-30 05:56:00+00	2026-04-30 05:56:00+00	two_d	SELECT "行政區" AS x_axis, "淨流入" AS data\nFROM net_inflow_commuters\nWHERE "縣市" = '臺北市'\nORDER BY "淨流入" ASC;	\N	taipei
 net_inflow_commuters	\N	{6}	{\n  "mode": "byParam",\n  "byParam": {\n    "xParam": "TNAME"\n  }\n}	static	\N	\N	\N	內政部統計處	呈現各行政區平日白天與夜間人口差異，觀察通勤淨流入情形	使用「112年11月行政區電信信令人口統計資料_鄉鎮市區」，以各行政區之「平日日間活動人數（DAY_WORK）」扣除「平日夜間停留人數（NIGHT_WORK）」計算通勤淨流入情形，呈現不同區域在白天與夜間人口分布上的差異。當數值為正，代表該行政區白天活動人口高於夜間停留人口，可能具有較明顯的就業、商業或通勤目的地特性；當數值為負，則代表夜間停留人口較高，可能偏向居住型或通勤輸出區。透過長條圖可快速比較各行政區的人口流動強度，掌握哪些地區在平日白天吸引大量人口聚集，哪些地區則較偏向夜間居住生活機能。	可用於分析都市通勤結構與區域功能分工，例如辨識主要就業中心、商業活動聚集區，以及住宅人口較集中的行政區。民眾可藉此了解各區白天與夜間的人口型態差異，作為通勤、居住與生活圈選擇的參考；政府與研究單位則可運用此資料評估交通運輸需求、公共服務配置與都市空間規劃，並作為捷運、公車路網、停車資源、公共設施及商業發展策略調整之依據。	{https://segis.moi.gov.tw/STATCloud/QueryInterfaceView?COL=zVTg8Fn91RUFg2R9uBdHTA%3d%3d}	{king}	2026-04-30 05:56:00+00	2026-04-30 05:56:00+00	two_d	SELECT "行政區" AS x_axis, "淨流入" AS data\nFROM net_inflow_commuters\nORDER BY "淨流入" ASC;	\N	metrotaipei
 social_housing	\N	{5,8}	\N	static	\N	\N	\N	內政部	呈現雙北各行政區社會住宅興辦進度與分布情形	展示臺北市與新北市各行政區社會住宅之興辦進度，依「已決標待開工」、「興建中」、「新完工」及「既有」等階段進行分類，呈現各區在不同進度階段的戶數分布情形。使用者可透過顏色與數值快速比較各行政區社會住宅的供給現況與建設進度，了解不同區域在興建推動上的差異，以及整體社會住宅政策的落實情形。上方亦提供總戶數統計，作為整體供給規模的參考。資料來源為內政部不動產相關資料，並依行政區與執行階段彙整呈現。	分析社會住宅資源在雙北各行政區的分布與發展狀況，例如觀察哪些區域已具備較高既有供給、哪些區域仍處於興建或規劃階段。民眾可藉此了解各區未來社會住宅供給潛力，作為居住選擇參考；政府與研究單位則可透過進度與區域分布分析，評估社會住宅政策推動是否均衡，並作為後續土地規劃、住宅政策調整及資源配置之依據。	{https://pip.moi.gov.tw/V3/B/SCRB0505.aspx?city=臺北市,https://pip.moi.gov.tw/V3/B/SCRB0505.aspx?city=新北市}	{king}	2026-04-30 05:56:00+00	2026-04-30 05:56:00+00	three_d	SELECT\n    d.行政區 AS x_axis,\n    s.執行情況 AS y_axis,\n    COUNT(t.執行情況) AS data\nFROM (\n    VALUES\n        ('北投區'), ('士林區'), ('內湖區'), ('南港區'), ('松山區'), ('信義區'),\n        ('中山區'), ('大同區'), ('中正區'), ('萬華區'), ('大安區'), ('文山區'),\n        ('新莊區'), ('淡水區'), ('汐止區'), ('板橋區'), ('三重區'), ('樹林區'),\n        ('土城區'), ('蘆洲區'), ('中和區'), ('永和區'), ('新店區'), ('鶯歌區'),\n        ('三峽區'), ('瑞芳區'), ('五股區'), ('泰山區'), ('林口區'), ('深坑區'),\n        ('石碇區'), ('坪林區'), ('三芝區'), ('石門區'), ('八里區'), ('平溪區'),\n        ('雙溪區'), ('貢寮區'), ('金山區'), ('萬里區'), ('烏來區')\n) AS d(行政區)\n\nCROSS JOIN (\n    VALUES\n        ('既有'),\n        ('新完工'),\n        ('興建中'),\n        ('已決標 待開工')\n) AS s(執行情況)\n\nLEFT JOIN social_housing_ntp t\n    ON t.行政區 = d.行政區\n    AND t.執行情況 = s.執行情況\n\nGROUP BY d.行政區, s.執行情況\n\nORDER BY\n    CASE d.行政區\n        WHEN '北投區' THEN 1\n        WHEN '士林區' THEN 2\n        WHEN '內湖區' THEN 3\n        WHEN '南港區' THEN 4\n        WHEN '松山區' THEN 5\n        WHEN '信義區' THEN 6\n        WHEN '中山區' THEN 7\n        WHEN '大同區' THEN 8\n        WHEN '中正區' THEN 9\n        WHEN '萬華區' THEN 10\n        WHEN '大安區' THEN 11\n        WHEN '文山區' THEN 12\n        WHEN '新莊區' THEN 13\n        WHEN '淡水區' THEN 14\n        WHEN '汐止區' THEN 15\n        WHEN '板橋區' THEN 16\n        WHEN '三重區' THEN 17\n        WHEN '樹林區' THEN 18\n        WHEN '土城區' THEN 19\n        WHEN '蘆洲區' THEN 20\n        WHEN '中和區' THEN 21\n        WHEN '永和區' THEN 22\n        WHEN '新店區' THEN 23\n        WHEN '鶯歌區' THEN 24\n        WHEN '三峽區' THEN 25\n        WHEN '瑞芳區' THEN 26\n        WHEN '五股區' THEN 27\n        WHEN '泰山區' THEN 28\n        WHEN '林口區' THEN 29\n        WHEN '深坑區' THEN 30\n        WHEN '石碇區' THEN 31\n        WHEN '坪林區' THEN 32\n        WHEN '三芝區' THEN 33\n        WHEN '石門區' THEN 34\n        WHEN '八里區' THEN 35\n        WHEN '平溪區' THEN 36\n        WHEN '雙溪區' THEN 37\n        WHEN '貢寮區' THEN 38\n        WHEN '金山區' THEN 39\n        WHEN '萬里區' THEN 40\n        WHEN '烏來區' THEN 41\n    END,\n    CASE s.執行情況\n        WHEN '既有' THEN 1\n        WHEN '新完工' THEN 2\n        WHEN '興建中' THEN 3\n        WHEN '已決標 待開工' THEN 4\n    END;	\N	metrotaipei
@@ -1006,12 +1002,14 @@ COPY public.roles (id, name, access_control, modify, read) FROM stdin;
 22	admin	t	t	t
 23	editor	f	t	t
 24	viewer	f	f	t
+25	admin	t	t	t
+26	editor	f	t	t
+27	viewer	f	f	t
 \.
 
 
 --
 -- Data for Name: auth_user_group_roles; Type: TABLE DATA; Schema: public; Owner: postgres
--- Load after auth_users, groups, and roles (FK: auth_user_id, group_id, role_id).
 --
 
 COPY public.auth_user_group_roles (auth_user_id, group_id, role_id) FROM stdin;
@@ -1101,7 +1099,7 @@ SELECT pg_catalog.setval('public.ai_chatlog_id_seq', 1, false);
 -- Name: auth_users_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('public.auth_users_id_seq', 8, true);
+SELECT pg_catalog.setval('public.auth_users_id_seq', 9, true);
 
 
 --
@@ -1164,7 +1162,7 @@ SELECT pg_catalog.setval('public.issues_id_seq', 4, true);
 -- Name: roles_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('public.roles_id_seq', 24, true);
+SELECT pg_catalog.setval('public.roles_id_seq', 27, true);
 
 
 --
